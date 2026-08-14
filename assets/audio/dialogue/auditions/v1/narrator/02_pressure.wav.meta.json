@@ -1,0 +1,22 @@
+{
+  "fingerprint": "f84c68bb7258893791c918013234fbde8dcc7a56475e62548a8552c4807f3cf9",
+  "job": {
+    "id": "aud_v1_narrator_pressure",
+    "instructions": "成熟男性叙述者，克制客观。场面突然紧张，语速略收紧，但不要用恐怖片预告腔，不夸张强调。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "旁白",
+    "text": "旅馆外传来汽车急刹声。顾宁的脸色变了。",
+    "voice": "Neil",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "de958ffe-2207-9cbc-8610-b50065336226",
+  "schema_version": 1,
+  "usage": {
+    "characters": 36
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "fingerprint": "c02d9e165f2d747c85cc5d4d2f6fa724bff66f422333300328ae205be8b1d825",
+  "job": {
+    "id": "aud_v1_qiao_wen_pressure",
+    "instructions": "四十岁左右女性，知性温和但有原则。秘密被揭开后决定承认，前句谨慎，后句更坚定，保护人的动机明显但不哭泣。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "乔雯",
+    "text": "登记是我代写的，签名由她们自己留下。有人只需要一晚不被找到，我们就给她一把钥匙。",
+    "voice": "Maia",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "ce7a1f3a-cd2e-9bdb-831d-92df5d637e55",
+  "schema_version": 1,
+  "usage": {
+    "characters": 76
+  }
+}

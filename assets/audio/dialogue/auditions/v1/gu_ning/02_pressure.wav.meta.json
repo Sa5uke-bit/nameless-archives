@@ -1,0 +1,22 @@
+{
+  "fingerprint": "c4a9aac47a90e5e7827f7e115a74346943ea69e417219ecff81c24598a0b6ae2",
+  "job": {
+    "id": "aud_v1_gu_ning_pressure",
+    "instructions": "三十多岁女性，低沉克制，平时掌控情绪。终于承认往事，声音出现细小裂缝但不哭喊，每句之间留短暂停顿。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "顾宁",
+    "text": "我们原本约好一起走。我最后只敢寄出钥匙。这个发夹是她留下的，内侧刻着她的名字。",
+    "voice": "Elias",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "d1e0c123-1054-9ac4-bb82-a10504844608",
+  "schema_version": 1,
+  "usage": {
+    "characters": 74
+  }
+}

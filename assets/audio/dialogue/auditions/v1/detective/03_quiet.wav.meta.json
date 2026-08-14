@@ -1,0 +1,22 @@
+{
+  "fingerprint": "74636787b07d5e7b0a98ac412c7071a0fc521512ca7f21c4bcfda810a757de44",
+  "job": {
+    "id": "aud_v1_detective_quiet",
+    "instructions": "三十多岁的职业侦探，低中音。像独自确认关键线索一样低声说出，克制、冷静，尾句留一点意味，不要阴森表演。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "侦探",
+    "text": "血迹的成分比它被发现的位置更诚实。",
+    "voice": "Moon",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "33fcb63b-5e53-9f65-ae12-e06e019f07b0",
+  "schema_version": 1,
+  "usage": {
+    "characters": 33
+  }
+}

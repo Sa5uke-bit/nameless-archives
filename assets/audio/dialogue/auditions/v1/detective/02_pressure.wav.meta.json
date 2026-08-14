@@ -1,0 +1,22 @@
+{
+  "fingerprint": "485a841347866babc921e67207fd98c2de3a2893718d78d9cb7ea51d0fee2355",
+  "job": {
+    "id": "aud_v1_detective_pressure",
+    "instructions": "三十多岁的职业侦探，低中音，沉稳清晰。证据已经闭合，面对嫌疑人坚定施压，力量来自确信而非喊叫，后半句略微放慢。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "侦探",
+    "text": "他的证词不是孤证。警方会打开雨水井，核对维修材料、血迹和林小满的身份。你没有剩下一个能同时解释全部证据的故事。",
+    "voice": "Moon",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "9d2ccf23-b3e7-96b5-bb67-41cdf5677761",
+  "schema_version": 1,
+  "usage": {
+    "characters": 105
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "fingerprint": "0cf3bb4d2acb4fa65476deb162001b66b8b1221ca921d55d3025c674ed0a5816",
+  "job": {
+    "id": "aud_v1_gu_ning_quiet",
+    "instructions": "三十多岁女性，低沉克制。像提出最后请求一样低声而坚定，前句有思念，后句保持清醒和边界感，不煽情。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "顾宁",
+    "text": "让小满的名字回到记录里。至于周岚的其他名字……请不要替她们决定。",
+    "voice": "Elias",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "cc2052de-25e8-99e5-b7b9-295242c8ddfa",
+  "schema_version": 1,
+  "usage": {
+    "characters": 58
+  }
+}

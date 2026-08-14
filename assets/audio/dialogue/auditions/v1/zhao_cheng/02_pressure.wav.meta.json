@@ -1,0 +1,22 @@
+{
+  "fingerprint": "b1b7d7d2594f9ea76ef1d10d064a45808da6ca44e974c50142b5a379bf2fe311",
+  "job": {
+    "id": "aud_v1_zhao_cheng_pressure",
+    "instructions": "五十岁左右维修工，粗粝疲惫。压了十二年的供述终于说出口，前半句艰难，后半句充满负罪和失眠感，克制颤抖，不做恐怖表演。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "赵成",
+    "text": "车轮卡在井边时，布下面掉出一只手。我还是帮他封了井。十二年，我每天都听见那辆车在走廊响。",
+    "voice": "Vincent",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "d53d891c-1d1b-96d0-84a4-2854c147dc7a",
+  "schema_version": 1,
+  "usage": {
+    "characters": 83
+  }
+}

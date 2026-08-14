@@ -1,0 +1,22 @@
+{
+  "fingerprint": "31697103ff06ca3eb59552831d0ead42318279893e74163a9a2e2e0cbdd19d72",
+  "job": {
+    "id": "aud_v1_qiao_wen_quiet",
+    "instructions": "四十岁左右女性，知性温和，记忆开始动摇。低声回想，中间停顿明显，困惑来自真实记忆而非故弄玄虚。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "乔雯",
+    "text": "我能确定的是浅色外套。至于外套里的人……越想，越像是从别人的话里借来的。",
+    "voice": "Maia",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "34eb013c-d2fc-9a5f-bf30-fa8edbdc1636",
+  "schema_version": 1,
+  "usage": {
+    "characters": 65
+  }
+}

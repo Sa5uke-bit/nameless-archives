@@ -1,0 +1,22 @@
+{
+  "fingerprint": "4444ea92a4b7f00bd8d533e7b75b2f8114e18c3b5e36799188174619cec22de7",
+  "job": {
+    "id": "aud_v1_qiao_wen_neutral",
+    "instructions": "四十岁左右女性，知性温和，声音里有长期疲惫和谨慎。礼貌回答，略带自嘲，语速自然，不柔弱。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "乔雯",
+    "text": "现在只是看守。等这栋楼拆掉，连这个称呼也没有了。",
+    "voice": "Maia",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "0f5703ab-c5d9-99ed-932c-dcad31425fc7",
+  "schema_version": 1,
+  "usage": {
+    "characters": 45
+  }
+}

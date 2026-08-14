@@ -1,0 +1,22 @@
+{
+  "fingerprint": "9e3f8ea1ac68c9fba32a17175b5b0012d94b606192ba0122aa086b58d64fe55e",
+  "job": {
+    "id": "aud_v1_gu_ning_neutral",
+    "instructions": "三十多岁女性，低沉冷静，措辞利落，习惯掌控局面。以事务负责人的身份划定边界，礼貌但不容商量。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "顾宁",
+    "text": "这里明早就会封闭。你可以查看大堂，但三楼暂时不能进去。",
+    "voice": "Elias",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "6551e831-5564-99f6-bd83-b1a4bc4187e6",
+  "schema_version": 1,
+  "usage": {
+    "characters": 51
+  }
+}

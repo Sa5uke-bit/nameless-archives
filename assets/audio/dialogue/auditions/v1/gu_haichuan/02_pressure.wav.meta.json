@@ -1,0 +1,22 @@
+{
+  "fingerprint": "b3187c9c31acdeaeb3a2f5e93e91d3003b7614b634b2598832ec23431ee3c2b9",
+  "job": {
+    "id": "aud_v1_gu_haichuan_pressure",
+    "instructions": "六十岁左右男性经营者，缓慢冷静，善于压制别人。面对指控时短促否定，再逐项反击，不能显得慌张或咆哮。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "顾海川",
+    "text": "猜测。它解释不了登记、行李、血迹和十二年的沉默。",
+    "voice": "Arthur",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "39444acb-18a4-9ace-a358-80481fc9aa40",
+  "schema_version": 1,
+  "usage": {
+    "characters": 44
+  }
+}

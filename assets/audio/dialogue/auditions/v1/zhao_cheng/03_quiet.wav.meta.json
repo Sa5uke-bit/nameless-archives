@@ -1,0 +1,22 @@
+{
+  "fingerprint": "4e24e63627f0e9e41f3edaf123d97ce8d6b56311f5b373742a19abac55931396",
+  "job": {
+    "id": "aud_v1_zhao_cheng_quiet",
+    "instructions": "五十岁左右维修工，粗粝疲惫。承认责任后的平静决定，语速慢，咬字清楚，最后一句有愧疚但不求原谅。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "赵成",
+    "text": "我会向警方重复一遍。不是为了减轻罪，是因为她该被找到。",
+    "voice": "Vincent",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "c3fb536b-8918-9420-87d1-a17e79b6e88c",
+  "schema_version": 1,
+  "usage": {
+    "characters": 51
+  }
+}

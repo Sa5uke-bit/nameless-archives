@@ -1,0 +1,22 @@
+{
+  "fingerprint": "c756978736fcd0377dbb984fea2a76296b1bda5d7a9f3f1ae599944fd7029f43",
+  "job": {
+    "id": "aud_v1_narrator_quiet",
+    "instructions": "成熟男性叙述者，声音平稳而有余韵。画面安静但真相已经落定，轻微放慢，保持克制，不煽情。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "旁白",
+    "text": "远处警笛穿过雨幕。顾海川看向顾宁，第一次没有从她脸上得到退让。",
+    "voice": "Neil",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "a89ba1ef-5d8d-91dd-b3ad-11fca06b891a",
+  "schema_version": 1,
+  "usage": {
+    "characters": 59
+  }
+}

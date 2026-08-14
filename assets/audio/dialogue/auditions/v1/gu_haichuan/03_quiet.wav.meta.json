@@ -1,0 +1,22 @@
+{
+  "fingerprint": "701a4ebf029efd1f5535eaa29f68f5957d2051b3de01232227902fb893e229fc",
+  "job": {
+    "id": "aud_v1_gu_haichuan_quiet",
+    "instructions": "六十岁左右男性经营者，慢而冷。证据逼近时仍用轻蔑口吻转移责任，声音压低，露出一点控制欲，不要戏剧化反派笑声。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "顾海川",
+    "text": "赵成为了脱罪，什么话都能说。",
+    "voice": "Arthur",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "33d14ea1-2858-98ad-abed-b4b32b1835fa",
+  "schema_version": 1,
+  "usage": {
+    "characters": 26
+  }
+}
