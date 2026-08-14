@@ -1,0 +1,22 @@
+{
+  "fingerprint": "098fa665fa4ce982ab1403c6b0eb43a0b2dd964b7abb6e8e8653bbf135ccf2b8",
+  "job": {
+    "id": "chapter_01_room_307.room_entry.003",
+    "instructions": "三十多岁的职业侦探，低中音，沉稳清晰，带分析感。现实主义表演，不故作深沉，不使用播音腔。当前是复查、回忆或含混段落，音量稍低、语速略慢，保留自然余韵。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "侦探",
+    "text": "声音从墙里传来。房间里没有第二个人。",
+    "voice": "Moon",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "a3856c66-1562-9dea-9ae8-fbd7596eb6d1",
+  "schema_version": 1,
+  "usage": {
+    "characters": 34
+  }
+}

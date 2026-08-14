@@ -1,0 +1,22 @@
+{
+  "fingerprint": "185086cea010f4d224f51fd6b4815bd3c2413527477f3ae2365ffc09ec37dd07",
+  "job": {
+    "id": "chapter_01_laundry.gu_ning_reveal.006",
+    "instructions": "三十多岁女性，低沉冷静，措辞利落，习惯掌控局面。情绪内收，避免讲课腔和夸张哭腔。当前处于对质、承认或推理推进段落，增加紧张与确定感，但不要喊叫或煽情。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "顾宁",
+    "text": "她说，到了没人认识我们的地方，先用自己的名字住一次旅馆。",
+    "voice": "Elias",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "7afe590d-4319-9e2f-baa6-44a775a38a24",
+  "schema_version": 1,
+  "usage": {
+    "characters": 53
+  }
+}

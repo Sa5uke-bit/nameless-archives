@@ -1,0 +1,22 @@
+{
+  "fingerprint": "569e63586aa7a6cd48f5c25f63592d63264e20f46304dffa0c0787c6785b7139",
+  "job": {
+    "id": "chapter_01_room_307.window_first.001",
+    "instructions": "三十多岁的职业侦探，低中音，沉稳清晰，带分析感。现实主义表演，不故作深沉，不使用播音腔。当前是复查、回忆或含混段落，音量稍低、语速略慢，保留自然余韵。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "侦探",
+    "text": "光从停车场斜照过来。站在楼下的人会把布影误认成窗边的人。",
+    "voice": "Moon",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "0c2c8f39-358d-96cc-9f33-409cccaa13c8",
+  "schema_version": 1,
+  "usage": {
+    "characters": 54
+  }
+}

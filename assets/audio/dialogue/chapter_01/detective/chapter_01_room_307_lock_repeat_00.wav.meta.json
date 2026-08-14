@@ -1,0 +1,22 @@
+{
+  "fingerprint": "2c8772da5e96908e820ce40aafd31ba922592136ee3b99ce4d166f1a434260e3",
+  "job": {
+    "id": "chapter_01_room_307.lock_repeat.000",
+    "instructions": "三十多岁的职业侦探，低中音，沉稳清晰，带分析感。现实主义表演，不故作深沉，不使用播音腔。当前是复查、回忆或含混段落，音量稍低、语速略慢，保留自然余韵。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "侦探",
+    "text": "所谓密室，只是一扇会自行关上的旧门和一句不准确的记录。",
+    "voice": "Moon",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "5ed55c71-87ff-9b22-b362-efe72055f917",
+  "schema_version": 1,
+  "usage": {
+    "characters": 52
+  }
+}

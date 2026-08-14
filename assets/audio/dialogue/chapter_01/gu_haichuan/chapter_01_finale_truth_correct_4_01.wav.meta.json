@@ -1,0 +1,22 @@
+{
+  "fingerprint": "b842e67847aa1fb3657b869bb291315a749a32b39a14264c23295e4fbdaf85f8",
+  "job": {
+    "id": "chapter_01_finale.truth_correct_4.001",
+    "instructions": "六十岁左右男性经营者，声音不高却习惯支配别人，缓慢冷静。避免乡野说书腔和脸谱化反派表演。当前处于对质、承认或推理推进段落，增加紧张与确定感，但不要喊叫或煽情。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "顾海川",
+    "text": "赵成为了脱罪，什么话都能说。",
+    "voice": "Arthur",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "391dd002-0512-9528-912e-a71afe6cf25b",
+  "schema_version": 1,
+  "usage": {
+    "characters": 26
+  }
+}

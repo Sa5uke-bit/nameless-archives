@@ -1,0 +1,22 @@
+{
+  "fingerprint": "409d19e06b1007215bf0e66afdf4563c12d415f90c852ea75788bf8e806ee83e",
+  "job": {
+    "id": "chapter_01_prologue.photo_first.001",
+    "instructions": "三十多岁的职业侦探，低中音，沉稳清晰，带分析感。现实主义表演，不故作深沉，不使用播音腔。按日常基线自然陈述，停顿清楚，不额外渲染悬疑。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "侦探",
+    "text": "照片背面写着六个班次，正面却只有五个人。",
+    "voice": "Moon",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "9a3b7a4a-273c-957e-96f6-8f05438f022f",
+  "schema_version": 1,
+  "usage": {
+    "characters": 38
+  }
+}

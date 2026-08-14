@@ -1,0 +1,22 @@
+{
+  "fingerprint": "7a01537070ee6d2f4a135a0a8a7a36d3a80c8ea72fbe0c178133e8399d2a8d3a",
+  "job": {
+    "id": "chapter_01_prologue.qiao_after_d01.003",
+    "instructions": "四十岁左右女性，知性温和，声音里有长期疲惫和谨慎。保护欲强但不柔弱，不故作神秘。当前处于对质、承认或推理推进段落，增加紧张与确定感，但不要喊叫或煽情。数字307读作“三零七”。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "乔雯",
+    "text": "所以钥匙又回来了。去楼下吧，声音真正开始的地方不在 307。",
+    "voice": "Maia",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "2c9387c6-797a-95a5-9de0-c93a791ca50c",
+  "schema_version": 1,
+  "usage": {
+    "characters": 53
+  }
+}

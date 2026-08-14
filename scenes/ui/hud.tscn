@@ -345,7 +345,7 @@ theme_override_constants/separation = 16
 [node name="Description" type="Label" parent="PausePanel/Margin/VBox/SettingsTabs/音频/VBox"]
 layout_mode = 2
 theme_override_colors/font_color = Color(0.62, 0.68, 0.69, 1)
-text = "分别调整整体、雨夜环境声和调查反馈音效。"
+text = "分别调整整体、雨夜环境声、角色语音和调查反馈音效。"
 
 [node name="MasterRow" type="HBoxContainer" parent="PausePanel/Margin/VBox/SettingsTabs/音频/VBox"]
 custom_minimum_size = Vector2(0, 54)
@@ -400,6 +400,34 @@ unique_name_in_owner = true
 custom_minimum_size = Vector2(58, 0)
 layout_mode = 2
 text = "80%"
+horizontal_alignment = 2
+vertical_alignment = 1
+
+[node name="VoiceRow" type="HBoxContainer" parent="PausePanel/Margin/VBox/SettingsTabs/音频/VBox"]
+custom_minimum_size = Vector2(0, 54)
+layout_mode = 2
+theme_override_constants/separation = 16
+
+[node name="Label" type="Label" parent="PausePanel/Margin/VBox/SettingsTabs/音频/VBox/VoiceRow"]
+custom_minimum_size = Vector2(170, 0)
+layout_mode = 2
+theme_override_font_sizes/font_size = 18
+text = "角色与旁白语音"
+vertical_alignment = 1
+
+[node name="VoiceVolumeSlider" type="HSlider" parent="PausePanel/Margin/VBox/SettingsTabs/音频/VBox/VoiceRow"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+max_value = 1.0
+step = 0.05
+value = 0.9
+
+[node name="VoiceVolumeValue" type="Label" parent="PausePanel/Margin/VBox/SettingsTabs/音频/VBox/VoiceRow"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(58, 0)
+layout_mode = 2
+text = "90%"
 horizontal_alignment = 2
 vertical_alignment = 1
 
@@ -658,8 +686,13 @@ text = "设置立即生效并自动保存 · 调查进度会在获得线索与�
 horizontal_alignment = 1
 autowrap_mode = 2
 
+[node name="DialogueVoicePlayer" type="AudioStreamPlayer" parent="."]
+unique_name_in_owner = true
+bus = &"Voice"
+
 [connection signal="value_changed" from="PausePanel/Margin/VBox/SettingsTabs/音频/VBox/MasterRow/MasterVolumeSlider" to="." method="_on_master_volume_changed"]
 [connection signal="value_changed" from="PausePanel/Margin/VBox/SettingsTabs/音频/VBox/AmbienceRow/AmbienceVolumeSlider" to="." method="_on_ambience_volume_changed"]
+[connection signal="value_changed" from="PausePanel/Margin/VBox/SettingsTabs/音频/VBox/VoiceRow/VoiceVolumeSlider" to="." method="_on_voice_volume_changed"]
 [connection signal="value_changed" from="PausePanel/Margin/VBox/SettingsTabs/音频/VBox/EffectsRow/EffectsVolumeSlider" to="." method="_on_effects_volume_changed"]
 [connection signal="item_selected" from="PausePanel/Margin/VBox/SettingsTabs/画面/VBox/DisplayModeRow/DisplayModeOption" to="." method="_on_display_mode_selected"]
 [connection signal="item_selected" from="PausePanel/Margin/VBox/SettingsTabs/画面/VBox/ResolutionRow/ResolutionOption" to="." method="_on_resolution_selected"]

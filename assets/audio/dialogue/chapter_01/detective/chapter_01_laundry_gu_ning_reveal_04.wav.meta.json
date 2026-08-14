@@ -1,0 +1,22 @@
+{
+  "fingerprint": "f22e21f5e23064f7b408150df1c7f2a7292274500834a3c239c14abdb42004f2",
+  "job": {
+    "id": "chapter_01_laundry.gu_ning_reveal.004",
+    "instructions": "三十多岁的职业侦探，低中音，沉稳清晰，带分析感。现实主义表演，不故作深沉，不使用播音腔。当前处于对质、承认或推理推进段落，增加紧张与确定感，但不要喊叫或煽情。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "侦探",
+    "text": "那张次日清晨的车票，是两个人的计划。匿名信也是你寄的。",
+    "voice": "Moon",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "4e90e71f-3306-9591-890a-eb7fddfbb034",
+  "schema_version": 1,
+  "usage": {
+    "characters": 51
+  }
+}

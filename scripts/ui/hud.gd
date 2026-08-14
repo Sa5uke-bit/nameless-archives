@@ -40,8 +40,11 @@ const ACTION_LABELS := {
 @onready var master_volume_value: Label = %MasterVolumeValue
 @onready var ambience_volume_slider: HSlider = %AmbienceVolumeSlider
 @onready var ambience_volume_value: Label = %AmbienceVolumeValue
+@onready var voice_volume_slider: HSlider = %VoiceVolumeSlider
+@onready var voice_volume_value: Label = %VoiceVolumeValue
 @onready var effects_volume_slider: HSlider = %EffectsVolumeSlider
 @onready var effects_volume_value: Label = %EffectsVolumeValue
+@onready var dialogue_voice_player: AudioStreamPlayer = %DialogueVoicePlayer
 @onready var display_mode_option: OptionButton = %DisplayModeOption
 @onready var resolution_option: OptionButton = %ResolutionOption
 @onready var vsync_check: CheckButton = %VsyncCheck
@@ -66,6 +69,7 @@ var settings_ui_ready := false
 
 func _ready() -> void:
 	dialogue_panel.hide()
+	dialogue_voice_player.stop()
 	notebook_panel.hide()
 	evidence_toast.hide()
 	choice_panel.hide()
@@ -213,6 +217,8 @@ func _advance_dialogue() -> void:
 		return
 
 	dialogue_panel.hide()
+	dialogue_voice_player.stop()
+	dialogue_voice_player.stream = null
 	dialogue_lines.clear()
 	modal_changed.emit(true)
 	_update_prompt_visibility()
@@ -277,6 +283,26 @@ func _render_dialogue_line() -> void:
 	var line: Dictionary = dialogue_lines[dialogue_index]
 	speaker_label.text = str(line.get("speaker", ""))
 	dialogue_text.text = str(line.get("text", ""))
+	_play_dialogue_voice(line)
+
+
+func _play_dialogue_voice(line: Dictionary) -> void:
+	dialogue_voice_player.stop()
+	dialogue_voice_player.stream = null
+	var voice_path := str(line.get("voice", ""))
+	if voice_path.is_empty():
+		return
+	if not ResourceLoader.exists(voice_path, "AudioStream"):
+		push_warning("Dialogue voice not found: %s" % voice_path)
+		return
+	var loaded: Resource = load(voice_path)
+	if loaded is not AudioStream:
+		push_warning("Dialogue voice is not an audio stream: %s" % voice_path)
+		return
+	var requested_bus := StringName(str(line.get("voice_bus", "Voice")))
+	dialogue_voice_player.bus = requested_bus if AudioServer.get_bus_index(requested_bus) >= 0 else &"Voice"
+	dialogue_voice_player.stream = loaded as AudioStream
+	dialogue_voice_player.play()
 
 
 func _toggle_notebook() -> void:
@@ -329,6 +355,13 @@ func _on_ambience_volume_changed(value: float) -> void:
 		return
 	ambience_volume_value.text = _format_percent(value)
 	SettingsManager.set_ambience_volume(value)
+
+
+func _on_voice_volume_changed(value: float) -> void:
+	if not settings_ui_ready:
+		return
+	voice_volume_value.text = _format_percent(value)
+	SettingsManager.set_voice_volume(value)
 
 
 func _on_effects_volume_changed(value: float) -> void:
@@ -460,6 +493,8 @@ func _refresh_settings_ui() -> void:
 	master_volume_value.text = _format_percent(SettingsManager.master_volume)
 	ambience_volume_slider.set_value_no_signal(SettingsManager.ambience_volume)
 	ambience_volume_value.text = _format_percent(SettingsManager.ambience_volume)
+	voice_volume_slider.set_value_no_signal(SettingsManager.voice_volume)
+	voice_volume_value.text = _format_percent(SettingsManager.voice_volume)
 	effects_volume_slider.set_value_no_signal(SettingsManager.effects_volume)
 	effects_volume_value.text = _format_percent(SettingsManager.effects_volume)
 	display_mode_option.select(SettingsManager.display_mode)

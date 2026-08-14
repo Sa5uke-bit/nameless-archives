@@ -1,0 +1,22 @@
+{
+  "fingerprint": "e625255273cf2cf44b60e548da905ea28e5f08724cebace812f62930dbe81b4e",
+  "job": {
+    "id": "chapter_01_room_307.vent_first.000",
+    "instructions": "三十多岁的职业侦探，低中音，沉稳清晰，带分析感。现实主义表演，不故作深沉，不使用播音腔。按日常基线自然陈述，停顿清楚，不额外渲染悬疑。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "侦探",
+    "text": "墙内留着废弃传声管，向下连接员工区域。管口的灰尘刚被雨天回流的空气吹开。",
+    "voice": "Moon",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "ffd9e8cd-01b3-92b7-885b-e1aecb3f2dff",
+  "schema_version": 1,
+  "usage": {
+    "characters": 69
+  }
+}

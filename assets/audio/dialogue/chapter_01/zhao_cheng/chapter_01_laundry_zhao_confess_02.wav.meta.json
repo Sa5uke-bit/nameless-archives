@@ -1,0 +1,22 @@
+{
+  "fingerprint": "cd2da84ed567381d78c13e97c65b30d0e84998b7fe1e794a725aafb98f00d4d5",
+  "job": {
+    "id": "chapter_01_laundry.zhao_confess.002",
+    "instructions": "五十岁左右维修工，嗓音粗粝疲惫，防备而负罪。口语真实克制，不使用武侠豪迈或恐怖故事腔。当前处于对质、承认或推理推进段落，增加紧张与确定感，但不要喊叫或煽情。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "赵成",
+    "text": "车轮卡在井边时，布下面掉出一只手。我还是帮他封了井。十二年，我每天都听见那辆车在走廊响。",
+    "voice": "Vincent",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "47fe1a3a-001a-9e8f-8c93-dd7de950e4c6",
+  "schema_version": 1,
+  "usage": {
+    "characters": 83
+  }
+}

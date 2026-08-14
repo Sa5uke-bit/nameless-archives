@@ -1,0 +1,22 @@
+{
+  "fingerprint": "225a565fa50debba3ccd050baecd44105df5fa540df598459913b786dbdf2a4a",
+  "job": {
+    "id": "chapter_01_finale.truth_correct_4.000",
+    "instructions": "三十多岁的职业侦探，低中音，沉稳清晰，带分析感。现实主义表演，不故作深沉，不使用播音腔。当前处于对质、承认或推理推进段落，增加紧张与确定感，但不要喊叫或煽情。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "侦探",
+    "text": "案发次日追加的封井单由你签字，水泥年代吻合，赵成也承认受你胁迫推车和封井。顾海川，制造假案的人是你。",
+    "voice": "Moon",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "7196c8bc-be69-992a-8d8f-b60bf5d5140c",
+  "schema_version": 1,
+  "usage": {
+    "characters": 95
+  }
+}

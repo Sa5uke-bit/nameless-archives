@@ -1,0 +1,22 @@
+{
+  "fingerprint": "b87b099466fa23762fdd208ef72905349f0551847b3c3a188fc5069c8fc81b7e",
+  "job": {
+    "id": "chapter_01_laundry.gu_ning_repeat.000",
+    "instructions": "三十多岁女性，低沉冷静，措辞利落，习惯掌控局面。情绪内收，避免讲课腔和夸张哭腔。当前是复查、回忆或含混段落，音量稍低、语速略慢，保留自然余韵。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "顾宁",
+    "text": "让小满的名字回到记录里。至于周岚的其他名字……请不要替她们决定。",
+    "voice": "Elias",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "51b2d49e-4f00-96dd-8430-9618c30df02f",
+  "schema_version": 1,
+  "usage": {
+    "characters": 58
+  }
+}

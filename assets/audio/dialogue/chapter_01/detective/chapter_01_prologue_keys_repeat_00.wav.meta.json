@@ -1,0 +1,22 @@
+{
+  "fingerprint": "dbb6cbf70207a6c3046eb392f0986ca2fc25bd4e19441899d28a4cf449aa3662",
+  "job": {
+    "id": "chapter_01_prologue.keys_repeat.000",
+    "instructions": "三十多岁的职业侦探，低中音，沉稳清晰，带分析感。现实主义表演，不故作深沉，不使用播音腔。当前是复查、回忆或含混段落，音量稍低、语速略慢，保留自然余韵。数字307读作“三零七”。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "侦探",
+    "text": "307 的钥匙被取走很久了，灰尘不会说谎。",
+    "voice": "Moon",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "ccaf814e-6231-98ff-adc7-fc7c3d346eff",
+  "schema_version": 1,
+  "usage": {
+    "characters": 36
+  }
+}

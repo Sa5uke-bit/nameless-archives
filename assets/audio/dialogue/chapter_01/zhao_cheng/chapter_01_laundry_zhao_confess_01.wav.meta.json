@@ -1,0 +1,22 @@
+{
+  "fingerprint": "c2d0d5ba1479999dd72c8e0bb8e63206f61c53ee58d2b9062355c892482aeddf",
+  "job": {
+    "id": "chapter_01_laundry.zhao_confess.001",
+    "instructions": "五十岁左右维修工，嗓音粗粝疲惫，防备而负罪。口语真实克制，不使用武侠豪迈或恐怖故事腔。当前处于对质、承认或推理推进段落，增加紧张与确定感，但不要喊叫或煽情。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "赵成",
+    "text": "……是顾海川让我推的车。他说里面只是弄脏的床单。",
+    "voice": "Vincent",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "9e8330b5-c78f-90dd-97a6-cb0020cf443f",
+  "schema_version": 1,
+  "usage": {
+    "characters": 42
+  }
+}

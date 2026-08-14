@@ -1,0 +1,22 @@
+{
+  "fingerprint": "d5b6bee549306f0217c4f8f1564629691fed0df4dada20bf6e3e278d611ffda7",
+  "job": {
+    "id": "chapter_01_room_307.staff_door_locked.000",
+    "instructions": "三十多岁的职业侦探，低中音，沉稳清晰，带分析感。现实主义表演，不故作深沉，不使用播音腔。按日常基线自然陈述，停顿清楚，不额外渲染悬疑。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "侦探",
+    "text": "门后通向员工区域。但在弄清周岚与房内物品的关系前，贸然换地点只会增加噪声。",
+    "voice": "Moon",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "164ffad0-7f86-9e60-b18a-5defe55fca62",
+  "schema_version": 1,
+  "usage": {
+    "characters": 71
+  }
+}

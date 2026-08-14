@@ -1,0 +1,22 @@
+{
+  "fingerprint": "24a3d4f366241a74ee47abe206d322f7f84329981635c84ec1d3010c5223ee55",
+  "job": {
+    "id": "chapter_01_laundry.gu_ning_wrong.000",
+    "instructions": "三十多岁女性，低沉冷静，措辞利落，习惯掌控局面。情绪内收，避免讲课腔和夸张哭腔。当前处于对质、承认或推理推进段落，增加紧张与确定感，但不要喊叫或煽情。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "顾宁",
+    "text": "这能证明旅馆有人撒谎，但不能证明我认识你要找的人。",
+    "voice": "Elias",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "7ab3066d-85d0-9ed4-86d2-582a53b3c50f",
+  "schema_version": 1,
+  "usage": {
+    "characters": 48
+  }
+}

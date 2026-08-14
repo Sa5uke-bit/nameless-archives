@@ -1,0 +1,22 @@
+{
+  "fingerprint": "60934ef37f1e851a886b741f062914c12aee495a965e719c9a1c32a998c127a7",
+  "job": {
+    "id": "chapter_01_finale.finale_intro.002",
+    "instructions": "六十岁左右男性经营者，声音不高却习惯支配别人，缓慢冷静。避免乡野说书腔和脸谱化反派表演。当前处于对质、承认或推理推进段落，增加紧张与确定感，但不要喊叫或煽情。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "顾海川",
+    "text": "员工名单里没有这个人。周岚失踪时，警方已经把能查的都查了。",
+    "voice": "Arthur",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "2df27486-b6a6-9b9a-b418-78c59cd69e3d",
+  "schema_version": 1,
+  "usage": {
+    "characters": 55
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "fingerprint": "b84c1710bd57b02f12d78edfafe94e69ff075dfccb1486ef7fd73f2cda345742",
+  "job": {
+    "id": "chapter_01_room_307.window_first.000",
+    "instructions": "成熟男性叙述者，清楚客观，有轻微纪录片质感但不过分正式。保持克制，不使用恐怖预告腔。当前是复查、回忆或含混段落，音量稍低、语速略慢，保留自然余韵。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "旁白",
+    "text": "磨砂玻璃外掠过一个女人般的影子。侦探拉开窗帘，只看到被风卷起的施工防水布。",
+    "voice": "Neil",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "17f50421-9711-9d48-aeb9-1c2ca076534d",
+  "schema_version": 1,
+  "usage": {
+    "characters": 71
+  }
+}

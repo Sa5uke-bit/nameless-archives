@@ -1,0 +1,22 @@
+{
+  "fingerprint": "2b9337fae5f66f0c380bcb637421a79413eeb05a06df92f7fc1c61631f992078",
+  "job": {
+    "id": "chapter_01_prologue.qiao_first.004",
+    "instructions": "三十多岁的职业侦探，低中音，沉稳清晰，带分析感。现实主义表演，不故作深沉，不使用播音腔。按日常基线自然陈述，停顿清楚，不额外渲染悬疑。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "侦探",
+    "text": "两个人记住了同一件衣服，却没有记住同一张脸。",
+    "voice": "Moon",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "79858238-575d-92f9-abc2-bca242a56a60",
+  "schema_version": 1,
+  "usage": {
+    "characters": 42
+  }
+}

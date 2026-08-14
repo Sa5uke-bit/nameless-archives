@@ -1,0 +1,22 @@
+{
+  "fingerprint": "eef3b15b60ae1f7c63b1718b302eb4cace7c03f6934d9ee8fc08a8c565e8c06f",
+  "job": {
+    "id": "chapter_01_finale.final_accusation.001",
+    "instructions": "成熟男性叙述者，清楚客观，有轻微纪录片质感但不过分正式。保持克制，不使用恐怖预告腔。当前处于对质、承认或推理推进段落，增加紧张与确定感，但不要喊叫或煽情。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "旁白",
+    "text": "远处警笛穿过雨幕。顾海川看向顾宁，第一次没有从她脸上得到退让。",
+    "voice": "Neil",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "4a46d86d-df2e-9aec-a7e7-78966f2996e3",
+  "schema_version": 1,
+  "usage": {
+    "characters": 59
+  }
+}

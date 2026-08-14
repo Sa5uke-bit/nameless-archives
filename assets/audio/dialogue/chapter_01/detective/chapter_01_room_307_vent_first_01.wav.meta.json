@@ -1,0 +1,22 @@
+{
+  "fingerprint": "99b6b22c90350ea8664f1d6cbe1edc622af7b4836367ef9fbfe287def662e886",
+  "job": {
+    "id": "chapter_01_room_307.vent_first.001",
+    "instructions": "三十多岁的职业侦探，低中音，沉稳清晰，带分析感。现实主义表演，不故作深沉，不使用播音腔。按日常基线自然陈述，停顿清楚，不额外渲染悬疑。数字307读作“三零七”。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "侦探",
+    "text": "刚才的话来自楼下。十二年前的争吵，也未必发生在 307。",
+    "voice": "Moon",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "6e787f4f-8d1a-95f9-866d-0cde2ee938fd",
+  "schema_version": 1,
+  "usage": {
+    "characters": 49
+  }
+}

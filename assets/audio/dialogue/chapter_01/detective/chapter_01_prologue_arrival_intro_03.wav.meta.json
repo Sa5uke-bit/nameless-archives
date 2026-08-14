@@ -1,0 +1,22 @@
+{
+  "fingerprint": "4ad57bec34e094ec7de1440bd8bf7157fc4aa0e78f6cd0a689076cbba9188e22",
+  "job": {
+    "id": "chapter_01_prologue.arrival_intro.003",
+    "instructions": "三十多岁的职业侦探，低中音，沉稳清晰，带分析感。现实主义表演，不故作深沉，不使用播音腔。按日常基线自然陈述，停顿清楚，不额外渲染悬疑。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "侦探",
+    "text": "暂时？",
+    "voice": "Moon",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "a73434b5-5f31-9a18-bf11-7d892e58bcfd",
+  "schema_version": 1,
+  "usage": {
+    "characters": 5
+  }
+}

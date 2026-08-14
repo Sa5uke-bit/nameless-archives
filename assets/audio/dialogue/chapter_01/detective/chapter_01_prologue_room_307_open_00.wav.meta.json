@@ -1,0 +1,22 @@
+{
+  "fingerprint": "076c5187ea5d38f604d9d130adeb8e219ee896ca70b775ce757d0fa6c5732a75",
+  "job": {
+    "id": "chapter_01_prologue.room_307_open.000",
+    "instructions": "三十多岁的职业侦探，低中音，沉稳清晰，带分析感。现实主义表演，不故作深沉，不使用播音腔。按日常基线自然陈述，停顿清楚，不额外渲染悬疑。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "侦探",
+    "text": "登记、照片和钥匙都指向三楼。继续留在大堂不会有新答案。",
+    "voice": "Moon",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "afd3603e-a14e-9ddd-8edc-c69c34b59eea",
+  "schema_version": 1,
+  "usage": {
+    "characters": 51
+  }
+}

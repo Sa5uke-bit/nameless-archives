@@ -1,0 +1,22 @@
+{
+  "fingerprint": "9541b9a070415595e4001d30a52c89b82486c02e9fa4f6dcd169d2bfe09906df",
+  "job": {
+    "id": "chapter_01_finale.finale_intro.000",
+    "instructions": "六十岁左右男性经营者，声音不高却习惯支配别人，缓慢冷静。避免乡野说书腔和脸谱化反派表演。当前处于对质、承认或推理推进段落，增加紧张与确定感，但不要喊叫或煽情。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "顾海川",
+    "text": "顾宁，施工前夜把陌生人放进旅馆，你还嫌这里的丑闻不够多？",
+    "voice": "Arthur",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "a4e4b9f5-af35-98c5-9dff-29ab5e0ea7fa",
+  "schema_version": 1,
+  "usage": {
+    "characters": 53
+  }
+}

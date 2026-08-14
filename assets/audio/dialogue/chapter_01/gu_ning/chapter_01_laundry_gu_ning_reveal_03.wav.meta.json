@@ -1,0 +1,22 @@
+{
+  "fingerprint": "fa97f94c85b8a025598669e0162c8d3db6569fe8e126dfd6d1ebc89336463a0f",
+  "job": {
+    "id": "chapter_01_laundry.gu_ning_reveal.003",
+    "instructions": "三十多岁女性，低沉冷静，措辞利落，习惯掌控局面。情绪内收，避免讲课腔和夸张哭腔。当前处于对质、承认或推理推进段落，增加紧张与确定感，但不要喊叫或煽情。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "顾宁",
+    "text": "父亲说替她保管工资和证件。她要离开时，他又说账没算清，哪一样都不能拿。",
+    "voice": "Elias",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "a8779bc0-63fd-9982-a7b8-371976e05926",
+  "schema_version": 1,
+  "usage": {
+    "characters": 66
+  }
+}

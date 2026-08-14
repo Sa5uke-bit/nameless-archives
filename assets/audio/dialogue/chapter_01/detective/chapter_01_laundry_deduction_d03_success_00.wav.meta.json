@@ -1,0 +1,22 @@
+{
+  "fingerprint": "08e10ae6c9af0dd520203da56c41050d5a6c7998f7aeff77e6303c35536988cb",
+  "job": {
+    "id": "chapter_01_laundry.deduction_d03_success.000",
+    "instructions": "三十多岁的职业侦探，低中音，沉稳清晰，带分析感。现实主义表演，不故作深沉，不使用播音腔。当前处于对质、承认或推理推进段落，增加紧张与确定感，但不要喊叫或煽情。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "侦探",
+    "text": "被裁照片证明她在旅馆工作，工时记录证明她长期存在，刻名发夹证明顾宁与她相识。",
+    "voice": "Moon",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "50f97586-4524-935e-9499-a0b7a34571ef",
+  "schema_version": 1,
+  "usage": {
+    "characters": 73
+  }
+}

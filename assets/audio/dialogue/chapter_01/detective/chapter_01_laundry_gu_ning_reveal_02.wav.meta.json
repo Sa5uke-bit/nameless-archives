@@ -1,0 +1,22 @@
+{
+  "fingerprint": "229a98f998455a50244b7ebb38f6617965b7ebc89445cea7d1983274e2b9abb7",
+  "job": {
+    "id": "chapter_01_laundry.gu_ning_reveal.002",
+    "instructions": "三十多岁的职业侦探，低中音，沉稳清晰，带分析感。现实主义表演，不故作深沉，不使用播音腔。当前处于对质、承认或推理推进段落，增加紧张与确定感，但不要喊叫或煽情。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "侦探",
+    "text": "她的工时一直存在，工资却从没有人签收。",
+    "voice": "Moon",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "9a9a3215-1fd9-98c4-90ca-ba6be66a9f91",
+  "schema_version": 1,
+  "usage": {
+    "characters": 36
+  }
+}

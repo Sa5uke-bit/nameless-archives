@@ -1,0 +1,22 @@
+{
+  "fingerprint": "df354417f7137d6cf6e1e4c4f75748eee5b4a9c166ff2b12adabcec29db63e1d",
+  "job": {
+    "id": "chapter_01_prologue.qiao_first.003",
+    "instructions": "四十岁左右女性，知性温和，声音里有长期疲惫和谨慎。保护欲强但不柔弱，不故作神秘。按日常基线自然陈述，停顿清楚，不额外渲染悬疑。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "乔雯",
+    "text": "短发，个子不高，习惯用左手。赵成当年却说她留长发、比他还高。我们都记得那件浅色外套。",
+    "voice": "Maia",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "668c3f15-df45-9a20-bd92-fbaa82433832",
+  "schema_version": 1,
+  "usage": {
+    "characters": 78
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "fingerprint": "9714cf8f4e43477ecb5742c3e6d535ff0009f10d96d67db8c03429b220c2be98",
+  "job": {
+    "id": "chapter_01_laundry.wage_first.002",
+    "instructions": "三十多岁的职业侦探，低中音，沉稳清晰，带分析感。现实主义表演，不故作深沉，不使用播音腔。按日常基线自然陈述，停顿清楚，不额外渲染悬疑。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "侦探",
+    "text": "末页还夹着一张没有使用过的长途汽车票，日期是失踪案次日。背面只写着：‘取回证件，再走。’",
+    "voice": "Moon",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "24669ccb-05ac-915d-bedb-958b72d1703a",
+  "schema_version": 1,
+  "usage": {
+    "characters": 81
+  }
+}

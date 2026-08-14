@@ -1,0 +1,22 @@
+{
+  "fingerprint": "8540dfe76bb6c2f171a1a6c0f4f99df569b7ff214dbfe50b25d62cc06841c4dc",
+  "job": {
+    "id": "chapter_01_prologue.room_307_open.001",
+    "instructions": "三十多岁女性，低沉冷静，措辞利落，习惯掌控局面。情绪内收，避免讲课腔和夸张哭腔。按日常基线自然陈述，停顿清楚，不额外渲染悬疑。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "顾宁",
+    "text": "……钥匙既然在你手里，门也拦不住你。别碰窗边的旧线路。",
+    "voice": "Elias",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "14a69cd2-3f48-913a-a44e-760c90cfae3c",
+  "schema_version": 1,
+  "usage": {
+    "characters": 47
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "fingerprint": "89beec2896b829d5ebb9e6f09d0ae38ba9acdb9257e67a7924db452ac1b74a72",
+  "job": {
+    "id": "chapter_01_prologue.gu_ning_first.000",
+    "instructions": "三十多岁的职业侦探，低中音，沉稳清晰，带分析感。现实主义表演，不故作深沉，不使用播音腔。按日常基线自然陈述，停顿清楚，不额外渲染悬疑。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "侦探",
+    "text": "你见过周岚吗？",
+    "voice": "Moon",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "ac5fd1f6-0fb5-96d1-8bfd-01e0bdb0a0f7",
+  "schema_version": 1,
+  "usage": {
+    "characters": 13
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "fingerprint": "87e99971663e157907cfb3b16de20f32f15d83e0b61a708c054861aadf789ca8",
+  "job": {
+    "id": "chapter_01_prologue.desk_repeat.000",
+    "instructions": "三十多岁的职业侦探，低中音，沉稳清晰，带分析感。现实主义表演，不故作深沉，不使用播音腔。当前是复查、回忆或含混段落，音量稍低、语速略慢，保留自然余韵。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "侦探",
+    "text": "登记内容像由同一个人代写，签名却刻意保留了差异。",
+    "voice": "Moon",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "66614c87-fa1a-95cb-a473-4bf8bfac1846",
+  "schema_version": 1,
+  "usage": {
+    "characters": 46
+  }
+}

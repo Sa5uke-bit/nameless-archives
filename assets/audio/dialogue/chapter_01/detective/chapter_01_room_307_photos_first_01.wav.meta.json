@@ -1,0 +1,22 @@
+{
+  "fingerprint": "bdda48a60555548626cda241346367b8370e58395703db817b370dbe94212865",
+  "job": {
+    "id": "chapter_01_room_307.photos_first.001",
+    "instructions": "三十多岁的职业侦探，低中音，沉稳清晰，带分析感。现实主义表演，不故作深沉，不使用播音腔。按日常基线自然陈述，停顿清楚，不额外渲染悬疑。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "侦探",
+    "text": "袖长相同，露出的手腕、发型和身高却不同。不是照片变了，是外套换了主人。",
+    "voice": "Moon",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "c1a2bd41-d68d-9836-ae4b-e1f3f8571eb8",
+  "schema_version": 1,
+  "usage": {
+    "characters": 65
+  }
+}

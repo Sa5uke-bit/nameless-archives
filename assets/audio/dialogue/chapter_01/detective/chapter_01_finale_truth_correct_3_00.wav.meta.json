@@ -1,0 +1,22 @@
+{
+  "fingerprint": "95641bef562563be099930b0c91e53f8227f0ad16306fed53a42374af8c8c538",
+  "job": {
+    "id": "chapter_01_finale.truth_correct_3.000",
+    "instructions": "三十多岁的职业侦探，低中音，沉稳清晰，带分析感。现实主义表演，不故作深沉，不使用播音腔。当前处于对质、承认或推理推进段落，增加紧张与确定感，但不要喊叫或煽情。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "侦探",
+    "text": "员工合照、工时和刻名发夹都证明林小满在这里生活和工作。她没有从名单上失踪，是你先把她从名单里删掉。",
+    "voice": "Moon",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "80592a59-b710-9e30-8221-0fccf21eba61",
+  "schema_version": 1,
+  "usage": {
+    "characters": 94
+  }
+}

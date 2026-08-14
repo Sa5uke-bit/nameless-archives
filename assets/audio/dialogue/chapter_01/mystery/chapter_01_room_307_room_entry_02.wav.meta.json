@@ -1,0 +1,22 @@
+{
+  "fingerprint": "84876daf0cdb30e3bf73e848f9b2090d419d31658b899ff534cbfbcf937c182e",
+  "job": {
+    "id": "chapter_01_room_307.room_entry.002",
+    "instructions": "使用顾宁同一声音身份，低声、急促、像一句被旧金属传声管截断的话。来源遥远但仍是现实人声，不表现成鬼魂。句子很短，保留自然停顿，音量偏低。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "？？？",
+    "text": "……小满，别回头。",
+    "voice": "Elias",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "6cc5e5d3-4c88-9d88-ae4c-8a6e4fc78732",
+  "schema_version": 1,
+  "usage": {
+    "characters": 12
+  }
+}

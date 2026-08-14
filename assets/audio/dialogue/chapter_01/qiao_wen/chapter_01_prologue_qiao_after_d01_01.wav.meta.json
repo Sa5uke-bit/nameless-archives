@@ -1,0 +1,22 @@
+{
+  "fingerprint": "00ade73973b6fa64e995c31ad319c658d490f9aaa39be3b59ac06465a581feac",
+  "job": {
+    "id": "chapter_01_prologue.qiao_after_d01.001",
+    "instructions": "四十岁左右女性，知性温和，声音里有长期疲惫和谨慎。保护欲强但不柔弱，不故作神秘。当前处于对质、承认或推理推进段落，增加紧张与确定感，但不要喊叫或煽情。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "乔雯",
+    "text": "登记是我代写的，签名由她们自己留下。有人只需要一晚不被找到，我们就给她一把钥匙。",
+    "voice": "Maia",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "39c5d15f-b5b2-9b7a-9621-08ee1eb707f2",
+  "schema_version": 1,
+  "usage": {
+    "characters": 76
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "fingerprint": "86005f88c95e523b9070a965026a0c6ca6f7c3389b4849bd06e63a2747bb8419",
+  "job": {
+    "id": "chapter_01_prologue.room_307_repeat.000",
+    "instructions": "三十多岁的职业侦探，低中音，沉稳清晰，带分析感。现实主义表演，不故作深沉，不使用播音腔。当前是复查、回忆或含混段落，音量稍低、语速略慢，保留自然余韵。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "侦探",
+    "text": "那句话又没有出现。附近一定有什么结构会传递声音。",
+    "voice": "Moon",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "ee9d0bab-1509-9d22-895f-f9bb87cca769",
+  "schema_version": 1,
+  "usage": {
+    "characters": 46
+  }
+}

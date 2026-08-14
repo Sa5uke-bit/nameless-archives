@@ -1,0 +1,22 @@
+{
+  "fingerprint": "3a74ee8afec2ccf04198b0b2d4454e1f170cd917da5a992c58ab74ddd74c8b33",
+  "job": {
+    "id": "chapter_01_laundry.deduction_d02_success.000",
+    "instructions": "三十多岁的职业侦探，低中音，沉稳清晰，带分析感。现实主义表演，不故作深沉，不使用播音腔。当前处于对质、承认或推理推进段落，增加紧张与确定感，但不要喊叫或煽情。数字307读作“三零七”。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "侦探",
+    "text": "血来自洗衣环境，洗衣车把带血物品移向三楼，传声管又让争吵听起来发生在 307。",
+    "voice": "Moon",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "a80c7c7c-f1f0-94ca-819c-44e9f7cbdbae",
+  "schema_version": 1,
+  "usage": {
+    "characters": 71
+  }
+}

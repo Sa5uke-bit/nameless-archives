@@ -1,0 +1,22 @@
+{
+  "fingerprint": "73914b3a91ab09cdb47043938d9a28d9c7958856cef7fcc612a7b9cd747cacc7",
+  "job": {
+    "id": "chapter_01_finale.truth_correct_2.000",
+    "instructions": "三十多岁的职业侦探，低中音，沉稳清晰，带分析感。现实主义表演，不故作深沉，不使用播音腔。当前处于对质、承认或推理推进段落，增加紧张与确定感，但不要喊叫或煽情。数字307读作“三零七”。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "侦探",
+    "text": "307 的血含洗涤剂和织物纤维，争吵声由楼下传声管送上去，洗衣车又把带血物移到三楼。那里是你布置的错误现场。",
+    "voice": "Moon",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "071a4db9-84a2-976d-a0b4-139e97567f66",
+  "schema_version": 1,
+  "usage": {
+    "characters": 100
+  }
+}

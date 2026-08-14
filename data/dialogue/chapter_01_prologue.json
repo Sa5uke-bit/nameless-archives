@@ -3,183 +3,259 @@
     "arrival_intro": [
       {
         "speaker": "顾宁",
-        "text": "你就是接下委托的人？比约定早了十分钟。"
+        "text": "你就是接下委托的人？比约定早了十分钟。",
+        "voice": "res://assets/audio/dialogue/chapter_01/gu_ning/chapter_01_prologue_arrival_intro_00.wav",
+        "voice_bus": "Voice"
       },
       {
         "speaker": "侦探",
-        "text": "信里只有地址、一把旧钥匙，还有一句没头没尾的话。"
+        "text": "信里只有地址、一把旧钥匙，还有一句没头没尾的话。",
+        "voice": "res://assets/audio/dialogue/chapter_01/detective/chapter_01_prologue_arrival_intro_01.wav",
+        "voice_bus": "Voice"
       },
       {
         "speaker": "顾宁",
-        "text": "这里明早就会封闭。你可以查看大堂，但三楼暂时不能进去。"
+        "text": "这里明早就会封闭。你可以查看大堂，但三楼暂时不能进去。",
+        "voice": "res://assets/audio/dialogue/chapter_01/gu_ning/chapter_01_prologue_arrival_intro_02.wav",
+        "voice_bus": "Voice"
       },
       {
         "speaker": "侦探",
-        "text": "暂时？"
+        "text": "暂时？",
+        "voice": "res://assets/audio/dialogue/chapter_01/detective/chapter_01_prologue_arrival_intro_03.wav",
+        "voice_bus": "Voice"
       },
       {
         "speaker": "顾宁",
-        "text": "先弄清楚你在找谁。十二年前，没人能回答这个问题。"
+        "text": "先弄清楚你在找谁。十二年前，没人能回答这个问题。",
+        "voice": "res://assets/audio/dialogue/chapter_01/gu_ning/chapter_01_prologue_arrival_intro_04.wav",
+        "voice_bus": "Voice"
       }
     ],
     "gu_ning_first": [
       {
         "speaker": "侦探",
-        "text": "你见过周岚吗？"
+        "text": "你见过周岚吗？",
+        "voice": "res://assets/audio/dialogue/chapter_01/detective/chapter_01_prologue_gu_ning_first_00.wav",
+        "voice_bus": "Voice"
       },
       {
         "speaker": "顾宁",
-        "text": "没有。父亲不让我过问住客的事。"
+        "text": "没有。父亲不让我过问住客的事。",
+        "voice": "res://assets/audio/dialogue/chapter_01/gu_ning/chapter_01_prologue_gu_ning_first_01.wav",
+        "voice_bus": "Voice"
       },
       {
         "speaker": "侦探",
-        "text": "可你知道我手里的钥匙属于 307。"
+        "text": "可你知道我手里的钥匙属于 307。",
+        "voice": "res://assets/audio/dialogue/chapter_01/detective/chapter_01_prologue_gu_ning_first_02.wav",
+        "voice_bus": "Voice"
       },
       {
         "speaker": "顾宁",
-        "text": "整座旅馆只有那把钥匙，没有换过标签。"
+        "text": "整座旅馆只有那把钥匙，没有换过标签。",
+        "voice": "res://assets/audio/dialogue/chapter_01/gu_ning/chapter_01_prologue_gu_ning_first_03.wav",
+        "voice_bus": "Voice"
       }
     ],
     "gu_ning_repeat": [
       {
         "speaker": "顾宁",
-        "text": "天亮前结束调查。施工队不会为一桩旧案再等一天。"
+        "text": "天亮前结束调查。施工队不会为一桩旧案再等一天。",
+        "voice": "res://assets/audio/dialogue/chapter_01/gu_ning/chapter_01_prologue_gu_ning_repeat_00.wav",
+        "voice_bus": "Voice"
       }
     ],
     "qiao_first": [
       {
         "speaker": "侦探",
-        "text": "乔雯？一九九六年，你是这里的前台。"
+        "text": "乔雯？一九九六年，你是这里的前台。",
+        "voice": "res://assets/audio/dialogue/chapter_01/detective/chapter_01_prologue_qiao_first_00.wav",
+        "voice_bus": "Voice"
       },
       {
         "speaker": "乔雯",
-        "text": "现在只是看守。等这栋楼拆掉，连这个称呼也没有了。"
+        "text": "现在只是看守。等这栋楼拆掉，连这个称呼也没有了。",
+        "voice": "res://assets/audio/dialogue/chapter_01/qiao_wen/chapter_01_prologue_qiao_first_01.wav",
+        "voice_bus": "Voice"
       },
       {
         "speaker": "侦探",
-        "text": "你记得周岚长什么样？"
+        "text": "你记得周岚长什么样？",
+        "voice": "res://assets/audio/dialogue/chapter_01/detective/chapter_01_prologue_qiao_first_02.wav",
+        "voice_bus": "Voice"
       },
       {
         "speaker": "乔雯",
-        "text": "短发，个子不高，习惯用左手。赵成当年却说她留长发、比他还高。我们都记得那件浅色外套。"
+        "text": "短发，个子不高，习惯用左手。赵成当年却说她留长发、比他还高。我们都记得那件浅色外套。",
+        "voice": "res://assets/audio/dialogue/chapter_01/qiao_wen/chapter_01_prologue_qiao_first_03.wav",
+        "voice_bus": "Voice"
       },
       {
         "speaker": "侦探",
-        "text": "两个人记住了同一件衣服，却没有记住同一张脸。"
+        "text": "两个人记住了同一件衣服，却没有记住同一张脸。",
+        "voice": "res://assets/audio/dialogue/chapter_01/detective/chapter_01_prologue_qiao_first_04.wav",
+        "voice_bus": "Voice"
       },
       {
         "speaker": "乔雯",
-        "text": "十二年了。脸会模糊，衣服不会开口纠正我们。"
+        "text": "十二年了。脸会模糊，衣服不会开口纠正我们。",
+        "voice": "res://assets/audio/dialogue/chapter_01/qiao_wen/chapter_01_prologue_qiao_first_05.wav",
+        "voice_bus": "Voice"
       }
     ],
     "qiao_repeat": [
       {
         "speaker": "乔雯",
-        "text": "我能确定的是浅色外套。至于外套里的人……越想，越像是从别人的话里借来的。"
+        "text": "我能确定的是浅色外套。至于外套里的人……越想，越像是从别人的话里借来的。",
+        "voice": "res://assets/audio/dialogue/chapter_01/qiao_wen/chapter_01_prologue_qiao_repeat_00.wav",
+        "voice_bus": "Voice"
       }
     ],
     "qiao_after_d01": [
       {
         "speaker": "侦探",
-        "text": "周岚不是一个人。登记页上的字是你的。"
+        "text": "周岚不是一个人。登记页上的字是你的。",
+        "voice": "res://assets/audio/dialogue/chapter_01/detective/chapter_01_prologue_qiao_after_d01_00.wav",
+        "voice_bus": "Voice"
       },
       {
         "speaker": "乔雯",
-        "text": "登记是我代写的，签名由她们自己留下。有人只需要一晚不被找到，我们就给她一把钥匙。"
+        "text": "登记是我代写的，签名由她们自己留下。有人只需要一晚不被找到，我们就给她一把钥匙。",
+        "voice": "res://assets/audio/dialogue/chapter_01/qiao_wen/chapter_01_prologue_qiao_after_d01_01.wav",
+        "voice_bus": "Voice"
       },
       {
         "speaker": "侦探",
-        "text": "你保护了她们，也让真正失踪的人被藏在这个名字后面。"
+        "text": "你保护了她们，也让真正失踪的人被藏在这个名字后面。",
+        "voice": "res://assets/audio/dialogue/chapter_01/detective/chapter_01_prologue_qiao_after_d01_02.wav",
+        "voice_bus": "Voice"
       },
       {
         "speaker": "乔雯",
-        "text": "所以钥匙又回来了。去楼下吧，声音真正开始的地方不在 307。"
+        "text": "所以钥匙又回来了。去楼下吧，声音真正开始的地方不在 307。",
+        "voice": "res://assets/audio/dialogue/chapter_01/qiao_wen/chapter_01_prologue_qiao_after_d01_03.wav",
+        "voice_bus": "Voice"
       }
     ],
     "desk_first": [
       {
         "speaker": "侦探",
-        "text": "登记簿受过潮，唯独‘周岚’那几页被人反复压平。"
+        "text": "登记簿受过潮，唯独‘周岚’那几页被人反复压平。",
+        "voice": "res://assets/audio/dialogue/chapter_01/detective/chapter_01_prologue_desk_first_00.wav",
+        "voice_bus": "Voice"
       },
       {
         "speaker": "侦探",
-        "text": "不同日期的登记笔迹几乎一样，签名收尾却各不相同。先记下来。"
+        "text": "不同日期的登记笔迹几乎一样，签名收尾却各不相同。先记下来。",
+        "voice": "res://assets/audio/dialogue/chapter_01/detective/chapter_01_prologue_desk_first_01.wav",
+        "voice_bus": "Voice"
       }
     ],
     "desk_repeat": [
       {
         "speaker": "侦探",
-        "text": "登记内容像由同一个人代写，签名却刻意保留了差异。"
+        "text": "登记内容像由同一个人代写，签名却刻意保留了差异。",
+        "voice": "res://assets/audio/dialogue/chapter_01/detective/chapter_01_prologue_desk_repeat_00.wav",
+        "voice_bus": "Voice"
       }
     ],
     "keys_first": [
       {
         "speaker": "侦探",
-        "text": "钥匙板上从 301 排到 308，只有 307 留着颜色更浅的轮廓。"
+        "text": "钥匙板上从 301 排到 308，只有 307 留着颜色更浅的轮廓。",
+        "voice": "res://assets/audio/dialogue/chapter_01/detective/chapter_01_prologue_keys_first_00.wav",
+        "voice_bus": "Voice"
       },
       {
         "speaker": "侦探",
-        "text": "匿名信寄来的钥匙，确实长期挂在这里。寄信人熟悉这间旅馆。"
+        "text": "匿名信寄来的钥匙，确实长期挂在这里。寄信人熟悉这间旅馆。",
+        "voice": "res://assets/audio/dialogue/chapter_01/detective/chapter_01_prologue_keys_first_01.wav",
+        "voice_bus": "Voice"
       }
     ],
     "keys_repeat": [
       {
         "speaker": "侦探",
-        "text": "307 的钥匙被取走很久了，灰尘不会说谎。"
+        "text": "307 的钥匙被取走很久了，灰尘不会说谎。",
+        "voice": "res://assets/audio/dialogue/chapter_01/detective/chapter_01_prologue_keys_repeat_00.wav",
+        "voice_bus": "Voice"
       }
     ],
     "photo_first": [
       {
         "speaker": "侦探",
-        "text": "一九九六年的员工合照。右边缘被重新裁过，半只手还留在画面里。"
+        "text": "一九九六年的员工合照。右边缘被重新裁过，半只手还留在画面里。",
+        "voice": "res://assets/audio/dialogue/chapter_01/detective/chapter_01_prologue_photo_first_00.wav",
+        "voice_bus": "Voice"
       },
       {
         "speaker": "侦探",
-        "text": "照片背面写着六个班次，正面却只有五个人。"
+        "text": "照片背面写着六个班次，正面却只有五个人。",
+        "voice": "res://assets/audio/dialogue/chapter_01/detective/chapter_01_prologue_photo_first_01.wav",
+        "voice_bus": "Voice"
       }
     ],
     "photo_repeat": [
       {
         "speaker": "侦探",
-        "text": "被裁掉的人也许没有出现在正式员工名单里。现在还不能下结论。"
+        "text": "被裁掉的人也许没有出现在正式员工名单里。现在还不能下结论。",
+        "voice": "res://assets/audio/dialogue/chapter_01/detective/chapter_01_prologue_photo_repeat_00.wav",
+        "voice_bus": "Voice"
       }
     ],
     "room_307_locked": [
       {
         "speaker": "侦探",
-        "text": "通往三楼的门从另一侧锁住了。门缝里有一股很淡的洗涤剂气味。"
+        "text": "通往三楼的门从另一侧锁住了。门缝里有一股很淡的洗涤剂气味。",
+        "voice": "res://assets/audio/dialogue/chapter_01/detective/chapter_01_prologue_room_307_locked_00.wav",
+        "voice_bus": "Voice"
       },
       {
         "speaker": "？？？",
-        "text": "……别开门。"
+        "text": "……别开门。",
+        "voice": "res://assets/audio/dialogue/chapter_01/mystery/chapter_01_prologue_room_307_locked_01.wav",
+        "voice_bus": "VoiceDuct"
       },
       {
         "speaker": "侦探",
-        "text": "声音很近，却不像是从门后传来的。"
+        "text": "声音很近，却不像是从门后传来的。",
+        "voice": "res://assets/audio/dialogue/chapter_01/detective/chapter_01_prologue_room_307_locked_02.wav",
+        "voice_bus": "Voice"
       },
       {
         "speaker": "侦探",
-        "text": "大堂的记录和当年证词还没核对完整。现在上楼，只会把疑问一起带进去。"
+        "text": "大堂的记录和当年证词还没核对完整。现在上楼，只会把疑问一起带进去。",
+        "voice": "res://assets/audio/dialogue/chapter_01/detective/chapter_01_prologue_room_307_locked_03.wav",
+        "voice_bus": "Voice"
       }
     ],
     "room_307_repeat": [
       {
         "speaker": "侦探",
-        "text": "那句话又没有出现。附近一定有什么结构会传递声音。"
+        "text": "那句话又没有出现。附近一定有什么结构会传递声音。",
+        "voice": "res://assets/audio/dialogue/chapter_01/detective/chapter_01_prologue_room_307_repeat_00.wav",
+        "voice_bus": "Voice"
       }
     ],
     "room_307_open": [
       {
         "speaker": "侦探",
-        "text": "登记、照片和钥匙都指向三楼。继续留在大堂不会有新答案。"
+        "text": "登记、照片和钥匙都指向三楼。继续留在大堂不会有新答案。",
+        "voice": "res://assets/audio/dialogue/chapter_01/detective/chapter_01_prologue_room_307_open_00.wav",
+        "voice_bus": "Voice"
       },
       {
         "speaker": "顾宁",
-        "text": "……钥匙既然在你手里，门也拦不住你。别碰窗边的旧线路。"
+        "text": "……钥匙既然在你手里，门也拦不住你。别碰窗边的旧线路。",
+        "voice": "res://assets/audio/dialogue/chapter_01/gu_ning/chapter_01_prologue_room_307_open_01.wav",
+        "voice_bus": "Voice"
       },
       {
         "speaker": "侦探",
-        "text": "你比我更清楚房间里有什么。"
+        "text": "你比我更清楚房间里有什么。",
+        "voice": "res://assets/audio/dialogue/chapter_01/detective/chapter_01_prologue_room_307_open_02.wav",
+        "voice_bus": "Voice"
       }
     ]
   }

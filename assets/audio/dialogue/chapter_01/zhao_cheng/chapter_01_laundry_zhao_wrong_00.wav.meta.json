@@ -1,0 +1,22 @@
+{
+  "fingerprint": "dba76a6471683df4bd8701a54e23f2cdda24a4653a2ed5f7bb0cf1300c31af7a",
+  "job": {
+    "id": "chapter_01_laundry.zhao_wrong.000",
+    "instructions": "五十岁左右维修工，嗓音粗粝疲惫，防备而负罪。口语真实克制，不使用武侠豪迈或恐怖故事腔。当前处于对质、承认或推理推进段落，增加紧张与确定感，但不要喊叫或煽情。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "赵成",
+    "text": "那能证明什么？这里每天都有车、有钥匙、有人说谎。",
+    "voice": "Vincent",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "65f71fd7-41fa-9692-9a05-3d511c0b8dc8",
+  "schema_version": 1,
+  "usage": {
+    "characters": 44
+  }
+}

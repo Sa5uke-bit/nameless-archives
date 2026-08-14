@@ -1,0 +1,22 @@
+{
+  "fingerprint": "3167fa1d4fbe03e527c37f17a0ba592ae5819f49efe0bc493198b24c98b20d32",
+  "job": {
+    "id": "chapter_01_prologue.qiao_first.002",
+    "instructions": "三十多岁的职业侦探，低中音，沉稳清晰，带分析感。现实主义表演，不故作深沉，不使用播音腔。按日常基线自然陈述，停顿清楚，不额外渲染悬疑。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "侦探",
+    "text": "你记得周岚长什么样？",
+    "voice": "Moon",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "f2af1b61-86d1-9431-b61b-72343e99830b",
+  "schema_version": 1,
+  "usage": {
+    "characters": 19
+  }
+}

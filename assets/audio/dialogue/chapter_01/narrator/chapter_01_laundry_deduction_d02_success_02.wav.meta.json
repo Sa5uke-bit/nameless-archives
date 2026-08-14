@@ -1,0 +1,22 @@
+{
+  "fingerprint": "84e296ee595d0feb6ea5abe66c889bbfc9fa7cb643d4f90ce2c99aa47b301bd0",
+  "job": {
+    "id": "chapter_01_laundry.deduction_d02_success.002",
+    "instructions": "成熟男性叙述者，清楚客观，有轻微纪录片质感但不过分正式。保持克制，不使用恐怖预告腔。当前处于对质、承认或推理推进段落，增加紧张与确定感，但不要喊叫或煽情。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "旁白",
+    "text": "第二项推理完成：错误的房间。顾宁一直站在不远处，她听见了结论。",
+    "voice": "Neil",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "ecce3177-8c50-9f41-88ad-63186e3e4973",
+  "schema_version": 1,
+  "usage": {
+    "characters": 58
+  }
+}

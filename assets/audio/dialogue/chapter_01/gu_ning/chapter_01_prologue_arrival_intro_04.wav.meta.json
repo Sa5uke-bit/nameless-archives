@@ -1,0 +1,22 @@
+{
+  "fingerprint": "3c10299de7137bc4225d52fe123817acf9a7de13d3849e4d95348771eef5824c",
+  "job": {
+    "id": "chapter_01_prologue.arrival_intro.004",
+    "instructions": "三十多岁女性，低沉冷静，措辞利落，习惯掌控局面。情绪内收，避免讲课腔和夸张哭腔。按日常基线自然陈述，停顿清楚，不额外渲染悬疑。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "顾宁",
+    "text": "先弄清楚你在找谁。十二年前，没人能回答这个问题。",
+    "voice": "Elias",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "f65fa1ab-b400-9f37-b94c-7ece523bd19d",
+  "schema_version": 1,
+  "usage": {
+    "characters": 45
+  }
+}

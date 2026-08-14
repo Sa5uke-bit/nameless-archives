@@ -1,0 +1,22 @@
+{
+  "fingerprint": "6642d646f99d955ea972f69c4f47e5a516ad16f7a55ca212396de88dc853c85c",
+  "job": {
+    "id": "chapter_01_laundry.zhao_repeat.000",
+    "instructions": "五十岁左右维修工，嗓音粗粝疲惫，防备而负罪。口语真实克制，不使用武侠豪迈或恐怖故事腔。当前是复查、回忆或含混段落，音量稍低、语速略慢，保留自然余韵。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "赵成",
+    "text": "我会向警方重复一遍。不是为了减轻罪，是因为她该被找到。",
+    "voice": "Vincent",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "a27c3df4-91e9-9610-bf7a-d38132d1bebb",
+  "schema_version": 1,
+  "usage": {
+    "characters": 51
+  }
+}

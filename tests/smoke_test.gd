@@ -34,6 +34,8 @@ func _run() -> void:
 
 	var hud: InvestigationHUD = lobby.get_node("HUD")
 	_check(hud.dialogue_panel.visible, "arrival dialogue opens")
+	_check(hud.dialogue_voice_player.stream != null, "arrival dialogue loads its voice stream")
+	_check(hud.dialogue_voice_player.bus == &"Voice", "normal dialogue uses the voice bus")
 	_close_dialogue(hud)
 	_check(not hud.dialogue_panel.visible, "arrival dialogue can finish")
 	_check(hud.guide_panel.visible, "first-play mouse guide appears after the arrival dialogue")
@@ -116,12 +118,16 @@ func _run() -> void:
 	)
 	_check(AudioServer.get_bus_index(&"Ambience") >= 0, "ambience audio bus exists")
 	_check(AudioServer.get_bus_index(&"SFX") >= 0, "effects audio bus exists")
+	_check(AudioServer.get_bus_index(&"Voice") >= 0, "dialogue voice audio bus exists")
+	_check(AudioServer.get_bus_index(&"VoiceDuct") >= 0, "duct voice effect bus exists")
 	_check(AudioManager.sea_player.bus == &"Ambience", "sea ambience uses the ambience bus")
 	_check(AudioManager.sfx_players[0].bus == &"SFX", "interaction sounds use the SFX bus")
 	hud._on_master_volume_changed(0.55)
 	_check(is_equal_approx(SettingsManager.master_volume, 0.55), "master volume setting applies")
 	hud._on_ambience_volume_changed(0.65)
 	_check(is_equal_approx(SettingsManager.ambience_volume, 0.65), "ambience volume setting applies")
+	hud._on_voice_volume_changed(0.6)
+	_check(is_equal_approx(SettingsManager.voice_volume, 0.6), "voice volume setting applies")
 	hud._on_effects_volume_changed(0.7)
 	_check(is_equal_approx(SettingsManager.effects_volume, 0.7), "effects volume setting applies")
 	hud._on_display_mode_selected(1)
@@ -155,15 +161,19 @@ func _run() -> void:
 	SettingsManager.settings_path = "user://chapter_01_smoke_settings.cfg"
 	SettingsManager.persistence_enabled = true
 	SettingsManager.set_master_volume(0.45)
+	SettingsManager.set_voice_volume(0.35)
 	_check(FileAccess.file_exists(SettingsManager.settings_path), "settings are written to disk")
 	SettingsManager.master_volume = 0.9
+	SettingsManager.voice_volume = 0.9
 	SettingsManager.load_settings()
 	_check(is_equal_approx(SettingsManager.master_volume, 0.45), "saved settings load across sessions")
+	_check(is_equal_approx(SettingsManager.voice_volume, 0.35), "saved voice volume loads across sessions")
 	DirAccess.remove_absolute(ProjectSettings.globalize_path(SettingsManager.settings_path))
 	SettingsManager.settings_path = SettingsManager.DEFAULT_SETTINGS_PATH
 	SettingsManager.persistence_enabled = false
 	SettingsManager.set_master_volume(0.8)
 	SettingsManager.set_ambience_volume(0.8)
+	SettingsManager.set_voice_volume(0.9)
 	SettingsManager.set_effects_volume(0.85)
 	SettingsManager.set_display_mode(0)
 	SettingsManager.set_resolution(Vector2i(1280, 720))
@@ -184,6 +194,12 @@ func _run() -> void:
 	_check(room.name == "Room307", "lobby routes to room 307")
 	hud = room.get_node("HUD")
 	_check(hud.dialogue_panel.visible, "room 307 anomaly intro opens")
+	_check(hud.dialogue_voice_player.stream != null, "room narration loads its voice stream")
+	hud._advance_dialogue()
+	_check(hud.dialogue_voice_player.stream == null, "sound-effect captions do not load a voice")
+	hud._advance_dialogue()
+	_check(hud.dialogue_voice_player.stream != null, "mysterious duct line loads a voice stream")
+	_check(hud.dialogue_voice_player.bus == &"VoiceDuct", "mysterious line uses the duct effect bus")
 	_close_dialogue(hud)
 	await _check_targets_reachable(
 		room,

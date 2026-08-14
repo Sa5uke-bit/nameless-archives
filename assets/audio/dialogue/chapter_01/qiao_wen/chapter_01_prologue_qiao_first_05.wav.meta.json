@@ -1,0 +1,22 @@
+{
+  "fingerprint": "5102b00cde52a47720025c490fece8581785b2377bf6584da31f879717150a19",
+  "job": {
+    "id": "chapter_01_prologue.qiao_first.005",
+    "instructions": "四十岁左右女性，知性温和，声音里有长期疲惫和谨慎。保护欲强但不柔弱，不故作神秘。按日常基线自然陈述，停顿清楚，不额外渲染悬疑。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "乔雯",
+    "text": "十二年了。脸会模糊，衣服不会开口纠正我们。",
+    "voice": "Maia",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "b96743d0-85b4-90cc-8843-afdc0122edd5",
+  "schema_version": 1,
+  "usage": {
+    "characters": 39
+  }
+}

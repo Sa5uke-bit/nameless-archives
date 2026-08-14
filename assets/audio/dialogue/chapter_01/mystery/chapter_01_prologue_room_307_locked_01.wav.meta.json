@@ -1,0 +1,22 @@
+{
+  "fingerprint": "86bf7a5be15cd1b7e70797246287cebd45601ec77cb37f1216648c981a75d54f",
+  "job": {
+    "id": "chapter_01_prologue.room_307_locked.001",
+    "instructions": "使用顾宁同一声音身份，低声、急促、像一句被旧金属传声管截断的话。来源遥远但仍是现实人声，不表现成鬼魂。句子很短，保留自然停顿，音量偏低。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "？？？",
+    "text": "……别开门。",
+    "voice": "Elias",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "1e715e27-d520-9c5c-b34d-30e3efc29f62",
+  "schema_version": 1,
+  "usage": {
+    "characters": 7
+  }
+}

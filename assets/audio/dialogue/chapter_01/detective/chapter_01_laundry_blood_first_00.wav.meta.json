@@ -1,0 +1,22 @@
+{
+  "fingerprint": "75eb0e262de15a9639ef3056f0535f1492ebb08eede5c2c02beeb90786005d26",
+  "job": {
+    "id": "chapter_01_laundry.blood_first.000",
+    "instructions": "三十多岁的职业侦探，低中音，沉稳清晰，带分析感。现实主义表演，不故作深沉，不使用播音腔。按日常基线自然陈述，停顿清楚，不额外渲染悬疑。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "侦探",
+    "text": "旧案血迹检验单夹在洗涤配方后面。样本中有大量水、碱性洗剂和织物纤维。",
+    "voice": "Moon",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "db4c6dec-9eb3-9526-b235-62cb2872a75b",
+  "schema_version": 1,
+  "usage": {
+    "characters": 65
+  }
+}

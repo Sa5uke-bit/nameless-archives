@@ -1,0 +1,22 @@
+{
+  "fingerprint": "3eb3e8884843dafe9bbf351af45950288d5eeed9bdc9eb70323c7418c01998b1",
+  "job": {
+    "id": "chapter_01_laundry.deduction_d03_success.001",
+    "instructions": "三十多岁的职业侦探，低中音，沉稳清晰，带分析感。现实主义表演，不故作深沉，不使用播音腔。当前处于对质、承认或推理推进段落，增加紧张与确定感，但不要喊叫或煽情。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "侦探",
+    "text": "真正从这个夜晚消失的人不是周岚，而是被正式记录抹去的林小满。",
+    "voice": "Moon",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "f87c244e-ef90-9720-8dee-1b0f2f96550d",
+  "schema_version": 1,
+  "usage": {
+    "characters": 58
+  }
+}

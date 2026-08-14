@@ -1,0 +1,22 @@
+{
+  "fingerprint": "f6f51e6b90e38739aa615ed7cd92b03f0028c678c95d08ff8206f94b70613f7b",
+  "job": {
+    "id": "chapter_01_finale.final_accusation.000",
+    "instructions": "三十多岁的职业侦探，低中音，沉稳清晰，带分析感。现实主义表演，不故作深沉，不使用播音腔。当前处于对质、承认或推理推进段落，增加紧张与确定感，但不要喊叫或煽情。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "侦探",
+    "text": "他的证词不是孤证。警方会打开雨水井，核对维修材料、血迹和林小满的身份。你没有剩下一个能同时解释全部证据的故事。",
+    "voice": "Moon",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "72fec185-a420-9f38-875b-305f5ccb0cf0",
+  "schema_version": 1,
+  "usage": {
+    "characters": 105
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "fingerprint": "9ac639bad6faf266b0133f02ee33e67397906d44b0a910af6cdc1cf3b382b220",
+  "job": {
+    "id": "chapter_01_laundry.finale_not_ready.000",
+    "instructions": "三十多岁的职业侦探，低中音，沉稳清晰，带分析感。现实主义表演，不故作深沉，不使用播音腔。当前处于对质、承认或推理推进段落，增加紧张与确定感，但不要喊叫或煽情。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "侦探",
+    "text": "要面对顾海川，维修时间、水泥和赵成的证词必须形成完整链条。",
+    "voice": "Moon",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "1dcf4e46-b1d7-9291-92a3-8d1939e89078",
+  "schema_version": 1,
+  "usage": {
+    "characters": 55
+  }
+}

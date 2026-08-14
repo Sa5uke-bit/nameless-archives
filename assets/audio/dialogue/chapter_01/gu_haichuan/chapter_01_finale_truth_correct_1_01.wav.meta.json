@@ -1,0 +1,22 @@
+{
+  "fingerprint": "36eaeb1331b5d9f56f2bb3697c3fd2b42f0cbf8f41c59c8f57c255a93b21499d",
+  "job": {
+    "id": "chapter_01_finale.truth_correct_1.001",
+    "instructions": "六十岁左右男性经营者，声音不高却习惯支配别人，缓慢冷静。避免乡野说书腔和脸谱化反派表演。当前处于对质、承认或推理推进段落，增加紧张与确定感，但不要喊叫或煽情。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "顾海川",
+    "text": "就算如此，也只能证明她们违规登记。",
+    "voice": "Arthur",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "911776c4-40fa-9adc-987c-771327b02f3e",
+  "schema_version": 1,
+  "usage": {
+    "characters": 32
+  }
+}

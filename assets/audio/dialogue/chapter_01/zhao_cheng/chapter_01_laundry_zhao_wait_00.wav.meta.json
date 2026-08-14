@@ -1,0 +1,22 @@
+{
+  "fingerprint": "1792de33c9009cadc31a46d8903bd31e812fcf35d4a518e19990d555c612e2c0",
+  "job": {
+    "id": "chapter_01_laundry.zhao_wait.000",
+    "instructions": "五十岁左右维修工，嗓音粗粝疲惫，防备而负罪。口语真实克制，不使用武侠豪迈或恐怖故事腔。按日常基线自然陈述，停顿清楚，不额外渲染悬疑。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "赵成",
+    "text": "我只修机器。你拿几张旧纸，别想让我替死人说话。",
+    "voice": "Vincent",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "132dd065-5008-99bb-a96b-6d2c9229e574",
+  "schema_version": 1,
+  "usage": {
+    "characters": 43
+  }
+}

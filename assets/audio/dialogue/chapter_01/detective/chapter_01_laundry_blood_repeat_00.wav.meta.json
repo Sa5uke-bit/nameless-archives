@@ -1,0 +1,22 @@
+{
+  "fingerprint": "da16d2aad2d5f91220b8c8a750a0905c834be7e291c461ce550eb1474597781c",
+  "job": {
+    "id": "chapter_01_laundry.blood_repeat.000",
+    "instructions": "三十多岁的职业侦探，低中音，沉稳清晰，带分析感。现实主义表演，不故作深沉，不使用播音腔。当前是复查、回忆或含混段落，音量稍低、语速略慢，保留自然余韵。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "侦探",
+    "text": "血迹的成分比它被发现的位置更诚实。",
+    "voice": "Moon",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "a5fd0c72-d83c-95c1-a5b1-ceea74b1d9bd",
+  "schema_version": 1,
+  "usage": {
+    "characters": 33
+  }
+}

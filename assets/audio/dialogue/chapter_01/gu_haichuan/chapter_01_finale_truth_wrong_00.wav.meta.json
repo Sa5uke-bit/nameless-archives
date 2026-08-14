@@ -1,0 +1,22 @@
+{
+  "fingerprint": "adbf1bc77289d615bae8740238e925f7a681f7f8c7ea07664d496a507962979f",
+  "job": {
+    "id": "chapter_01_finale.truth_wrong.000",
+    "instructions": "六十岁左右男性经营者，声音不高却习惯支配别人，缓慢冷静。避免乡野说书腔和脸谱化反派表演。当前处于对质、承认或推理推进段落，增加紧张与确定感，但不要喊叫或煽情。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "顾海川",
+    "text": "猜测。它解释不了登记、行李、血迹和十二年的沉默。",
+    "voice": "Arthur",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "2de9ae4b-9419-9614-a710-0b4d98172226",
+  "schema_version": 1,
+  "usage": {
+    "characters": 44
+  }
+}

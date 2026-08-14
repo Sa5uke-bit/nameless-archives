@@ -1,0 +1,22 @@
+{
+  "fingerprint": "e06a0a6be98f91d1d8d9c65e025bb50a83975485c7ae21ccaa9a1ee2530170c1",
+  "job": {
+    "id": "chapter_01_room_307.luggage_repeat.000",
+    "instructions": "三十多岁的职业侦探，低中音，沉稳清晰，带分析感。现实主义表演，不故作深沉，不使用播音腔。当前是复查、回忆或含混段落，音量稍低、语速略慢，保留自然余韵。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "侦探",
+    "text": "这些东西被使用过，却不像属于同一位住客。",
+    "voice": "Moon",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "b06b0ed7-58fe-9c52-9050-d0307e0dd6d9",
+  "schema_version": 1,
+  "usage": {
+    "characters": 38
+  }
+}

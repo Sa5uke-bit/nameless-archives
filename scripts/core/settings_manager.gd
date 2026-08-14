@@ -23,6 +23,7 @@ var persistence_enabled := true
 
 var master_volume := 0.8
 var ambience_volume := 0.8
+var voice_volume := 0.9
 var effects_volume := 0.85
 var display_mode := 0
 var resolution := Vector2i(1280, 720)
@@ -41,6 +42,7 @@ func load_settings() -> void:
 		var legacy_master: Variant = config.get_value("audio", "master_volume", master_volume)
 		master_volume = clampf(float(config.get_value("audio", "master", legacy_master)), 0.0, 1.0)
 		ambience_volume = clampf(float(config.get_value("audio", "ambience", ambience_volume)), 0.0, 1.0)
+		voice_volume = clampf(float(config.get_value("audio", "voice", voice_volume)), 0.0, 1.0)
 		effects_volume = clampf(float(config.get_value("audio", "effects", effects_volume)), 0.0, 1.0)
 		var legacy_fullscreen := bool(config.get_value("display", "fullscreen", false))
 		var fallback_display_mode := 1 if legacy_fullscreen else display_mode
@@ -64,6 +66,7 @@ func save_settings() -> void:
 	var config := ConfigFile.new()
 	config.set_value("audio", "master", master_volume)
 	config.set_value("audio", "ambience", ambience_volume)
+	config.set_value("audio", "voice", voice_volume)
 	config.set_value("audio", "effects", effects_volume)
 	config.set_value("video", "display_mode", display_mode)
 	config.set_value("video", "width", resolution.x)
@@ -86,6 +89,12 @@ func set_master_volume(value: float) -> void:
 func set_ambience_volume(value: float) -> void:
 	ambience_volume = clampf(value, 0.0, 1.0)
 	_set_bus_linear(&"Ambience", ambience_volume)
+	_commit_change()
+
+
+func set_voice_volume(value: float) -> void:
+	voice_volume = clampf(value, 0.0, 1.0)
+	_set_bus_linear(&"Voice", voice_volume)
 	_commit_change()
 
 
@@ -175,6 +184,7 @@ func find_binding_conflict(action: StringName, keycode: Key) -> StringName:
 func _apply_audio_settings() -> void:
 	_set_bus_linear(&"Master", master_volume)
 	_set_bus_linear(&"Ambience", ambience_volume)
+	_set_bus_linear(&"Voice", voice_volume)
 	_set_bus_linear(&"SFX", effects_volume)
 
 

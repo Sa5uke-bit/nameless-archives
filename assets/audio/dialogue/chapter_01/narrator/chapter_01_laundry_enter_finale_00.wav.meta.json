@@ -1,0 +1,22 @@
+{
+  "fingerprint": "1faf319c703c43bba880413a58a64d4f140fba115258c9a8c08bd1da00726d9a",
+  "job": {
+    "id": "chapter_01_laundry.enter_finale.000",
+    "instructions": "成熟男性叙述者，清楚客观，有轻微纪录片质感但不过分正式。保持克制，不使用恐怖预告腔。当前处于对质、承认或推理推进段落，增加紧张与确定感，但不要喊叫或煽情。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "旁白",
+    "text": "旅馆外传来汽车急刹声。顾宁的脸色变了。",
+    "voice": "Neil",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "ee8cac6f-4a9e-9167-b72b-1897f1bd55f3",
+  "schema_version": 1,
+  "usage": {
+    "characters": 36
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "fingerprint": "9590105f854d2ae19ad5aefd55e2adb56e7a37645e8dc2ed121a66b98d87138c",
+  "job": {
+    "id": "chapter_01_laundry.cistern_first.001",
+    "instructions": "三十多岁的职业侦探，低中音，沉稳清晰，带分析感。现实主义表演，不故作深沉，不使用播音腔。按日常基线自然陈述，停顿清楚，不额外渲染悬疑。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "侦探",
+    "text": "水泥配比与一九九六年的维修记录一致。顾海川封住的不是一口废井，而是一处现场。",
+    "voice": "Moon",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "e7c9e7fb-2cdd-934e-8791-2693a1ba3284",
+  "schema_version": 1,
+  "usage": {
+    "characters": 73
+  }
+}

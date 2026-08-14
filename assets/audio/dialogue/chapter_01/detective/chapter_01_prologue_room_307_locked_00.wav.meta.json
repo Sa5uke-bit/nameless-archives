@@ -1,0 +1,22 @@
+{
+  "fingerprint": "abc5f6124bc1bdcd74cf9b8a864a2f93fd5c06a47f348d0982b195b07829529c",
+  "job": {
+    "id": "chapter_01_prologue.room_307_locked.000",
+    "instructions": "三十多岁的职业侦探，低中音，沉稳清晰，带分析感。现实主义表演，不故作深沉，不使用播音腔。当前是复查、回忆或含混段落，音量稍低、语速略慢，保留自然余韵。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "侦探",
+    "text": "通往三楼的门从另一侧锁住了。门缝里有一股很淡的洗涤剂气味。",
+    "voice": "Moon",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "9013085e-5a2f-980e-b3ad-34fe18621af5",
+  "schema_version": 1,
+  "usage": {
+    "characters": 56
+  }
+}

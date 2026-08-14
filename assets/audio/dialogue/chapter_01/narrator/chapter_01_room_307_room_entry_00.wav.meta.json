@@ -1,0 +1,22 @@
+{
+  "fingerprint": "215422a37a44cfbb06149b76661b0399c3e232a3b5e5f6ccf02f216aed22eeb4",
+  "job": {
+    "id": "chapter_01_room_307.room_entry.000",
+    "instructions": "成熟男性叙述者，清楚客观，有轻微纪录片质感但不过分正式。保持克制，不使用恐怖预告腔。当前是复查、回忆或含混段落，音量稍低、语速略慢，保留自然余韵。数字307读作“三零七”。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "旁白",
+    "text": "钥匙转动时没有阻力。侦探刚跨进 307，身后的门便沿着倾斜地面自行合拢。",
+    "voice": "Neil",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "ac00e090-914c-9906-b701-3e2e876bab7c",
+  "schema_version": 1,
+  "usage": {
+    "characters": 65
+  }
+}

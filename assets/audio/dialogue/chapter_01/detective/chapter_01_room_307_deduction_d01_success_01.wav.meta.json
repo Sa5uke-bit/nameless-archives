@@ -1,0 +1,22 @@
+{
+  "fingerprint": "193037e9070ef4b73544c86c69f22a4e3fb7bb47fc819318d9006d2e82b1c378",
+  "job": {
+    "id": "chapter_01_room_307.deduction_d01_success.001",
+    "instructions": "三十多岁的职业侦探，低中音，沉稳清晰，带分析感。现实主义表演，不故作深沉，不使用播音腔。当前处于对质、承认或推理推进段落，增加紧张与确定感，但不要喊叫或煽情。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "侦探",
+    "text": "‘周岚’不是一名住客，而是被多人先后使用的身份。警方寻找的那个人，从一开始就不存在。",
+    "voice": "Moon",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "6de1cdb6-02f5-9cef-ae47-b9730755b642",
+  "schema_version": 1,
+  "usage": {
+    "characters": 78
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "fingerprint": "aa071be4f4d208fd637d4d3d6359268e21cc9ce155b26118be140628702218a9",
+  "job": {
+    "id": "chapter_01_prologue.gu_ning_repeat.000",
+    "instructions": "三十多岁女性，低沉冷静，措辞利落，习惯掌控局面。情绪内收，避免讲课腔和夸张哭腔。当前是复查、回忆或含混段落，音量稍低、语速略慢，保留自然余韵。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "顾宁",
+    "text": "天亮前结束调查。施工队不会为一桩旧案再等一天。",
+    "voice": "Elias",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "2f821e81-5cf0-9045-bcc0-3599a2c2a2cb",
+  "schema_version": 1,
+  "usage": {
+    "characters": 44
+  }
+}
