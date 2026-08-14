@@ -1,0 +1,92 @@
+[gd_scene load_steps=11 format=3]
+
+[ext_resource type="Script" path="res://scripts/characters/player.gd" id="1_player"]
+[ext_resource type="Texture2D" path="res://assets/art/characters/detective_v1.png" id="2_detective"]
+[ext_resource type="Texture2D" path="res://assets/art/characters/detective_walk_v1.png" id="3_walk"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_walk_1"]
+atlas = ExtResource("3_walk")
+region = Rect2(0, 0, 627, 627)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_walk_2"]
+atlas = ExtResource("3_walk")
+region = Rect2(627, 0, 627, 627)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_walk_3"]
+atlas = ExtResource("3_walk")
+region = Rect2(0, 627, 627, 627)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_walk_4"]
+atlas = ExtResource("3_walk")
+region = Rect2(627, 627, 627, 627)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_walk"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_walk_1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_walk_2")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_walk_3")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_walk_4")
+}],
+"loop": true,
+"name": &"walk",
+"speed": 7.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_body"]
+size = Vector2(54, 250)
+
+[sub_resource type="CircleShape2D" id="CircleShape2D_interaction"]
+radius = 82.0
+
+[node name="Player" type="CharacterBody2D"]
+collision_layer = 1
+collision_mask = 1
+script = ExtResource("1_player")
+
+[node name="BodyVisual" type="Polygon2D" parent="."]
+visible = false
+polygon = PackedVector2Array(-18, -72, 18, -72, 18, 0, -18, 0)
+color = Color(0.76, 0.73, 0.63, 1)
+
+[node name="Coat" type="Polygon2D" parent="BodyVisual"]
+polygon = PackedVector2Array(-19, -44, 19, -44, 25, 0, -25, 0)
+color = Color(0.19, 0.25, 0.3, 1)
+
+[node name="Hat" type="Polygon2D" parent="BodyVisual"]
+polygon = PackedVector2Array(-22, -70, 22, -70, 14, -82, -13, -82)
+color = Color(0.13, 0.17, 0.2, 1)
+
+[node name="CharacterSprite" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(0, -151)
+scale = Vector2(0.205, 0.205)
+texture = ExtResource("2_detective")
+
+[node name="WalkSprite" type="AnimatedSprite2D" parent="."]
+visible = false
+texture_filter = 1
+position = Vector2(0, -147)
+scale = Vector2(0.49, 0.49)
+sprite_frames = SubResource("SpriteFrames_walk")
+animation = &"walk"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(0, -125)
+shape = SubResource("RectangleShape2D_body")
+
+[node name="InteractionArea" type="Area2D" parent="."]
+position = Vector2(0, -90)
+collision_layer = 0
+collision_mask = 2
+monitoring = true
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="InteractionArea"]
+shape = SubResource("CircleShape2D_interaction")

@@ -1,0 +1,232 @@
+[gd_scene load_steps=17 format=3]
+
+[ext_resource type="Script" path="res://scripts/locations/laundry.gd" id="1_laundry"]
+[ext_resource type="Script" path="res://scripts/locations/laundry_art.gd" id="2_art"]
+[ext_resource type="PackedScene" path="res://scenes/characters/player.tscn" id="3_player"]
+[ext_resource type="PackedScene" path="res://scenes/ui/hud.tscn" id="4_hud"]
+[ext_resource type="Script" path="res://scripts/interaction/interactable.gd" id="5_interactable"]
+[ext_resource type="Texture2D" path="res://assets/art/backgrounds/laundry_v1.png" id="6_background"]
+[ext_resource type="Texture2D" path="res://assets/art/characters/gu_ning_v1.png" id="7_gu"]
+[ext_resource type="Texture2D" path="res://assets/art/characters/zhao_cheng_v2.png" id="8_zhao"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_floor"]
+size = Vector2(1280, 100)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_wall"]
+size = Vector2(40, 720)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_standard"]
+size = Vector2(105, 230)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_wide"]
+size = Vector2(145, 180)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_person"]
+size = Vector2(120, 300)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_door"]
+size = Vector2(100, 340)
+
+[node name="Laundry" type="Node2D"]
+script = ExtResource("1_laundry")
+
+[node name="Background" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(640, 360)
+scale = Vector2(0.76555, 0.76514)
+texture = ExtResource("6_background")
+
+[node name="LaundryArt" type="Node2D" parent="."]
+visible = false
+script = ExtResource("2_art")
+
+[node name="LocationTitle" type="Label" parent="."]
+visible = false
+offset_left = 480.0
+offset_top = 115.0
+offset_right = 800.0
+offset_bottom = 155.0
+theme_override_colors/font_color = Color(0.62, 0.66, 0.6, 1)
+theme_override_font_sizes/font_size = 24
+text = "员工通道 · 旧洗衣房"
+horizontal_alignment = 1
+
+[node name="Floor" type="StaticBody2D" parent="."]
+position = Vector2(640, 670)
+collision_layer = 1
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Floor"]
+shape = SubResource("RectangleShape2D_floor")
+
+[node name="LeftWall" type="StaticBody2D" parent="."]
+position = Vector2(-20, 360)
+collision_layer = 1
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="LeftWall"]
+shape = SubResource("RectangleShape2D_wall")
+
+[node name="RightWall" type="StaticBody2D" parent="."]
+position = Vector2(1300, 360)
+collision_layer = 1
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="RightWall"]
+shape = SubResource("RectangleShape2D_wall")
+
+[node name="Player" parent="." instance=ExtResource("3_player")]
+position = Vector2(165, 620)
+
+[node name="BackDoor" type="Area2D" parent="."]
+position = Vector2(78, 535)
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("5_interactable")
+display_name = "返回 307"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="BackDoor"]
+shape = SubResource("RectangleShape2D_door")
+
+[node name="BloodReport" type="Area2D" parent="."]
+position = Vector2(292, 510)
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("5_interactable")
+display_name = "检查旧血迹检验单"
+conversation_id = "blood_first"
+repeat_conversation_id = "blood_repeat"
+evidence_id = "E03"
+evidence_title = "含洗涤剂的血迹记录"
+evidence_description = "307 的血迹样本含大量水、碱性洗剂和织物纤维，来源更像洗衣环境。"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="BloodReport"]
+shape = SubResource("RectangleShape2D_wide")
+
+[node name="LaundryCart" type="Area2D" parent="."]
+position = Vector2(485, 515)
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("5_interactable")
+display_name = "检查旧洗衣车"
+conversation_id = "cart_first"
+repeat_conversation_id = "cart_repeat"
+evidence_id = "E04"
+evidence_title = "洗衣车轴承里的旧染痕"
+evidence_description = "轴承内部卡有织物与褐色旧污渍；车轮曾在血迹未干时移动带血织物。"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="LaundryCart"]
+shape = SubResource("RectangleShape2D_wide")
+
+[node name="RearDoorPhoto" type="Area2D" parent="."]
+position = Vector2(640, 535)
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("5_interactable")
+display_name = "查看后门旧照片"
+conversation_id = "rear_photo_first"
+repeat_conversation_id = "rear_photo_repeat"
+evidence_id = "E05"
+evidence_title = "雨停后的洗衣车轮印"
+evidence_description = "案发夜雨停后，一组洗衣车轮印从洗衣房穿过后门；赵成声称整晚没有开门。"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="RearDoorPhoto"]
+shape = SubResource("RectangleShape2D_standard")
+
+[node name="WageBook" type="Area2D" parent="."]
+position = Vector2(755, 535)
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("5_interactable")
+display_name = "检查无名工时记录"
+conversation_id = "wage_first"
+repeat_conversation_id = "wage_repeat"
+evidence_id = "E07"
+evidence_title = "没有工资签收的‘小满’工时"
+evidence_description = "‘小满’连续出现在手写工时中，领取栏始终空白；末页夹着一张案发次日未使用的车票，背面写着‘取回证件，再走’。"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="WageBook"]
+shape = SubResource("RectangleShape2D_standard")
+
+[node name="GuNing" type="Area2D" parent="."]
+position = Vector2(850, 535)
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("5_interactable")
+display_name = "向顾宁出示证据"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="GuNing"]
+position = Vector2(0, -65)
+shape = SubResource("RectangleShape2D_person")
+
+[node name="CharacterSprite" type="Sprite2D" parent="GuNing"]
+texture_filter = 1
+position = Vector2(0, -65)
+scale = Vector2(-0.205, 0.205)
+texture = ExtResource("7_gu")
+
+[node name="DeductionBoard" type="Area2D" parent="."]
+position = Vector2(940, 535)
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("5_interactable")
+display_name = "整理案件推理"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="DeductionBoard"]
+shape = SubResource("RectangleShape2D_wide")
+
+[node name="RepairOrder" type="Area2D" parent="."]
+position = Vector2(1035, 535)
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("5_interactable")
+display_name = "检查后院维修单"
+conversation_id = "repair_first"
+repeat_conversation_id = "repair_repeat"
+evidence_id = "E10"
+evidence_title = "案发次日追加的封井单"
+evidence_description = "顾海川在案发夜临时追加封闭后院旧雨水井，工程于次日清晨完成。"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="RepairOrder"]
+shape = SubResource("RectangleShape2D_standard")
+
+[node name="Cistern" type="Area2D" parent="."]
+position = Vector2(1125, 535)
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("5_interactable")
+display_name = "检查封死的雨水井"
+conversation_id = "cistern_first"
+repeat_conversation_id = "cistern_repeat"
+evidence_id = "E11"
+evidence_title = "两个年代的井口水泥"
+evidence_description = "较新的水泥只覆盖检修口，配比与 1996 年封井维修记录一致。"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Cistern"]
+shape = SubResource("RectangleShape2D_wide")
+
+[node name="ZhaoCheng" type="Area2D" parent="."]
+position = Vector2(1205, 535)
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("5_interactable")
+display_name = "向赵成出示证据"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ZhaoCheng"]
+position = Vector2(0, -65)
+shape = SubResource("RectangleShape2D_person")
+
+[node name="CharacterSprite" type="Sprite2D" parent="ZhaoCheng"]
+texture_filter = 1
+position = Vector2(0, -65)
+scale = Vector2(0.205, 0.205)
+texture = ExtResource("8_zhao")
+
+[node name="FinalDoor" type="Area2D" parent="."]
+position = Vector2(1265, 535)
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("5_interactable")
+display_name = "返回大堂"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="FinalDoor"]
+shape = SubResource("RectangleShape2D_door")
+
+[node name="HUD" parent="." instance=ExtResource("4_hud")]

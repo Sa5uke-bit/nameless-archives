@@ -1,0 +1,175 @@
+[gd_scene load_steps=14 format=3]
+
+[ext_resource type="Script" path="res://scripts/locations/room_307.gd" id="1_room"]
+[ext_resource type="Script" path="res://scripts/locations/room_307_art.gd" id="2_art"]
+[ext_resource type="PackedScene" path="res://scenes/characters/player.tscn" id="3_player"]
+[ext_resource type="PackedScene" path="res://scenes/ui/hud.tscn" id="4_hud"]
+[ext_resource type="Script" path="res://scripts/interaction/interactable.gd" id="5_interactable"]
+[ext_resource type="Texture2D" path="res://assets/art/backgrounds/room_307_v1.png" id="6_background"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_floor"]
+size = Vector2(1280, 100)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_wall"]
+size = Vector2(40, 720)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_wide"]
+size = Vector2(150, 190)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_tall"]
+size = Vector2(115, 300)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_door"]
+size = Vector2(130, 330)
+
+[node name="Room307" type="Node2D"]
+script = ExtResource("1_room")
+
+[node name="Background" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(640, 360)
+scale = Vector2(0.76555, 0.76514)
+texture = ExtResource("6_background")
+
+[node name="RoomArt" type="Node2D" parent="."]
+visible = false
+script = ExtResource("2_art")
+
+[node name="RoomTitle" type="Label" parent="."]
+visible = false
+offset_left = 540.0
+offset_top = 120.0
+offset_right = 740.0
+offset_bottom = 165.0
+theme_override_colors/font_color = Color(0.66, 0.64, 0.57, 1)
+theme_override_font_sizes/font_size = 25
+text = "三楼 · 307"
+horizontal_alignment = 1
+
+[node name="Floor" type="StaticBody2D" parent="."]
+position = Vector2(640, 670)
+collision_layer = 1
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Floor"]
+shape = SubResource("RectangleShape2D_floor")
+
+[node name="LeftWall" type="StaticBody2D" parent="."]
+position = Vector2(-20, 360)
+collision_layer = 1
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="LeftWall"]
+shape = SubResource("RectangleShape2D_wall")
+
+[node name="RightWall" type="StaticBody2D" parent="."]
+position = Vector2(1300, 360)
+collision_layer = 1
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="RightWall"]
+shape = SubResource("RectangleShape2D_wall")
+
+[node name="Player" parent="." instance=ExtResource("3_player")]
+position = Vector2(190, 620)
+
+[node name="BackDoor" type="Area2D" parent="."]
+position = Vector2(92, 535)
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("5_interactable")
+display_name = "返回大堂"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="BackDoor"]
+shape = SubResource("RectangleShape2D_door")
+
+[node name="DoorLock" type="Area2D" parent="."]
+position = Vector2(170, 535)
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("5_interactable")
+display_name = "检查自动落锁的房门"
+conversation_id = "lock_first"
+repeat_conversation_id = "lock_repeat"
+evidence_id = "E05B"
+evidence_title = "会自行扣住的旧门锁"
+evidence_description = "潮湿门框、倾斜地板和弹簧锁舌让门能自行关闭；旧案的‘从内反锁’并不准确。"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="DoorLock"]
+shape = SubResource("RectangleShape2D_tall")
+
+[node name="Luggage" type="Area2D" parent="."]
+position = Vector2(335, 535)
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("5_interactable")
+display_name = "检查混杂行李"
+conversation_id = "luggage_first"
+repeat_conversation_id = "luggage_repeat"
+evidence_id = "E02"
+evidence_title = "属于不同体型的行李"
+evidence_description = "衣物、鞋码和磨损来自至少三种体型，不可能长期属于同一名住客。"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Luggage"]
+shape = SubResource("RectangleShape2D_wide")
+
+[node name="PhotoStrip" type="Area2D" parent="."]
+position = Vector2(835, 535)
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("5_interactable")
+display_name = "检查三张旧照片"
+conversation_id = "photos_first"
+repeat_conversation_id = "photos_repeat"
+evidence_id = "T01"
+evidence_title = "同一外套里的不同面孔"
+evidence_description = "三张照片中的人穿着同一件浅色外套，但身高、手腕和发型明显不同。"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="PhotoStrip"]
+shape = SubResource("RectangleShape2D_tall")
+
+[node name="Vent" type="Area2D" parent="."]
+position = Vector2(995, 535)
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("5_interactable")
+display_name = "检查墙内传声管"
+conversation_id = "vent_first"
+repeat_conversation_id = "vent_repeat"
+evidence_id = "E05A"
+evidence_title = "连接洗衣房的传声管"
+evidence_description = "废弃管道会把楼下员工区域的声音导向 307，让争吵听起来像来自房内。"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Vent"]
+shape = SubResource("RectangleShape2D_tall")
+
+[node name="Window" type="Area2D" parent="."]
+position = Vector2(1145, 535)
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("5_interactable")
+display_name = "查看窗外人影"
+conversation_id = "window_first"
+repeat_conversation_id = "window_repeat"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Window"]
+shape = SubResource("RectangleShape2D_tall")
+
+[node name="DeductionPoint" type="Area2D" parent="."]
+position = Vector2(635, 535)
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("5_interactable")
+display_name = "整理周岚的身份"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="DeductionPoint"]
+shape = SubResource("RectangleShape2D_wide")
+
+[node name="StaffDoor" type="Area2D" parent="."]
+position = Vector2(1250, 535)
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("5_interactable")
+display_name = "前往员工通道"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaffDoor"]
+shape = SubResource("RectangleShape2D_door")
+
+[node name="HUD" parent="." instance=ExtResource("4_hud")]

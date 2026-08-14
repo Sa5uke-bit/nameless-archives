@@ -1,0 +1,670 @@
+[gd_scene load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/ui/hud.gd" id="1_hud"]
+
+[node name="HUD" type="CanvasLayer"]
+script = ExtResource("1_hud")
+
+[node name="ObjectivePanel" type="PanelContainer" parent="."]
+offset_left = 24.0
+offset_top = 22.0
+offset_right = 720.0
+offset_bottom = 66.0
+
+[node name="Margin" type="MarginContainer" parent="ObjectivePanel"]
+layout_mode = 2
+theme_override_constants/margin_left = 16
+theme_override_constants/margin_top = 9
+theme_override_constants/margin_right = 16
+theme_override_constants/margin_bottom = 9
+
+[node name="ObjectiveLabel" type="Label" parent="ObjectivePanel/Margin"]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_colors/font_color = Color(0.87, 0.83, 0.69, 1)
+theme_override_font_sizes/font_size = 16
+text = "当前目标"
+
+[node name="HelpLabel" type="Label" parent="."]
+offset_left = 24.0
+offset_top = 670.0
+offset_right = 760.0
+offset_bottom = 704.0
+theme_override_colors/font_color = Color(0.7, 0.75, 0.76, 1)
+theme_override_font_sizes/font_size = 15
+text = "鼠标单击移动 / 调查   ·   A / D 移动   ·   E 调查   ·   Tab 调查笔记"
+
+[node name="GuidePanel" type="PanelContainer" parent="."]
+unique_name_in_owner = true
+offset_left = 24.0
+offset_top = 86.0
+offset_right = 492.0
+offset_bottom = 218.0
+mouse_filter = 2
+
+[node name="Margin" type="MarginContainer" parent="GuidePanel"]
+layout_mode = 2
+theme_override_constants/margin_left = 18
+theme_override_constants/margin_top = 14
+theme_override_constants/margin_right = 18
+theme_override_constants/margin_bottom = 14
+
+[node name="GuideText" type="Label" parent="GuidePanel/Margin"]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_colors/font_color = Color(0.88, 0.87, 0.78, 1)
+theme_override_font_sizes/font_size = 16
+text = "单击地面移动\n指向人物或物件并单击调查\nTab 打开调查笔记"
+autowrap_mode = 2
+
+[node name="PromptLabel" type="Label" parent="."]
+unique_name_in_owner = true
+offset_left = 490.0
+offset_top = 570.0
+offset_right = 790.0
+offset_bottom = 610.0
+theme_override_colors/font_color = Color(0.96, 0.88, 0.61, 1)
+theme_override_font_sizes/font_size = 20
+text = "E / 单击  调查"
+horizontal_alignment = 1
+
+[node name="DialoguePanel" type="PanelContainer" parent="."]
+unique_name_in_owner = true
+offset_left = 120.0
+offset_top = 470.0
+offset_right = 1160.0
+offset_bottom = 675.0
+
+[node name="Margin" type="MarginContainer" parent="DialoguePanel"]
+layout_mode = 2
+theme_override_constants/margin_left = 28
+theme_override_constants/margin_top = 20
+theme_override_constants/margin_right = 28
+theme_override_constants/margin_bottom = 18
+
+[node name="VBox" type="VBoxContainer" parent="DialoguePanel/Margin"]
+layout_mode = 2
+theme_override_constants/separation = 10
+
+[node name="SpeakerLabel" type="Label" parent="DialoguePanel/Margin/VBox"]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_colors/font_color = Color(0.89, 0.77, 0.47, 1)
+theme_override_font_sizes/font_size = 20
+text = "侦探"
+
+[node name="DialogueText" type="RichTextLabel" parent="DialoguePanel/Margin/VBox"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(0, 92)
+layout_mode = 2
+theme_override_colors/default_color = Color(0.9, 0.91, 0.9, 1)
+theme_override_font_sizes/normal_font_size = 20
+bbcode_enabled = true
+text = "对白"
+fit_content = true
+scroll_active = false
+
+[node name="ContinueHint" type="Label" parent="DialoguePanel/Margin/VBox"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.55, 0.62, 0.65, 1)
+text = "E / 单击 继续"
+horizontal_alignment = 2
+
+[node name="NotebookPanel" type="PanelContainer" parent="."]
+unique_name_in_owner = true
+offset_left = 245.0
+offset_top = 95.0
+offset_right = 1035.0
+offset_bottom = 640.0
+
+[node name="Margin" type="MarginContainer" parent="NotebookPanel"]
+layout_mode = 2
+theme_override_constants/margin_left = 30
+theme_override_constants/margin_top = 24
+theme_override_constants/margin_right = 30
+theme_override_constants/margin_bottom = 22
+
+[node name="VBox" type="VBoxContainer" parent="NotebookPanel/Margin"]
+layout_mode = 2
+theme_override_constants/separation = 14
+
+[node name="Title" type="Label" parent="NotebookPanel/Margin/VBox"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.89, 0.79, 0.54, 1)
+theme_override_font_sizes/font_size = 28
+text = "调查笔记"
+
+[node name="Rule" type="HSeparator" parent="NotebookPanel/Margin/VBox"]
+layout_mode = 2
+
+[node name="EvidenceText" type="RichTextLabel" parent="NotebookPanel/Margin/VBox"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(0, 390)
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_colors/default_color = Color(0.84, 0.86, 0.84, 1)
+theme_override_font_sizes/normal_font_size = 18
+bbcode_enabled = true
+text = "[i]还没有记录任何线索。[/i]"
+scroll_active = true
+
+[node name="CloseHint" type="Label" parent="NotebookPanel/Margin/VBox"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.58, 0.64, 0.66, 1)
+text = "Tab / Esc 关闭"
+horizontal_alignment = 2
+
+[node name="EvidenceToast" type="PanelContainer" parent="."]
+unique_name_in_owner = true
+offset_left = 880.0
+offset_top = 24.0
+offset_right = 1255.0
+offset_bottom = 76.0
+
+[node name="Margin" type="MarginContainer" parent="EvidenceToast"]
+layout_mode = 2
+theme_override_constants/margin_left = 16
+theme_override_constants/margin_top = 10
+theme_override_constants/margin_right = 16
+theme_override_constants/margin_bottom = 10
+
+[node name="EvidenceToastLabel" type="Label" parent="EvidenceToast/Margin"]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_colors/font_color = Color(0.91, 0.82, 0.57, 1)
+text = "新线索"
+horizontal_alignment = 1
+
+[node name="ToastTimer" type="Timer" parent="."]
+unique_name_in_owner = true
+wait_time = 2.5
+one_shot = true
+
+[node name="ChoicePanel" type="PanelContainer" parent="."]
+unique_name_in_owner = true
+offset_left = 300.0
+offset_top = 190.0
+offset_right = 980.0
+offset_bottom = 610.0
+
+[node name="Margin" type="MarginContainer" parent="ChoicePanel"]
+layout_mode = 2
+theme_override_constants/margin_left = 28
+theme_override_constants/margin_top = 25
+theme_override_constants/margin_right = 28
+theme_override_constants/margin_bottom = 25
+
+[node name="VBox" type="VBoxContainer" parent="ChoicePanel/Margin"]
+layout_mode = 2
+theme_override_constants/separation = 16
+
+[node name="ChoicePrompt" type="Label" parent="ChoicePanel/Margin/VBox"]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_colors/font_color = Color(0.9, 0.82, 0.58, 1)
+theme_override_font_sizes/font_size = 23
+text = "选择"
+horizontal_alignment = 1
+autowrap_mode = 2
+
+[node name="Rule" type="HSeparator" parent="ChoicePanel/Margin/VBox"]
+layout_mode = 2
+
+[node name="ChoiceButtons" type="VBoxContainer" parent="ChoicePanel/Margin/VBox"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_constants/separation = 10
+
+[node name="DeductionPanel" type="PanelContainer" parent="."]
+unique_name_in_owner = true
+offset_left = 170.0
+offset_top = 75.0
+offset_right = 1110.0
+offset_bottom = 650.0
+
+[node name="Margin" type="MarginContainer" parent="DeductionPanel"]
+layout_mode = 2
+theme_override_constants/margin_left = 30
+theme_override_constants/margin_top = 24
+theme_override_constants/margin_right = 30
+theme_override_constants/margin_bottom = 22
+
+[node name="VBox" type="VBoxContainer" parent="DeductionPanel/Margin"]
+layout_mode = 2
+theme_override_constants/separation = 10
+
+[node name="DeductionTitle" type="Label" parent="DeductionPanel/Margin/VBox"]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_colors/font_color = Color(0.9, 0.8, 0.53, 1)
+theme_override_font_sizes/font_size = 27
+text = "形成假设"
+
+[node name="DeductionPrompt" type="Label" parent="DeductionPanel/Margin/VBox"]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_colors/font_color = Color(0.84, 0.86, 0.85, 1)
+theme_override_font_sizes/font_size = 18
+text = "选择能够证明结论的线索。"
+autowrap_mode = 2
+
+[node name="Rule" type="HSeparator" parent="DeductionPanel/Margin/VBox"]
+layout_mode = 2
+
+[node name="Scroll" type="ScrollContainer" parent="DeductionPanel/Margin/VBox"]
+custom_minimum_size = Vector2(0, 330)
+layout_mode = 2
+size_flags_vertical = 3
+horizontal_scroll_mode = 0
+
+[node name="DeductionClues" type="VBoxContainer" parent="DeductionPanel/Margin/VBox/Scroll"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_constants/separation = 7
+
+[node name="DeductionFeedback" type="Label" parent="DeductionPanel/Margin/VBox"]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_colors/font_color = Color(0.66, 0.72, 0.73, 1)
+text = "选择与假设直接相关的线索，然后提交。"
+autowrap_mode = 2
+
+[node name="Actions" type="HBoxContainer" parent="DeductionPanel/Margin/VBox"]
+layout_mode = 2
+theme_override_constants/separation = 12
+alignment = 2
+
+[node name="CloseButton" type="Button" parent="DeductionPanel/Margin/VBox/Actions"]
+custom_minimum_size = Vector2(150, 45)
+layout_mode = 2
+text = "稍后再想"
+
+[node name="SubmitButton" type="Button" parent="DeductionPanel/Margin/VBox/Actions"]
+custom_minimum_size = Vector2(180, 45)
+layout_mode = 2
+text = "形成假设"
+
+[connection signal="pressed" from="DeductionPanel/Margin/VBox/Actions/CloseButton" to="." method="_on_deduction_close_pressed"]
+[connection signal="pressed" from="DeductionPanel/Margin/VBox/Actions/SubmitButton" to="." method="_on_deduction_submit_pressed"]
+
+[node name="PauseBackdrop" type="ColorRect" parent="."]
+unique_name_in_owner = true
+offset_right = 1280.0
+offset_bottom = 720.0
+mouse_filter = 0
+color = Color(0.008, 0.012, 0.018, 0.72)
+
+[node name="PausePanel" type="PanelContainer" parent="."]
+unique_name_in_owner = true
+offset_left = 150.0
+offset_top = 38.0
+offset_right = 1130.0
+offset_bottom = 682.0
+
+[node name="Margin" type="MarginContainer" parent="PausePanel"]
+layout_mode = 2
+theme_override_constants/margin_left = 30
+theme_override_constants/margin_top = 22
+theme_override_constants/margin_right = 30
+theme_override_constants/margin_bottom = 20
+
+[node name="VBox" type="VBoxContainer" parent="PausePanel/Margin"]
+layout_mode = 2
+theme_override_constants/separation = 10
+
+[node name="Title" type="Label" parent="PausePanel/Margin/VBox"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.9, 0.81, 0.57, 1)
+theme_override_font_sizes/font_size = 28
+text = "暂停与设置"
+horizontal_alignment = 1
+
+[node name="Rule" type="HSeparator" parent="PausePanel/Margin/VBox"]
+layout_mode = 2
+
+[node name="SettingsTabs" type="TabContainer" parent="PausePanel/Margin/VBox"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(0, 450)
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_font_sizes/font_size = 17
+
+[node name="音频" type="MarginContainer" parent="PausePanel/Margin/VBox/SettingsTabs"]
+layout_mode = 2
+theme_override_constants/margin_left = 24
+theme_override_constants/margin_top = 22
+theme_override_constants/margin_right = 24
+theme_override_constants/margin_bottom = 18
+
+[node name="VBox" type="VBoxContainer" parent="PausePanel/Margin/VBox/SettingsTabs/音频"]
+layout_mode = 2
+theme_override_constants/separation = 16
+
+[node name="Description" type="Label" parent="PausePanel/Margin/VBox/SettingsTabs/音频/VBox"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.62, 0.68, 0.69, 1)
+text = "分别调整整体、雨夜环境声和调查反馈音效。"
+
+[node name="MasterRow" type="HBoxContainer" parent="PausePanel/Margin/VBox/SettingsTabs/音频/VBox"]
+custom_minimum_size = Vector2(0, 54)
+layout_mode = 2
+theme_override_constants/separation = 16
+
+[node name="Label" type="Label" parent="PausePanel/Margin/VBox/SettingsTabs/音频/VBox/MasterRow"]
+custom_minimum_size = Vector2(170, 0)
+layout_mode = 2
+theme_override_font_sizes/font_size = 18
+text = "主音量"
+vertical_alignment = 1
+
+[node name="MasterVolumeSlider" type="HSlider" parent="PausePanel/Margin/VBox/SettingsTabs/音频/VBox/MasterRow"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+max_value = 1.0
+step = 0.05
+value = 0.8
+
+[node name="MasterVolumeValue" type="Label" parent="PausePanel/Margin/VBox/SettingsTabs/音频/VBox/MasterRow"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(58, 0)
+layout_mode = 2
+text = "80%"
+horizontal_alignment = 2
+vertical_alignment = 1
+
+[node name="AmbienceRow" type="HBoxContainer" parent="PausePanel/Margin/VBox/SettingsTabs/音频/VBox"]
+custom_minimum_size = Vector2(0, 54)
+layout_mode = 2
+theme_override_constants/separation = 16
+
+[node name="Label" type="Label" parent="PausePanel/Margin/VBox/SettingsTabs/音频/VBox/AmbienceRow"]
+custom_minimum_size = Vector2(170, 0)
+layout_mode = 2
+theme_override_font_sizes/font_size = 18
+text = "环境声"
+vertical_alignment = 1
+
+[node name="AmbienceVolumeSlider" type="HSlider" parent="PausePanel/Margin/VBox/SettingsTabs/音频/VBox/AmbienceRow"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+max_value = 1.0
+step = 0.05
+value = 0.8
+
+[node name="AmbienceVolumeValue" type="Label" parent="PausePanel/Margin/VBox/SettingsTabs/音频/VBox/AmbienceRow"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(58, 0)
+layout_mode = 2
+text = "80%"
+horizontal_alignment = 2
+vertical_alignment = 1
+
+[node name="EffectsRow" type="HBoxContainer" parent="PausePanel/Margin/VBox/SettingsTabs/音频/VBox"]
+custom_minimum_size = Vector2(0, 54)
+layout_mode = 2
+theme_override_constants/separation = 16
+
+[node name="Label" type="Label" parent="PausePanel/Margin/VBox/SettingsTabs/音频/VBox/EffectsRow"]
+custom_minimum_size = Vector2(170, 0)
+layout_mode = 2
+theme_override_font_sizes/font_size = 18
+text = "界面与互动音效"
+vertical_alignment = 1
+
+[node name="EffectsVolumeSlider" type="HSlider" parent="PausePanel/Margin/VBox/SettingsTabs/音频/VBox/EffectsRow"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+max_value = 1.0
+step = 0.05
+value = 0.85
+
+[node name="EffectsVolumeValue" type="Label" parent="PausePanel/Margin/VBox/SettingsTabs/音频/VBox/EffectsRow"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(58, 0)
+layout_mode = 2
+text = "85%"
+horizontal_alignment = 2
+vertical_alignment = 1
+
+[node name="AudioHint" type="Label" parent="PausePanel/Margin/VBox/SettingsTabs/音频/VBox"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.55, 0.62, 0.64, 1)
+text = "滑到 0% 会静音对应声部。"
+
+[node name="画面" type="MarginContainer" parent="PausePanel/Margin/VBox/SettingsTabs"]
+layout_mode = 2
+theme_override_constants/margin_left = 24
+theme_override_constants/margin_top = 22
+theme_override_constants/margin_right = 24
+theme_override_constants/margin_bottom = 18
+
+[node name="VBox" type="VBoxContainer" parent="PausePanel/Margin/VBox/SettingsTabs/画面"]
+layout_mode = 2
+theme_override_constants/separation = 17
+
+[node name="DisplayModeRow" type="HBoxContainer" parent="PausePanel/Margin/VBox/SettingsTabs/画面/VBox"]
+custom_minimum_size = Vector2(0, 48)
+layout_mode = 2
+theme_override_constants/separation = 18
+
+[node name="Label" type="Label" parent="PausePanel/Margin/VBox/SettingsTabs/画面/VBox/DisplayModeRow"]
+custom_minimum_size = Vector2(230, 0)
+layout_mode = 2
+theme_override_font_sizes/font_size = 18
+text = "显示模式"
+vertical_alignment = 1
+
+[node name="DisplayModeOption" type="OptionButton" parent="PausePanel/Margin/VBox/SettingsTabs/画面/VBox/DisplayModeRow"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(360, 44)
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="ResolutionRow" type="HBoxContainer" parent="PausePanel/Margin/VBox/SettingsTabs/画面/VBox"]
+custom_minimum_size = Vector2(0, 48)
+layout_mode = 2
+theme_override_constants/separation = 18
+
+[node name="Label" type="Label" parent="PausePanel/Margin/VBox/SettingsTabs/画面/VBox/ResolutionRow"]
+custom_minimum_size = Vector2(230, 0)
+layout_mode = 2
+theme_override_font_sizes/font_size = 18
+text = "窗口分辨率"
+vertical_alignment = 1
+
+[node name="ResolutionOption" type="OptionButton" parent="PausePanel/Margin/VBox/SettingsTabs/画面/VBox/ResolutionRow"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(360, 44)
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="VsyncCheck" type="CheckButton" parent="PausePanel/Margin/VBox/SettingsTabs/画面/VBox"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(0, 46)
+layout_mode = 2
+theme_override_font_sizes/font_size = 18
+text = "垂直同步（减少画面撕裂）"
+
+[node name="FpsRow" type="HBoxContainer" parent="PausePanel/Margin/VBox/SettingsTabs/画面/VBox"]
+custom_minimum_size = Vector2(0, 48)
+layout_mode = 2
+theme_override_constants/separation = 18
+
+[node name="Label" type="Label" parent="PausePanel/Margin/VBox/SettingsTabs/画面/VBox/FpsRow"]
+custom_minimum_size = Vector2(230, 0)
+layout_mode = 2
+theme_override_font_sizes/font_size = 18
+text = "帧率上限"
+vertical_alignment = 1
+
+[node name="FpsLimitOption" type="OptionButton" parent="PausePanel/Margin/VBox/SettingsTabs/画面/VBox/FpsRow"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(360, 44)
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="VideoHint" type="Label" parent="PausePanel/Margin/VBox/SettingsTabs/画面/VBox"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.55, 0.62, 0.64, 1)
+text = "分辨率仅在窗口模式下生效；全屏模式使用当前显示器分辨率。"
+autowrap_mode = 2
+
+[node name="键位" type="MarginContainer" parent="PausePanel/Margin/VBox/SettingsTabs"]
+layout_mode = 2
+theme_override_constants/margin_left = 24
+theme_override_constants/margin_top = 18
+theme_override_constants/margin_right = 24
+theme_override_constants/margin_bottom = 14
+
+[node name="VBox" type="VBoxContainer" parent="PausePanel/Margin/VBox/SettingsTabs/键位"]
+layout_mode = 2
+theme_override_constants/separation = 8
+
+[node name="Description" type="Label" parent="PausePanel/Margin/VBox/SettingsTabs/键位/VBox"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.62, 0.68, 0.69, 1)
+text = "单击右侧按键，然后按下新的键；Esc 可取消等待。"
+
+[node name="MoveLeftRow" type="HBoxContainer" parent="PausePanel/Margin/VBox/SettingsTabs/键位/VBox"]
+custom_minimum_size = Vector2(0, 45)
+layout_mode = 2
+
+[node name="Label" type="Label" parent="PausePanel/Margin/VBox/SettingsTabs/键位/VBox/MoveLeftRow"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_font_sizes/font_size = 17
+text = "向左移动"
+vertical_alignment = 1
+
+[node name="MoveLeftBind" type="Button" parent="PausePanel/Margin/VBox/SettingsTabs/键位/VBox/MoveLeftRow"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(260, 42)
+layout_mode = 2
+text = "A / Left"
+
+[node name="MoveRightRow" type="HBoxContainer" parent="PausePanel/Margin/VBox/SettingsTabs/键位/VBox"]
+custom_minimum_size = Vector2(0, 45)
+layout_mode = 2
+
+[node name="Label" type="Label" parent="PausePanel/Margin/VBox/SettingsTabs/键位/VBox/MoveRightRow"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_font_sizes/font_size = 17
+text = "向右移动"
+vertical_alignment = 1
+
+[node name="MoveRightBind" type="Button" parent="PausePanel/Margin/VBox/SettingsTabs/键位/VBox/MoveRightRow"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(260, 42)
+layout_mode = 2
+text = "D / Right"
+
+[node name="InteractRow" type="HBoxContainer" parent="PausePanel/Margin/VBox/SettingsTabs/键位/VBox"]
+custom_minimum_size = Vector2(0, 45)
+layout_mode = 2
+
+[node name="Label" type="Label" parent="PausePanel/Margin/VBox/SettingsTabs/键位/VBox/InteractRow"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_font_sizes/font_size = 17
+text = "调查 / 推进对白"
+vertical_alignment = 1
+
+[node name="InteractBind" type="Button" parent="PausePanel/Margin/VBox/SettingsTabs/键位/VBox/InteractRow"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(260, 42)
+layout_mode = 2
+text = "E / Space"
+
+[node name="NotebookRow" type="HBoxContainer" parent="PausePanel/Margin/VBox/SettingsTabs/键位/VBox"]
+custom_minimum_size = Vector2(0, 45)
+layout_mode = 2
+
+[node name="Label" type="Label" parent="PausePanel/Margin/VBox/SettingsTabs/键位/VBox/NotebookRow"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_font_sizes/font_size = 17
+text = "调查笔记"
+vertical_alignment = 1
+
+[node name="NotebookBind" type="Button" parent="PausePanel/Margin/VBox/SettingsTabs/键位/VBox/NotebookRow"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(260, 42)
+layout_mode = 2
+text = "Tab"
+
+[node name="CancelRow" type="HBoxContainer" parent="PausePanel/Margin/VBox/SettingsTabs/键位/VBox"]
+custom_minimum_size = Vector2(0, 45)
+layout_mode = 2
+
+[node name="Label" type="Label" parent="PausePanel/Margin/VBox/SettingsTabs/键位/VBox/CancelRow"]
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_font_sizes/font_size = 17
+text = "返回 / 暂停"
+vertical_alignment = 1
+
+[node name="CancelBind" type="Button" parent="PausePanel/Margin/VBox/SettingsTabs/键位/VBox/CancelRow"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(260, 42)
+layout_mode = 2
+text = "Escape"
+
+[node name="BindingFooter" type="HBoxContainer" parent="PausePanel/Margin/VBox/SettingsTabs/键位/VBox"]
+custom_minimum_size = Vector2(0, 42)
+layout_mode = 2
+theme_override_constants/separation = 12
+
+[node name="BindingStatus" type="Label" parent="PausePanel/Margin/VBox/SettingsTabs/键位/VBox/BindingFooter"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_horizontal = 3
+theme_override_colors/font_color = Color(0.69, 0.72, 0.62, 1)
+text = "键位更改会立即保存。"
+vertical_alignment = 1
+
+[node name="ResetBindingsButton" type="Button" parent="PausePanel/Margin/VBox/SettingsTabs/键位/VBox/BindingFooter"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(180, 40)
+layout_mode = 2
+text = "恢复默认键位"
+
+[node name="BottomActions" type="HBoxContainer" parent="PausePanel/Margin/VBox"]
+layout_mode = 2
+theme_override_constants/separation = 14
+
+[node name="ResumeButton" type="Button" parent="PausePanel/Margin/VBox/BottomActions"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(0, 48)
+layout_mode = 2
+size_flags_horizontal = 3
+text = "继续调查"
+
+[node name="ReturnTitleButton" type="Button" parent="PausePanel/Margin/VBox/BottomActions"]
+custom_minimum_size = Vector2(0, 48)
+layout_mode = 2
+size_flags_horizontal = 3
+text = "保存并返回标题"
+
+[node name="SaveHint" type="Label" parent="PausePanel/Margin/VBox"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.55, 0.62, 0.64, 1)
+text = "设置立即生效并自动保存 · 调查进度会在获得线索与推进剧情时自动保存"
+horizontal_alignment = 1
+autowrap_mode = 2
+
+[connection signal="value_changed" from="PausePanel/Margin/VBox/SettingsTabs/音频/VBox/MasterRow/MasterVolumeSlider" to="." method="_on_master_volume_changed"]
+[connection signal="value_changed" from="PausePanel/Margin/VBox/SettingsTabs/音频/VBox/AmbienceRow/AmbienceVolumeSlider" to="." method="_on_ambience_volume_changed"]
+[connection signal="value_changed" from="PausePanel/Margin/VBox/SettingsTabs/音频/VBox/EffectsRow/EffectsVolumeSlider" to="." method="_on_effects_volume_changed"]
+[connection signal="item_selected" from="PausePanel/Margin/VBox/SettingsTabs/画面/VBox/DisplayModeRow/DisplayModeOption" to="." method="_on_display_mode_selected"]
+[connection signal="item_selected" from="PausePanel/Margin/VBox/SettingsTabs/画面/VBox/ResolutionRow/ResolutionOption" to="." method="_on_resolution_selected"]
+[connection signal="toggled" from="PausePanel/Margin/VBox/SettingsTabs/画面/VBox/VsyncCheck" to="." method="_on_vsync_toggled"]
+[connection signal="item_selected" from="PausePanel/Margin/VBox/SettingsTabs/画面/VBox/FpsRow/FpsLimitOption" to="." method="_on_fps_limit_selected"]
+[connection signal="pressed" from="PausePanel/Margin/VBox/SettingsTabs/键位/VBox/BindingFooter/ResetBindingsButton" to="." method="_on_reset_bindings_pressed"]
+[connection signal="pressed" from="PausePanel/Margin/VBox/BottomActions/ResumeButton" to="." method="_on_resume_button_pressed"]
+[connection signal="pressed" from="PausePanel/Margin/VBox/BottomActions/ReturnTitleButton" to="." method="_on_return_title_button_pressed"]

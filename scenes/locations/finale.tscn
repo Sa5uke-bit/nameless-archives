@@ -1,0 +1,53 @@
+[gd_scene load_steps=8 format=3]
+
+[ext_resource type="Script" path="res://scripts/locations/finale.gd" id="1_finale"]
+[ext_resource type="Script" path="res://scripts/locations/finale_art.gd" id="2_art"]
+[ext_resource type="PackedScene" path="res://scenes/ui/hud.tscn" id="3_hud"]
+[ext_resource type="Texture2D" path="res://assets/art/backgrounds/lobby_v1.png" id="4_background"]
+[ext_resource type="Texture2D" path="res://assets/art/characters/detective_v1.png" id="5_detective"]
+[ext_resource type="Texture2D" path="res://assets/art/characters/gu_ning_v1.png" id="6_gu"]
+[ext_resource type="Texture2D" path="res://assets/art/characters/gu_haichuan_v1.png" id="7_gu_hai"]
+
+[node name="Finale" type="Node2D"]
+script = ExtResource("1_finale")
+
+[node name="Background" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(640, 360)
+scale = Vector2(0.76555, 0.76514)
+texture = ExtResource("4_background")
+
+[node name="FinaleArt" type="Node2D" parent="."]
+visible = false
+script = ExtResource("2_art")
+
+[node name="LocationTitle" type="Label" parent="."]
+visible = false
+offset_left = 500.0
+offset_top = 135.0
+offset_right = 780.0
+offset_bottom = 180.0
+theme_override_colors/font_color = Color(0.72, 0.68, 0.56, 1)
+theme_override_font_sizes/font_size = 27
+text = "归 潮 旅 馆"
+horizontal_alignment = 1
+
+[node name="Detective" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(300, 470)
+scale = Vector2(0.205, 0.205)
+texture = ExtResource("5_detective")
+
+[node name="GuNing" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(610, 470)
+scale = Vector2(0.205, 0.205)
+texture = ExtResource("6_gu")
+
+[node name="GuHaichuan" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(980, 470)
+scale = Vector2(-0.205, 0.205)
+texture = ExtResource("7_gu_hai")
+
+[node name="HUD" parent="." instance=ExtResource("3_hud")]
