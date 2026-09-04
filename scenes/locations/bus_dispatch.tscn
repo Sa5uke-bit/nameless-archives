@@ -1,0 +1,222 @@
+[gd_scene load_steps=14 format=3]
+[ext_resource type="Script" path="res://scripts/locations/bus_dispatch.gd" id="1"]
+[ext_resource type="PackedScene" path="res://scenes/characters/player.tscn" id="2"]
+[ext_resource type="PackedScene" path="res://scenes/ui/hud.tscn" id="3"]
+[ext_resource type="PackedScene" path="res://scenes/ui/timeline_calibration.tscn" id="4"]
+[ext_resource type="Script" path="res://scripts/interaction/interactable.gd" id="5"]
+[ext_resource type="Texture2D" path="res://assets/art/backgrounds/bus_dispatch_v1.png" id="6"]
+[ext_resource type="Texture2D" path="res://assets/art/characters/deng_shouyi_v1.png" id="7"]
+[ext_resource type="Texture2D" path="res://assets/art/characters/huang_weiguo_v1.png" id="8"]
+[sub_resource type="RectangleShape2D" id="Floor"]
+size = Vector2(1280, 100)
+[sub_resource type="RectangleShape2D" id="Wall"]
+size = Vector2(40, 720)
+[sub_resource type="RectangleShape2D" id="Small"]
+size = Vector2(88, 220)
+[sub_resource type="RectangleShape2D" id="Person"]
+size = Vector2(92, 290)
+[sub_resource type="RectangleShape2D" id="Door"]
+size = Vector2(66, 320)
+[node name="BusDispatch" type="Node2D"]
+script = ExtResource("1")
+[node name="Background" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(640, 360)
+scale = Vector2(0.76555, 0.76514)
+texture = ExtResource("6")
+[node name="LocationTitle" type="Label" parent="."]
+offset_left = 420.0
+offset_top = 104.0
+offset_right = 860.0
+offset_bottom = 144.0
+theme_override_colors/font_color = Color(0.78, 0.7, 0.56, 1)
+theme_override_font_sizes/font_size = 25
+text = "岚岭旧客运站 · 调度室"
+horizontal_alignment = 1
+[node name="Floor" type="StaticBody2D" parent="."]
+position = Vector2(640, 670)
+collision_layer = 1
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Floor"]
+shape = SubResource("Floor")
+[node name="LeftWall" type="StaticBody2D" parent="."]
+position = Vector2(-20, 360)
+collision_layer = 1
+[node name="CollisionShape2D" type="CollisionShape2D" parent="LeftWall"]
+shape = SubResource("Wall")
+[node name="RightWall" type="StaticBody2D" parent="."]
+position = Vector2(1300, 360)
+collision_layer = 1
+[node name="CollisionShape2D" type="CollisionShape2D" parent="RightWall"]
+shape = SubResource("Wall")
+[node name="Player" parent="." instance=ExtResource("2")]
+position = Vector2(95, 620)
+[node name="BackDoor" type="Area2D" parent="."]
+position = Vector2(38, 515)
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("5")
+display_name = "返回售票室"
+[node name="CollisionShape2D" type="CollisionShape2D" parent="BackDoor"]
+shape = SubResource("Door")
+[node name="RouteSlip" type="Area2D" parent="."]
+position = Vector2(120, 515)
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("5")
+display_name = "检查车载打孔路单"
+conversation_id = "route_first"
+repeat_conversation_id = "route_repeat"
+evidence_id = "E311"
+evidence_title = "车载打孔路单"
+evidence_description = "不依赖站内电钟的机械打孔记录维护车于 03:52 离站。"
+[node name="CollisionShape2D" type="CollisionShape2D" parent="RouteSlip"]
+shape = SubResource("Small")
+[node name="QuestionNotes" type="Area2D" parent="."]
+position = Vector2(220, 515)
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("5")
+display_name = "阅读第一版询问速记"
+conversation_id = "questions_first"
+repeat_conversation_id = "questions_repeat"
+evidence_id = "E308"
+evidence_title = "黄维国的提问速记"
+evidence_description = "询问以‘你在四点十七分看见了什么’开头，先给出时间再要求回忆。"
+[node name="CollisionShape2D" type="CollisionShape2D" parent="QuestionNotes"]
+shape = SubResource("Small")
+[node name="StatementCopies" type="Area2D" parent="."]
+position = Vector2(320, 515)
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("5")
+display_name = "对照两版笔录"
+conversation_id = "statements_first"
+repeat_conversation_id = "statements_repeat"
+evidence_id = "E309"
+evidence_title = "第一版与誊清版对照"
+evidence_description = "‘大约四点后’与‘复电前后’在誊清版中被统一改为 4:17。"
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StatementCopies"]
+shape = SubResource("Small")
+[node name="WaitingList" type="Area2D" parent="."]
+position = Vector2(420, 515)
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("5")
+display_name = "核对证人等候顺序"
+conversation_id = "waiting_first"
+repeat_conversation_id = "waiting_repeat"
+evidence_id = "E310"
+evidence_title = "证人等候顺序表"
+evidence_description = "三人先在同一候车室看过主钟并交谈，08:10 后才分别制作正式笔录。"
+[node name="CollisionShape2D" type="CollisionShape2D" parent="WaitingList"]
+shape = SubResource("Small")
+[node name="TimelineDesk" type="Area2D" parent="."]
+position = Vector2(530, 515)
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("5")
+display_name = "打开时间校准台"
+[node name="CollisionShape2D" type="CollisionShape2D" parent="TimelineDesk"]
+shape = SubResource("Small")
+[node name="Raincoat" type="Area2D" parent="."]
+position = Vector2(640, 515)
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("5")
+display_name = "检查门卫雨衣与副钥匙"
+conversation_id = "raincoat_first"
+repeat_conversation_id = "raincoat_repeat"
+evidence_id = "E313"
+evidence_title = "雨衣纤维与副钥匙痕"
+evidence_description = "陈默用副钥匙进入并把雨衣留给余真；保险柜封条没有他的接触痕迹。"
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Raincoat"]
+shape = SubResource("Small")
+[node name="ClinicPage" type="Area2D" parent="."]
+position = Vector2(745, 515)
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("5")
+display_name = "阅读山路诊所接诊页"
+conversation_id = "clinic_first"
+repeat_conversation_id = "clinic_repeat"
+evidence_id = "E314"
+evidence_title = "山路诊所接诊页"
+evidence_description = "04:26 收治携邮袋、右脚受伤的年轻女性；登记名按本人要求留空。"
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ClinicPage"]
+shape = SubResource("Small")
+[node name="Mailbag" type="Area2D" parent="."]
+position = Vector2(850, 515)
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("5")
+display_name = "检查找回的邮袋"
+conversation_id = "mailbag_first"
+repeat_conversation_id = "mailbag_repeat"
+evidence_id = "E315"
+evidence_title = "邮袋夹层中的工资副本"
+evidence_description = "黄维国签名、站章与银行兑付号证明他代领三名临时工工资。"
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Mailbag"]
+shape = SubResource("Small")
+[node name="HuangPen" type="Area2D" parent="."]
+position = Vector2(950, 515)
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("5")
+display_name = "比对值班笔与改写笔迹"
+conversation_id = "pen_first"
+repeat_conversation_id = "pen_repeat"
+evidence_id = "E316"
+evidence_title = "证词改写笔迹"
+evidence_description = "三份誊清笔录中的 4:17 均由黄维国值班笔写入，压笔习惯一致。"
+[node name="CollisionShape2D" type="CollisionShape2D" parent="HuangPen"]
+shape = SubResource("Small")
+[node name="DengShouyi" type="Area2D" parent="."]
+position = Vector2(1040, 535)
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("5")
+display_name = "询问邓守义"
+conversation_id = "deng_first"
+repeat_conversation_id = "deng_repeat"
+[node name="CollisionShape2D" type="CollisionShape2D" parent="DengShouyi"]
+position = Vector2(0, -65)
+shape = SubResource("Person")
+[node name="CharacterSprite" type="Sprite2D" parent="DengShouyi"]
+texture_filter = 1
+position = Vector2(0, -65)
+scale = Vector2(0.195, 0.195)
+texture = ExtResource("7")
+[node name="HuangWeiguo" type="Area2D" parent="."]
+position = Vector2(1135, 535)
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("5")
+display_name = "询问黄维国"
+conversation_id = "huang_first"
+repeat_conversation_id = "huang_repeat"
+[node name="CollisionShape2D" type="CollisionShape2D" parent="HuangWeiguo"]
+position = Vector2(0, -65)
+shape = SubResource("Person")
+[node name="CharacterSprite" type="Sprite2D" parent="HuangWeiguo"]
+texture_filter = 1
+position = Vector2(0, -65)
+scale = Vector2(-0.195, 0.195)
+texture = ExtResource("8")
+[node name="DeductionBoard" type="Area2D" parent="."]
+position = Vector2(1210, 515)
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("5")
+display_name = "整理证词来源"
+[node name="CollisionShape2D" type="CollisionShape2D" parent="DeductionBoard"]
+shape = SubResource("Small")
+[node name="FinalDoor" type="Area2D" parent="."]
+position = Vector2(1260, 515)
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("5")
+display_name = "进入最终对质"
+[node name="CollisionShape2D" type="CollisionShape2D" parent="FinalDoor"]
+shape = SubResource("Door")
+[node name="HUD" parent="." instance=ExtResource("3")]
+[node name="TimelineCalibration" parent="." instance=ExtResource("4")]

@@ -10,6 +10,10 @@ const LOCATION_PATHS := {
 	"theater_wardrobe": "res://scenes/locations/theater_wardrobe.tscn",
 	"theater_backstage": "res://scenes/locations/theater_backstage.tscn",
 	"theater_finale": "res://scenes/locations/theater_finale.tscn",
+	"bus_concourse": "res://scenes/locations/bus_concourse.tscn",
+	"bus_ticket_office": "res://scenes/locations/bus_ticket_office.tscn",
+	"bus_dispatch": "res://scenes/locations/bus_dispatch.tscn",
+	"bus_finale": "res://scenes/locations/bus_finale.tscn",
 }
 
 var current_screen: Node
@@ -29,6 +33,7 @@ func _show_title_screen() -> void:
 	add_child(current_screen)
 	current_screen.start_requested.connect(_start_new_case)
 	current_screen.chapter_two_requested.connect(_start_chapter_two)
+	current_screen.chapter_three_requested.connect(_start_chapter_three)
 	current_screen.continue_requested.connect(_continue_case)
 	current_screen.quit_requested.connect(_quit_game)
 
@@ -47,6 +52,20 @@ func _start_chapter_two() -> void:
 		GameState.get_chapter_outcome("chapter_01", "name")
 	)
 	GameState.request_location("theater_stage")
+
+
+func _start_chapter_three() -> void:
+	GameState.reset_case()
+	GameState.set_flag("current_chapter", "chapter_03")
+	GameState.set_flag(
+		"chapter_02_ending",
+		GameState.get_chapter_outcome("chapter_02", "clear")
+	)
+	GameState.set_flag(
+		"chapter_01_ending",
+		GameState.get_chapter_outcome("chapter_01", "name")
+	)
+	GameState.request_location("bus_concourse")
 
 
 func _continue_case() -> void:

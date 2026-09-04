@@ -15,6 +15,10 @@ func _ready() -> void:
 		_show_clear_ending()
 	elif ending_id == "original":
 		_show_original_ending()
+	elif ending_id == "calibration":
+		_show_calibration_ending()
+	elif ending_id == "broadcast":
+		_show_broadcast_ending()
 	elif ending_id == "archive":
 		_show_archive_ending()
 	else:
@@ -64,6 +68,26 @@ func _show_original_ending() -> void:
 		"两盒磁带、替位经过、胸针记录与私人明信片一并公开。旧报道迅速被改写，方芸得到最彻底的舆论平反，梁绍康对剧团档案的操纵也受到更广泛追查。\n\n"
 		+ "公开材料同时指出程书瑜曾借用另一个名字离开。杨佩没有否认真相，只问侦探：证明已经足够以后，多写出的那一行究竟属于谁。\n\n"
 		+ "原声被找回了。与它一起回到公众面前的，还有一个本来不必出现的去向。"
+	)
+
+
+func _show_calibration_ending() -> void:
+	ending_label.text = "第三章结局"
+	ending_title.text = "校正"
+	ending_text.text = (
+		"机械路单、复电记录、底片批次与原始速记重新排成了一条不再服从站厅主钟的时间线。陈默进入过售票室，却没有偷走邮袋；余真带走的是黄维国冒领工资与截留信件的证据。\n\n"
+		+ "侦探提交了足以重启调查的材料，隐去诊所地址、匿名转交路径和其他寄信人的身份。四点十七分仍留在旧钟面上，却不再规定任何人的罪。\n\n"
+		+ "邮袋夹层里，两份侦探亲手写过的报告被人删去了姓名与去向。不同笔迹的信件使用着同一个记号：委托从来不是一个人的声音。"
+	)
+
+
+func _show_broadcast_ending() -> void:
+	ending_label.text = "第三章结局"
+	ending_title.text = "报时"
+	ending_text.text = (
+		"完整邮袋、诊所页和所有匿名信件被同时公开。陈默的旧指控迅速崩塌，黄维国截留信件、冒领工资和改写笔录的行为受到更广泛追查。\n\n"
+		+ "但公开记录也给出了余真受伤后的路径，并把数名寄信人重新暴露在旧关系里。纠正一个被强加的时间，不等于有权替所有人宣布他们如今在哪里。\n\n"
+		+ "邮袋夹层里，两份侦探报告的删节复印件与不同笔迹的信并排放着。共同记号没有说明谁在指挥，只证明此前每一封信都可能来自不同的人。"
 	)
 
 

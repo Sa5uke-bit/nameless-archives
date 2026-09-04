@@ -1,0 +1,124 @@
+[gd_scene load_steps=10 format=3]
+[ext_resource type="Script" path="res://scripts/locations/bus_ticket_office.gd" id="1"]
+[ext_resource type="PackedScene" path="res://scenes/characters/player.tscn" id="2"]
+[ext_resource type="PackedScene" path="res://scenes/ui/hud.tscn" id="3"]
+[ext_resource type="Script" path="res://scripts/interaction/interactable.gd" id="4"]
+[ext_resource type="Texture2D" path="res://assets/art/backgrounds/bus_ticket_office_v1.png" id="5"]
+[sub_resource type="RectangleShape2D" id="Floor"]
+size = Vector2(1280, 100)
+[sub_resource type="RectangleShape2D" id="Wall"]
+size = Vector2(40, 720)
+[sub_resource type="RectangleShape2D" id="Object"]
+size = Vector2(145, 230)
+[sub_resource type="RectangleShape2D" id="Door"]
+size = Vector2(88, 320)
+[node name="BusTicketOffice" type="Node2D"]
+script = ExtResource("1")
+[node name="Background" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(640, 360)
+scale = Vector2(0.76555, 0.76514)
+texture = ExtResource("5")
+[node name="LocationTitle" type="Label" parent="."]
+offset_left = 400.0
+offset_top = 104.0
+offset_right = 880.0
+offset_bottom = 144.0
+theme_override_colors/font_color = Color(0.78, 0.7, 0.56, 1)
+theme_override_font_sizes/font_size = 25
+text = "岚岭旧客运站 · 售票室与暗房"
+horizontal_alignment = 1
+[node name="Floor" type="StaticBody2D" parent="."]
+position = Vector2(640, 670)
+collision_layer = 1
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Floor"]
+shape = SubResource("Floor")
+[node name="LeftWall" type="StaticBody2D" parent="."]
+position = Vector2(-20, 360)
+collision_layer = 1
+[node name="CollisionShape2D" type="CollisionShape2D" parent="LeftWall"]
+shape = SubResource("Wall")
+[node name="RightWall" type="StaticBody2D" parent="."]
+position = Vector2(1300, 360)
+collision_layer = 1
+[node name="CollisionShape2D" type="CollisionShape2D" parent="RightWall"]
+shape = SubResource("Wall")
+[node name="Player" parent="." instance=ExtResource("2")]
+position = Vector2(125, 620)
+[node name="BackDoor" type="Area2D" parent="."]
+position = Vector2(55, 515)
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("4")
+display_name = "返回站厅"
+[node name="CollisionShape2D" type="CollisionShape2D" parent="BackDoor"]
+shape = SubResource("Door")
+[node name="NegativeStrip" type="Area2D" parent="."]
+position = Vector2(265, 515)
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("4")
+display_name = "检查巡检底片条"
+conversation_id = "negative_first"
+repeat_conversation_id = "negative_repeat"
+evidence_id = "E304"
+evidence_title = "巡检底片条"
+evidence_description = "保险箱照片是第 12 格；前后画面与 03:34 的巡检顺序连续。"
+[node name="CollisionShape2D" type="CollisionShape2D" parent="NegativeStrip"]
+shape = SubResource("Object")
+[node name="BatchSheet" type="Area2D" parent="."]
+position = Vector2(465, 515)
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("4")
+display_name = "核对暗房批次单"
+conversation_id = "batch_first"
+repeat_conversation_id = "batch_repeat"
+evidence_id = "E305"
+evidence_title = "暗房批次单"
+evidence_description = "停电后整卷无法处理，复电后的真实时间 05:05 才开始显影。"
+[node name="CollisionShape2D" type="CollisionShape2D" parent="BatchSheet"]
+shape = SubResource("Object")
+[node name="BackPrinter" type="Area2D" parent="."]
+position = Vector2(665, 515)
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("4")
+display_name = "检查照片背印机"
+conversation_id = "printer_first"
+repeat_conversation_id = "printer_repeat"
+evidence_id = "E306"
+evidence_title = "背印机接线说明"
+evidence_description = "背印时间来自暗房子钟，操作员在冲印时压印，不是相机曝光记录。"
+[node name="CollisionShape2D" type="CollisionShape2D" parent="BackPrinter"]
+shape = SubResource("Object")
+[node name="CarbonLedger" type="Area2D" parent="."]
+position = Vector2(850, 515)
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("4")
+display_name = "查看售票账复写压痕"
+conversation_id = "ledger_first"
+repeat_conversation_id = "ledger_repeat"
+evidence_id = "E312"
+evidence_title = "售票室复写压痕"
+evidence_description = "被撕账页的压痕记录黄维国代领三名临时工工资，并由余真逐项圈出。"
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CarbonLedger"]
+shape = SubResource("Object")
+[node name="DeductionBoard" type="Area2D" parent="."]
+position = Vector2(1030, 515)
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("4")
+display_name = "整理照片时间"
+[node name="CollisionShape2D" type="CollisionShape2D" parent="DeductionBoard"]
+shape = SubResource("Object")
+[node name="DispatchDoor" type="Area2D" parent="."]
+position = Vector2(1210, 515)
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("4")
+display_name = "进入调度室"
+[node name="CollisionShape2D" type="CollisionShape2D" parent="DispatchDoor"]
+shape = SubResource("Door")
+[node name="HUD" parent="." instance=ExtResource("3")]

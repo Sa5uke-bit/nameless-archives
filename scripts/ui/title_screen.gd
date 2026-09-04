@@ -2,11 +2,13 @@ extends Control
 
 signal start_requested
 signal chapter_two_requested
+signal chapter_three_requested
 signal continue_requested
 signal quit_requested
 
 @onready var start_button: Button = %StartButton
 @onready var chapter_two_button: Button = %Chapter2Button
+@onready var chapter_three_button: Button = %Chapter3Button
 @onready var continue_button: Button = %ContinueButton
 
 
@@ -20,6 +22,7 @@ func _ready() -> void:
 func _update_chapter_labels() -> void:
 	var chapter_one_outcome := GameState.get_chapter_outcome("chapter_01")
 	var chapter_two_outcome := GameState.get_chapter_outcome("chapter_02")
+	var chapter_three_outcome := GameState.get_chapter_outcome("chapter_03")
 	start_button.text = _chapter_label(
 		"第一章 · 不存在的住客",
 		chapter_one_outcome,
@@ -29,6 +32,11 @@ func _update_chapter_labels() -> void:
 		"第二章 · 谢幕之后",
 		chapter_two_outcome,
 		{"clear": "清白", "original": "原声"}
+	)
+	chapter_three_button.text = _chapter_label(
+		"第三章 · 停在四点十七分",
+		chapter_three_outcome,
+		{"calibration": "校正", "broadcast": "报时"}
 	)
 
 
@@ -48,6 +56,10 @@ func _on_continue_button_pressed() -> void:
 
 func _on_chapter_two_button_pressed() -> void:
 	chapter_two_requested.emit()
+
+
+func _on_chapter_three_button_pressed() -> void:
+	chapter_three_requested.emit()
 
 
 func _on_quit_button_pressed() -> void:

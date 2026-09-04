@@ -1,0 +1,125 @@
+[gd_scene load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/ui/timeline_calibration.gd" id="1_timeline"]
+
+[node name="TimelineCalibration" type="CanvasLayer"]
+layer = 25
+script = ExtResource("1_timeline")
+
+[node name="Root" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Dim" type="ColorRect" parent="Root"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.008, 0.012, 0.018, 0.94)
+
+[node name="Margin" type="MarginContainer" parent="Root"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 100.0
+offset_top = 56.0
+offset_right = -100.0
+offset_bottom = -56.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Panel" type="PanelContainer" parent="Root/Margin"]
+layout_mode = 2
+
+[node name="Content" type="VBoxContainer" parent="Root/Margin/Panel"]
+layout_mode = 2
+theme_override_constants/separation = 14
+
+[node name="Title" type="Label" parent="Root/Margin/Panel/Content"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.9, 0.82, 0.61, 1)
+theme_override_font_sizes/font_size = 30
+text = "时间基准校准"
+horizontal_alignment = 1
+
+[node name="Instruction" type="Label" parent="Root/Margin/Panel/Content"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 17
+text = "不要按四点十七分排序。用彼此独立的记录，还原事件实际先后。"
+horizontal_alignment = 1
+
+[node name="Columns" type="HBoxContainer" parent="Root/Margin/Panel/Content"]
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_constants/separation = 24
+
+[node name="Available" type="VBoxContainer" parent="Root/Margin/Panel/Content/Columns"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Label" type="Label" parent="Root/Margin/Panel/Content/Columns/Available"]
+layout_mode = 2
+text = "待校准记录"
+horizontal_alignment = 1
+
+[node name="AvailableEvents" type="VBoxContainer" parent="Root/Margin/Panel/Content/Columns/Available"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_constants/separation = 8
+
+[node name="Selected" type="VBoxContainer" parent="Root/Margin/Panel/Content/Columns"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="Label" type="Label" parent="Root/Margin/Panel/Content/Columns/Selected"]
+layout_mode = 2
+text = "实际顺序 · 从早到晚"
+horizontal_alignment = 1
+
+[node name="SelectedEvents" type="VBoxContainer" parent="Root/Margin/Panel/Content/Columns/Selected"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_constants/separation = 8
+
+[node name="Feedback" type="Label" parent="Root/Margin/Panel/Content"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(0, 48)
+layout_mode = 2
+theme_override_colors/font_color = Color(0.74, 0.78, 0.76, 1)
+text = "反馈"
+horizontal_alignment = 1
+autowrap_mode = 2
+
+[node name="Actions" type="HBoxContainer" parent="Root/Margin/Panel/Content"]
+layout_mode = 2
+alignment = 1
+theme_override_constants/separation = 14
+
+[node name="ClearButton" type="Button" parent="Root/Margin/Panel/Content/Actions"]
+custom_minimum_size = Vector2(170, 48)
+layout_mode = 2
+text = "清空顺序"
+
+[node name="SubmitButton" type="Button" parent="Root/Margin/Panel/Content/Actions"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(200, 48)
+layout_mode = 2
+text = "提交校准"
+
+[node name="CloseButton" type="Button" parent="Root/Margin/Panel/Content/Actions"]
+custom_minimum_size = Vector2(170, 48)
+layout_mode = 2
+text = "暂时离开"
+
+[connection signal="pressed" from="Root/Margin/Panel/Content/Actions/ClearButton" to="." method="_on_clear_pressed"]
+[connection signal="pressed" from="Root/Margin/Panel/Content/Actions/SubmitButton" to="." method="_on_submit_pressed"]
+[connection signal="pressed" from="Root/Margin/Panel/Content/Actions/CloseButton" to="." method="_on_close_pressed"]

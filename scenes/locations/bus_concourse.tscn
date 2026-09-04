@@ -1,0 +1,141 @@
+[gd_scene load_steps=12 format=3]
+
+[ext_resource type="Script" path="res://scripts/locations/bus_concourse.gd" id="1"]
+[ext_resource type="PackedScene" path="res://scenes/characters/player.tscn" id="2"]
+[ext_resource type="PackedScene" path="res://scenes/ui/hud.tscn" id="3"]
+[ext_resource type="Script" path="res://scripts/interaction/interactable.gd" id="4"]
+[ext_resource type="Texture2D" path="res://assets/art/backgrounds/bus_concourse_v1.png" id="5"]
+[ext_resource type="Texture2D" path="res://assets/art/characters/chen_mo_v1.png" id="6"]
+[ext_resource type="Texture2D" path="res://assets/art/characters/luo_yao_v1.png" id="7"]
+
+[sub_resource type="RectangleShape2D" id="Floor"]
+size = Vector2(1280, 100)
+[sub_resource type="RectangleShape2D" id="Wall"]
+size = Vector2(40, 720)
+[sub_resource type="RectangleShape2D" id="Object"]
+size = Vector2(130, 230)
+[sub_resource type="RectangleShape2D" id="Person"]
+size = Vector2(105, 290)
+
+[node name="BusConcourse" type="Node2D"]
+script = ExtResource("1")
+[node name="Background" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(640, 360)
+scale = Vector2(0.76555, 0.76514)
+texture = ExtResource("5")
+[node name="LocationTitle" type="Label" parent="."]
+offset_left = 420.0
+offset_top = 104.0
+offset_right = 860.0
+offset_bottom = 144.0
+theme_override_colors/font_color = Color(0.78, 0.7, 0.56, 1)
+theme_override_font_sizes/font_size = 25
+text = "岚岭旧客运站 · 站厅"
+horizontal_alignment = 1
+[node name="Floor" type="StaticBody2D" parent="."]
+position = Vector2(640, 670)
+collision_layer = 1
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Floor"]
+shape = SubResource("Floor")
+[node name="LeftWall" type="StaticBody2D" parent="."]
+position = Vector2(-20, 360)
+collision_layer = 1
+[node name="CollisionShape2D" type="CollisionShape2D" parent="LeftWall"]
+shape = SubResource("Wall")
+[node name="RightWall" type="StaticBody2D" parent="."]
+position = Vector2(1300, 360)
+collision_layer = 1
+[node name="CollisionShape2D" type="CollisionShape2D" parent="RightWall"]
+shape = SubResource("Wall")
+[node name="Player" parent="." instance=ExtResource("2")]
+position = Vector2(95, 620)
+
+[node name="ClockDiagram" type="Area2D" parent="."]
+position = Vector2(250, 515)
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("4")
+display_name = "检查集中校时线路图"
+conversation_id = "diagram_first"
+repeat_conversation_id = "diagram_repeat"
+evidence_id = "E301"
+evidence_title = "集中校时线路图"
+evidence_description = "站厅主钟向售票室、暗房和调度室三只子钟发送同一复位脉冲。"
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ClockDiagram"]
+shape = SubResource("Object")
+[node name="PowerLog" type="Area2D" parent="."]
+position = Vector2(420, 515)
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("4")
+display_name = "核对复电记录"
+conversation_id = "power_first"
+repeat_conversation_id = "power_repeat"
+evidence_id = "E302"
+evidence_title = "复电与保险记录"
+evidence_description = "外部配电日志记录 04:40 恢复供电；站内控制箱保险同时熔断。"
+[node name="CollisionShape2D" type="CollisionShape2D" parent="PowerLog"]
+shape = SubResource("Object")
+[node name="MaintenanceNote" type="Area2D" parent="."]
+position = Vector2(585, 515)
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("4")
+display_name = "阅读维修员批注"
+conversation_id = "maintenance_first"
+repeat_conversation_id = "maintenance_repeat"
+evidence_id = "E303"
+evidence_title = "维修员批注"
+evidence_description = "故障控制箱会把所有子钟一同复位到残留值 4:17，而不是保留各自停电时刻。"
+[node name="CollisionShape2D" type="CollisionShape2D" parent="MaintenanceNote"]
+shape = SubResource("Object")
+[node name="ChenMo" type="Area2D" parent="."]
+position = Vector2(770, 535)
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("4")
+display_name = "询问陈默"
+conversation_id = "chen_first"
+repeat_conversation_id = "chen_repeat"
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ChenMo"]
+position = Vector2(0, -65)
+shape = SubResource("Person")
+[node name="CharacterSprite" type="Sprite2D" parent="ChenMo"]
+texture_filter = 1
+position = Vector2(0, -65)
+scale = Vector2(0.205, 0.205)
+texture = ExtResource("6")
+[node name="LuoYao" type="Area2D" parent="."]
+position = Vector2(915, 535)
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("4")
+display_name = "询问罗遥"
+conversation_id = "luo_first"
+repeat_conversation_id = "luo_repeat"
+[node name="CollisionShape2D" type="CollisionShape2D" parent="LuoYao"]
+position = Vector2(0, -65)
+shape = SubResource("Person")
+[node name="CharacterSprite" type="Sprite2D" parent="LuoYao"]
+texture_filter = 1
+position = Vector2(0, -65)
+scale = Vector2(-0.205, 0.205)
+texture = ExtResource("7")
+[node name="DeductionBoard" type="Area2D" parent="."]
+position = Vector2(1055, 515)
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("4")
+display_name = "整理钟表来源"
+[node name="CollisionShape2D" type="CollisionShape2D" parent="DeductionBoard"]
+shape = SubResource("Object")
+[node name="TicketDoor" type="Area2D" parent="."]
+position = Vector2(1205, 515)
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("4")
+display_name = "进入售票室"
+[node name="CollisionShape2D" type="CollisionShape2D" parent="TicketDoor"]
+shape = SubResource("Object")
+[node name="HUD" parent="." instance=ExtResource("3")]
