@@ -1,0 +1,22 @@
+{
+  "fingerprint": "d1e6e198c2c25caa6163be65dc1e36c35fbfa8ef4750db8fcf0aced9ffd552c1",
+  "job": {
+    "id": "chapter_03_finale.truth_correct_2.000",
+    "instructions": "三十多岁的职业侦探，低中音，沉稳清晰，带分析感。现实主义表演，不故作深沉，不使用播音腔。当前处于对质、承认或推理推进段落，增加紧张与确定感，但不要喊叫或煽情。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "侦探",
+    "text": "底片在停电前曝光，照片在复电后冲印。背印机抄的是暗房子钟，不是快门。",
+    "voice": "Moon",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "0a12053c-6da5-9828-be62-46a93c6c8a01",
+  "schema_version": 1,
+  "usage": {
+    "characters": 64
+  }
+}

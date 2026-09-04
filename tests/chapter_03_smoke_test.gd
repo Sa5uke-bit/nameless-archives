@@ -32,6 +32,7 @@ func _run() -> void:
 	_check(concourse.get_node("LuoYao/CharacterSprite").texture != null, "Luo Yao art is loaded")
 	var hud: InvestigationHUD = concourse.get_node("HUD")
 	_close_dialogue(hud)
+	await _check_targets_reachable(concourse, ["ClockDiagram", "PowerLog", "MaintenanceNote", "ChenMo", "LuoYao", "DeductionBoard", "TicketDoor"])
 	for target_name: String in ["ClockDiagram", "PowerLog", "MaintenanceNote"]:
 		concourse._on_interaction_requested(concourse.get_node(target_name))
 		_close_dialogue(hud)
@@ -49,6 +50,7 @@ func _run() -> void:
 	_check(ticket.name == "BusTicketOffice", "concourse routes to ticket office")
 	hud = ticket.get_node("HUD")
 	_close_dialogue(hud)
+	await _check_targets_reachable(ticket, ["BackDoor", "NegativeStrip", "BatchSheet", "BackPrinter", "CarbonLedger", "DeductionBoard", "DispatchDoor"])
 	for target_name: String in ["NegativeStrip", "BatchSheet", "BackPrinter", "CarbonLedger"]:
 		ticket._on_interaction_requested(ticket.get_node(target_name))
 		_close_dialogue(hud)
@@ -68,6 +70,7 @@ func _run() -> void:
 	_check(dispatch.get_node("HuangWeiguo/CharacterSprite").texture != null, "Huang Weiguo art is loaded")
 	hud = dispatch.get_node("HUD")
 	_close_dialogue(hud)
+	await _check_targets_reachable(dispatch, ["BackDoor", "RouteSlip", "QuestionNotes", "StatementCopies", "WaitingList", "TimelineDesk", "Raincoat", "ClinicPage", "Mailbag", "HuangPen", "DengShouyi", "HuangWeiguo", "DeductionBoard", "FinalDoor"])
 	for target_name: String in ["RouteSlip", "QuestionNotes", "StatementCopies", "WaitingList"]:
 		dispatch._on_interaction_requested(dispatch.get_node(target_name))
 		_close_dialogue(hud)
@@ -119,6 +122,11 @@ func _run() -> void:
 	ending._on_return_button_pressed()
 	await get_tree().process_frame
 	_check(main.current_screen.get_node("Center/VBox/Chapter3Button").text.contains("校正"), "chapter selection shows outcome")
+	GameState.set_flag("current_chapter", "chapter_03")
+	GameState.request_ending("broadcast")
+	await _frames(2)
+	_check(main.current_screen.get_node("Center/Panel/Margin/VBox/EndingTitle").text == "报时", "broadcast ending is rendered")
+	_check(GameState.get_chapter_outcome("chapter_03") == "broadcast", "alternate chapter three outcome is kept")
 	main.queue_free()
 	await _frames(2)
 	_finish()
@@ -134,6 +142,19 @@ func _close_dialogue(hud: InvestigationHUD) -> void:
 func _frames(count: int) -> void:
 	for _index: int in count:
 		await get_tree().process_frame
+
+
+func _check_targets_reachable(location: Node, target_names: Array) -> void:
+	var player: DetectivePlayer = location.get_node("Player")
+	player.set_controls_enabled(true)
+	for target_name: String in target_names:
+		var target: Investigable = location.get_node(target_name)
+		player.global_position = Vector2(target.global_position.x, 620.0)
+		player.velocity = Vector2.ZERO
+		await get_tree().physics_frame
+		await get_tree().physics_frame
+		await get_tree().physics_frame
+		_check(is_instance_valid(player.current_target) and player.current_target.name == target_name, "%s is reachable through player movement" % target_name)
 
 
 func _check(condition: bool, description: String) -> void:

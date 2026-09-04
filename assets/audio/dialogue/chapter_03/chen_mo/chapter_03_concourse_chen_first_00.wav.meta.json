@@ -1,0 +1,22 @@
+{
+  "fingerprint": "70b55ccace33c5c006add5cf45db6cd86303f75cab7b52ac6394e1bfb23f58c6",
+  "job": {
+    "id": "chapter_03_concourse.chen_first.000",
+    "instructions": "四十五岁男性，前夜班门卫，嗓音粗粝疲惫但不凶狠。说话朴实、克制，有被长期误解后的谨慎，不使用武侠或苦情腔。按日常基线自然陈述，停顿清楚，不额外渲染悬疑。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "陈默",
+    "text": "我进过售票室。这件事我从没否认。余真说要下山，我给她拿了雨衣和手电。",
+    "voice": "Vincent",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "b65f672c-aa62-9282-9f32-6af72ef13a60",
+  "schema_version": 1,
+  "usage": {
+    "characters": 64
+  }
+}

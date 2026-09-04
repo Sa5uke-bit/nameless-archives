@@ -1,0 +1,22 @@
+{
+  "fingerprint": "7f4348a95ef34ba36a860f762606c8e1061c075cbf34459a8394e5ec6ae9b31b",
+  "job": {
+    "id": "chapter_03_dispatch.return_ticket.000",
+    "instructions": "三十六岁女性，前售票员和档案志愿者，音色温和清楚，观察力强，带压住的内疚。现实主义表演，不柔弱，不故作神秘。按日常基线自然陈述，停顿清楚，不额外渲染悬疑。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "罗遥",
+    "text": "暗房和售票账还在原处。",
+    "voice": "Serena",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "9c043743-dd8a-9762-9dd4-afeb8156ae2c",
+  "schema_version": 1,
+  "usage": {
+    "characters": 21
+  }
+}

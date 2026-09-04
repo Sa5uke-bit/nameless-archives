@@ -1,0 +1,22 @@
+{
+  "fingerprint": "cdc51ade4529c7e797f457d2514df7ab8eab95dbbaacdd09bb1ffee00bc039d1",
+  "job": {
+    "id": "chapter_03_ticket_office.negative_first.001",
+    "instructions": "三十六岁女性，前售票员和档案志愿者，音色温和清楚，观察力强，带压住的内疚。现实主义表演，不柔弱，不故作神秘。按日常基线自然陈述，停顿清楚，不额外渲染悬疑。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "罗遥",
+    "text": "没有剪口，也没有重新装卷。保险箱照片不可能突然跳到复电以后拍摄。",
+    "voice": "Serena",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "dbc25a7e-1225-95f4-978d-cee26368a447",
+  "schema_version": 1,
+  "usage": {
+    "characters": 61
+  }
+}

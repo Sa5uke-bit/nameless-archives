@@ -1,0 +1,22 @@
+{
+  "fingerprint": "429c1d40734be9873d29fbba51721e204fd383556f6df937a72ba7b5799419c0",
+  "job": {
+    "id": "chapter_03_dispatch.mailbag_repeat.000",
+    "instructions": "三十多岁的职业侦探，低中音，沉稳清晰，带分析感。现实主义表演，不故作深沉，不使用播音腔。当前是复查、回忆或含混段落，音量稍低、语速略慢，保留自然余韵。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "侦探",
+    "text": "邮袋夹层同时保存工资证据、不同笔迹的信，以及两份删节过的侦探报告。",
+    "voice": "Moon",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "3918e30b-69bd-945e-80c4-cc2943d5dd18",
+  "schema_version": 1,
+  "usage": {
+    "characters": 63
+  }
+}

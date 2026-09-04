@@ -1,0 +1,22 @@
+{
+  "fingerprint": "3a062ad0d23e86b06a94afae556aa8dab8461f893c2a240bc03103d78c99dfec",
+  "job": {
+    "id": "chapter_03_dispatch.timeline_success.000",
+    "instructions": "三十多岁的职业侦探，低中音，沉稳清晰，带分析感。现实主义表演，不故作深沉，不使用播音腔。当前处于对质、承认或推理推进段落，增加紧张与确定感，但不要喊叫或煽情。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "侦探",
+    "text": "维护车先离站，之后才复电；照片又在复电后冲印；正式证词直到早上才誊清。",
+    "voice": "Moon",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "9f1bfa16-6923-9915-9a43-0da97013cc41",
+  "schema_version": 1,
+  "usage": {
+    "characters": 66
+  }
+}

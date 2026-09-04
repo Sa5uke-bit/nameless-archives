@@ -1,0 +1,22 @@
+{
+  "fingerprint": "c7a77af20d02e2c3c19116142a6edf2554559e8040f2710a9a232585a3d86c76",
+  "job": {
+    "id": "chapter_03_ticket_office.ledger_repeat.000",
+    "instructions": "三十多岁的职业侦探，低中音，沉稳清晰，带分析感。现实主义表演，不故作深沉，不使用播音腔。当前是复查、回忆或含混段落，音量稍低、语速略慢，保留自然余韵。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "侦探",
+    "text": "被撕掉的纸没有带走下一页留下的压力。",
+    "voice": "Moon",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "1ce613fc-70d9-95b0-b64c-7ea23b28feff",
+  "schema_version": 1,
+  "usage": {
+    "characters": 35
+  }
+}

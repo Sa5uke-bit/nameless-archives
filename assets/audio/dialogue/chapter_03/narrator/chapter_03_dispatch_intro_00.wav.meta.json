@@ -1,0 +1,22 @@
+{
+  "fingerprint": "1aa215de0deced59fbd9c6a8d1985dcee357a8a2a78bcfb0faa0b1020b2d8d9a",
+  "job": {
+    "id": "chapter_03_dispatch.intro.000",
+    "instructions": "成熟男性叙述者，清楚客观，有轻微纪录片质感但不过分正式。保持克制，不使用恐怖预告腔。按日常基线自然陈述，停顿清楚，不额外渲染悬疑。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "旁白",
+    "text": "调度室面向山路。雨云正在退去，十二年前的四份时间记录第一次被摊在同一张桌上。",
+    "voice": "Neil",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "e579b63b-79c0-9b33-9528-8d7093f80c28",
+  "schema_version": 1,
+  "usage": {
+    "characters": 73
+  }
+}

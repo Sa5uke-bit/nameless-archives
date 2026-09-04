@@ -1,0 +1,22 @@
+{
+  "fingerprint": "02aa3036e791bc3439046c0950615c5cd2be66d3a6531930612bc7c29731ed3d",
+  "job": {
+    "id": "chapter_03_concourse.intro_public.001",
+    "instructions": "三十六岁女性，前售票员和档案志愿者，音色温和清楚，观察力强，带压住的内疚。现实主义表演，不柔弱，不故作神秘。按日常基线自然陈述，停顿清楚，不额外渲染悬疑。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "罗遥",
+    "text": "听说你会把完整材料都写进报告。那我先保管邮袋，等你证明哪些东西真的属于案情。",
+    "voice": "Serena",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "083e467a-57bb-9a3e-9543-b524288af790",
+  "schema_version": 1,
+  "usage": {
+    "characters": 73
+  }
+}

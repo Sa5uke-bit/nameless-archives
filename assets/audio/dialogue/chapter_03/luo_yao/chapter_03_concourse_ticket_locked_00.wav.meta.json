@@ -1,0 +1,22 @@
+{
+  "fingerprint": "512fe0a8aa16e87f778738bae472fafe5d442e565ef877412b0c6a0e40d044d8",
+  "job": {
+    "id": "chapter_03_concourse.ticket_locked.000",
+    "instructions": "三十六岁女性，前售票员和档案志愿者，音色温和清楚，观察力强，带压住的内疚。现实主义表演，不柔弱，不故作神秘。按日常基线自然陈述，停顿清楚，不额外渲染悬疑。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "罗遥",
+    "text": "先证明那些钟是否真的彼此独立。否则暗房只会再给你一个 4:17。",
+    "voice": "Serena",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "64d3c713-571a-9b41-89c0-38f98771bd64",
+  "schema_version": 1,
+  "usage": {
+    "characters": 57
+  }
+}

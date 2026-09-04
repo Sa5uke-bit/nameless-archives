@@ -1,0 +1,22 @@
+{
+  "fingerprint": "f20a48698225eb32922b7656a060c440f00ffd0e1af5b6639775b75fdd76ca05",
+  "job": {
+    "id": "chapter_03_concourse.diagram_repeat.000",
+    "instructions": "三十多岁的职业侦探，低中音，沉稳清晰，带分析感。现实主义表演，不故作深沉，不使用播音腔。当前是复查、回忆或含混段落，音量稍低、语速略慢，保留自然余韵。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "侦探",
+    "text": "四个表盘，一条校时线路。数量没有增加来源。",
+    "voice": "Moon",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "cf3af210-87e9-93f5-9444-65f552e105dc",
+  "schema_version": 1,
+  "usage": {
+    "characters": 39
+  }
+}

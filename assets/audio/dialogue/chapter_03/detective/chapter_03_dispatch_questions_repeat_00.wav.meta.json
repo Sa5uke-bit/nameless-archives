@@ -1,0 +1,22 @@
+{
+  "fingerprint": "8e1c06e210fb78f34e5ced682c647e3cffa79b26f69ed18112546717fb9a767d",
+  "job": {
+    "id": "chapter_03_dispatch.questions_repeat.000",
+    "instructions": "三十多岁的职业侦探，低中音，沉稳清晰，带分析感。现实主义表演，不故作深沉，不使用播音腔。当前是复查、回忆或含混段落，音量稍低、语速略慢，保留自然余韵。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "侦探",
+    "text": "时间先被说出口，记忆才被要求填进去。",
+    "voice": "Moon",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "4b658ab8-e935-9d5f-8d62-3d2399a8cb84",
+  "schema_version": 1,
+  "usage": {
+    "characters": 34
+  }
+}

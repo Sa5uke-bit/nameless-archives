@@ -1,0 +1,22 @@
+{
+  "fingerprint": "9ba72fba380e595bd5ec3b2f93822f90dd36346fd5b6d56955a9d2441b5fdfd0",
+  "job": {
+    "id": "chapter_03_audition.huang_weiguo.quiet",
+    "instructions": "六十四岁前站长，平静固执，像抓住最后一条行政记录。语速偏慢，不阴森。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "黄维国",
+    "text": "陈默进门、余真拿袋，这两件事实你推不掉。",
+    "voice": "Eldric Sage",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "0ef6f16a-edd4-950c-8850-c4cf8badb209",
+  "schema_version": 1,
+  "usage": {
+    "characters": 37
+  }
+}

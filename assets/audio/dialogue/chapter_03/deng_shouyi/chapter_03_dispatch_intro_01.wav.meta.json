@@ -1,0 +1,22 @@
+{
+  "fingerprint": "0310dc649cb5a3af7607f895a2cac173437ddf798da6c1aa460ddbec5b71a3e1",
+  "job": {
+    "id": "chapter_03_dispatch.intro.001",
+    "instructions": "六十一岁男性，退休山路司机，声音年长、厚实、疲惫。承认错误时不煽情，日常口语，不使用说书腔或慈祥长者腔。按日常基线自然陈述，停顿清楚，不额外渲染悬疑。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "邓守义",
+    "text": "我一直说车是四点十七分开的。可这张打孔纸不是我今天才想起来的。",
+    "voice": "Arthur",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "fe094231-65e2-995f-936b-cf9584805852",
+  "schema_version": 1,
+  "usage": {
+    "characters": 60
+  }
+}

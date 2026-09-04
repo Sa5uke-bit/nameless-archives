@@ -1,0 +1,22 @@
+{
+  "fingerprint": "b0a7f42a3098b6363bc76166dd2aceb3e6924499ef249f7941fbc4282f57fba2",
+  "job": {
+    "id": "chapter_03_audition.luo_yao.neutral",
+    "instructions": "三十六岁女性，前售票员和档案志愿者，温和清楚、观察力强。现实主义自然陈述，不柔弱，不神秘。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "罗遥",
+    "text": "照片是我冲的，背面确实印着四点十七分。",
+    "voice": "Serena",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "28519570-e17a-96bd-ae8c-96d407d6b856",
+  "schema_version": 1,
+  "usage": {
+    "characters": 36
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "fingerprint": "0b1251f958b63d9cfe6ad3f59f7335c3fd88f456da9b0cd826e8b1cf7244ed1e",
+  "job": {
+    "id": "chapter_03_concourse.intro_public.000",
+    "instructions": "成熟男性叙述者，清楚客观，有轻微纪录片质感但不过分正式。保持克制，不使用恐怖预告腔。按日常基线自然陈述，停顿清楚，不额外渲染悬疑。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "旁白",
+    "text": "2008 年九月，岚岭旧客运站。停运六年的站厅仍把所有钟面留在四点十七分。",
+    "voice": "Neil",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "f377569c-4e7b-9847-90aa-d6337135b4eb",
+  "schema_version": 1,
+  "usage": {
+    "characters": 66
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "fingerprint": "7e6a14fd02cb4e505d28c717343786097b0f59114dc2e02072a3fd6656198bed",
+  "job": {
+    "id": "chapter_03_dispatch.route_first.002",
+    "instructions": "六十一岁男性，退休山路司机，声音年长、厚实、疲惫。承认错误时不煽情，日常口语，不使用说书腔或慈祥长者腔。按日常基线自然陈述，停顿清楚，不额外渲染悬疑。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "邓守义",
+    "text": "余真没上车。我怕承认提前发车担责任，就顺着他们说成了四点十七分。",
+    "voice": "Arthur",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "283496f9-afd2-9935-b5dd-0eee1b7b0a8f",
+  "schema_version": 1,
+  "usage": {
+    "characters": 61
+  }
+}

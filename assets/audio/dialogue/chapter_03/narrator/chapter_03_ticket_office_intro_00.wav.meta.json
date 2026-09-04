@@ -1,0 +1,22 @@
+{
+  "fingerprint": "fa274aa44010a5f6b343a3a5afd99766c3379a68bad06442ab2a727ed75bd427",
+  "job": {
+    "id": "chapter_03_ticket_office.intro.000",
+    "instructions": "成熟男性叙述者，清楚客观，有轻微纪录片质感但不过分正式。保持克制，不使用恐怖预告腔。按日常基线自然陈述，停顿清楚，不额外渲染悬疑。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "旁白",
+    "text": "暗房的红灯早已熄灭。墙钟与背印机之间那根短线，却仍完整地钉在墙上。",
+    "voice": "Neil",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "9049497d-9414-9f64-8a39-93d0f33e58cf",
+  "schema_version": 1,
+  "usage": {
+    "characters": 63
+  }
+}

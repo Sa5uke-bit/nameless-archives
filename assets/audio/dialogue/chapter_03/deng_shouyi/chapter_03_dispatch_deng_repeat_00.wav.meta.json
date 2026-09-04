@@ -1,0 +1,22 @@
+{
+  "fingerprint": "1ea4a4f930c0f8d134a610daab7dec772e7a21e95d55b60766f7a7a78b372ca5",
+  "job": {
+    "id": "chapter_03_dispatch.deng_repeat.000",
+    "instructions": "六十一岁男性，退休山路司机，声音年长、厚实、疲惫。承认错误时不煽情，日常口语，不使用说书腔或慈祥长者腔。当前是复查、回忆或含混段落，音量稍低、语速略慢，保留自然余韵。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "邓守义",
+    "text": "纸上那个孔比我勇敢。它十二年都没改口。",
+    "voice": "Arthur",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "bb5182ee-80f6-9d09-acab-daba8bad4e9a",
+  "schema_version": 1,
+  "usage": {
+    "characters": 36
+  }
+}

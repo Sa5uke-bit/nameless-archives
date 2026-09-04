@@ -1,0 +1,22 @@
+{
+  "fingerprint": "d5877a46e42d615fec67610f73664a3adc253cbc737a42790b2591310f6227be",
+  "job": {
+    "id": "chapter_03_audition.luo_yao.pressure",
+    "instructions": "三十六岁女性，聪明克制。理解自己当年错误时有压住的内疚和确定感，不哭泣，不夸张。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "罗遥",
+    "text": "我不是在三次回忆里看见四点十七分，我是在同一只钟下把它听了三遍。",
+    "voice": "Serena",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "bfea7e34-93e4-9cc5-9344-d9a703edb847",
+  "schema_version": 1,
+  "usage": {
+    "characters": 62
+  }
+}

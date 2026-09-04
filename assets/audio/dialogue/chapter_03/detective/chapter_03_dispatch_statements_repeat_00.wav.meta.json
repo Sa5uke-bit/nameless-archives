@@ -1,0 +1,22 @@
+{
+  "fingerprint": "8d7dcee2b10ffc9ee8547404b552a2deedc8e81c21b25ab57f062ebf3fd5f5df",
+  "job": {
+    "id": "chapter_03_dispatch.statements_repeat.000",
+    "instructions": "三十多岁的职业侦探，低中音，沉稳清晰，带分析感。现实主义表演，不故作深沉，不使用播音腔。当前是复查、回忆或含混段落，音量稍低、语速略慢，保留自然余韵。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "侦探",
+    "text": "三种模糊记忆在誊清时才变成同一个分钟。",
+    "voice": "Moon",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "8a8bc156-c386-9dee-8cef-9d9835172678",
+  "schema_version": 1,
+  "usage": {
+    "characters": 37
+  }
+}

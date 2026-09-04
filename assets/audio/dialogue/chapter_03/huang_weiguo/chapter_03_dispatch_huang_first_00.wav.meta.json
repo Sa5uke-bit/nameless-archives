@@ -1,0 +1,22 @@
+{
+  "fingerprint": "c3d48b91a63f6c08db04d9bf913104063f0249dabe5414e78fb7bb652a7df4c2",
+  "job": {
+    "id": "chapter_03_dispatch.huang_first.000",
+    "instructions": "六十四岁男性，前客运站站长，低中音平稳清楚，习惯用行政措辞控制谈话。防御而非咆哮，不做脸谱化反派，不冷笑。按日常基线自然陈述，停顿清楚，不额外渲染悬疑。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "黄维国",
+    "text": "你们现在拿几张烂纸，把当年的应急处置说成阴谋。",
+    "voice": "Eldric Sage",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "7f0ad28e-857b-9ad3-b095-af27343fa6c2",
+  "schema_version": 1,
+  "usage": {
+    "characters": 44
+  }
+}

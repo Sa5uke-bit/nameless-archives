@@ -1,0 +1,22 @@
+{
+  "fingerprint": "7a895c6d77cef336340cea0975075b6da40b58e3aae8ef8f6c38e6f46c466db3",
+  "job": {
+    "id": "chapter_03_audition.luo_yao.quiet",
+    "instructions": "三十六岁女性，温和但边界清楚。音量稍低，语速略慢，收住情绪。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "罗遥",
+    "text": "剩下的信，不该自动成为公开材料。",
+    "voice": "Serena",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "da0e2da1-4e11-9b02-83ed-0145074a6c0b",
+  "schema_version": 1,
+  "usage": {
+    "characters": 30
+  }
+}

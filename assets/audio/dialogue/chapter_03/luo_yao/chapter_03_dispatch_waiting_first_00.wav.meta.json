@@ -1,0 +1,22 @@
+{
+  "fingerprint": "6b534255180b80d43e2efa7e499f54a27a8a5da3bebd2e398055fccbafcbb682",
+  "job": {
+    "id": "chapter_03_dispatch.waiting_first.000",
+    "instructions": "三十六岁女性，前售票员和档案志愿者，音色温和清楚，观察力强，带压住的内疚。现实主义表演，不柔弱，不故作神秘。按日常基线自然陈述，停顿清楚，不额外渲染悬疑。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "罗遥",
+    "text": "我们都在候车室等。黄站长指着主钟说四点十七分，邓师傅也重复了。",
+    "voice": "Serena",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "447d6f90-f13b-93df-b1cb-7691f6e026cb",
+  "schema_version": 1,
+  "usage": {
+    "characters": 59
+  }
+}

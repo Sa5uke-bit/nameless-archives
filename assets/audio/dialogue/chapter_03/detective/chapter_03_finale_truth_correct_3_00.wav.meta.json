@@ -1,0 +1,22 @@
+{
+  "fingerprint": "92af0cfffb4bb4acfea64bec3094dc4a2ccdb0786fc983b98a75a6a4ee0d2681",
+  "job": {
+    "id": "chapter_03_finale.truth_correct_3.000",
+    "instructions": "三十多岁的职业侦探，低中音，沉稳清晰，带分析感。现实主义表演，不故作深沉，不使用播音腔。当前处于对质、承认或推理推进段落，增加紧张与确定感，但不要喊叫或煽情。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "侦探",
+    "text": "证人先看同一只错钟、听同一个诱导问题，又在同一房间交换记忆。精确分钟到誊清时才出现。",
+    "voice": "Moon",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "23d797f1-7508-9d51-8ba3-059844e732a4",
+  "schema_version": 1,
+  "usage": {
+    "characters": 80
+  }
+}

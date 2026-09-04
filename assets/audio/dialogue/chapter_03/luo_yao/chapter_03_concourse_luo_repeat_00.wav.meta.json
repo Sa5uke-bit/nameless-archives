@@ -1,0 +1,22 @@
+{
+  "fingerprint": "1e2598446840927006b07b7d692dedb9f3f2ec17430ff228666756b892ae71b9",
+  "job": {
+    "id": "chapter_03_concourse.luo_repeat.000",
+    "instructions": "三十六岁女性，前售票员和档案志愿者，音色温和清楚，观察力强，带压住的内疚。现实主义表演，不柔弱，不故作神秘。当前是复查、回忆或含混段落，音量稍低、语速略慢，保留自然余韵。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "罗遥",
+    "text": "暗房还保持原样。你可以去看照片的时间从哪里来。",
+    "voice": "Serena",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "0e6045dc-6bb0-9f63-bb58-1c554fef3173",
+  "schema_version": 1,
+  "usage": {
+    "characters": 44
+  }
+}

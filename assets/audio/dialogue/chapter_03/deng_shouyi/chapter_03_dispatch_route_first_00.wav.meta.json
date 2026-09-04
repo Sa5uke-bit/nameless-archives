@@ -1,0 +1,22 @@
+{
+  "fingerprint": "deb89af5450ee99a7fe50cdbac03e75a72d9481a60383b683fbab12aad6af839",
+  "job": {
+    "id": "chapter_03_dispatch.route_first.000",
+    "instructions": "六十一岁男性，退休山路司机，声音年长、厚实、疲惫。承认错误时不煽情，日常口语，不使用说书腔或慈祥长者腔。按日常基线自然陈述，停顿清楚，不额外渲染悬疑。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "邓守义",
+    "text": "打孔轮每天由收费站封签。我接到塌方预警，三点五十二分就开了维护车。",
+    "voice": "Arthur",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "987fcab6-a1e4-9dd3-900b-611f58187128",
+  "schema_version": 1,
+  "usage": {
+    "characters": 63
+  }
+}

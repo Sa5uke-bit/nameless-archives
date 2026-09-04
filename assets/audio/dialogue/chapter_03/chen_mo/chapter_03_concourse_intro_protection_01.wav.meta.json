@@ -1,0 +1,22 @@
+{
+  "fingerprint": "3e6092f432edca5fcb9418e19376d9fdc82aab30fb3183ddd9d28ce1c136c703",
+  "job": {
+    "id": "chapter_03_concourse.intro_protection.001",
+    "instructions": "四十五岁男性，前夜班门卫，嗓音粗粝疲惫但不凶狠。说话朴实、克制，有被长期误解后的谨慎，不使用武侠或苦情腔。按日常基线自然陈述，停顿清楚，不额外渲染悬疑。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "陈默",
+    "text": "你上一桩案子只交了够用的证据。所以这次，邮袋里不相干的名字也请你留在袋里。",
+    "voice": "Vincent",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "6228a818-0f98-958d-bb8e-8c6f45b4b40f",
+  "schema_version": 1,
+  "usage": {
+    "characters": 71
+  }
+}

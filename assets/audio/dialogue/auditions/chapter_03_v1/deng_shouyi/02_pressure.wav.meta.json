@@ -1,0 +1,22 @@
+{
+  "fingerprint": "4d978256b772dbc1d16206e6268f616d976bf03a66ab606befa939e46c6605bc",
+  "job": {
+    "id": "chapter_03_audition.deng_shouyi.pressure",
+    "instructions": "六十一岁退休司机，承认懦弱时沉重而直接。有愧疚但不哭诉，不喊叫。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "邓守义",
+    "text": "我为了保住饭碗签了那份笔录。她不是坐我的车跑的。",
+    "voice": "Arthur",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "a150a027-dc50-9f60-9a2c-3f0fc982533f",
+  "schema_version": 1,
+  "usage": {
+    "characters": 46
+  }
+}

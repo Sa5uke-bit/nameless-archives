@@ -1,0 +1,22 @@
+{
+  "fingerprint": "7b6f8051d8202160b98a9cfb0228f8319b3f6def4d660af8347b6de670ca0154",
+  "job": {
+    "id": "chapter_03_ticket_office.intro.001",
+    "instructions": "三十六岁女性，前售票员和档案志愿者，音色温和清楚，观察力强，带压住的内疚。现实主义表演，不柔弱，不故作神秘。按日常基线自然陈述，停顿清楚，不额外渲染悬疑。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "罗遥",
+    "text": "我在这里冲了那卷巡检照片。旧报告把背印当成快门时间，我也签了字。",
+    "voice": "Serena",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "caf3592b-25d5-92f2-87a5-f23829127421",
+  "schema_version": 1,
+  "usage": {
+    "characters": 61
+  }
+}

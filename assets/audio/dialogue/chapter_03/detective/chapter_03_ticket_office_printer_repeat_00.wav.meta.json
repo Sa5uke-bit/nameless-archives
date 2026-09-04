@@ -1,0 +1,22 @@
+{
+  "fingerprint": "67fddbaa23e1e7234319308a1cef5c9bab7a213d01765a53761af23bd1c33d43",
+  "job": {
+    "id": "chapter_03_ticket_office.printer_repeat.000",
+    "instructions": "三十多岁的职业侦探，低中音，沉稳清晰，带分析感。现实主义表演，不故作深沉，不使用播音腔。当前是复查、回忆或含混段落，音量稍低、语速略慢，保留自然余韵。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "侦探",
+    "text": "4:17 属于冲印设备读到的钟面，不属于快门。",
+    "voice": "Moon",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "d881e566-f93a-99a0-aefa-cf9d75d8b525",
+  "schema_version": 1,
+  "usage": {
+    "characters": 39
+  }
+}

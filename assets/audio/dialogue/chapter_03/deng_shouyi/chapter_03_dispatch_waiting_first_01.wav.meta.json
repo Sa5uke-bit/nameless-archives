@@ -1,0 +1,22 @@
+{
+  "fingerprint": "6f5e2823ae370d3f515d6467811fc7f54e07490de0743a8f55fbb6a6d4d4e8cc",
+  "job": {
+    "id": "chapter_03_dispatch.waiting_first.001",
+    "instructions": "六十一岁男性，退休山路司机，声音年长、厚实、疲惫。承认错误时不煽情，日常口语，不使用说书腔或慈祥长者腔。按日常基线自然陈述，停顿清楚，不额外渲染悬疑。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "邓守义",
+    "text": "等轮到我写正式笔录，我已经分不清是自己记得，还是听他们说过。",
+    "voice": "Arthur",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "8e2efeb6-9390-9719-9f49-80891986bdef",
+  "schema_version": 1,
+  "usage": {
+    "characters": 57
+  }
+}

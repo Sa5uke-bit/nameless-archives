@@ -1,0 +1,22 @@
+{
+  "fingerprint": "83237f1dc2b564c9e3617c88b54dc95403b5f3b0e3b20494db2578c35e523a24",
+  "job": {
+    "id": "chapter_03_audition.chen_mo.neutral",
+    "instructions": "四十五岁男性，前夜班门卫，嗓音粗粝疲惫但不凶狠。朴实克制，有长期被误解后的谨慎。自然陈述，不使用武侠、苦情或恐怖腔。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "陈默",
+    "text": "我进过售票室。这件事我从没否认。",
+    "voice": "Vincent",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "d4734f20-1957-9687-be5f-67353c78712c",
+  "schema_version": 1,
+  "usage": {
+    "characters": 30
+  }
+}

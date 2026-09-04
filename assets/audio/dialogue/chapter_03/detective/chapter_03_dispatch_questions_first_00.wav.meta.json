@@ -1,0 +1,22 @@
+{
+  "fingerprint": "e3010d90b462fdb75104f0be430d587870c8bbd05b8f7c11cfc18ff700716897",
+  "job": {
+    "id": "chapter_03_dispatch.questions_first.000",
+    "instructions": "三十多岁的职业侦探，低中音，沉稳清晰，带分析感。现实主义表演，不故作深沉，不使用播音腔。按日常基线自然陈述，停顿清楚，不额外渲染悬疑。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "侦探",
+    "text": "黄维国的原始速记不是问‘几点’，而是问‘你在四点十七分看见了什么’。",
+    "voice": "Moon",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "b915de43-b362-92f9-a6a0-c6747008725c",
+  "schema_version": 1,
+  "usage": {
+    "characters": 62
+  }
+}

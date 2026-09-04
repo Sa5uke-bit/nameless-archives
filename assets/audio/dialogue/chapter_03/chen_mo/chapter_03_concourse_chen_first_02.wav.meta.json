@@ -1,0 +1,22 @@
+{
+  "fingerprint": "c3d28abf30ab70cdb31ff8150150492f8e00ada3781f7f9fd3b6dff6222ede66",
+  "job": {
+    "id": "chapter_03_concourse.chen_first.002",
+    "instructions": "四十五岁男性，前夜班门卫，嗓音粗粝疲惫但不凶狠。说话朴实、克制，有被长期误解后的谨慎，不使用武侠或苦情腔。按日常基线自然陈述，停顿清楚，不额外渲染悬疑。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "陈默",
+    "text": "黄站长问我的第一句话就是：四点十七分，你从里面拿了什么？",
+    "voice": "Vincent",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "efc5e32c-fcce-9180-a6d5-a6f22b53a918",
+  "schema_version": 1,
+  "usage": {
+    "characters": 53
+  }
+}

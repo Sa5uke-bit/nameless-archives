@@ -1,0 +1,22 @@
+{
+  "fingerprint": "35bd5d1854db547cd5b7b0504b7d98e028c96d8e04824b12318cf5eea4607e16",
+  "job": {
+    "id": "chapter_03_concourse.luo_first.001",
+    "instructions": "三十多岁的职业侦探，低中音，沉稳清晰，带分析感。现实主义表演，不故作深沉，不使用播音腔。按日常基线自然陈述，停顿清楚，不额外渲染悬疑。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "侦探",
+    "text": "机器不站队，但机器会服从接线。",
+    "voice": "Moon",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "12205aac-1761-9031-8209-7a16fc1167cc",
+  "schema_version": 1,
+  "usage": {
+    "characters": 28
+  }
+}

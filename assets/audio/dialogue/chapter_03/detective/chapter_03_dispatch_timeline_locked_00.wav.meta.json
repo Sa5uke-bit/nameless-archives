@@ -1,0 +1,22 @@
+{
+  "fingerprint": "04f0d33e3ba04b5c9084fa22c58d237798109d77fb2b0ebd62d06f96fb0d9bda",
+  "job": {
+    "id": "chapter_03_dispatch.timeline_locked.000",
+    "instructions": "三十多岁的职业侦探，低中音，沉稳清晰，带分析感。现实主义表演，不故作深沉，不使用播音腔。按日常基线自然陈述，停顿清楚，不额外渲染悬疑。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "侦探",
+    "text": "先找到不依赖站内电钟的记录。没有独立锚点，时间线只是另一种猜测。",
+    "voice": "Moon",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "6d0a1358-7aec-9a2a-bf92-7d3246694690",
+  "schema_version": 1,
+  "usage": {
+    "characters": 61
+  }
+}

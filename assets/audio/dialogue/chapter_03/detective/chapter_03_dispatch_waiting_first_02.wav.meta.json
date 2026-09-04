@@ -1,0 +1,22 @@
+{
+  "fingerprint": "56eb7eb83565177b3fdfe0394cabd81e33a760ab5d097dda7a95b48c7fc08269",
+  "job": {
+    "id": "chapter_03_dispatch.waiting_first.002",
+    "instructions": "三十多岁的职业侦探，低中音，沉稳清晰，带分析感。现实主义表演，不故作深沉，不使用播音腔。按日常基线自然陈述，停顿清楚，不额外渲染悬疑。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "侦探",
+    "text": "共享等待空间让三份证词在落笔前先交换过答案。",
+    "voice": "Moon",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "18391689-f0e5-9211-b28f-935b3d97cbc8",
+  "schema_version": 1,
+  "usage": {
+    "characters": 43
+  }
+}

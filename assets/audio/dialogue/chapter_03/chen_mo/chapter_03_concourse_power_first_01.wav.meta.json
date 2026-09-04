@@ -1,0 +1,22 @@
+{
+  "fingerprint": "96fb3d9a2c4ab86a8ceef255242c95bfe61c1931ec8611bfaeadc6aea4f95ef0",
+  "job": {
+    "id": "chapter_03_concourse.power_first.001",
+    "instructions": "四十五岁男性，前夜班门卫，嗓音粗粝疲惫但不凶狠。说话朴实、克制，有被长期误解后的谨慎，不使用武侠或苦情腔。按日常基线自然陈述，停顿清楚，不额外渲染悬疑。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "陈默",
+    "text": "那晚我只记得灯突然亮了。黄站长让我们都去看大厅的钟。",
+    "voice": "Vincent",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "b4297f22-11d5-9966-95c7-708bd694c820",
+  "schema_version": 1,
+  "usage": {
+    "characters": 50
+  }
+}

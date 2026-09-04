@@ -1,0 +1,22 @@
+{
+  "fingerprint": "ed93031c6b32b2950d1eb1e34b12de7eab00c05dd1af02705bb688fbe363526e",
+  "job": {
+    "id": "chapter_03_ticket_office.batch_first.001",
+    "instructions": "三十多岁的职业侦探，低中音，沉稳清晰，带分析感。现实主义表演，不故作深沉，不使用播音腔。按日常基线自然陈述，停顿清楚，不额外渲染悬疑。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "侦探",
+    "text": "这给了照片另一个时刻：不是拍下它，而是处理它。",
+    "voice": "Moon",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "30c08df1-486a-91fc-abd7-7fc41057679a",
+  "schema_version": 1,
+  "usage": {
+    "characters": 43
+  }
+}

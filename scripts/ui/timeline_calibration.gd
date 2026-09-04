@@ -114,6 +114,7 @@ func _on_close_pressed() -> void:
 
 func _clear_buttons(container: VBoxContainer) -> void:
 	for child: Node in container.get_children():
+		container.remove_child(child)
 		child.queue_free()
 
 

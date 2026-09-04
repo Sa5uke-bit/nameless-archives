@@ -1,0 +1,22 @@
+{
+  "fingerprint": "7081fdec91f9f7beca6330e2c0fde8ef9415c6759aee709ae4b276e0d1f16072",
+  "job": {
+    "id": "chapter_03_finale.intro.001",
+    "instructions": "六十四岁男性，前客运站站长，低中音平稳清楚，习惯用行政措辞控制谈话。防御而非咆哮，不做脸谱化反派，不冷笑。按日常基线自然陈述，停顿清楚，不额外渲染悬疑。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "黄维国",
+    "text": "你可以说钟坏了、照片晚洗、他们记错。可余真带走邮袋，陈默私自开门，事实没有消失。",
+    "voice": "Eldric Sage",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "35065b55-0a2b-9911-a8e0-4e4538a53cd4",
+  "schema_version": 1,
+  "usage": {
+    "characters": 74
+  }
+}

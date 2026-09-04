@@ -1,0 +1,22 @@
+{
+  "fingerprint": "30cba2638c7d58a8d8fe6eacea5a4e43f3de7b2f70c84ea85d71c546e83cdd0b",
+  "job": {
+    "id": "chapter_03_dispatch.raincoat_first.000",
+    "instructions": "四十五岁男性，前夜班门卫，嗓音粗粝疲惫但不凶狠。说话朴实、克制，有被长期误解后的谨慎，不使用武侠或苦情腔。按日常基线自然陈述，停顿清楚，不额外渲染悬疑。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "陈默",
+    "text": "副钥匙刮到锁簧，是因为我手里抱着雨衣。保险柜封条我碰都没碰。",
+    "voice": "Vincent",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "0ec47744-4155-9a48-afd3-d39d8e21a258",
+  "schema_version": 1,
+  "usage": {
+    "characters": 57
+  }
+}

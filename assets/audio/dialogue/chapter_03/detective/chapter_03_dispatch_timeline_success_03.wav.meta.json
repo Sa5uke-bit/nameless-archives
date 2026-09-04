@@ -1,0 +1,22 @@
+{
+  "fingerprint": "365f174687616492623889c536146cd677bbf788889d421003e4805db51f2854",
+  "job": {
+    "id": "chapter_03_dispatch.timeline_success.003",
+    "instructions": "三十多岁的职业侦探，低中音，沉稳清晰，带分析感。现实主义表演，不故作深沉，不使用播音腔。当前处于对质、承认或推理推进段落，增加紧张与确定感，但不要喊叫或煽情。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "侦探",
+    "text": "那就继续查邮袋为什么离开，以及你为什么需要给它安排一个时间。",
+    "voice": "Moon",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "738d4327-4027-97d8-a8c8-c99d6669dd0a",
+  "schema_version": 1,
+  "usage": {
+    "characters": 58
+  }
+}

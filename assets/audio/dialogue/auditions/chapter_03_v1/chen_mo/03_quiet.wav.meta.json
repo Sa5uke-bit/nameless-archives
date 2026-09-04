@@ -1,0 +1,22 @@
+{
+  "fingerprint": "34ee1cfd751b42df85ed091a49168c883c7c94148dbd1d3da2adbd5d23970d24",
+  "job": {
+    "id": "chapter_03_audition.chen_mo.quiet",
+    "instructions": "四十五岁男性，前夜班门卫。低声而准确，像反复校正一条被误传多年的事实，保留自然停顿。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "陈默",
+    "text": "我拿进去的是雨衣，不是从里面拿出邮袋。",
+    "voice": "Vincent",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "abc6febf-8ee8-9c19-ab1a-07942ac38515",
+  "schema_version": 1,
+  "usage": {
+    "characters": 36
+  }
+}

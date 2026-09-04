@@ -82,6 +82,31 @@ CAST_CHAPTER_02: dict[str, dict[str, str]] = {
     },
 }
 
+CAST_CHAPTER_03: dict[str, dict[str, str]] = {
+    "侦探": CAST_CHAPTER_01["侦探"],
+    "旁白": CAST_CHAPTER_01["旁白"],
+    "陈默": {
+        "slug": "chen_mo",
+        "voice": "Vincent",
+        "base": "四十五岁男性，前夜班门卫，嗓音粗粝疲惫但不凶狠。说话朴实、克制，有被长期误解后的谨慎，不使用武侠或苦情腔。",
+    },
+    "罗遥": {
+        "slug": "luo_yao",
+        "voice": "Serena",
+        "base": "三十六岁女性，前售票员和档案志愿者，音色温和清楚，观察力强，带压住的内疚。现实主义表演，不柔弱，不故作神秘。",
+    },
+    "邓守义": {
+        "slug": "deng_shouyi",
+        "voice": "Arthur",
+        "base": "六十一岁男性，退休山路司机，声音年长、厚实、疲惫。承认错误时不煽情，日常口语，不使用说书腔或慈祥长者腔。",
+    },
+    "黄维国": {
+        "slug": "huang_weiguo",
+        "voice": "Eldric Sage",
+        "base": "六十四岁男性，前客运站站长，低中音平稳清楚，习惯用行政措辞控制谈话。防御而非咆哮，不做脸谱化反派，不冷笑。",
+    },
+}
+
 CHAPTER_CONFIGS = {
     "1": {
         "dialogue_files": CHAPTER_01_DIALOGUE_FILES,
@@ -95,6 +120,12 @@ CHAPTER_CONFIGS = {
         "voice_root": "res://assets/audio/dialogue/chapter_02",
         "cast": CAST_CHAPTER_02,
     },
+    "3": {
+        "dialogue_files": tuple(sorted((PROJECT_ROOT / "data/dialogue").glob("chapter_03_*.json"))),
+        "manifest_path": PROJECT_ROOT / "data/voice/chapter_03_full.jsonl",
+        "voice_root": "res://assets/audio/dialogue/chapter_03",
+        "cast": CAST_CHAPTER_03,
+    },
 }
 
 PRESSURE_MARKERS = (
@@ -106,6 +137,10 @@ PRESSURE_MARKERS = (
     "truth_",
     "accusation",
     "after_d01",
+    "d31_success",
+    "d32_success",
+    "d33_success",
+    "timeline_success",
 )
 QUIET_MARKERS = (
     "repeat",

@@ -1,0 +1,22 @@
+{
+  "fingerprint": "6a9b8f1c4887455990e2dafd5c7ba632ac3039a5fce4a36b074f44a01c28359a",
+  "job": {
+    "id": "chapter_03_concourse.intro_protection.003",
+    "instructions": "三十六岁女性，前售票员和档案志愿者，音色温和清楚，观察力强，带压住的内疚。现实主义表演，不柔弱，不故作神秘。按日常基线自然陈述，停顿清楚，不额外渲染悬疑。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "罗遥",
+    "text": "主钟、三只子钟、照片和三份证词都一样。你要推翻的不是一个人，是一整座站。",
+    "voice": "Serena",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "fbbd1461-4564-9533-a9ff-a9702bd07779",
+  "schema_version": 1,
+  "usage": {
+    "characters": 67
+  }
+}

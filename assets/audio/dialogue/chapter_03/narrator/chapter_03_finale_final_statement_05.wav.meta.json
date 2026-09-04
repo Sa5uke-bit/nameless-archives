@@ -1,0 +1,22 @@
+{
+  "fingerprint": "db8ec25ac8aefd96021aa343924baefc02839f06dae3e859a376d3132bc6532c",
+  "job": {
+    "id": "chapter_03_finale.final_statement.005",
+    "instructions": "成熟男性叙述者，清楚客观，有轻微纪录片质感但不过分正式。保持克制，不使用恐怖预告腔。按日常基线自然陈述，停顿清楚，不额外渲染悬疑。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "旁白",
+    "text": "邮袋夹层还有数封不同笔迹的信，以及两份侦探前案报告的删节复印件。每一页都画着同一个记号。",
+    "voice": "Neil",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "8db6ef85-89d3-936e-a9e8-6898066faa1c",
+  "schema_version": 1,
+  "usage": {
+    "characters": 85
+  }
+}

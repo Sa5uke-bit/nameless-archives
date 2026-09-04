@@ -1,0 +1,22 @@
+{
+  "fingerprint": "2ee68acd0cc646af91166cf6e6e94d9db15f64ee9bc569284b5def9de351cef7",
+  "job": {
+    "id": "chapter_03_concourse.maintenance_first.000",
+    "instructions": "三十多岁的职业侦探，低中音，沉稳清晰，带分析感。现实主义表演，不故作深沉，不使用播音腔。按日常基线自然陈述，停顿清楚，不额外渲染悬疑。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "侦探",
+    "text": "维修员写得很直白：残值未清，复电后全部子钟回拨至四点十七分。",
+    "voice": "Moon",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "1ae57ee5-c786-975c-842f-97fb9fce0863",
+  "schema_version": 1,
+  "usage": {
+    "characters": 57
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "fingerprint": "a1549fc060c4ada8a5e574e5e21a7e9219b3ce7c5db762e99b9093eb32c6c025",
+  "job": {
+    "id": "chapter_03_ticket_office.batch_first.000",
+    "instructions": "三十六岁女性，前售票员和档案志愿者，音色温和清楚，观察力强，带压住的内疚。现实主义表演，不柔弱，不故作神秘。按日常基线自然陈述，停顿清楚，不额外渲染悬疑。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "罗遥",
+    "text": "停电时显影机不能用。批次单写着五点零五分开机，整卷一起处理。",
+    "voice": "Serena",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "8151d191-bd37-9eb6-ae67-a277a590ba97",
+  "schema_version": 1,
+  "usage": {
+    "characters": 57
+  }
+}

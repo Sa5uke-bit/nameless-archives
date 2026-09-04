@@ -1,0 +1,22 @@
+{
+  "fingerprint": "6b4d1a4546d059295ff5e29d8c750e916f53ea324f848da77e797c968b3383dd",
+  "job": {
+    "id": "chapter_03_dispatch.mailbag_first.000",
+    "instructions": "四十五岁男性，前夜班门卫，嗓音粗粝疲惫但不凶狠。说话朴实、克制，有被长期误解后的谨慎，不使用武侠或苦情腔。按日常基线自然陈述，停顿清楚，不额外渲染悬疑。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "陈默",
+    "text": "秦梅去世前把袋子交给我。余真留下话：等有人不再把所有名字都当证据，再打开夹层。",
+    "voice": "Vincent",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "2dbdf16d-2123-9f1c-bac9-343604dbba54",
+  "schema_version": 1,
+  "usage": {
+    "characters": 74
+  }
+}

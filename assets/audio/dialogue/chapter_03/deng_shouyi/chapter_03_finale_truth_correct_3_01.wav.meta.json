@@ -1,0 +1,22 @@
+{
+  "fingerprint": "47b07fcf4239b2c8a502c43af6273304eb6ed2fc95343da2ad7e71d2bd585a59",
+  "job": {
+    "id": "chapter_03_finale.truth_correct_3.001",
+    "instructions": "六十一岁男性，退休山路司机，声音年长、厚实、疲惫。承认错误时不煽情，日常口语，不使用说书腔或慈祥长者腔。当前处于对质、承认或推理推进段落，增加紧张与确定感，但不要喊叫或煽情。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "邓守义",
+    "text": "我真正能证明的只有路单：三点五十二分，车已经走了。",
+    "voice": "Arthur",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "9369b717-b59d-9ccd-a786-a7f4e03d5f47",
+  "schema_version": 1,
+  "usage": {
+    "characters": 47
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "fingerprint": "1ce7c96ff4c10f12d6cf5b112d0050bc5f00d9a436057c7f5b18e7e2a69043fd",
+  "job": {
+    "id": "chapter_03_audition.deng_shouyi.quiet",
+    "instructions": "六十一岁退休司机，低声自嘲，停顿自然，不演成哲理朗诵。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "邓守义",
+    "text": "纸上那个孔比我勇敢。它十二年都没改口。",
+    "voice": "Arthur",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "c85ed87e-0636-94a1-884a-df43817135a5",
+  "schema_version": 1,
+  "usage": {
+    "characters": 36
+  }
+}

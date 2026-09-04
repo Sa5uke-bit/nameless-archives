@@ -1,0 +1,22 @@
+{
+  "fingerprint": "5836afdbb49e614508d2b12f07aade0a3ad66e74a11b5fb1f61bba72871bb192",
+  "job": {
+    "id": "chapter_03_finale.truth_correct_4.001",
+    "instructions": "四十五岁男性，前夜班门卫，嗓音粗粝疲惫但不凶狠。说话朴实、克制，有被长期误解后的谨慎，不使用武侠或苦情腔。当前处于对质、承认或推理推进段落，增加紧张与确定感，但不要喊叫或煽情。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "陈默",
+    "text": "我进门送雨衣是真的。你拿这半句真话，替后面十二年定了罪。",
+    "voice": "Vincent",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "7b87e72c-5f1e-991f-83aa-8ff7e34f45b5",
+  "schema_version": 1,
+  "usage": {
+    "characters": 53
+  }
+}

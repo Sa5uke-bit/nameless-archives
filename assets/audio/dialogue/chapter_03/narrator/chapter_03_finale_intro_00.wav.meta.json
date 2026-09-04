@@ -1,0 +1,22 @@
+{
+  "fingerprint": "8c2c9c8eb43666ea2302c8a15a0c79ca11377217792f1e87a33432ae5eeb662b",
+  "job": {
+    "id": "chapter_03_finale.intro.000",
+    "instructions": "成熟男性叙述者，清楚客观，有轻微纪录片质感但不过分正式。保持克制，不使用恐怖预告腔。按日常基线自然陈述，停顿清楚，不额外渲染悬疑。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "旁白",
+    "text": "天亮时，雨终于从站厅玻璃上退开。主钟仍指着四点十七分，桌上的证据却已经不再服从它。",
+    "voice": "Neil",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "4544348a-18da-9567-8932-f91f89b87486",
+  "schema_version": 1,
+  "usage": {
+    "characters": 78
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "fingerprint": "be83f667db0ff1111dfe12e3fec9e51c4e09f6aa8d6f7cde010a68ca4a4d5426",
+  "job": {
+    "id": "chapter_03_audition.chen_mo.pressure",
+    "instructions": "四十五岁男性，前夜班门卫，粗粝疲惫。压住十二年的委屈，坚定但不喊叫，不煽情。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "陈默",
+    "text": "别替我说我从没进去过，只说清楚我进去做了什么。",
+    "voice": "Vincent",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "8205be08-b018-9f78-b84c-a2f114c8f507",
+  "schema_version": 1,
+  "usage": {
+    "characters": 44
+  }
+}

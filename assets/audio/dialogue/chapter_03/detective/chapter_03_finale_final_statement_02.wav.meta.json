@@ -1,0 +1,22 @@
+{
+  "fingerprint": "c2688eba3118c04d54c71675747f4a28fba8ef8a0282148302879818518ee235",
+  "job": {
+    "id": "chapter_03_finale.final_statement.002",
+    "instructions": "三十多岁的职业侦探，低中音，沉稳清晰，带分析感。现实主义表演，不故作深沉，不使用播音腔。按日常基线自然陈述，停顿清楚，不额外渲染悬疑。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "侦探",
+    "text": "你在复电后发现材料不见，利用故障钟先规定 4:17，再用同一支笔把三份模糊记忆改成准确指控。",
+    "voice": "Moon",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "a0abd90d-85d1-95a9-b9f8-1606a68915b1",
+  "schema_version": 1,
+  "usage": {
+    "characters": 84
+  }
+}

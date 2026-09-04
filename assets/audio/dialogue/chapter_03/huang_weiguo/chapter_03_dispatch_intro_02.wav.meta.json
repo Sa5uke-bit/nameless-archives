@@ -1,0 +1,22 @@
+{
+  "fingerprint": "a7f853ee05fefc3a061e6379236e855bedc9d2bd7a4128a9a7cd917094cf7ba8",
+  "job": {
+    "id": "chapter_03_dispatch.intro.002",
+    "instructions": "六十四岁男性，前客运站站长，低中音平稳清楚，习惯用行政措辞控制谈话。防御而非咆哮，不做脸谱化反派，不冷笑。按日常基线自然陈述，停顿清楚，不额外渲染悬疑。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "黄维国",
+    "text": "几只坏钟不等于旧案全错。陈默进了售票室，余真带走了邮袋，这两件事都是真的。",
+    "voice": "Eldric Sage",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "8fbbb99b-5051-96ed-8e16-63242ea10ced",
+  "schema_version": 1,
+  "usage": {
+    "characters": 70
+  }
+}

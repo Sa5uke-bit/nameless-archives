@@ -1,37 +1,132 @@
 {
   "conversations": {
     "intro": [
-      {"speaker": "旁白", "text": "天亮时，雨终于从站厅玻璃上退开。主钟仍指着四点十七分，桌上的证据却已经不再服从它。"},
-      {"speaker": "黄维国", "text": "你可以说钟坏了、照片晚洗、他们记错。可余真带走邮袋，陈默私自开门，事实没有消失。"},
-      {"speaker": "侦探", "text": "事实不会消失。消失的是你替它们安排的先后与因果。"}
+      {
+        "speaker": "旁白",
+        "text": "天亮时，雨终于从站厅玻璃上退开。主钟仍指着四点十七分，桌上的证据却已经不再服从它。",
+        "voice": "res://assets/audio/dialogue/chapter_03/narrator/chapter_03_finale_intro_00.wav",
+        "voice_bus": "Voice"
+      },
+      {
+        "speaker": "黄维国",
+        "text": "你可以说钟坏了、照片晚洗、他们记错。可余真带走邮袋，陈默私自开门，事实没有消失。",
+        "voice": "res://assets/audio/dialogue/chapter_03/huang_weiguo/chapter_03_finale_intro_01.wav",
+        "voice_bus": "Voice"
+      },
+      {
+        "speaker": "侦探",
+        "text": "事实不会消失。消失的是你替它们安排的先后与因果。",
+        "voice": "res://assets/audio/dialogue/chapter_03/detective/chapter_03_finale_intro_02.wav",
+        "voice_bus": "Voice"
+      }
     ],
     "truth_correct_1": [
-      {"speaker": "侦探", "text": "主钟与三只子钟由同一控制箱复位。四个相同读数只有一个来源。"},
-      {"speaker": "黄维国", "text": "那只是设备故障。"}
+      {
+        "speaker": "侦探",
+        "text": "主钟与三只子钟由同一控制箱复位。四个相同读数只有一个来源。",
+        "voice": "res://assets/audio/dialogue/chapter_03/detective/chapter_03_finale_truth_correct_1_00.wav",
+        "voice_bus": "Voice"
+      },
+      {
+        "speaker": "黄维国",
+        "text": "那只是设备故障。",
+        "voice": "res://assets/audio/dialogue/chapter_03/huang_weiguo/chapter_03_finale_truth_correct_1_01.wav",
+        "voice_bus": "Voice"
+      }
     ],
     "truth_correct_2": [
-      {"speaker": "侦探", "text": "底片在停电前曝光，照片在复电后冲印。背印机抄的是暗房子钟，不是快门。"},
-      {"speaker": "罗遥", "text": "那枚 4:17 是我在五点以后印上去的。"}
+      {
+        "speaker": "侦探",
+        "text": "底片在停电前曝光，照片在复电后冲印。背印机抄的是暗房子钟，不是快门。",
+        "voice": "res://assets/audio/dialogue/chapter_03/detective/chapter_03_finale_truth_correct_2_00.wav",
+        "voice_bus": "Voice"
+      },
+      {
+        "speaker": "罗遥",
+        "text": "那枚 4:17 是我在五点以后印上去的。",
+        "voice": "res://assets/audio/dialogue/chapter_03/luo_yao/chapter_03_finale_truth_correct_2_01.wav",
+        "voice_bus": "Voice"
+      }
     ],
     "truth_correct_3": [
-      {"speaker": "侦探", "text": "证人先看同一只错钟、听同一个诱导问题，又在同一房间交换记忆。精确分钟到誊清时才出现。"},
-      {"speaker": "邓守义", "text": "我真正能证明的只有路单：三点五十二分，车已经走了。"}
+      {
+        "speaker": "侦探",
+        "text": "证人先看同一只错钟、听同一个诱导问题，又在同一房间交换记忆。精确分钟到誊清时才出现。",
+        "voice": "res://assets/audio/dialogue/chapter_03/detective/chapter_03_finale_truth_correct_3_00.wav",
+        "voice_bus": "Voice"
+      },
+      {
+        "speaker": "邓守义",
+        "text": "我真正能证明的只有路单：三点五十二分，车已经走了。",
+        "voice": "res://assets/audio/dialogue/chapter_03/deng_shouyi/chapter_03_finale_truth_correct_3_01.wav",
+        "voice_bus": "Voice"
+      }
     ],
     "truth_correct_4": [
-      {"speaker": "侦探", "text": "余真发现你冒领工资和截留信件。你需要让她成为携款失踪者，让帮助她的陈默成为盗窃者。"},
-      {"speaker": "陈默", "text": "我进门送雨衣是真的。你拿这半句真话，替后面十二年定了罪。"}
+      {
+        "speaker": "侦探",
+        "text": "余真发现你冒领工资和截留信件。你需要让她成为携款失踪者，让帮助她的陈默成为盗窃者。",
+        "voice": "res://assets/audio/dialogue/chapter_03/detective/chapter_03_finale_truth_correct_4_00.wav",
+        "voice_bus": "Voice"
+      },
+      {
+        "speaker": "陈默",
+        "text": "我进门送雨衣是真的。你拿这半句真话，替后面十二年定了罪。",
+        "voice": "res://assets/audio/dialogue/chapter_03/chen_mo/chapter_03_finale_truth_correct_4_01.wav",
+        "voice_bus": "Voice"
+      }
     ],
     "truth_wrong": [
-      {"speaker": "黄维国", "text": "你还是在猜。四点十七分至少比你的故事整齐。"},
-      {"speaker": "侦探", "text": "整齐不是独立。回到来源、形成过程和真实先后。"}
+      {
+        "speaker": "黄维国",
+        "text": "你还是在猜。四点十七分至少比你的故事整齐。",
+        "voice": "res://assets/audio/dialogue/chapter_03/huang_weiguo/chapter_03_finale_truth_wrong_00.wav",
+        "voice_bus": "Voice"
+      },
+      {
+        "speaker": "侦探",
+        "text": "整齐不是独立。回到来源、形成过程和真实先后。",
+        "voice": "res://assets/audio/dialogue/chapter_03/detective/chapter_03_finale_truth_wrong_01.wav",
+        "voice_bus": "Voice"
+      }
     ],
     "final_statement": [
-      {"speaker": "侦探", "text": "余真在 04:03 左右步行离站，04:26 已在山路诊所接受处置。她没有搭维护车，也没有在站内遇害。"},
-      {"speaker": "侦探", "text": "邮袋夹层保存着你的工资兑付副本。陈默的雨衣与副钥匙只证明他帮助过她，保险柜封条没有他的痕迹。"},
-      {"speaker": "侦探", "text": "你在复电后发现材料不见，利用故障钟先规定 4:17，再用同一支笔把三份模糊记忆改成准确指控。"},
-      {"speaker": "黄维国", "text": "把邮袋全公开。里面那些人也未必愿意替余真作证。"},
-      {"speaker": "罗遥", "text": "他的责任已经写清了。剩下的信，不该自动成为公开材料。"},
-      {"speaker": "旁白", "text": "邮袋夹层还有数封不同笔迹的信，以及两份侦探前案报告的删节复印件。每一页都画着同一个记号。"}
+      {
+        "speaker": "侦探",
+        "text": "余真在 04:03 左右步行离站，04:26 已在山路诊所接受处置。她没有搭维护车，也没有在站内遇害。",
+        "voice": "res://assets/audio/dialogue/chapter_03/detective/chapter_03_finale_final_statement_00.wav",
+        "voice_bus": "Voice"
+      },
+      {
+        "speaker": "侦探",
+        "text": "邮袋夹层保存着你的工资兑付副本。陈默的雨衣与副钥匙只证明他帮助过她，保险柜封条没有他的痕迹。",
+        "voice": "res://assets/audio/dialogue/chapter_03/detective/chapter_03_finale_final_statement_01.wav",
+        "voice_bus": "Voice"
+      },
+      {
+        "speaker": "侦探",
+        "text": "你在复电后发现材料不见，利用故障钟先规定 4:17，再用同一支笔把三份模糊记忆改成准确指控。",
+        "voice": "res://assets/audio/dialogue/chapter_03/detective/chapter_03_finale_final_statement_02.wav",
+        "voice_bus": "Voice"
+      },
+      {
+        "speaker": "黄维国",
+        "text": "把邮袋全公开。里面那些人也未必愿意替余真作证。",
+        "voice": "res://assets/audio/dialogue/chapter_03/huang_weiguo/chapter_03_finale_final_statement_03.wav",
+        "voice_bus": "Voice"
+      },
+      {
+        "speaker": "罗遥",
+        "text": "他的责任已经写清了。剩下的信，不该自动成为公开材料。",
+        "voice": "res://assets/audio/dialogue/chapter_03/luo_yao/chapter_03_finale_final_statement_04.wav",
+        "voice_bus": "Voice"
+      },
+      {
+        "speaker": "旁白",
+        "text": "邮袋夹层还有数封不同笔迹的信，以及两份侦探前案报告的删节复印件。每一页都画着同一个记号。",
+        "voice": "res://assets/audio/dialogue/chapter_03/narrator/chapter_03_finale_final_statement_05.wav",
+        "voice_bus": "Voice"
+      }
     ]
   }
 }

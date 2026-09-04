@@ -1,0 +1,22 @@
+{
+  "fingerprint": "b08ab986710f8d20b8e75ced62ba95f2f0fc06d1c90771ed1b3450eaba3a5bf2",
+  "job": {
+    "id": "chapter_03_concourse.d31_success.002",
+    "instructions": "三十多岁的职业侦探，低中音，沉稳清晰，带分析感。现实主义表演，不故作深沉，不使用播音腔。当前处于对质、承认或推理推进段落，增加紧张与确定感，但不要喊叫或煽情。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "侦探",
+    "text": "所以接下来不是看照片拍了什么，而是查它的时间在什么时候写上去。",
+    "voice": "Moon",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "2785ac00-5415-902b-a912-ad7cf032dabc",
+  "schema_version": 1,
+  "usage": {
+    "characters": 60
+  }
+}

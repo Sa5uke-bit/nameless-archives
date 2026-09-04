@@ -1,0 +1,22 @@
+{
+  "fingerprint": "c23d0b6f53d1370d5557bd7a0f5252cb79701900e69138f35f06a1c755f7662a",
+  "job": {
+    "id": "chapter_03_dispatch.clinic_first.000",
+    "instructions": "三十六岁女性，前售票员和档案志愿者，音色温和清楚，观察力强，带压住的内疚。现实主义表演，不柔弱，不故作神秘。按日常基线自然陈述，停顿清楚，不额外渲染悬疑。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "罗遥",
+    "text": "秦梅诊所四点二十六分收过一名脚伤女子。登记名留空，随身物写的是旧邮袋。",
+    "voice": "Serena",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "88147daa-795f-9908-8ea3-0158fc19641e",
+  "schema_version": 1,
+  "usage": {
+    "characters": 67
+  }
+}

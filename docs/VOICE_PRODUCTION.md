@@ -1,8 +1,8 @@
-# 两章配音与录音制作记录
+# 三章配音与录音制作记录
 
-> 当前阶段：第一、二章正式全量配音均已生成并接入
+> 当前阶段：第一至第三章正式全量配音均已生成并接入
 > 生成方式：阿里云百炼 `qwen3-tts-instruct-flash`，AI 合成语音
-> 状态：共 231 条正式对白已生成、导入并通过自动检查，等待完整实机听感复核
+> 状态：共 357 条正式对白已生成、导入并通过自动检查，等待完整实机听感复核
 
 ## 1. 制作范围
 
@@ -136,7 +136,36 @@ python tools/validate_voice_pack.py --chapter 2
 python tools/build_tape_puzzle_audio.py
 ```
 
-## 8. 来源与使用说明
+## 8. 第三章《停在四点十七分》
+
+第三章正式清单为 [`data/voice/chapter_03_full.jsonl`](../data/voice/chapter_03_full.jsonl)，输出位于 `assets/audio/dialogue/chapter_03/`。共 126 条、3602 个剧本文字，总时长约 810.88 秒（13 分 31 秒），WAV 数据约 38.93 MB；全部为单声道、16 位、24 kHz PCM，126 个请求 ID 与参数指纹均唯一且有效。
+
+侦探继续使用 `Moon`，旁白继续使用 `Neil`。四名新角色没有创建付费自定义音色，而是复用前两章已验证兼容 `qwen3-tts-instruct-flash` 的系统声线，再以角色级指令区分表演：
+
+| 发声身份 | 内置音色 | 表演方向 |
+| --- | --- | --- |
+| 陈默 | `Vincent` | 粗粝疲惫但不凶狠，被长期误解后的谨慎，避免苦情与武侠腔 |
+| 罗遥 | `Serena` | 温和清楚、观察力强，压住内疚但保持边界 |
+| 邓守义 | `Arthur` | 年长厚实、日常口语，承认错误时沉重但不煽情 |
+| 黄维国 | `Eldric Sage` | 平稳的行政控制感，防御而不咆哮，不做脸谱化反派 |
+
+试听清单为 [`data/voice/chapter_03_auditions_v1.jsonl`](../data/voice/chapter_03_auditions_v1.jsonl)，四人各有中性、受压与低声三条，共 12 条，输出位于 `assets/audio/dialogue/auditions/chapter_03_v1/`。本轮选角复用已经通过前两章兼容性检查的音色；正式包完成了文件、侧录、指纹、请求 ID、采样率、声道、位深、时长和对白引用的自动校验。当前环境不能替代人耳判断具体读音与表演，因此仍把完整听测列为待办，不宣称已经完成听感验收。
+
+重建与验证：
+
+```powershell
+python tools/build_voice_manifest.py --chapter 3
+python tools/build_voice_manifest.py --chapter 3 --check
+python C:\Users\SASUKE\.codex\skills\aliyun-bailian-speech\scripts\bailian_speech.py speak-batch `
+  --input data/voice/chapter_03_full.jsonl `
+  --output-dir assets/audio/dialogue/chapter_03 `
+  --confirm-batch --requests-per-minute 10
+python tools/validate_voice_pack.py --chapter 3
+```
+
+批量生成期间发生过两次网络超时。工具没有自动重试不确定请求；续跑依赖已经写入的参数指纹侧录跳过完成项，最终 126 条全部通过唯一请求 ID 校验，没有盲目覆盖整个语音包。
+
+## 9. 来源与使用说明
 
 - 服务：阿里云百炼大模型服务平台；
 - 模型：`qwen3-tts-instruct-flash`；

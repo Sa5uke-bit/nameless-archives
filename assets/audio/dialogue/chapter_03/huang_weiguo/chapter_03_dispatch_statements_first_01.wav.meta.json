@@ -1,0 +1,22 @@
+{
+  "fingerprint": "e564d66c2ebd4cf7b8ed83b2969aaa12f6c37b9461320d9cd72240d1c18052ac",
+  "job": {
+    "id": "chapter_03_dispatch.statements_first.001",
+    "instructions": "六十四岁男性，前客运站站长，低中音平稳清楚，习惯用行政措辞控制谈话。防御而非咆哮，不做脸谱化反派，不冷笑。按日常基线自然陈述，停顿清楚，不额外渲染悬疑。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "黄维国",
+    "text": "正式记录需要准确。",
+    "voice": "Eldric Sage",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "4ed1bb9d-8bc7-99f9-b042-d3ba78e016d6",
+  "schema_version": 1,
+  "usage": {
+    "characters": 17
+  }
+}

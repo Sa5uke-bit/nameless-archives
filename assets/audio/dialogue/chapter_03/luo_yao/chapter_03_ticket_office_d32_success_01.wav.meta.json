@@ -1,0 +1,22 @@
+{
+  "fingerprint": "91c350efb32f59aa3eb9ca4ac782bc41263d4345caafb03de88105a46fff5871",
+  "job": {
+    "id": "chapter_03_ticket_office.d32_success.001",
+    "instructions": "三十六岁女性，前售票员和档案志愿者，音色温和清楚，观察力强，带压住的内疚。现实主义表演，不柔弱，不故作神秘。当前处于对质、承认或推理推进段落，增加紧张与确定感，但不要喊叫或煽情。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "罗遥",
+    "text": "旧案把处理时间当成拍摄时间，再拿照片去证明那只钟。",
+    "voice": "Serena",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "399fb165-d113-949b-a630-91637b6335e1",
+  "schema_version": 1,
+  "usage": {
+    "characters": 48
+  }
+}

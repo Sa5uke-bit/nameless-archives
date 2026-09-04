@@ -1,0 +1,22 @@
+{
+  "fingerprint": "d20e7ecef4958ebd36b0f62f3d37c4c7f85328fa6a3a490b8000e907b6abfa8c",
+  "job": {
+    "id": "chapter_03_concourse.chen_repeat.000",
+    "instructions": "四十五岁男性，前夜班门卫，嗓音粗粝疲惫但不凶狠。说话朴实、克制，有被长期误解后的谨慎，不使用武侠或苦情腔。当前是复查、回忆或含混段落，音量稍低、语速略慢，保留自然余韵。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "陈默",
+    "text": "我拿进去的是雨衣，不是从里面拿出邮袋。",
+    "voice": "Vincent",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "42ec4a66-04c1-9f9d-8bdf-1efd2a062b64",
+  "schema_version": 1,
+  "usage": {
+    "characters": 36
+  }
+}

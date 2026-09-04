@@ -1,0 +1,22 @@
+{
+  "fingerprint": "a12663be69bae5b77b345afd7ac77718556a0aa3d83e189f89b5518c485ff132",
+  "job": {
+    "id": "chapter_03_dispatch.d33_success.001",
+    "instructions": "三十六岁女性，前售票员和档案志愿者，音色温和清楚，观察力强，带压住的内疚。现实主义表演，不柔弱，不故作神秘。当前处于对质、承认或推理推进段落，增加紧张与确定感，但不要喊叫或煽情。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "罗遥",
+    "text": "我不是在三次回忆里看见 4:17。我是在同一只钟下，把它听了三遍。",
+    "voice": "Serena",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "06a0d11a-f2ac-9e6b-b087-45232ad18c34",
+  "schema_version": 1,
+  "usage": {
+    "characters": 58
+  }
+}

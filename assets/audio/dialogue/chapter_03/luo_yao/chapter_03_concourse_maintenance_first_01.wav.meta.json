@@ -1,0 +1,22 @@
+{
+  "fingerprint": "bd90645d0f973d8b1e0002d2d70757d5cac7f5e9332789b75d1df8b9c4dd007d",
+  "job": {
+    "id": "chapter_03_concourse.maintenance_first.001",
+    "instructions": "三十六岁女性，前售票员和档案志愿者，音色温和清楚，观察力强，带压住的内疚。现实主义表演，不柔弱，不故作神秘。按日常基线自然陈述，停顿清楚，不额外渲染悬疑。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "罗遥",
+    "text": "所以它们不是同时停住，是后来同时得到一个错答案。",
+    "voice": "Serena",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "499bf0ea-7ad6-9a69-888b-2dff3165411c",
+  "schema_version": 1,
+  "usage": {
+    "characters": 46
+  }
+}
