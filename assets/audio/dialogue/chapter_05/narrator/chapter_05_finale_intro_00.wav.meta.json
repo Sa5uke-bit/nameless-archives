@@ -1,0 +1,22 @@
+{
+  "fingerprint": "8ad8304bc3f6dbaa5a12da669e9c9b8f1be8398ee6ad1d4101d214fb3dd5332c",
+  "job": {
+    "id": "chapter_05_finale.intro.000",
+    "instructions": "成熟男性叙述者，清楚客观，有轻微纪录片质感但不过分正式。保持克制，不使用恐怖预告腔。按日常基线自然陈述，停顿清楚，不额外渲染悬疑。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "旁白",
+    "text": "天光进入七码头。四封信被放在同一张桌上，第一次没有任何人躲在下一次转交之后。",
+    "voice": "Neil",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "9ca8eb8d-bc1b-9976-990f-3a3c268aaba4",
+  "schema_version": 1,
+  "usage": {
+    "characters": 73
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "fingerprint": "42cdaa05ff97e05ddbbdeb85819a28a62462f84d37b83609a283f41b198336f4",
+  "job": {
+    "id": "chapter05_jiang_neutral",
+    "instructions": "二十二岁中国女性，音色清楚偏低，年轻但不稚嫩，冷静分析，不使用哭腔。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "蒋禾",
+    "text": "同一条黑线，有时保护，有时替人闭嘴。",
+    "voice": "Vivian",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "30f847df-26c7-94d1-b08f-233a9b15cbd8",
+  "schema_version": 1,
+  "usage": {
+    "characters": 33
+  }
+}

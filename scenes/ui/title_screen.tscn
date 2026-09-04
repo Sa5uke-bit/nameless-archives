@@ -57,7 +57,7 @@ grow_vertical = 2
 [node name="VBox" type="VBoxContainer" parent="Center"]
 custom_minimum_size = Vector2(520, 0)
 layout_mode = 2
-theme_override_constants/separation = 18
+theme_override_constants/separation = 10
 alignment = 1
 
 [node name="ChapterLabel" type="Label" parent="Center/VBox"]
@@ -70,8 +70,8 @@ horizontal_alignment = 1
 [node name="Title" type="Label" parent="Center/VBox"]
 layout_mode = 2
 theme_override_colors/font_color = Color(0.9, 0.86, 0.72, 1)
-theme_override_font_sizes/font_size = 54
-text = "不存在的住客"
+theme_override_font_sizes/font_size = 48
+text = "无名档案"
 horizontal_alignment = 1
 
 [node name="Rule" type="HSeparator" parent="Center/VBox"]
@@ -81,40 +81,47 @@ layout_mode = 2
 layout_mode = 2
 theme_override_colors/font_color = Color(0.63, 0.68, 0.7, 1)
 theme_override_font_sizes/font_size = 18
-text = "归潮旅馆 · 2008"
+text = "记录能证明，也能伤人 · 2008"
 horizontal_alignment = 1
 
 [node name="Spacer" type="Control" parent="Center/VBox"]
-custom_minimum_size = Vector2(0, 22)
+custom_minimum_size = Vector2(0, 8)
 layout_mode = 2
 
 [node name="StartButton" type="Button" parent="Center/VBox"]
 unique_name_in_owner = true
-custom_minimum_size = Vector2(0, 54)
+custom_minimum_size = Vector2(0, 46)
 layout_mode = 2
 theme_override_font_sizes/font_size = 20
 text = "第一章 · 不存在的住客"
 
 [node name="Chapter2Button" type="Button" parent="Center/VBox"]
 unique_name_in_owner = true
-custom_minimum_size = Vector2(0, 54)
+custom_minimum_size = Vector2(0, 46)
 layout_mode = 2
 theme_override_font_sizes/font_size = 20
 text = "第二章 · 谢幕之后"
 
 [node name="Chapter3Button" type="Button" parent="Center/VBox"]
 unique_name_in_owner = true
-custom_minimum_size = Vector2(0, 54)
+custom_minimum_size = Vector2(0, 46)
 layout_mode = 2
 theme_override_font_sizes/font_size = 20
 text = "第三章 · 停在四点十七分"
 
 [node name="Chapter4Button" type="Button" parent="Center/VBox"]
 unique_name_in_owner = true
-custom_minimum_size = Vector2(0, 54)
+custom_minimum_size = Vector2(0, 46)
 layout_mode = 2
 theme_override_font_sizes/font_size = 20
 text = "第四章 · 被删去的地址"
+
+[node name="Chapter5Button" type="Button" parent="Center/VBox"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(0, 46)
+layout_mode = 2
+theme_override_font_sizes/font_size = 20
+text = "第五章 · 共同的名字"
 
 [node name="ContinueButton" type="Button" parent="Center/VBox"]
 unique_name_in_owner = true
@@ -141,12 +148,13 @@ offset_bottom = -18.0
 grow_horizontal = 0
 grow_vertical = 0
 theme_override_colors/font_color = Color(0.45, 0.52, 0.55, 1)
-text = "四章完整版 · v0.5"
+text = "五章完整制作版 · v1.0"
 horizontal_alignment = 2
 
 [connection signal="pressed" from="Center/VBox/StartButton" to="." method="_on_start_button_pressed"]
 [connection signal="pressed" from="Center/VBox/Chapter2Button" to="." method="_on_chapter_two_button_pressed"]
 [connection signal="pressed" from="Center/VBox/Chapter3Button" to="." method="_on_chapter_three_button_pressed"]
 [connection signal="pressed" from="Center/VBox/Chapter4Button" to="." method="_on_chapter_four_button_pressed"]
+[connection signal="pressed" from="Center/VBox/Chapter5Button" to="." method="_on_chapter_five_button_pressed"]
 [connection signal="pressed" from="Center/VBox/ContinueButton" to="." method="_on_continue_button_pressed"]
 [connection signal="pressed" from="Center/VBox/QuitButton" to="." method="_on_quit_button_pressed"]

@@ -1,0 +1,22 @@
+{
+  "fingerprint": "6f1e090bda6757e2417a4a153ddb442c60839d6e548a389123eccd543b0807ad",
+  "job": {
+    "id": "chapter_05_archive.letter_one_repeat.000",
+    "instructions": "三十多岁的职业侦探，低中音，沉稳清晰，带分析感。现实主义表演，不故作深沉，不使用播音腔。当前是复查、回忆或含混段落，音量稍低、语速略慢，保留自然余韵。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "侦探",
+    "text": "第一封信只能证明顾宁寄出钥匙，不能替后三封信确定作者。",
+    "voice": "Moon",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "01cf6d09-0918-9782-ae35-f8f6b1e796e2",
+  "schema_version": 1,
+  "usage": {
+    "characters": 52
+  }
+}

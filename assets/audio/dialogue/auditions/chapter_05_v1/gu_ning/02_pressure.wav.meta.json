@@ -1,0 +1,22 @@
+{
+  "fingerprint": "bc1a2a2ab1cbd1d8b078daaa137b69c055e46e6a586edfc76c14f765c8e23205",
+  "job": {
+    "id": "chapter05_gu_pressure",
+    "instructions": "三十多岁中国女性，语气坚定、边界清楚，稍有压力但不喊叫、不讲课。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "顾宁",
+    "text": "我提出过记号，不等于拥有后来每一封信。",
+    "voice": "Elias",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "6f235546-15e2-9a39-bc41-907f2a851873",
+  "schema_version": 1,
+  "usage": {
+    "characters": 36
+  }
+}

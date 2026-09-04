@@ -1,0 +1,22 @@
+{
+  "fingerprint": "839bccb3d9439b46c38358697fa51c627fb5092e96307d75ba31723d83f3a4c0",
+  "job": {
+    "id": "chapter_05_finale.truth_correct_1.000",
+    "instructions": "三十多岁的职业侦探，低中音，沉稳清晰，带分析感。现实主义表演，不故作深沉，不使用播音腔。当前处于对质、承认或推理推进段落，增加紧张与确定感，但不要喊叫或煽情。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "侦探",
+    "text": "共同记号只说明采用同一转交格式。四种材料痕迹和形成顺序证明，经手者并不相同。",
+    "voice": "Moon",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "72ad1795-9ff6-9192-9461-b7b50986e412",
+  "schema_version": 1,
+  "usage": {
+    "characters": 73
+  }
+}

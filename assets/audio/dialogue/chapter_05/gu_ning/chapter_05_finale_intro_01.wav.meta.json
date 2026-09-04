@@ -1,0 +1,22 @@
+{
+  "fingerprint": "51beb04d5136e7b82013836a18d9af29e663774b8c23c3c85a197885542e1230",
+  "job": {
+    "id": "chapter_05_finale.intro.001",
+    "instructions": "三十多岁女性，低沉冷静，措辞利落，习惯掌控局面。情绪内收，避免讲课腔和夸张哭腔。按日常基线自然陈述，停顿清楚，不额外渲染悬疑。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "顾宁",
+    "text": "缺口方框最早是我画的。它不是我的名字，只是提醒收到信的人：这里还有一段没有写完。",
+    "voice": "Elias",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "6358595f-d0b9-9f75-a9fc-78f581502c7a",
+  "schema_version": 1,
+  "usage": {
+    "characters": 76
+  }
+}

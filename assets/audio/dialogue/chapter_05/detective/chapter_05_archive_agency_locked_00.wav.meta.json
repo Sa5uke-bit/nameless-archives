@@ -1,0 +1,22 @@
+{
+  "fingerprint": "16d078ec9e5a763a89155c2d63571b43e0cc1951c6a2117a1c838664d96b5f8c",
+  "job": {
+    "id": "chapter_05_archive.agency_locked.000",
+    "instructions": "三十多岁的职业侦探，低中音，沉稳清晰，带分析感。现实主义表演，不故作深沉，不使用播音腔。按日常基线自然陈述，停顿清楚，不额外渲染悬疑。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "侦探",
+    "text": "七码头只是路的终点。先确认桌上四封信究竟能否来自同一人。",
+    "voice": "Moon",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "b2d750eb-3941-9316-b3b0-e0d2f04c00a7",
+  "schema_version": 1,
+  "usage": {
+    "characters": 54
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "fingerprint": "509d9bf37710bc6820369ada393b6dbdd0cd593c47196d5cc32f76b712b9b5a8",
+  "job": {
+    "id": "chapter_05_agency.d52_success.001",
+    "instructions": "三十六岁女性，声音温和但有清楚边界，长期疲惫而谨慎。现实主义表演，不柔弱，不故作神秘。当前处于对质、承认或推理推进段落，增加紧张与确定感，但不要喊叫或煽情。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "方芸",
+    "text": "没有首领，也没有谁能替所有人撤回一句话。",
+    "voice": "Serena",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "ed3a1b0f-e53a-94c9-8705-b6f56374eeef",
+  "schema_version": 1,
+  "usage": {
+    "characters": 38
+  }
+}

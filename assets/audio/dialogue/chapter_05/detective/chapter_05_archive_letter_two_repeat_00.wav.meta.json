@@ -1,0 +1,22 @@
+{
+  "fingerprint": "7905b789675a18e49b977881c3ccd7cd1bcf310d84f45b79d87d4f94fe86e285",
+  "job": {
+    "id": "chapter_05_archive.letter_two_repeat.000",
+    "instructions": "三十多岁的职业侦探，低中音，沉稳清晰，带分析感。现实主义表演，不故作深沉，不使用播音腔。当前是复查、回忆或含混段落，音量稍低、语速略慢，保留自然余韵。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "侦探",
+    "text": "相同记号之外，第二封信保留着剧场自己的材料习惯。",
+    "voice": "Moon",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "67fa5a8e-b157-98eb-9070-d2983b043365",
+  "schema_version": 1,
+  "usage": {
+    "characters": 46
+  }
+}

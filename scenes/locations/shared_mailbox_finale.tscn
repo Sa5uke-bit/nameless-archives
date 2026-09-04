@@ -1,0 +1,47 @@
+[gd_scene load_steps=8 format=3]
+
+[ext_resource type="Script" path="res://scripts/locations/shared_mailbox_finale.gd" id="1"]
+[ext_resource type="PackedScene" path="res://scenes/ui/hud.tscn" id="2"]
+[ext_resource type="Texture2D" path="res://assets/art/backgrounds/shared_mailbox_finale_v1.png" id="3"]
+[ext_resource type="Texture2D" path="res://assets/art/characters/gu_ning_v1.png" id="4"]
+[ext_resource type="Texture2D" path="res://assets/art/characters/fang_yun_v1.png" id="5"]
+[ext_resource type="Texture2D" path="res://assets/art/characters/luo_yao_v1.png" id="6"]
+[ext_resource type="Texture2D" path="res://assets/art/characters/jiang_he_v1.png" id="7"]
+
+[node name="SharedMailboxFinale" type="Node2D"]
+script = ExtResource("1")
+[node name="Background" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(640, 360)
+scale = Vector2(0.76555, 0.76514)
+texture = ExtResource("3")
+[node name="LocationTitle" type="Label" parent="."]
+offset_left = 420.0
+offset_top = 72.0
+offset_right = 860.0
+offset_bottom = 112.0
+theme_override_colors/font_color = Color(0.78, 0.7, 0.56, 1)
+theme_override_font_sizes/font_size = 25
+text = "七码头 · 共同信箱"
+horizontal_alignment = 1
+[node name="GuNing" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(275, 485)
+scale = Vector2(0.19, 0.19)
+texture = ExtResource("4")
+[node name="FangYun" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(500, 485)
+scale = Vector2(-0.19, 0.19)
+texture = ExtResource("5")
+[node name="LuoYao" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(780, 485)
+scale = Vector2(0.19, 0.19)
+texture = ExtResource("6")
+[node name="JiangHe" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(1010, 485)
+scale = Vector2(-0.19, 0.19)
+texture = ExtResource("7")
+[node name="HUD" parent="." instance=ExtResource("2")]

@@ -1,0 +1,22 @@
+{
+  "fingerprint": "333db3d7faeb714b69ceb59c45f280bddd2d684281c876e67fef5d7fe3419a3e",
+  "job": {
+    "id": "chapter_05_archive.intro.002",
+    "instructions": "三十多岁女性，低沉冷静，措辞利落，习惯掌控局面。情绪内收，避免讲课腔和夸张哭腔。按日常基线自然陈述，停顿清楚，不额外渲染悬疑。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "顾宁",
+    "text": "我来不是认领所有信。我只认第一把钥匙，以及第一封信末尾那一笔。",
+    "voice": "Elias",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "e0f39ba0-9350-96f6-be1b-424664cd37aa",
+  "schema_version": 1,
+  "usage": {
+    "characters": 59
+  }
+}

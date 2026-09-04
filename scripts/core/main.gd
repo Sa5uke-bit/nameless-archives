@@ -18,6 +18,10 @@ const LOCATION_PATHS := {
 	"archive_revision_room": "res://scenes/locations/archive_revision_room.tscn",
 	"news_negative_room": "res://scenes/locations/news_negative_room.tscn",
 	"demolition_hearing": "res://scenes/locations/demolition_hearing.tscn",
+	"final_archive_room": "res://scenes/locations/final_archive_room.tscn",
+	"postal_agency": "res://scenes/locations/postal_agency.tscn",
+	"shared_record_room": "res://scenes/locations/shared_record_room.tscn",
+	"shared_mailbox_finale": "res://scenes/locations/shared_mailbox_finale.tscn",
 }
 
 var current_screen: Node
@@ -39,6 +43,7 @@ func _show_title_screen() -> void:
 	current_screen.chapter_two_requested.connect(_start_chapter_two)
 	current_screen.chapter_three_requested.connect(_start_chapter_three)
 	current_screen.chapter_four_requested.connect(_start_chapter_four)
+	current_screen.chapter_five_requested.connect(_start_chapter_five)
 	current_screen.continue_requested.connect(_continue_case)
 	current_screen.quit_requested.connect(_quit_game)
 
@@ -89,6 +94,16 @@ func _start_chapter_four() -> void:
 		GameState.get_chapter_outcome("chapter_01", "name")
 	)
 	GameState.request_location("old_courtyard")
+
+
+func _start_chapter_five() -> void:
+	GameState.reset_case()
+	GameState.set_flag("current_chapter", "chapter_05")
+	GameState.set_flag("chapter_04_ending", GameState.get_chapter_outcome("chapter_04", "doorplate"))
+	GameState.set_flag("chapter_03_ending", GameState.get_chapter_outcome("chapter_03", "calibration"))
+	GameState.set_flag("chapter_02_ending", GameState.get_chapter_outcome("chapter_02", "clear"))
+	GameState.set_flag("chapter_01_ending", GameState.get_chapter_outcome("chapter_01", "name"))
+	GameState.request_location("final_archive_room")
 
 
 func _continue_case() -> void:

@@ -1,0 +1,22 @@
+{
+  "fingerprint": "497a5384b4d3ae53419938a7210414f696e18fadb08b5fc289e3eef0ce21823d",
+  "job": {
+    "id": "chapter_05_agency.records_locked.000",
+    "instructions": "三十多岁的职业侦探，低中音，沉稳清晰，带分析感。现实主义表演，不故作深沉，不使用播音腔。按日常基线自然陈述，停顿清楚，不额外渲染悬疑。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "侦探",
+    "text": "后室是谁整理的不重要，先用路线证明这里不是单一保管者的据点。",
+    "voice": "Moon",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "6a3fd51f-f7fb-9c09-b06a-3e9bf6965acf",
+  "schema_version": 1,
+  "usage": {
+    "characters": 58
+  }
+}

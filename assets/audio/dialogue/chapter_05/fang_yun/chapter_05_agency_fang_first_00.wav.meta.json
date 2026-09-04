@@ -1,0 +1,22 @@
+{
+  "fingerprint": "07d16b3b1628a585f4816c9523eaa5215cb45155d1ea5b93e8eae104b19e7279",
+  "job": {
+    "id": "chapter_05_agency.fang_first.000",
+    "instructions": "三十六岁女性，声音温和但有清楚边界，长期疲惫而谨慎。现实主义表演，不柔弱，不故作神秘。按日常基线自然陈述，停顿清楚，不额外渲染悬疑。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "方芸",
+    "text": "我想洗清盗窃，却不想用程书瑜现在的生活换取清白。这就是我寄信的全部目的。",
+    "voice": "Serena",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "c6fad8b7-1c15-9678-a39c-3628014f9ad2",
+  "schema_version": 1,
+  "usage": {
+    "characters": 69
+  }
+}

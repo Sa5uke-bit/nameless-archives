@@ -1,0 +1,22 @@
+{
+  "fingerprint": "60e24ad6c679df2f9c97dab43288af9a8a0139f92776cf9f3c9ccf64d88f5e44",
+  "job": {
+    "id": "chapter_05_archive.letter_three_first.000",
+    "instructions": "三十多岁的职业侦探，低中音，沉稳清晰，带分析感。现实主义表演，不故作深沉，不使用播音腔。按日常基线自然陈述，停顿清楚，不额外渲染悬疑。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "侦探",
+    "text": "雨渍停在邮袋压缝处，机械路戳属于岚岭客运线。它不是从澄湾剧场投出的。",
+    "voice": "Moon",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "f0c4bc65-a0c2-9834-9241-15df8048697f",
+  "schema_version": 1,
+  "usage": {
+    "characters": 65
+  }
+}

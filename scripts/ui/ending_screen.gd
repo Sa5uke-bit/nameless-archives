@@ -23,6 +23,12 @@ func _ready() -> void:
 		_show_doorplate_ending()
 	elif ending_id == "base_map":
 		_show_base_map_ending()
+	elif ending_id == "silence":
+		_show_silence_ending()
+	elif ending_id == "full_archive":
+		_show_full_archive_ending()
+	elif ending_id == "index":
+		_show_index_ending()
 	elif ending_id == "archive":
 		_show_archive_ending()
 	else:
@@ -112,6 +118,36 @@ func _show_base_map_ending() -> void:
 		"完整底图、住户清单、断电工单与未裁底片同时公开。十四号迅速成为旧城区补偿复核的焦点，蒋禾与蒋兰的关系得到承认，冯启昌无法再把火灾归结为一个不存在地址里的意外。\n\n"
 		+ "公开压力推进得更快，也把已经离开临潮街的人重新标到地图上。共同信箱的转交路径出现在报道里，有人因此停止使用它。\n\n"
 		+ "前三章报告的删节副本证明，另一群人一直在把事实与身份分开保存。侦探沿复写顺序和投递路线，第一次主动走向七码头的共同信箱。"
+	)
+
+
+func _show_silence_ending() -> void:
+	ending_label.text = "第五章结局"
+	ending_title.text = "沉默"
+	ending_text.text = (
+		"侦探公开了一份去除姓名、现址与原件路径的五章事实概要。共同署名的使用者没有被列成组织名单，仍可在各自生活里保持距离。\n\n"
+		+ "概要纠正了被嫁祸者与被删去者的记录，却没有给出足以让外部机构独立追索每份原件的完整路径。一些责任继续推进，另一些停在‘材料仍待核验’的门前。\n\n"
+		+ "七码头的信箱被正式停用。沉默保护了仍需要匿名的人，也留下一个无法仅靠善意填补的缺口：没有来源的事实，终究只能要求后来者相信。"
+	)
+
+
+func _show_full_archive_ending() -> void:
+	ending_label.text = "第五章结局"
+	ending_title.text = "全卷"
+	ending_text.text = (
+		"五章原件、匿名信、同意便笺、真实姓名与现址被装订成同一套公开全卷。责任人的签字与删改动作迅速形成压力，许多长期被否认的事实第一次同时出现在公众面前。\n\n"
+		+ "但转交者被误认成作者，未经核实的关联被当作共同组织，依靠匿名离开旧关系的人再次成为可搜索的线索。完整没有消除误读，只让误读拥有了更多材料。\n\n"
+		+ "共同信箱关闭以后，没有人再把下一封信投进来。全卷保存了一切，也取消了部分人选择何时重新出现的权利。"
+	)
+
+
+func _show_index_ending() -> void:
+	ending_label.text = "第五章结局"
+	ending_title.text = "索引"
+	ending_text.text = (
+		"五章已验证结论、责任动作与证据编号进入公开索引；匿名信原件、私人身份和同意记录交由独立渠道封存。任何公开指控都有可申请核验的路径，任何姓名也不再因为靠近证据就自动公开。\n\n"
+		+ "处理因此更慢。部分过时效的责任无法立刻追回，缺失原件的指控仍被诚实标为不足；当事人也可能在未来撤回或补充自己的公开边界。\n\n"
+		+ "七码头的旧信箱被拆下，缺口方框留在索引封底。它不再假装代表一个共同声音，只表示记录仍允许更正。侦探写下最后一行：名字不是证据的代价，而是由人决定如何留下的那一部分。"
 	)
 
 

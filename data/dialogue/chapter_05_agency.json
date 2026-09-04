@@ -1,0 +1,238 @@
+{
+  "conversations": {
+    "intro": [
+      {
+        "speaker": "旁白",
+        "text": "七码头代办所停用三年，盐雾把邮箱门腐成同一种颜色。只有钥匙台上的灰被最近擦过。",
+        "voice": "res://assets/audio/dialogue/chapter_05/narrator/chapter_05_agency_intro_00.wav",
+        "voice_bus": "Voice"
+      },
+      {
+        "speaker": "方芸",
+        "text": "我写过剧场那封。没有人命令我，是别人告诉我：这位侦探会查证，也会为公开范围负责。",
+        "voice": "res://assets/audio/dialogue/chapter_05/fang_yun/chapter_05_agency_intro_01.wav",
+        "voice_bus": "Voice"
+      },
+      {
+        "speaker": "罗遥",
+        "text": "我只经手客运邮袋里的信。第一章是谁，我到今天才见到。",
+        "voice": "res://assets/audio/dialogue/chapter_05/luo_yao/chapter_05_agency_intro_02.wav",
+        "voice_bus": "Voice"
+      },
+      {
+        "speaker": "侦探",
+        "text": "那就不数站在这里的人。只重建钥匙和路线。",
+        "voice": "res://assets/audio/dialogue/chapter_05/detective/chapter_05_agency_intro_03.wav",
+        "voice_bus": "Voice"
+      }
+    ],
+    "return_archive": [
+      {
+        "speaker": "侦探",
+        "text": "原件还留在归档室，需要时可以回去对照。",
+        "voice": "res://assets/audio/dialogue/chapter_05/detective/chapter_05_agency_return_archive_00.wav",
+        "voice_bus": "Voice"
+      }
+    ],
+    "lease_first": [
+      {
+        "speaker": "侦探",
+        "text": "租用栏写的是公开柜位用途：互助阅报组。不是姓名，也不是地下组织。",
+        "voice": "res://assets/audio/dialogue/chapter_05/detective/chapter_05_agency_lease_first_00.wav",
+        "voice_bus": "Voice"
+      },
+      {
+        "speaker": "方芸",
+        "text": "码头工人、家属和夜校学员都曾往这里放过报纸。我们只是借了它的旧用途。",
+        "voice": "res://assets/audio/dialogue/chapter_05/fang_yun/chapter_05_agency_lease_first_01.wav",
+        "voice_bus": "Voice"
+      }
+    ],
+    "lease_repeat": [
+      {
+        "speaker": "侦探",
+        "text": "柜位允许多人投递，只能证明入口共享，不能证明所有投递者身份。",
+        "voice": "res://assets/audio/dialogue/chapter_05/detective/chapter_05_agency_lease_repeat_00.wav",
+        "voice_bus": "Voice"
+      }
+    ],
+    "keys_first": [
+      {
+        "speaker": "侦探",
+        "text": "轮换簿只记蜡封颜色和交接日期。四段时间不重叠，没有人长期持有钥匙。",
+        "voice": "res://assets/audio/dialogue/chapter_05/detective/chapter_05_agency_keys_first_00.wav",
+        "voice_bus": "Voice"
+      },
+      {
+        "speaker": "罗遥",
+        "text": "我拿钥匙时只取自己的袋子。上一段是谁，温岑也不会告诉我。",
+        "voice": "res://assets/audio/dialogue/chapter_05/luo_yao/chapter_05_agency_keys_first_01.wav",
+        "voice_bus": "Voice"
+      }
+    ],
+    "keys_repeat": [
+      {
+        "speaker": "侦探",
+        "text": "轮换制度限制了每个人的知识，也避免一份名单成为新的危险。",
+        "voice": "res://assets/audio/dialogue/chapter_05/detective/chapter_05_agency_keys_repeat_00.wav",
+        "voice_bus": "Voice"
+      }
+    ],
+    "routes_first": [
+      {
+        "speaker": "侦探",
+        "text": "一封在北线终点落戳，二十分钟后另一封在南码头投入。旧班表给出的最短换乘是九十分钟。",
+        "voice": "res://assets/audio/dialogue/chapter_05/detective/chapter_05_agency_routes_first_00.wav",
+        "voice_bus": "Voice"
+      },
+      {
+        "speaker": "方芸",
+        "text": "那天南码头的信是我放的。我没有去过北线。",
+        "voice": "res://assets/audio/dialogue/chapter_05/fang_yun/chapter_05_agency_routes_first_01.wav",
+        "voice_bus": "Voice"
+      },
+      {
+        "speaker": "罗遥",
+        "text": "北线邮袋由我交接。二十分钟不是赶路，是两个人。",
+        "voice": "res://assets/audio/dialogue/chapter_05/luo_yao/chapter_05_agency_routes_first_02.wav",
+        "voice_bus": "Voice"
+      }
+    ],
+    "routes_repeat": [
+      {
+        "speaker": "侦探",
+        "text": "时间差短于物理路线下限，单人连续投递被排除。",
+        "voice": "res://assets/audio/dialogue/chapter_05/detective/chapter_05_agency_routes_repeat_00.wav",
+        "voice_bus": "Voice"
+      }
+    ],
+    "knowledge_first": [
+      {
+        "speaker": "侦探",
+        "text": "第二封只知道林小满被公开承认；第三封把未公开的磁带编号写错；第四封不知道被封存的旧住址。",
+        "voice": "res://assets/audio/dialogue/chapter_05/detective/chapter_05_agency_knowledge_first_00.wav",
+        "voice_bus": "Voice"
+      },
+      {
+        "speaker": "罗遥",
+        "text": "我们传的是能安全传的那一层。错误也被一起传下来了。",
+        "voice": "res://assets/audio/dialogue/chapter_05/luo_yao/chapter_05_agency_knowledge_first_01.wav",
+        "voice_bus": "Voice"
+      }
+    ],
+    "knowledge_repeat": [
+      {
+        "speaker": "侦探",
+        "text": "每封信的知识边界不同。没有一双眼睛看过全部档案。",
+        "voice": "res://assets/audio/dialogue/chapter_05/detective/chapter_05_agency_knowledge_repeat_00.wav",
+        "voice_bus": "Voice"
+      }
+    ],
+    "fang_first": [
+      {
+        "speaker": "方芸",
+        "text": "我想洗清盗窃，却不想用程书瑜现在的生活换取清白。这就是我寄信的全部目的。",
+        "voice": "res://assets/audio/dialogue/chapter_05/fang_yun/chapter_05_agency_fang_first_00.wav",
+        "voice_bus": "Voice"
+      },
+      {
+        "speaker": "侦探",
+        "text": "你没有为第三章选择委托，也不知道第四章会发生什么。",
+        "voice": "res://assets/audio/dialogue/chapter_05/detective/chapter_05_agency_fang_first_01.wav",
+        "voice_bus": "Voice"
+      },
+      {
+        "speaker": "方芸",
+        "text": "是。共同的是出口，不是答案。",
+        "voice": "res://assets/audio/dialogue/chapter_05/fang_yun/chapter_05_agency_fang_first_02.wav",
+        "voice_bus": "Voice"
+      }
+    ],
+    "fang_repeat": [
+      {
+        "speaker": "方芸",
+        "text": "如果有人说我们目标完全一致，那份记录本身就在抹掉分歧。",
+        "voice": "res://assets/audio/dialogue/chapter_05/fang_yun/chapter_05_agency_fang_repeat_00.wav",
+        "voice_bus": "Voice"
+      }
+    ],
+    "luo_first": [
+      {
+        "speaker": "罗遥",
+        "text": "余真获救以后，我把邮袋里不属于黄维国的信重新分开。能送到这里的，只有那几封。",
+        "voice": "res://assets/audio/dialogue/chapter_05/luo_yao/chapter_05_agency_luo_first_00.wav",
+        "voice_bus": "Voice"
+      },
+      {
+        "speaker": "侦探",
+        "text": "所以你知道运输，不知道作者。",
+        "voice": "res://assets/audio/dialogue/chapter_05/detective/chapter_05_agency_luo_first_01.wav",
+        "voice_bus": "Voice"
+      },
+      {
+        "speaker": "罗遥",
+        "text": "知道边界，比假装知道名字重要。",
+        "voice": "res://assets/audio/dialogue/chapter_05/luo_yao/chapter_05_agency_luo_first_02.wav",
+        "voice_bus": "Voice"
+      }
+    ],
+    "luo_repeat": [
+      {
+        "speaker": "罗遥",
+        "text": "我可以为路戳作证，不能替信封里面的人作证。",
+        "voice": "res://assets/audio/dialogue/chapter_05/luo_yao/chapter_05_agency_luo_repeat_00.wav",
+        "voice_bus": "Voice"
+      }
+    ],
+    "d52_not_ready": [
+      {
+        "speaker": "侦探",
+        "text": "多人出现不等于多人写信。我还缺信箱用途、钥匙时段、路线下限和知识边界。",
+        "voice": "res://assets/audio/dialogue/chapter_05/detective/chapter_05_agency_d52_not_ready_00.wav",
+        "voice_bus": "Voice"
+      }
+    ],
+    "d52_success": [
+      {
+        "speaker": "侦探",
+        "text": "柜位可共享，钥匙分段轮换，两条投递不可能由一人赶完，各封信又只知道局部。这是一条有限保管路线。",
+        "voice": "res://assets/audio/dialogue/chapter_05/detective/chapter_05_agency_d52_success_00.wav",
+        "voice_bus": "Voice"
+      },
+      {
+        "speaker": "方芸",
+        "text": "没有首领，也没有谁能替所有人撤回一句话。",
+        "voice": "res://assets/audio/dialogue/chapter_05/fang_yun/chapter_05_agency_d52_success_01.wav",
+        "voice_bus": "Voice"
+      },
+      {
+        "speaker": "罗遥",
+        "text": "后室里保存着我们怎样删改转交副本。那部分并不总是做对了。",
+        "voice": "res://assets/audio/dialogue/chapter_05/luo_yao/chapter_05_agency_d52_success_02.wav",
+        "voice_bus": "Voice"
+      }
+    ],
+    "records_locked": [
+      {
+        "speaker": "侦探",
+        "text": "后室是谁整理的不重要，先用路线证明这里不是单一保管者的据点。",
+        "voice": "res://assets/audio/dialogue/chapter_05/detective/chapter_05_agency_records_locked_00.wav",
+        "voice_bus": "Voice"
+      }
+    ],
+    "enter_records": [
+      {
+        "speaker": "方芸",
+        "text": "里面的黑线不是为了改掉结论，是为了不让下一个人顺着结论找到我们。",
+        "voice": "res://assets/audio/dialogue/chapter_05/fang_yun/chapter_05_agency_enter_records_00.wav",
+        "voice_bus": "Voice"
+      },
+      {
+        "speaker": "侦探",
+        "text": "但谁有权画下黑线，还需要重新核对。",
+        "voice": "res://assets/audio/dialogue/chapter_05/detective/chapter_05_agency_enter_records_01.wav",
+        "voice_bus": "Voice"
+      }
+    ]
+  }
+}

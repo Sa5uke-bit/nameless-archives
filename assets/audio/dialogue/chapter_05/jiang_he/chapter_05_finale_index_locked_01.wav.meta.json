@@ -1,0 +1,22 @@
+{
+  "fingerprint": "7e3e034a7b26c79b05c95e5024684f31e2e13028f6c7641dd2740179622e2914",
+  "job": {
+    "id": "chapter_05_finale.index_locked.001",
+    "instructions": "二十二岁中国女性，音色清楚偏低，年轻但不稚嫩。长期谨慎，表达事实时坚定，不使用哭腔、少女感或戏剧化受害者表演。当前处于对质、承认或推理推进段落，增加紧张与确定感，但不要喊叫或煽情。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "蒋禾",
+    "text": "记录可以以后更正。现在先诚实写下你真正拥有的边界。",
+    "voice": "Vivian",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "6f79e475-387e-93f7-9d4d-f6238cd632ab",
+  "schema_version": 1,
+  "usage": {
+    "characters": 48
+  }
+}

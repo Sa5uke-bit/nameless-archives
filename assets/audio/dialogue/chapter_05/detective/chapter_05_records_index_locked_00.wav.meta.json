@@ -1,0 +1,22 @@
+{
+  "fingerprint": "4f39621e2278621c9dd1f0d5b94946603554d2d1e6f18d400d76ddaaf6f28ee7",
+  "job": {
+    "id": "chapter_05_records.index_locked.000",
+    "instructions": "三十多岁的职业侦探，低中音，沉稳清晰，带分析感。现实主义表演，不故作深沉，不使用播音腔。当前处于对质、承认或推理推进段落，增加紧张与确定感，但不要喊叫或煽情。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "侦探",
+    "text": "先证明删节记录的用途与缺口，否则分类只会把既有偏见换成四个抽屉。",
+    "voice": "Moon",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "d313370a-f744-9b5e-a364-8cca7b60b61d",
+  "schema_version": 1,
+  "usage": {
+    "characters": 62
+  }
+}

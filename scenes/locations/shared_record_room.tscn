@@ -1,0 +1,173 @@
+[gd_scene load_steps=14 format=3]
+
+[ext_resource type="Script" path="res://scripts/locations/shared_record_room.gd" id="1"]
+[ext_resource type="PackedScene" path="res://scenes/characters/player.tscn" id="2"]
+[ext_resource type="PackedScene" path="res://scenes/ui/hud.tscn" id="3"]
+[ext_resource type="Script" path="res://scripts/interaction/interactable.gd" id="4"]
+[ext_resource type="Texture2D" path="res://assets/art/backgrounds/shared_record_room_v1.png" id="5"]
+[ext_resource type="Texture2D" path="res://assets/art/characters/jiang_he_v1.png" id="6"]
+[ext_resource type="Texture2D" path="res://assets/art/characters/wen_cen_v1.png" id="7"]
+[ext_resource type="PackedScene" path="res://scenes/ui/record_index.tscn" id="8"]
+
+[sub_resource type="RectangleShape2D" id="Floor"]
+size = Vector2(1280, 100)
+[sub_resource type="RectangleShape2D" id="Wall"]
+size = Vector2(40, 720)
+[sub_resource type="RectangleShape2D" id="Prop"]
+size = Vector2(102, 210)
+[sub_resource type="RectangleShape2D" id="Person"]
+size = Vector2(90, 290)
+[sub_resource type="RectangleShape2D" id="Door"]
+size = Vector2(70, 320)
+
+[node name="SharedRecordRoom" type="Node2D"]
+script = ExtResource("1")
+[node name="Background" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(640, 360)
+scale = Vector2(0.76555, 0.76514)
+texture = ExtResource("5")
+[node name="LocationTitle" type="Label" parent="."]
+offset_left = 420.0
+offset_top = 78.0
+offset_right = 860.0
+offset_bottom = 118.0
+theme_override_colors/font_color = Color(0.78, 0.7, 0.56, 1)
+theme_override_font_sizes/font_size = 25
+text = "代办所后室 · 共同记录台"
+horizontal_alignment = 1
+[node name="Floor" type="StaticBody2D" parent="."]
+position = Vector2(640, 670)
+collision_layer = 1
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Floor"]
+shape = SubResource("Floor")
+[node name="LeftWall" type="StaticBody2D" parent="."]
+position = Vector2(-20, 360)
+collision_layer = 1
+[node name="CollisionShape2D" type="CollisionShape2D" parent="LeftWall"]
+shape = SubResource("Wall")
+[node name="RightWall" type="StaticBody2D" parent="."]
+position = Vector2(1300, 360)
+collision_layer = 1
+[node name="CollisionShape2D" type="CollisionShape2D" parent="RightWall"]
+shape = SubResource("Wall")
+[node name="Player" parent="." instance=ExtResource("2")]
+position = Vector2(85, 620)
+[node name="BackDoor" type="Area2D" parent="."]
+position = Vector2(35, 520)
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("4")
+display_name = "返回代办所前厅"
+[node name="CollisionShape2D" type="CollisionShape2D" parent="BackDoor"]
+shape = SubResource("Door")
+[node name="SourceIndex" type="Area2D" parent="."]
+position = Vector2(165, 520)
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("4")
+display_name = "检查责任索引页"
+conversation_id = "source_first"
+repeat_conversation_id = "source_repeat"
+evidence_id = "E509"
+evidence_title = "保留证据编号的责任索引"
+evidence_description = "删节本保留结论、证据编号和出处，没有改写每章定案事实。"
+[node name="CollisionShape2D" type="CollisionShape2D" parent="SourceIndex"]
+shape = SubResource("Prop")
+[node name="ConsentNotes" type="Area2D" parent="."]
+position = Vector2(300, 520)
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("4")
+display_name = "比较四份同意便笺"
+conversation_id = "consent_first"
+repeat_conversation_id = "consent_repeat"
+evidence_id = "E510"
+evidence_title = "互不相同的同意便笺"
+evidence_description = "四名当事人对实名、现址和原件公开作出不同选择，不能统一代决。"
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ConsentNotes"]
+shape = SubResource("Prop")
+[node name="RumorPage" type="Area2D" parent="."]
+position = Vector2(435, 520)
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("4")
+display_name = "检查幕后首领传闻"
+conversation_id = "rumor_first"
+repeat_conversation_id = "rumor_repeat"
+evidence_id = "E511"
+evidence_title = "没有来源的首领传闻"
+evidence_description = "只有转述，没有原件、日期或独立来源，不能提升为事实。"
+[node name="CollisionShape2D" type="CollisionShape2D" parent="RumorPage"]
+shape = SubResource("Prop")
+[node name="SealedRegister" type="Area2D" parent="."]
+position = Vector2(570, 520)
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("4")
+display_name = "检查封存原件登记"
+conversation_id = "sealed_first"
+repeat_conversation_id = "sealed_repeat"
+evidence_id = "E512"
+evidence_title = "封存原件登记"
+evidence_description = "原始信件可由第三方核验，但无需随公开报告复制私人姓名。"
+[node name="CollisionShape2D" type="CollisionShape2D" parent="SealedRegister"]
+shape = SubResource("Prop")
+[node name="JiangHe" type="Area2D" parent="."]
+position = Vector2(710, 538)
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("4")
+display_name = "询问蒋禾"
+conversation_id = "jiang_first"
+repeat_conversation_id = "jiang_repeat"
+[node name="CollisionShape2D" type="CollisionShape2D" parent="JiangHe"]
+position = Vector2(0, -66)
+shape = SubResource("Person")
+[node name="CharacterSprite" type="Sprite2D" parent="JiangHe"]
+texture_filter = 1
+position = Vector2(0, -66)
+scale = Vector2(0.195, 0.195)
+texture = ExtResource("6")
+[node name="WenCen" type="Area2D" parent="."]
+position = Vector2(835, 538)
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("4")
+display_name = "询问温岑"
+conversation_id = "wen_first"
+repeat_conversation_id = "wen_repeat"
+[node name="CollisionShape2D" type="CollisionShape2D" parent="WenCen"]
+position = Vector2(0, -66)
+shape = SubResource("Person")
+[node name="CharacterSprite" type="Sprite2D" parent="WenCen"]
+texture_filter = 1
+position = Vector2(0, -66)
+scale = Vector2(-0.195, 0.195)
+texture = ExtResource("7")
+[node name="DeductionBoard" type="Area2D" parent="."]
+position = Vector2(955, 520)
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("4")
+display_name = "判断删节边界"
+[node name="CollisionShape2D" type="CollisionShape2D" parent="DeductionBoard"]
+shape = SubResource("Prop")
+[node name="IndexDesk" type="Area2D" parent="."]
+position = Vector2(1080, 520)
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("4")
+display_name = "制作最终材料索引"
+[node name="CollisionShape2D" type="CollisionShape2D" parent="IndexDesk"]
+shape = SubResource("Prop")
+[node name="FinalDoor" type="Area2D" parent="."]
+position = Vector2(1240, 520)
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("4")
+display_name = "把索引带回共同信箱"
+[node name="CollisionShape2D" type="CollisionShape2D" parent="FinalDoor"]
+shape = SubResource("Door")
+[node name="HUD" parent="." instance=ExtResource("3")]
+[node name="RecordIndex" parent="." instance=ExtResource("8")]

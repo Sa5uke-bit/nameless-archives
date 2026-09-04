@@ -1,0 +1,22 @@
+{
+  "fingerprint": "59b1cd3d6c8e4e6e230d43c3b9179e7fe4233981fded9bcaac61df5776a919c4",
+  "job": {
+    "id": "chapter_05_records.intro.002",
+    "instructions": "五十八岁中国男性退休投递员，嗓音略粗、语速偏慢，带风霜与内疚。口语自然克制，不使用说书腔或慈祥长者腔。按日常基线自然陈述，停顿清楚，不额外渲染悬疑。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "温岑",
+    "text": "我会投递，不会替当事人判断哪一页该见光。我们做到一半，就把另一半交给你。",
+    "voice": "Vincent",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "039f40b4-9e04-95a1-9fd9-88f06d63a060",
+  "schema_version": 1,
+  "usage": {
+    "characters": 68
+  }
+}

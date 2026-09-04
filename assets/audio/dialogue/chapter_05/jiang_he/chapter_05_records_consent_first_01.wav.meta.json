@@ -1,0 +1,22 @@
+{
+  "fingerprint": "31265adc21845660e4137cf1c7fef9ba478c56e9fa89df5e6bd63420b5abd345",
+  "job": {
+    "id": "chapter_05_records.consent_first.001",
+    "instructions": "二十二岁中国女性，音色清楚偏低，年轻但不稚嫩。长期谨慎，表达事实时坚定，不使用哭腔、少女感或戏剧化受害者表演。按日常基线自然陈述，停顿清楚，不额外渲染悬疑。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "蒋禾",
+    "text": "四种同意不能被一句‘为你们好’替换。",
+    "voice": "Vivian",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "93a053c0-d057-9dff-8da4-944101bf7d9a",
+  "schema_version": 1,
+  "usage": {
+    "characters": 33
+  }
+}

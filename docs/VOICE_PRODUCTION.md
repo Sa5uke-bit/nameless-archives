@@ -1,12 +1,12 @@
-# 四章配音与录音制作记录
+# 五章配音与录音制作记录
 
-> 当前阶段：第一至第四章正式全量配音均已生成并接入
+> 当前阶段：第一至第五章正式全量配音均已生成并接入
 > 生成方式：阿里云百炼 `qwen3-tts-instruct-flash`，AI 合成语音
-> 状态：共 485 条正式对白已生成、导入并通过自动检查，等待完整实机听感复核
+> 状态：共 601 条正式对白已生成、导入并通过自动检查，等待完整实机听感复核
 
 ## 1. 制作范围
 
-用户确认保留试听阶段的全部六个声线：侦探、旁白、乔雯、顾宁、赵成和顾海川。正式包覆盖四个章节 JSON 中的旁白、人物对白和重复调查提示，共 135 条、3615 个剧本文字。
+第一章用户确认保留试听阶段的六个基础声线：侦探、旁白、乔雯、顾宁、赵成和顾海川。第一章正式包覆盖四个 JSON 中的旁白、人物对白和重复调查提示，共 135 条、3615 个剧本文字；后续章节在此基础上扩展并尽量复用系统音色。
 
 林小满在现有剧本中没有直接台词。“？？？”的两句由顾宁的 `Elias` 声线演绎，并通过 `VoiceDuct` 总线加入低通、轻微混响和音量衰减，表现声音从传声管另一端传来；这不增加第七个角色声线。“咔哒”属于音效字幕，不生成语音。
 
@@ -183,7 +183,22 @@ python tools/build_voice_manifest.py --chapter 4 --check
 python tools/validate_voice_pack.py --chapter 4
 ```
 
-## 10. 来源与使用说明
+## 10. 第五章《共同的名字》
+
+第五章正式清单为 [`data/voice/chapter_05_full.jsonl`](../data/voice/chapter_05_full.jsonl)，输出位于 `assets/audio/dialogue/chapter_05/`。共 116 条、3368 个剧本文字，总时长约 750.64 秒（12 分 31 秒），WAV 数据约 36.04 MB；全部为单声道、16 位、24 kHz PCM，116 个请求 ID 与参数指纹均唯一有效。
+
+终章没有创建付费自定义音色。侦探继续使用 `Moon`，旁白继续使用 `Neil`；顾宁、方芸、罗遥、蒋禾与温岑分别沿用其前章 `Elias`、`Serena`、`Serena`、`Vivian`、`Vincent` 声线与角色级指令，保证回归人物的声音身份连续。七个发声身份共使用六个系统音色。
+
+试听清单为 [`data/voice/chapter_05_auditions_v1.jsonl`](../data/voice/chapter_05_auditions_v1.jsonl)，五名回归角色各有两条终章语境试听，共 10 条，输出位于 `assets/audio/dialogue/auditions/chapter_05_v1/`。正式批次发生一次网络超时，前 39 条写入后按侧录指纹续传；第二次执行跳过这 39 条并补齐其余 77 条，没有覆盖已完成请求。
+
+自动检查已覆盖清单与对白幂等性、WAV 解码、声道、位深、采样率、时长、内容指纹、唯一请求 ID 和 Godot 运行时引用。当前仍未逐条完成人耳听测，因此不能据此声称读音、停顿和表演已经全部验收。
+
+```powershell
+python tools/build_voice_manifest.py --chapter 5 --check
+python tools/validate_voice_pack.py --chapter 5
+```
+
+## 11. 来源与使用说明
 
 - 服务：阿里云百炼大模型服务平台；
 - 模型：`qwen3-tts-instruct-flash`；

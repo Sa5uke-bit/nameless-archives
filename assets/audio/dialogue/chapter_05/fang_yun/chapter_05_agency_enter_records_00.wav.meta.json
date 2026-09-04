@@ -1,0 +1,22 @@
+{
+  "fingerprint": "4d53557a28804d93fee4900791b4cab7189479c2d2c85d198ff0004c5c16e4b6",
+  "job": {
+    "id": "chapter_05_agency.enter_records.000",
+    "instructions": "三十六岁女性，声音温和但有清楚边界，长期疲惫而谨慎。现实主义表演，不柔弱，不故作神秘。按日常基线自然陈述，停顿清楚，不额外渲染悬疑。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "方芸",
+    "text": "里面的黑线不是为了改掉结论，是为了不让下一个人顺着结论找到我们。",
+    "voice": "Serena",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "6de6e72b-976c-99a2-aad6-8c097aeccdbb",
+  "schema_version": 1,
+  "usage": {
+    "characters": 62
+  }
+}

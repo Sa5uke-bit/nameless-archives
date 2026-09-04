@@ -1,0 +1,22 @@
+{
+  "fingerprint": "bf87079405159d64e2db93564da36938ccd15471eab519b0881f212117c7c2ab",
+  "job": {
+    "id": "chapter_05_archive.d51_success.001",
+    "instructions": "三十多岁女性，低沉冷静，措辞利落，习惯掌控局面。情绪内收，避免讲课腔和夸张哭腔。当前处于对质、承认或推理推进段落，增加紧张与确定感，但不要喊叫或煽情。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "顾宁",
+    "text": "你已经证明我不是幕后的人。现在去证明，那里也没有另一个我。",
+    "voice": "Elias",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "cb9fce79-203c-9934-932a-b2a2b851a8dd",
+  "schema_version": 1,
+  "usage": {
+    "characters": 55
+  }
+}

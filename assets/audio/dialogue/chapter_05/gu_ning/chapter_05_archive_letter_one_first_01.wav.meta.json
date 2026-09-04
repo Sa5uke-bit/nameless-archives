@@ -1,0 +1,22 @@
+{
+  "fingerprint": "d2a75f15e785392b3def4171dd228ac93177eaf488af772095531157060ba6ea",
+  "job": {
+    "id": "chapter_05_archive.letter_one_first.001",
+    "instructions": "三十多岁女性，低沉冷静，措辞利落，习惯掌控局面。情绪内收，避免讲课腔和夸张哭腔。按日常基线自然陈述，停顿清楚，不额外渲染悬疑。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "顾宁",
+    "text": "那时我只想说：林小满还缺在记录里。没有第二章，也没有什么计划。",
+    "voice": "Elias",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "dde8b691-ed31-9124-a186-9b0cdee6f432",
+  "schema_version": 1,
+  "usage": {
+    "characters": 58
+  }
+}

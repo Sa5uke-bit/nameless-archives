@@ -1,0 +1,22 @@
+{
+  "fingerprint": "cb499abbeb3450d63b9d04d5f8859dd9226e0fb111fa96cf921e2f8a15ef3b60",
+  "job": {
+    "id": "chapter_05_agency.routes_repeat.000",
+    "instructions": "三十多岁的职业侦探，低中音，沉稳清晰，带分析感。现实主义表演，不故作深沉，不使用播音腔。当前是复查、回忆或含混段落，音量稍低、语速略慢，保留自然余韵。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "侦探",
+    "text": "时间差短于物理路线下限，单人连续投递被排除。",
+    "voice": "Moon",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "d48c1ee5-967e-9f38-b8cb-ec27fc2ed2c2",
+  "schema_version": 1,
+  "usage": {
+    "characters": 42
+  }
+}

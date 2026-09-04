@@ -1,0 +1,22 @@
+{
+  "fingerprint": "93e5c232789fa9e2d1e470891e85a4cf7190d31b9d8682aa24509019234cc01a",
+  "job": {
+    "id": "chapter_05_agency.intro.000",
+    "instructions": "成熟男性叙述者，清楚客观，有轻微纪录片质感但不过分正式。保持克制，不使用恐怖预告腔。按日常基线自然陈述，停顿清楚，不额外渲染悬疑。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "旁白",
+    "text": "七码头代办所停用三年，盐雾把邮箱门腐成同一种颜色。只有钥匙台上的灰被最近擦过。",
+    "voice": "Neil",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "2b9d5ef5-50e3-9f0d-80ce-4e1bdadb0050",
+  "schema_version": 1,
+  "usage": {
+    "characters": 75
+  }
+}

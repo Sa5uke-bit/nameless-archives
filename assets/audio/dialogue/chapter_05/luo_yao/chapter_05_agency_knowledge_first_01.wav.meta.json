@@ -1,0 +1,22 @@
+{
+  "fingerprint": "c7fd449a20d1590a406a5cc031817225afcac32f7c9c6548f06a63ba9cdcb998",
+  "job": {
+    "id": "chapter_05_agency.knowledge_first.001",
+    "instructions": "三十六岁女性，前售票员和档案志愿者，音色温和清楚，观察力强，带压住的内疚。现实主义表演，不柔弱，不故作神秘。按日常基线自然陈述，停顿清楚，不额外渲染悬疑。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "罗遥",
+    "text": "我们传的是能安全传的那一层。错误也被一起传下来了。",
+    "voice": "Serena",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "ddc1c56c-91ae-9769-b849-a9ee433284ff",
+  "schema_version": 1,
+  "usage": {
+    "characters": 48
+  }
+}

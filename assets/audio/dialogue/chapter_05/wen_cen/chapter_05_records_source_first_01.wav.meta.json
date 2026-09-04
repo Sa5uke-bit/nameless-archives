@@ -1,0 +1,22 @@
+{
+  "fingerprint": "0090983eecff709d962775f51e404a010b5bf67388a54ef7c11a6619f242d07e",
+  "job": {
+    "id": "chapter_05_records.source_first.001",
+    "instructions": "五十八岁中国男性退休投递员，嗓音略粗、语速偏慢，带风霜与内疚。口语自然克制，不使用说书腔或慈祥长者腔。按日常基线自然陈述，停顿清楚，不额外渲染悬疑。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "温岑",
+    "text": "因为名字可以隐去，证据从哪里来不能隐去。",
+    "voice": "Vincent",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "0a8d0b5e-34f8-9ceb-925a-c2c9da741e20",
+  "schema_version": 1,
+  "usage": {
+    "characters": 38
+  }
+}

@@ -1,0 +1,262 @@
+{
+  "conversations": {
+    "intro": [
+      {
+        "speaker": "旁白",
+        "text": "后室没有总名单。木桌上只有五章材料的公开层、私人层和一叠互相冲突的便笺。",
+        "voice": "res://assets/audio/dialogue/chapter_05/narrator/chapter_05_records_intro_00.wav",
+        "voice_bus": "Voice"
+      },
+      {
+        "speaker": "蒋禾",
+        "text": "我删去过旧住户现址，也坚持把蒋兰的名字写回来。同一条黑线，有时保护，有时替人闭嘴。",
+        "voice": "res://assets/audio/dialogue/chapter_05/jiang_he/chapter_05_records_intro_01.wav",
+        "voice_bus": "Voice"
+      },
+      {
+        "speaker": "温岑",
+        "text": "我会投递，不会替当事人判断哪一页该见光。我们做到一半，就把另一半交给你。",
+        "voice": "res://assets/audio/dialogue/chapter_05/wen_cen/chapter_05_records_intro_02.wav",
+        "voice_bus": "Voice"
+      },
+      {
+        "speaker": "侦探",
+        "text": "那就先查删节保留了什么，又漏掉了什么程序。",
+        "voice": "res://assets/audio/dialogue/chapter_05/detective/chapter_05_records_intro_03.wav",
+        "voice_bus": "Voice"
+      }
+    ],
+    "return_agency": [
+      {
+        "speaker": "侦探",
+        "text": "前厅的钥匙与路线仍可复查。",
+        "voice": "res://assets/audio/dialogue/chapter_05/detective/chapter_05_records_return_agency_00.wav",
+        "voice_bus": "Voice"
+      }
+    ],
+    "source_first": [
+      {
+        "speaker": "侦探",
+        "text": "所有删节本都保留证据编号、责任动作和原件所在处。它们没有把顾海川写成别人，也没有替冯启昌减责。",
+        "voice": "res://assets/audio/dialogue/chapter_05/detective/chapter_05_records_source_first_00.wav",
+        "voice_bus": "Voice"
+      },
+      {
+        "speaker": "温岑",
+        "text": "因为名字可以隐去，证据从哪里来不能隐去。",
+        "voice": "res://assets/audio/dialogue/chapter_05/wen_cen/chapter_05_records_source_first_01.wav",
+        "voice_bus": "Voice"
+      }
+    ],
+    "source_repeat": [
+      {
+        "speaker": "侦探",
+        "text": "可复核路径完整。删节的主要对象是私人身份，不是案件结论。",
+        "voice": "res://assets/audio/dialogue/chapter_05/detective/chapter_05_records_source_repeat_00.wav",
+        "voice_bus": "Voice"
+      }
+    ],
+    "consent_first": [
+      {
+        "speaker": "侦探",
+        "text": "顾宁同意林小满实名，方芸拒绝公开程书瑜去向，罗遥只同意路线作证，蒋禾要求写回亲属关系。",
+        "voice": "res://assets/audio/dialogue/chapter_05/detective/chapter_05_records_consent_first_00.wav",
+        "voice_bus": "Voice"
+      },
+      {
+        "speaker": "蒋禾",
+        "text": "四种同意不能被一句‘为你们好’替换。",
+        "voice": "res://assets/audio/dialogue/chapter_05/jiang_he/chapter_05_records_consent_first_01.wav",
+        "voice_bus": "Voice"
+      }
+    ],
+    "consent_repeat": [
+      {
+        "speaker": "侦探",
+        "text": "保护不是统一静音。当事人对哪一部分发声，有各自决定。",
+        "voice": "res://assets/audio/dialogue/chapter_05/detective/chapter_05_records_consent_repeat_00.wav",
+        "voice_bus": "Voice"
+      }
+    ],
+    "rumor_first": [
+      {
+        "speaker": "侦探",
+        "text": "‘有人安排所有案件’只在一张转述页上出现。没有原信、日期，也没有第二来源。",
+        "voice": "res://assets/audio/dialogue/chapter_05/detective/chapter_05_records_rumor_first_00.wav",
+        "voice_bus": "Voice"
+      },
+      {
+        "speaker": "温岑",
+        "text": "人们更愿意相信一只看不见的手，因为接力听起来太普通。",
+        "voice": "res://assets/audio/dialogue/chapter_05/wen_cen/chapter_05_records_rumor_first_01.wav",
+        "voice_bus": "Voice"
+      },
+      {
+        "speaker": "侦探",
+        "text": "普通不能让传闻升级成事实。",
+        "voice": "res://assets/audio/dialogue/chapter_05/detective/chapter_05_records_rumor_first_02.wav",
+        "voice_bus": "Voice"
+      }
+    ],
+    "rumor_repeat": [
+      {
+        "speaker": "侦探",
+        "text": "这页可以作为待核线索保存，不能进入已证结论。",
+        "voice": "res://assets/audio/dialogue/chapter_05/detective/chapter_05_records_rumor_repeat_00.wav",
+        "voice_bus": "Voice"
+      }
+    ],
+    "sealed_first": [
+      {
+        "speaker": "侦探",
+        "text": "每份公开副本对应一只封套。第三方可以核验原文、删节位置和同意日期。",
+        "voice": "res://assets/audio/dialogue/chapter_05/detective/chapter_05_records_sealed_first_00.wav",
+        "voice_bus": "Voice"
+      },
+      {
+        "speaker": "蒋禾",
+        "text": "不把原件贴在墙上，也不等于要求所有人相信我们的口头保证。",
+        "voice": "res://assets/audio/dialogue/chapter_05/jiang_he/chapter_05_records_sealed_first_01.wav",
+        "voice_bus": "Voice"
+      }
+    ],
+    "sealed_repeat": [
+      {
+        "speaker": "侦探",
+        "text": "封存保存了更正与审计可能，不让私人材料自动变成公共材料。",
+        "voice": "res://assets/audio/dialogue/chapter_05/detective/chapter_05_records_sealed_repeat_00.wav",
+        "voice_bus": "Voice"
+      }
+    ],
+    "jiang_first": [
+      {
+        "speaker": "蒋禾",
+        "text": "十四号曾经被别人从地图上抹掉。所以我最怕‘保护’最后又变成一次删除。",
+        "voice": "res://assets/audio/dialogue/chapter_05/jiang_he/chapter_05_records_jiang_first_00.wav",
+        "voice_bus": "Voice"
+      },
+      {
+        "speaker": "侦探",
+        "text": "该写回的事实由证据和你的同意支持；无关住址则不承担证明责任。",
+        "voice": "res://assets/audio/dialogue/chapter_05/detective/chapter_05_records_jiang_first_01.wav",
+        "voice_bus": "Voice"
+      },
+      {
+        "speaker": "蒋禾",
+        "text": "把这两件事分开，我才愿意把便笺留下。",
+        "voice": "res://assets/audio/dialogue/chapter_05/jiang_he/chapter_05_records_jiang_first_02.wav",
+        "voice_bus": "Voice"
+      }
+    ],
+    "jiang_repeat": [
+      {
+        "speaker": "蒋禾",
+        "text": "我需要的不是更多曝光，是不再由别人决定我是否存在。",
+        "voice": "res://assets/audio/dialogue/chapter_05/jiang_he/chapter_05_records_jiang_repeat_00.wav",
+        "voice_bus": "Voice"
+      }
+    ],
+    "wen_first": [
+      {
+        "speaker": "温岑",
+        "text": "邮差习惯把无法投递的信退回。这里却没有一个永远正确的寄件人地址。",
+        "voice": "res://assets/audio/dialogue/chapter_05/wen_cen/chapter_05_records_wen_first_00.wav",
+        "voice_bus": "Voice"
+      },
+      {
+        "speaker": "侦探",
+        "text": "所以记录要能说明来源，也要说明来源何时不足。",
+        "voice": "res://assets/audio/dialogue/chapter_05/detective/chapter_05_records_wen_first_01.wav",
+        "voice_bus": "Voice"
+      }
+    ],
+    "wen_repeat": [
+      {
+        "speaker": "温岑",
+        "text": "不知道就写不知道，比补一个好听的名字可靠。",
+        "voice": "res://assets/audio/dialogue/chapter_05/wen_cen/chapter_05_records_wen_repeat_00.wav",
+        "voice_bus": "Voice"
+      }
+    ],
+    "d53_not_ready": [
+      {
+        "speaker": "侦探",
+        "text": "要判断删节边界，我需要同时看到责任索引、同意差异、无源传闻和封存登记。",
+        "voice": "res://assets/audio/dialogue/chapter_05/detective/chapter_05_records_d53_not_ready_00.wav",
+        "voice_bus": "Voice"
+      }
+    ],
+    "d53_success": [
+      {
+        "speaker": "侦探",
+        "text": "删节本保住了责任来源，却没有逐项取得公开或删节同意。它是有用但不完整的方法。",
+        "voice": "res://assets/audio/dialogue/chapter_05/detective/chapter_05_records_d53_success_00.wav",
+        "voice_bus": "Voice"
+      },
+      {
+        "speaker": "蒋禾",
+        "text": "别把它烧掉，也别原样贴出去。给每一层材料一个能被追问的位置。",
+        "voice": "res://assets/audio/dialogue/chapter_05/jiang_he/chapter_05_records_d53_success_01.wav",
+        "voice_bus": "Voice"
+      },
+      {
+        "speaker": "温岑",
+        "text": "中间那张空桌，就是留给这件事的。",
+        "voice": "res://assets/audio/dialogue/chapter_05/wen_cen/chapter_05_records_d53_success_02.wav",
+        "voice_bus": "Voice"
+      }
+    ],
+    "index_locked": [
+      {
+        "speaker": "侦探",
+        "text": "先证明删节记录的用途与缺口，否则分类只会把既有偏见换成四个抽屉。",
+        "voice": "res://assets/audio/dialogue/chapter_05/detective/chapter_05_records_index_locked_00.wav",
+        "voice_bus": "Voice"
+      }
+    ],
+    "index_repeat": [
+      {
+        "speaker": "侦探",
+        "text": "索引已经把事实、身份、传闻和原件分开。每一项仍保留更正入口。",
+        "voice": "res://assets/audio/dialogue/chapter_05/detective/chapter_05_records_index_repeat_00.wav",
+        "voice_bus": "Voice"
+      }
+    ],
+    "index_success": [
+      {
+        "speaker": "侦探",
+        "text": "责任结论与证据编号进入公开层；非必要身份受保护；传闻标明来源不足；原件和同意表封存供核验。",
+        "voice": "res://assets/audio/dialogue/chapter_05/detective/chapter_05_records_index_success_00.wav",
+        "voice_bus": "Voice"
+      },
+      {
+        "speaker": "蒋禾",
+        "text": "这不是替所有人决定同一个答案。至少每个人知道自己的决定写在哪里。",
+        "voice": "res://assets/audio/dialogue/chapter_05/jiang_he/chapter_05_records_index_success_01.wav",
+        "voice_bus": "Voice"
+      }
+    ],
+    "finale_locked": [
+      {
+        "speaker": "温岑",
+        "text": "共同信箱不缺另一份未经整理的卷宗。先把最后索引完成。",
+        "voice": "res://assets/audio/dialogue/chapter_05/wen_cen/chapter_05_records_finale_locked_00.wav",
+        "voice_bus": "Voice"
+      }
+    ],
+    "enter_finale": [
+      {
+        "speaker": "温岑",
+        "text": "天快亮了。她们在前厅等的不是幕后人，而是你对这份记录的最后说明。",
+        "voice": "res://assets/audio/dialogue/chapter_05/wen_cen/chapter_05_records_enter_finale_00.wav",
+        "voice_bus": "Voice"
+      },
+      {
+        "speaker": "侦探",
+        "text": "我会先陈述能证明的，再决定留下哪一层。",
+        "voice": "res://assets/audio/dialogue/chapter_05/detective/chapter_05_records_enter_finale_01.wav",
+        "voice_bus": "Voice"
+      }
+    ]
+  }
+}

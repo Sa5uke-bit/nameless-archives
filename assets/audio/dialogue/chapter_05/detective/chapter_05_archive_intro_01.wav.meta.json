@@ -1,0 +1,22 @@
+{
+  "fingerprint": "1135fad5d9cafeee828cebfb22d97874bc7cdb98913b0eaf9b8d7692e9adb5b2",
+  "job": {
+    "id": "chapter_05_archive.intro.001",
+    "instructions": "三十多岁的职业侦探，低中音，沉稳清晰，带分析感。现实主义表演，不故作深沉，不使用播音腔。按日常基线自然陈述，停顿清楚，不额外渲染悬疑。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "侦探",
+    "text": "四只档案盒，四封信。共同记号画在相同位置，纸却没有一张相同。",
+    "voice": "Moon",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "3e608d8e-42d9-9d02-a3df-c2ed72cb1da0",
+  "schema_version": 1,
+  "usage": {
+    "characters": 56
+  }
+}

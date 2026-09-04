@@ -1,0 +1,22 @@
+{
+  "fingerprint": "bdc0a2bea837e48ef23345bd97c1567acba63a3afb0a09104496d627bbaeb5de",
+  "job": {
+    "id": "chapter_05_records.consent_first.000",
+    "instructions": "三十多岁的职业侦探，低中音，沉稳清晰，带分析感。现实主义表演，不故作深沉，不使用播音腔。按日常基线自然陈述，停顿清楚，不额外渲染悬疑。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "侦探",
+    "text": "顾宁同意林小满实名，方芸拒绝公开程书瑜去向，罗遥只同意路线作证，蒋禾要求写回亲属关系。",
+    "voice": "Moon",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "bbbd57df-e56a-9376-907f-648c94a5ef73",
+  "schema_version": 1,
+  "usage": {
+    "characters": 82
+  }
+}

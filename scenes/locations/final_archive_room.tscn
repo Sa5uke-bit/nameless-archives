@@ -1,0 +1,138 @@
+[gd_scene load_steps=12 format=3]
+
+[ext_resource type="Script" path="res://scripts/locations/final_archive_room.gd" id="1"]
+[ext_resource type="PackedScene" path="res://scenes/characters/player.tscn" id="2"]
+[ext_resource type="PackedScene" path="res://scenes/ui/hud.tscn" id="3"]
+[ext_resource type="Script" path="res://scripts/interaction/interactable.gd" id="4"]
+[ext_resource type="Texture2D" path="res://assets/art/backgrounds/final_archive_room_v1.png" id="5"]
+[ext_resource type="Texture2D" path="res://assets/art/characters/gu_ning_v1.png" id="6"]
+
+[sub_resource type="RectangleShape2D" id="Floor"]
+size = Vector2(1280, 100)
+[sub_resource type="RectangleShape2D" id="Wall"]
+size = Vector2(40, 720)
+[sub_resource type="RectangleShape2D" id="Prop"]
+size = Vector2(112, 210)
+[sub_resource type="RectangleShape2D" id="Person"]
+size = Vector2(90, 290)
+[sub_resource type="RectangleShape2D" id="Door"]
+size = Vector2(72, 320)
+
+[node name="FinalArchiveRoom" type="Node2D"]
+script = ExtResource("1")
+[node name="Background" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(640, 360)
+scale = Vector2(0.76555, 0.76514)
+texture = ExtResource("5")
+[node name="LocationTitle" type="Label" parent="."]
+offset_left = 420.0
+offset_top = 92.0
+offset_right = 860.0
+offset_bottom = 132.0
+theme_override_colors/font_color = Color(0.78, 0.7, 0.56, 1)
+theme_override_font_sizes/font_size = 25
+text = "临时归档室 · 最后一封信"
+horizontal_alignment = 1
+[node name="Floor" type="StaticBody2D" parent="."]
+position = Vector2(640, 670)
+collision_layer = 1
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Floor"]
+shape = SubResource("Floor")
+[node name="LeftWall" type="StaticBody2D" parent="."]
+position = Vector2(-20, 360)
+collision_layer = 1
+[node name="CollisionShape2D" type="CollisionShape2D" parent="LeftWall"]
+shape = SubResource("Wall")
+[node name="RightWall" type="StaticBody2D" parent="."]
+position = Vector2(1300, 360)
+collision_layer = 1
+[node name="CollisionShape2D" type="CollisionShape2D" parent="RightWall"]
+shape = SubResource("Wall")
+[node name="Player" parent="." instance=ExtResource("2")]
+position = Vector2(80, 620)
+[node name="FirstLetter" type="Area2D" parent="."]
+position = Vector2(170, 520)
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("4")
+display_name = "检查第一章钥匙信"
+conversation_id = "letter_one_first"
+repeat_conversation_id = "letter_one_repeat"
+evidence_id = "E501"
+evidence_title = "第一章钥匙信原件"
+evidence_description = "普通账簿纸上的顾宁笔迹；共同记号是正文写完后补上的一笔。"
+[node name="CollisionShape2D" type="CollisionShape2D" parent="FirstLetter"]
+shape = SubResource("Prop")
+[node name="SecondLetter" type="Area2D" parent="."]
+position = Vector2(335, 520)
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("4")
+display_name = "检查第二章节目单内衬"
+conversation_id = "letter_two_first"
+repeat_conversation_id = "letter_two_repeat"
+evidence_id = "E502"
+evidence_title = "第二章节目单内衬"
+evidence_description = "纸张纤维来自剧场节目单，三折内收，与第一封信的对折方式不同。"
+[node name="CollisionShape2D" type="CollisionShape2D" parent="SecondLetter"]
+shape = SubResource("Prop")
+[node name="ThirdLetter" type="Area2D" parent="."]
+position = Vector2(500, 520)
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("4")
+display_name = "检查第三章邮袋转交件"
+conversation_id = "letter_three_first"
+repeat_conversation_id = "letter_three_repeat"
+evidence_id = "E503"
+evidence_title = "第三章邮袋转交件"
+evidence_description = "机械路戳和雨渍边界证明它随客运邮袋到达，不是从剧场路线寄出。"
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ThirdLetter"]
+shape = SubResource("Prop")
+[node name="FourthCopy" type="Area2D" parent="."]
+position = Vector2(665, 520)
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("4")
+display_name = "检查第四章报告复写件"
+conversation_id = "copy_four_first"
+repeat_conversation_id = "copy_four_repeat"
+evidence_id = "E504"
+evidence_title = "第四章报告复写件"
+evidence_description = "温岑誊写正文，蒋禾以另一种笔迹标出姓名删节，形成顺序可分辨。"
+[node name="CollisionShape2D" type="CollisionShape2D" parent="FourthCopy"]
+shape = SubResource("Prop")
+[node name="GuNing" type="Area2D" parent="."]
+position = Vector2(825, 538)
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("4")
+display_name = "询问顾宁"
+conversation_id = "gu_ning_first"
+repeat_conversation_id = "gu_ning_repeat"
+[node name="CollisionShape2D" type="CollisionShape2D" parent="GuNing"]
+position = Vector2(0, -66)
+shape = SubResource("Person")
+[node name="CharacterSprite" type="Sprite2D" parent="GuNing"]
+texture_filter = 1
+position = Vector2(0, -66)
+scale = Vector2(0.195, 0.195)
+texture = ExtResource("6")
+[node name="DeductionBoard" type="Area2D" parent="."]
+position = Vector2(1030, 520)
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("4")
+display_name = "比较四封委托"
+[node name="CollisionShape2D" type="CollisionShape2D" parent="DeductionBoard"]
+shape = SubResource("Prop")
+[node name="AgencyDoor" type="Area2D" parent="."]
+position = Vector2(1230, 520)
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("4")
+display_name = "前往七码头代办所"
+[node name="CollisionShape2D" type="CollisionShape2D" parent="AgencyDoor"]
+shape = SubResource("Door")
+[node name="HUD" parent="." instance=ExtResource("3")]

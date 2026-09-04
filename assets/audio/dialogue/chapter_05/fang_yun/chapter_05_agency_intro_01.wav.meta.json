@@ -1,0 +1,22 @@
+{
+  "fingerprint": "f3e4b4a43013c2609d4632da55cffb1f98a74ef19f3d55abc68f8797a9fdff57",
+  "job": {
+    "id": "chapter_05_agency.intro.001",
+    "instructions": "三十六岁女性，声音温和但有清楚边界，长期疲惫而谨慎。现实主义表演，不柔弱，不故作神秘。按日常基线自然陈述，停顿清楚，不额外渲染悬疑。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "方芸",
+    "text": "我写过剧场那封。没有人命令我，是别人告诉我：这位侦探会查证，也会为公开范围负责。",
+    "voice": "Serena",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "14db01e2-6047-9314-ab49-05bd6a7b3efb",
+  "schema_version": 1,
+  "usage": {
+    "characters": 75
+  }
+}

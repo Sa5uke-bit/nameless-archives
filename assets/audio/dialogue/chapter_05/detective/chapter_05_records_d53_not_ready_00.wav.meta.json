@@ -1,0 +1,22 @@
+{
+  "fingerprint": "da417a3882d7a61d823b9d7df071b594676b52d9650ccb9fc8ac282a4cb14cc0",
+  "job": {
+    "id": "chapter_05_records.d53_not_ready.000",
+    "instructions": "三十多岁的职业侦探，低中音，沉稳清晰，带分析感。现实主义表演，不故作深沉，不使用播音腔。按日常基线自然陈述，停顿清楚，不额外渲染悬疑。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "侦探",
+    "text": "要判断删节边界，我需要同时看到责任索引、同意差异、无源传闻和封存登记。",
+    "voice": "Moon",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "7bf8f488-cb29-9427-94ca-7556f057eacc",
+  "schema_version": 1,
+  "usage": {
+    "characters": 66
+  }
+}

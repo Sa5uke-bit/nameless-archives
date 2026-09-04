@@ -1,0 +1,22 @@
+{
+  "fingerprint": "0f869d848b8f5a6228b7fed3a34b4fed955e551c9a89d7a815e9f8c64accbbfe",
+  "job": {
+    "id": "chapter_05_agency.luo_repeat.000",
+    "instructions": "三十六岁女性，前售票员和档案志愿者，音色温和清楚，观察力强，带压住的内疚。现实主义表演，不柔弱，不故作神秘。当前是复查、回忆或含混段落，音量稍低、语速略慢，保留自然余韵。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "罗遥",
+    "text": "我可以为路戳作证，不能替信封里面的人作证。",
+    "voice": "Serena",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "79c760ff-972c-9822-ae10-e9a2c6612d40",
+  "schema_version": 1,
+  "usage": {
+    "characters": 40
+  }
+}

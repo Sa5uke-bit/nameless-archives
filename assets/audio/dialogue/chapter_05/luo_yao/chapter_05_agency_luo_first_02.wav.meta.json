@@ -1,0 +1,22 @@
+{
+  "fingerprint": "15b4707859bbb749efba37d7355a432eee2e8fb0c5885ace718f170f5ca4be6a",
+  "job": {
+    "id": "chapter_05_agency.luo_first.002",
+    "instructions": "三十六岁女性，前售票员和档案志愿者，音色温和清楚，观察力强，带压住的内疚。现实主义表演，不柔弱，不故作神秘。按日常基线自然陈述，停顿清楚，不额外渲染悬疑。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "罗遥",
+    "text": "知道边界，比假装知道名字重要。",
+    "voice": "Serena",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "9c894476-955e-9ff3-b32d-db1dc4db4243",
+  "schema_version": 1,
+  "usage": {
+    "characters": 28
+  }
+}

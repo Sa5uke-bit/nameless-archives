@@ -1,0 +1,22 @@
+{
+  "fingerprint": "e3c56f296c3acfbc1841c54625ff1643211519c637d17d6b22f876828ad8fd4f",
+  "job": {
+    "id": "chapter_05_finale.intro.004",
+    "instructions": "二十二岁中国女性，音色清楚偏低，年轻但不稚嫩。长期谨慎，表达事实时坚定，不使用哭腔、少女感或戏剧化受害者表演。按日常基线自然陈述，停顿清楚，不额外渲染悬疑。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "蒋禾",
+    "text": "我删过地址，也要求写回一个名字。我们从来没有完全同意彼此。",
+    "voice": "Vivian",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "fd0a2168-7b1e-95b9-b78b-0e3d700fd1e4",
+  "schema_version": 1,
+  "usage": {
+    "characters": 55
+  }
+}

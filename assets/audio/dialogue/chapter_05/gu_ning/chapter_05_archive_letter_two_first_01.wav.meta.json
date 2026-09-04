@@ -1,0 +1,22 @@
+{
+  "fingerprint": "9787151961d780d79521fbfe485f63e3fdf83bd9c39eaa0bad12513988ef8017",
+  "job": {
+    "id": "chapter_05_archive.letter_two_first.001",
+    "instructions": "三十多岁女性，低沉冷静，措辞利落，习惯掌控局面。情绪内收，避免讲课腔和夸张哭腔。按日常基线自然陈述，停顿清楚，不额外渲染悬疑。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "顾宁",
+    "text": "我没见过那出戏，也不会把信折成三层向内。",
+    "voice": "Elias",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "5a6d1ade-2ed0-9747-87c9-53e9c0706943",
+  "schema_version": 1,
+  "usage": {
+    "characters": 38
+  }
+}

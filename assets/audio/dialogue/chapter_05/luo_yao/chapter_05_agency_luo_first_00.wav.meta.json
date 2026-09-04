@@ -1,0 +1,22 @@
+{
+  "fingerprint": "0ba42f4034d46a7044e8d1f6af9d5c31f82c8af3662fd9d6a0c36f961dd833e6",
+  "job": {
+    "id": "chapter_05_agency.luo_first.000",
+    "instructions": "三十六岁女性，前售票员和档案志愿者，音色温和清楚，观察力强，带压住的内疚。现实主义表演，不柔弱，不故作神秘。按日常基线自然陈述，停顿清楚，不额外渲染悬疑。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "罗遥",
+    "text": "余真获救以后，我把邮袋里不属于黄维国的信重新分开。能送到这里的，只有那几封。",
+    "voice": "Serena",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "daa8e34e-a5b4-9220-bf18-f0cd86307590",
+  "schema_version": 1,
+  "usage": {
+    "characters": 72
+  }
+}

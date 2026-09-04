@@ -1,0 +1,22 @@
+{
+  "fingerprint": "33930c3edbaa87f994b538dea7ba58c721a4afa366c7f4f0fbd1704f6e54548c",
+  "job": {
+    "id": "chapter_05_agency.lease_repeat.000",
+    "instructions": "三十多岁的职业侦探，低中音，沉稳清晰，带分析感。现实主义表演，不故作深沉，不使用播音腔。当前是复查、回忆或含混段落，音量稍低、语速略慢，保留自然余韵。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "侦探",
+    "text": "柜位允许多人投递，只能证明入口共享，不能证明所有投递者身份。",
+    "voice": "Moon",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "7c9df4bd-92a2-93d3-a2bb-2b4e0c900416",
+  "schema_version": 1,
+  "usage": {
+    "characters": 57
+  }
+}

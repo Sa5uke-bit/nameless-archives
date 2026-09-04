@@ -1,0 +1,22 @@
+{
+  "fingerprint": "11a5b0d1a1ee4fea9319ab3aac98778af1b8670c0e58039e81ad6ea94861bc31",
+  "job": {
+    "id": "chapter_05_records.enter_finale.000",
+    "instructions": "五十八岁中国男性退休投递员，嗓音略粗、语速偏慢，带风霜与内疚。口语自然克制，不使用说书腔或慈祥长者腔。当前处于对质、承认或推理推进段落，增加紧张与确定感，但不要喊叫或煽情。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "温岑",
+    "text": "天快亮了。她们在前厅等的不是幕后人，而是你对这份记录的最后说明。",
+    "voice": "Vincent",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "ee683c52-76dd-9035-bb90-ce5cea32ac3a",
+  "schema_version": 1,
+  "usage": {
+    "characters": 61
+  }
+}

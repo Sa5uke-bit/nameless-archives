@@ -1,0 +1,22 @@
+{
+  "fingerprint": "fc87c176231aacb4d15ecae20d0a913abc73a212ece75b6695a20dbdb056aafb",
+  "job": {
+    "id": "chapter_05_finale.final_statement.003",
+    "instructions": "成熟男性叙述者，清楚客观，有轻微纪录片质感但不过分正式。保持克制，不使用恐怖预告腔。按日常基线自然陈述，停顿清楚，不额外渲染悬疑。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "旁白",
+    "text": "桌上留下三种封面。每一种都承认真相，却让真相以不同代价进入世界。",
+    "voice": "Neil",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "4b970f3e-8ed4-93b4-a4b0-21d090ef6cf6",
+  "schema_version": 1,
+  "usage": {
+    "characters": 61
+  }
+}

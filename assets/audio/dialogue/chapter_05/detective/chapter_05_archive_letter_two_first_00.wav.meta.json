@@ -1,0 +1,22 @@
+{
+  "fingerprint": "57bc12425aa8923a75778a2a68a47430d2682c55dc689e158213090848a71a3c",
+  "job": {
+    "id": "chapter_05_archive.letter_two_first.000",
+    "instructions": "三十多岁的职业侦探，低中音，沉稳清晰，带分析感。现实主义表演，不故作深沉，不使用播音腔。按日常基线自然陈述，停顿清楚，不额外渲染悬疑。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "侦探",
+    "text": "这层内衬来自剧场节目单。纸纤维、旧油墨和裁边都能对应。",
+    "voice": "Moon",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "eedc2fe1-720d-91e8-857d-02c4d680c878",
+  "schema_version": 1,
+  "usage": {
+    "characters": 51
+  }
+}

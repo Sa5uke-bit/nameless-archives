@@ -1,0 +1,22 @@
+{
+  "fingerprint": "895c842ad4d08e7d01f0f8ffe35ac3fb8b02c72b509166c5b9bda85b7f2569f3",
+  "job": {
+    "id": "chapter05_wen_neutral",
+    "instructions": "五十八岁中国男性退休投递员，嗓音略粗，语速偏慢，口语自然克制。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "温岑",
+    "text": "不知道就写不知道，比补一个好听的名字可靠。",
+    "voice": "Vincent",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "cfb11484-42c1-949a-9fd0-735573159b0b",
+  "schema_version": 1,
+  "usage": {
+    "characters": 40
+  }
+}

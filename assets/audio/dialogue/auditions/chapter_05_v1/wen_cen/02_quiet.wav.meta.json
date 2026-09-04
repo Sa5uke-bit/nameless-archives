@@ -1,0 +1,22 @@
+{
+  "fingerprint": "6870b3f3ecdcca81fb16795db6ff3324a784a09e8d29f39b0f2eb196e8a7205c",
+  "job": {
+    "id": "chapter05_wen_quiet",
+    "instructions": "五十八岁中国男性，带风霜与内疚，音量稍低，不使用说书腔。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "温岑",
+    "text": "我会投递，不会替当事人判断哪一页该见光。",
+    "voice": "Vincent",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "aeae1f25-4978-9aaa-a34c-43f616bbf1b5",
+  "schema_version": 1,
+  "usage": {
+    "characters": 38
+  }
+}

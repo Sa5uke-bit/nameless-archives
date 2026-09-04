@@ -1,0 +1,22 @@
+{
+  "fingerprint": "a2c7ca13755eb8b4149afaec73fc31a61a9fb4a42adfc5ae35eaf12541448374",
+  "job": {
+    "id": "chapter_05_records.source_first.000",
+    "instructions": "三十多岁的职业侦探，低中音，沉稳清晰，带分析感。现实主义表演，不故作深沉，不使用播音腔。按日常基线自然陈述，停顿清楚，不额外渲染悬疑。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "侦探",
+    "text": "所有删节本都保留证据编号、责任动作和原件所在处。它们没有把顾海川写成别人，也没有替冯启昌减责。",
+    "voice": "Moon",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "3fa8d862-b671-91c4-8f13-0fa1865958ff",
+  "schema_version": 1,
+  "usage": {
+    "characters": 90
+  }
+}

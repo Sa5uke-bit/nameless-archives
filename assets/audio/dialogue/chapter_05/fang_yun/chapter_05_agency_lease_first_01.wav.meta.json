@@ -1,0 +1,22 @@
+{
+  "fingerprint": "fc1fd006cf02e8476231b18f87806e5ee9d988c1643df0dc186ff384fe64abcf",
+  "job": {
+    "id": "chapter_05_agency.lease_first.001",
+    "instructions": "三十六岁女性，声音温和但有清楚边界，长期疲惫而谨慎。现实主义表演，不柔弱，不故作神秘。按日常基线自然陈述，停顿清楚，不额外渲染悬疑。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "方芸",
+    "text": "码头工人、家属和夜校学员都曾往这里放过报纸。我们只是借了它的旧用途。",
+    "voice": "Serena",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "16552d38-e079-955e-8ac2-e8f90046a979",
+  "schema_version": 1,
+  "usage": {
+    "characters": 65
+  }
+}

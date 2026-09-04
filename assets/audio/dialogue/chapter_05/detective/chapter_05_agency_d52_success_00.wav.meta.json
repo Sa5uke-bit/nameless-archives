@@ -1,0 +1,22 @@
+{
+  "fingerprint": "743ec13b3384c9cb9125901b4a906aac483909b5bbc41518eb1fd53d82973ca7",
+  "job": {
+    "id": "chapter_05_agency.d52_success.000",
+    "instructions": "三十多岁的职业侦探，低中音，沉稳清晰，带分析感。现实主义表演，不故作深沉，不使用播音腔。当前处于对质、承认或推理推进段落，增加紧张与确定感，但不要喊叫或煽情。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "侦探",
+    "text": "柜位可共享，钥匙分段轮换，两条投递不可能由一人赶完，各封信又只知道局部。这是一条有限保管路线。",
+    "voice": "Moon",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "2f4bcb42-d7f8-9041-b3d7-5dc7245e7c57",
+  "schema_version": 1,
+  "usage": {
+    "characters": 89
+  }
+}

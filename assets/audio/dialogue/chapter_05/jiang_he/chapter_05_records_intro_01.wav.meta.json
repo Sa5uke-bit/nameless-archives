@@ -1,0 +1,22 @@
+{
+  "fingerprint": "c1bb66b7852568dc01e2ea1a0f5793041a9f3581a33b4568206bab764a9d9ca5",
+  "job": {
+    "id": "chapter_05_records.intro.001",
+    "instructions": "二十二岁中国女性，音色清楚偏低，年轻但不稚嫩。长期谨慎，表达事实时坚定，不使用哭腔、少女感或戏剧化受害者表演。按日常基线自然陈述，停顿清楚，不额外渲染悬疑。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "蒋禾",
+    "text": "我删去过旧住户现址，也坚持把蒋兰的名字写回来。同一条黑线，有时保护，有时替人闭嘴。",
+    "voice": "Vivian",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "cdfce2d4-6fbd-9a4f-8268-a6bde7cbfc39",
+  "schema_version": 1,
+  "usage": {
+    "characters": 77
+  }
+}

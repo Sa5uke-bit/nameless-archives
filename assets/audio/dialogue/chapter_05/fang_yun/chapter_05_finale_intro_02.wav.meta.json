@@ -1,0 +1,22 @@
+{
+  "fingerprint": "968126a7a64232d31a67242badc7843a4126c3c9590cc0d54df270587b381f6d",
+  "job": {
+    "id": "chapter_05_finale.intro.002",
+    "instructions": "三十六岁女性，声音温和但有清楚边界，长期疲惫而谨慎。现实主义表演，不柔弱，不故作神秘。按日常基线自然陈述，停顿清楚，不额外渲染悬疑。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "方芸",
+    "text": "我借过它为自己求证，也拒绝过别人替我公开全部真相。",
+    "voice": "Serena",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "6c25d10e-1e6d-9bc9-b69a-47c4792d81cb",
+  "schema_version": 1,
+  "usage": {
+    "characters": 48
+  }
+}

@@ -1,0 +1,190 @@
+{
+  "conversations": {
+    "intro": [
+      {
+        "speaker": "旁白",
+        "text": "凌晨，第四章报告的复写件被人从门缝推进来。最上面只有一句：这一次，请调查委托人。",
+        "voice": "res://assets/audio/dialogue/chapter_05/narrator/chapter_05_archive_intro_00.wav",
+        "voice_bus": "Voice"
+      },
+      {
+        "speaker": "侦探",
+        "text": "四只档案盒，四封信。共同记号画在相同位置，纸却没有一张相同。",
+        "voice": "res://assets/audio/dialogue/chapter_05/detective/chapter_05_archive_intro_01.wav",
+        "voice_bus": "Voice"
+      },
+      {
+        "speaker": "顾宁",
+        "text": "我来不是认领所有信。我只认第一把钥匙，以及第一封信末尾那一笔。",
+        "voice": "res://assets/audio/dialogue/chapter_05/gu_ning/chapter_05_archive_intro_02.wav",
+        "voice_bus": "Voice"
+      },
+      {
+        "speaker": "侦探",
+        "text": "在你说明以前，我先让原件自己回答。",
+        "voice": "res://assets/audio/dialogue/chapter_05/detective/chapter_05_archive_intro_03.wav",
+        "voice_bus": "Voice"
+      }
+    ],
+    "letter_one_first": [
+      {
+        "speaker": "侦探",
+        "text": "普通账簿纸，先写正文，再补记号。墨水在交叉处的上下顺序很清楚。",
+        "voice": "res://assets/audio/dialogue/chapter_05/detective/chapter_05_archive_letter_one_first_00.wav",
+        "voice_bus": "Voice"
+      },
+      {
+        "speaker": "顾宁",
+        "text": "那时我只想说：林小满还缺在记录里。没有第二章，也没有什么计划。",
+        "voice": "res://assets/audio/dialogue/chapter_05/gu_ning/chapter_05_archive_letter_one_first_01.wav",
+        "voice_bus": "Voice"
+      }
+    ],
+    "letter_one_repeat": [
+      {
+        "speaker": "侦探",
+        "text": "第一封信只能证明顾宁寄出钥匙，不能替后三封信确定作者。",
+        "voice": "res://assets/audio/dialogue/chapter_05/detective/chapter_05_archive_letter_one_repeat_00.wav",
+        "voice_bus": "Voice"
+      }
+    ],
+    "letter_two_first": [
+      {
+        "speaker": "侦探",
+        "text": "这层内衬来自剧场节目单。纸纤维、旧油墨和裁边都能对应。",
+        "voice": "res://assets/audio/dialogue/chapter_05/detective/chapter_05_archive_letter_two_first_00.wav",
+        "voice_bus": "Voice"
+      },
+      {
+        "speaker": "顾宁",
+        "text": "我没见过那出戏，也不会把信折成三层向内。",
+        "voice": "res://assets/audio/dialogue/chapter_05/gu_ning/chapter_05_archive_letter_two_first_01.wav",
+        "voice_bus": "Voice"
+      }
+    ],
+    "letter_two_repeat": [
+      {
+        "speaker": "侦探",
+        "text": "相同记号之外，第二封信保留着剧场自己的材料习惯。",
+        "voice": "res://assets/audio/dialogue/chapter_05/detective/chapter_05_archive_letter_two_repeat_00.wav",
+        "voice_bus": "Voice"
+      }
+    ],
+    "letter_three_first": [
+      {
+        "speaker": "侦探",
+        "text": "雨渍停在邮袋压缝处，机械路戳属于岚岭客运线。它不是从澄湾剧场投出的。",
+        "voice": "res://assets/audio/dialogue/chapter_05/detective/chapter_05_archive_letter_three_first_00.wav",
+        "voice_bus": "Voice"
+      },
+      {
+        "speaker": "顾宁",
+        "text": "写信的人把第二章磁带编号记错了。全知的人不会只知道报纸上的写法。",
+        "voice": "res://assets/audio/dialogue/chapter_05/gu_ning/chapter_05_archive_letter_three_first_01.wav",
+        "voice_bus": "Voice"
+      }
+    ],
+    "letter_three_repeat": [
+      {
+        "speaker": "侦探",
+        "text": "运输痕迹和知识错误都把第三封信留在另一条生活路径上。",
+        "voice": "res://assets/audio/dialogue/chapter_05/detective/chapter_05_archive_letter_three_repeat_00.wav",
+        "voice_bus": "Voice"
+      }
+    ],
+    "copy_four_first": [
+      {
+        "speaker": "侦探",
+        "text": "正文压痕沉稳，删节线更轻。温岑誊写，蒋禾随后决定哪些姓名暂不外传。",
+        "voice": "res://assets/audio/dialogue/chapter_05/detective/chapter_05_archive_copy_four_first_00.wav",
+        "voice_bus": "Voice"
+      },
+      {
+        "speaker": "顾宁",
+        "text": "已经是两个人共同做的一份副本，更不可能来自一个始终不变的作者。",
+        "voice": "res://assets/audio/dialogue/chapter_05/gu_ning/chapter_05_archive_copy_four_first_01.wav",
+        "voice_bus": "Voice"
+      }
+    ],
+    "copy_four_repeat": [
+      {
+        "speaker": "侦探",
+        "text": "先誊写、后删节。这里保留的是协作顺序，不是神秘人的伪装。",
+        "voice": "res://assets/audio/dialogue/chapter_05/detective/chapter_05_archive_copy_four_repeat_00.wav",
+        "voice_bus": "Voice"
+      }
+    ],
+    "gu_ning_first": [
+      {
+        "speaker": "顾宁",
+        "text": "那个缺口方框是我画的。温岑说，不写名字，也得让下一名保管者知道它不是广告。",
+        "voice": "res://assets/audio/dialogue/chapter_05/gu_ning/chapter_05_archive_gu_ning_first_00.wav",
+        "voice_bus": "Voice"
+      },
+      {
+        "speaker": "侦探",
+        "text": "你认识后来每一个使用者吗？",
+        "voice": "res://assets/audio/dialogue/chapter_05/detective/chapter_05_archive_gu_ning_first_01.wav",
+        "voice_bus": "Voice"
+      },
+      {
+        "speaker": "顾宁",
+        "text": "不认识。要是认识，这条路就不会比一张名单安全。",
+        "voice": "res://assets/audio/dialogue/chapter_05/gu_ning/chapter_05_archive_gu_ning_first_02.wav",
+        "voice_bus": "Voice"
+      }
+    ],
+    "gu_ning_repeat": [
+      {
+        "speaker": "顾宁",
+        "text": "我提出过记号，不等于拥有后来写在记号前面的每句话。",
+        "voice": "res://assets/audio/dialogue/chapter_05/gu_ning/chapter_05_archive_gu_ning_repeat_00.wav",
+        "voice_bus": "Voice"
+      }
+    ],
+    "d51_not_ready": [
+      {
+        "speaker": "侦探",
+        "text": "只看共同记号会把格式误作作者。我需要把四章原件放在一起比较。",
+        "voice": "res://assets/audio/dialogue/chapter_05/detective/chapter_05_archive_d51_not_ready_00.wav",
+        "voice_bus": "Voice"
+      }
+    ],
+    "d51_success": [
+      {
+        "speaker": "侦探",
+        "text": "共同记号是一条约定，不是一枚个人签名。四种纸、折法、笔迹和形成顺序指向不同经手者。",
+        "voice": "res://assets/audio/dialogue/chapter_05/detective/chapter_05_archive_d51_success_00.wav",
+        "voice_bus": "Voice"
+      },
+      {
+        "speaker": "顾宁",
+        "text": "你已经证明我不是幕后的人。现在去证明，那里也没有另一个我。",
+        "voice": "res://assets/audio/dialogue/chapter_05/gu_ning/chapter_05_archive_d51_success_01.wav",
+        "voice_bus": "Voice"
+      }
+    ],
+    "agency_locked": [
+      {
+        "speaker": "侦探",
+        "text": "七码头只是路的终点。先确认桌上四封信究竟能否来自同一人。",
+        "voice": "res://assets/audio/dialogue/chapter_05/detective/chapter_05_archive_agency_locked_00.wav",
+        "voice_bus": "Voice"
+      }
+    ],
+    "enter_agency": [
+      {
+        "speaker": "顾宁",
+        "text": "温岑留下的旧钥匙只能开外门。信箱里面是谁的，要看轮换簿。",
+        "voice": "res://assets/audio/dialogue/chapter_05/gu_ning/chapter_05_archive_enter_agency_00.wav",
+        "voice_bus": "Voice"
+      },
+      {
+        "speaker": "侦探",
+        "text": "共同格式已经成立。下一步查谁在什么时间能接触它。",
+        "voice": "res://assets/audio/dialogue/chapter_05/detective/chapter_05_archive_enter_agency_01.wav",
+        "voice_bus": "Voice"
+      }
+    ]
+  }
+}

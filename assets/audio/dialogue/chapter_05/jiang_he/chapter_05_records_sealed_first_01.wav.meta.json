@@ -1,0 +1,22 @@
+{
+  "fingerprint": "7f5082f9df297b5e10f8c68a9fb987d8603eef77e208165c0e8c7fd7a17473ee",
+  "job": {
+    "id": "chapter_05_records.sealed_first.001",
+    "instructions": "二十二岁中国女性，音色清楚偏低，年轻但不稚嫩。长期谨慎，表达事实时坚定，不使用哭腔、少女感或戏剧化受害者表演。按日常基线自然陈述，停顿清楚，不额外渲染悬疑。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "蒋禾",
+    "text": "不把原件贴在墙上，也不等于要求所有人相信我们的口头保证。",
+    "voice": "Vivian",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "43188399-cc5d-9521-a67f-fd4c14490b01",
+  "schema_version": 1,
+  "usage": {
+    "characters": 54
+  }
+}

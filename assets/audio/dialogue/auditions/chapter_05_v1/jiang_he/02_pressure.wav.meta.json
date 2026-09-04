@@ -1,0 +1,22 @@
+{
+  "fingerprint": "b74ccd630073534fc8e5c2bbc4987782e8a891a971b35878da6a10629ddd36f2",
+  "job": {
+    "id": "chapter05_jiang_pressure",
+    "instructions": "二十二岁中国女性，语气坚定，压住愤怒，不喊叫、不煽情。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "蒋禾",
+    "text": "我需要的不是更多曝光，是不再由别人决定我是否存在。",
+    "voice": "Vivian",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "3e08366d-eba8-9680-9b9d-57e6d5b1706b",
+  "schema_version": 1,
+  "usage": {
+    "characters": 48
+  }
+}

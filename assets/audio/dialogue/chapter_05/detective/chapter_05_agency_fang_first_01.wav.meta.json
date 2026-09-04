@@ -1,0 +1,22 @@
+{
+  "fingerprint": "669dac9568a8729472de096d40a08049e7aff50e7fa011eabb451fd543e95b83",
+  "job": {
+    "id": "chapter_05_agency.fang_first.001",
+    "instructions": "三十多岁的职业侦探，低中音，沉稳清晰，带分析感。现实主义表演，不故作深沉，不使用播音腔。按日常基线自然陈述，停顿清楚，不额外渲染悬疑。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "侦探",
+    "text": "你没有为第三章选择委托，也不知道第四章会发生什么。",
+    "voice": "Moon",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "06b5c0d0-6d9f-930f-82bb-c770d3460726",
+  "schema_version": 1,
+  "usage": {
+    "characters": 48
+  }
+}

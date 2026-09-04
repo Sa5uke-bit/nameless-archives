@@ -1,0 +1,93 @@
+[gd_scene load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/ui/record_index.gd" id="1_index"]
+
+[node name="RecordIndex" type="CanvasLayer"]
+layer = 25
+script = ExtResource("1_index")
+
+[node name="Root" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Dim" type="ColorRect" parent="Root"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.008, 0.012, 0.018, 0.96)
+
+[node name="Margin" type="MarginContainer" parent="Root"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 126.0
+offset_top = 32.0
+offset_right = -126.0
+offset_bottom = -32.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Panel" type="PanelContainer" parent="Root/Margin"]
+layout_mode = 2
+
+[node name="Content" type="VBoxContainer" parent="Root/Margin/Panel"]
+layout_mode = 2
+theme_override_constants/separation = 8
+
+[node name="Title" type="Label" parent="Root/Margin/Panel/Content"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.9, 0.82, 0.61, 1)
+theme_override_font_sizes/font_size = 28
+text = "最后一份记录 · 材料索引"
+horizontal_alignment = 1
+
+[node name="Instruction" type="Label" parent="Root/Margin/Panel/Content"]
+layout_mode = 2
+theme_override_font_sizes/font_size = 16
+text = "按证据用途分类；公开结论、私人身份、未证传闻与可复核原件不能混在同一层。"
+horizontal_alignment = 1
+
+[node name="Rule" type="HSeparator" parent="Root/Margin/Panel/Content"]
+layout_mode = 2
+
+[node name="MaterialRows" type="VBoxContainer" parent="Root/Margin/Panel/Content"]
+unique_name_in_owner = true
+layout_mode = 2
+size_flags_vertical = 3
+theme_override_constants/separation = 4
+
+[node name="Feedback" type="Label" parent="Root/Margin/Panel/Content"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(0, 46)
+layout_mode = 2
+theme_override_colors/font_color = Color(0.74, 0.79, 0.76, 1)
+text = "反馈"
+horizontal_alignment = 1
+autowrap_mode = 2
+
+[node name="Actions" type="HBoxContainer" parent="Root/Margin/Panel/Content"]
+layout_mode = 2
+alignment = 1
+theme_override_constants/separation = 14
+
+[node name="SubmitButton" type="Button" parent="Root/Margin/Panel/Content/Actions"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(220, 46)
+layout_mode = 2
+text = "提交最终索引"
+
+[node name="CloseButton" type="Button" parent="Root/Margin/Panel/Content/Actions"]
+custom_minimum_size = Vector2(180, 46)
+layout_mode = 2
+text = "暂时离开"
+
+[connection signal="pressed" from="Root/Margin/Panel/Content/Actions/SubmitButton" to="." method="_on_submit_pressed"]
+[connection signal="pressed" from="Root/Margin/Panel/Content/Actions/CloseButton" to="." method="_on_close_pressed"]

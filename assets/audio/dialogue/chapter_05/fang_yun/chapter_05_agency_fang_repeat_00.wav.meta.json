@@ -1,0 +1,22 @@
+{
+  "fingerprint": "c27ad1161f4de2cb489a91b0bf07d958b298b915669943908630ab033a9133aa",
+  "job": {
+    "id": "chapter_05_agency.fang_repeat.000",
+    "instructions": "三十六岁女性，声音温和但有清楚边界，长期疲惫而谨慎。现实主义表演，不柔弱，不故作神秘。当前是复查、回忆或含混段落，音量稍低、语速略慢，保留自然余韵。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "方芸",
+    "text": "如果有人说我们目标完全一致，那份记录本身就在抹掉分歧。",
+    "voice": "Serena",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "f9e9d99d-9bc1-978c-8d96-7923fc62fccc",
+  "schema_version": 1,
+  "usage": {
+    "characters": 52
+  }
+}

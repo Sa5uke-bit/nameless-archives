@@ -1,0 +1,22 @@
+{
+  "fingerprint": "e29925e4a6ccc7210bd0e546deb124c784cf99005915571dff21cda99f219dfa",
+  "job": {
+    "id": "chapter_05_records.return_agency.000",
+    "instructions": "三十多岁的职业侦探，低中音，沉稳清晰，带分析感。现实主义表演，不故作深沉，不使用播音腔。按日常基线自然陈述，停顿清楚，不额外渲染悬疑。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "侦探",
+    "text": "前厅的钥匙与路线仍可复查。",
+    "voice": "Moon",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "7f2ecf5e-ed90-958a-93c2-ad9aab6ae28e",
+  "schema_version": 1,
+  "usage": {
+    "characters": 25
+  }
+}

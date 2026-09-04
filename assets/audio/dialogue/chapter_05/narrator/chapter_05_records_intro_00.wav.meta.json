@@ -1,0 +1,22 @@
+{
+  "fingerprint": "37defeb562ae9f67ebf612a5b4f4cfc72445893fcc104414ec5f6c2da5dad351",
+  "job": {
+    "id": "chapter_05_records.intro.000",
+    "instructions": "成熟男性叙述者，清楚客观，有轻微纪录片质感但不过分正式。保持克制，不使用恐怖预告腔。按日常基线自然陈述，停顿清楚，不额外渲染悬疑。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "旁白",
+    "text": "后室没有总名单。木桌上只有五章材料的公开层、私人层和一叠互相冲突的便笺。",
+    "voice": "Neil",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "505aa0a9-656e-994d-9b38-c0399e2e6732",
+  "schema_version": 1,
+  "usage": {
+    "characters": 69
+  }
+}

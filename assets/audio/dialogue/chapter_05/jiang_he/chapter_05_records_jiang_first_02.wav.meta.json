@@ -1,0 +1,22 @@
+{
+  "fingerprint": "62211d89788d7e2e49a462aa11f193f67be9ab62cab007a547467044a6ec2227",
+  "job": {
+    "id": "chapter_05_records.jiang_first.002",
+    "instructions": "二十二岁中国女性，音色清楚偏低，年轻但不稚嫩。长期谨慎，表达事实时坚定，不使用哭腔、少女感或戏剧化受害者表演。按日常基线自然陈述，停顿清楚，不额外渲染悬疑。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "蒋禾",
+    "text": "把这两件事分开，我才愿意把便笺留下。",
+    "voice": "Vivian",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "4204d78c-b802-99d3-a9a8-9a4764f07d1f",
+  "schema_version": 1,
+  "usage": {
+    "characters": 34
+  }
+}

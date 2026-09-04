@@ -1,0 +1,22 @@
+{
+  "fingerprint": "d9c420c971597b5a187b0c6df72ef5e248b7ad0f123cf4237092d5241fb6ca81",
+  "job": {
+    "id": "chapter_05_agency.d52_not_ready.000",
+    "instructions": "三十多岁的职业侦探，低中音，沉稳清晰，带分析感。现实主义表演，不故作深沉，不使用播音腔。按日常基线自然陈述，停顿清楚，不额外渲染悬疑。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "侦探",
+    "text": "多人出现不等于多人写信。我还缺信箱用途、钥匙时段、路线下限和知识边界。",
+    "voice": "Moon",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "124dc07e-485f-9c94-a025-0ed280c467cc",
+  "schema_version": 1,
+  "usage": {
+    "characters": 66
+  }
+}

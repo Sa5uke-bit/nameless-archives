@@ -1,0 +1,22 @@
+{
+  "fingerprint": "8961a8fa36ae8b0e17f20cbec5c046628d3bb7728793057c497fd650e76a1c6e",
+  "job": {
+    "id": "chapter05_fang_pressure",
+    "instructions": "三十六岁中国女性，压住情绪，语气明确坚定，不煽情、不哭诉。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "方芸",
+    "text": "我的清白不需要另一个人的现址作脚注。",
+    "voice": "Serena",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "70d999be-f785-9474-bdb3-f0ee040d1426",
+  "schema_version": 1,
+  "usage": {
+    "characters": 35
+  }
+}

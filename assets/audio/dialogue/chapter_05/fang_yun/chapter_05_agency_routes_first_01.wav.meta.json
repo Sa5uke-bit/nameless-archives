@@ -1,0 +1,22 @@
+{
+  "fingerprint": "13e0f143b81c8f57a5f60225f4e12276e6e53db7de83d311929938767163996e",
+  "job": {
+    "id": "chapter_05_agency.routes_first.001",
+    "instructions": "三十六岁女性，声音温和但有清楚边界，长期疲惫而谨慎。现实主义表演，不柔弱，不故作神秘。按日常基线自然陈述，停顿清楚，不额外渲染悬疑。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "方芸",
+    "text": "那天南码头的信是我放的。我没有去过北线。",
+    "voice": "Serena",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "55303c85-950c-9aad-a2b9-b8dafbf2a90e",
+  "schema_version": 1,
+  "usage": {
+    "characters": 38
+  }
+}

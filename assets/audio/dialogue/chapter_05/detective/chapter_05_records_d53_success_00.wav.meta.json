@@ -1,0 +1,22 @@
+{
+  "fingerprint": "f5ef2db6e590f6ecd73941598769a26219f7400132707daee80ec792e691d0f8",
+  "job": {
+    "id": "chapter_05_records.d53_success.000",
+    "instructions": "三十多岁的职业侦探，低中音，沉稳清晰，带分析感。现实主义表演，不故作深沉，不使用播音腔。当前处于对质、承认或推理推进段落，增加紧张与确定感，但不要喊叫或煽情。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "侦探",
+    "text": "删节本保住了责任来源，却没有逐项取得公开或删节同意。它是有用但不完整的方法。",
+    "voice": "Moon",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "2c7afadb-2b6f-9924-9bfd-7953823fd2e6",
+  "schema_version": 1,
+  "usage": {
+    "characters": 73
+  }
+}

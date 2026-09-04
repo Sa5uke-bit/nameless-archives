@@ -1,0 +1,22 @@
+{
+  "fingerprint": "46b40e3fb17056511bfb9b576111786142df448bb02c0973e6c6c68b5e411641",
+  "job": {
+    "id": "chapter_05_records.wen_repeat.000",
+    "instructions": "五十八岁中国男性退休投递员，嗓音略粗、语速偏慢，带风霜与内疚。口语自然克制，不使用说书腔或慈祥长者腔。当前是复查、回忆或含混段落，音量稍低、语速略慢，保留自然余韵。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "温岑",
+    "text": "不知道就写不知道，比补一个好听的名字可靠。",
+    "voice": "Vincent",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "0d67b785-7761-9ae7-b2e4-0d61ec250785",
+  "schema_version": 1,
+  "usage": {
+    "characters": 40
+  }
+}

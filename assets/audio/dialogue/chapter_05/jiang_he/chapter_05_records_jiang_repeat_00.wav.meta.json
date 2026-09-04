@@ -1,0 +1,22 @@
+{
+  "fingerprint": "6d84175e79cbdbe33896889dff4c95626d10b83d0037d1ce90ad31d7364d2b3f",
+  "job": {
+    "id": "chapter_05_records.jiang_repeat.000",
+    "instructions": "二十二岁中国女性，音色清楚偏低，年轻但不稚嫩。长期谨慎，表达事实时坚定，不使用哭腔、少女感或戏剧化受害者表演。当前是复查、回忆或含混段落，音量稍低、语速略慢，保留自然余韵。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "蒋禾",
+    "text": "我需要的不是更多曝光，是不再由别人决定我是否存在。",
+    "voice": "Vivian",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "c788c889-bbc7-955c-af53-db55048a9983",
+  "schema_version": 1,
+  "usage": {
+    "characters": 48
+  }
+}

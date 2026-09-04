@@ -1,0 +1,163 @@
+[gd_scene load_steps=13 format=3]
+
+[ext_resource type="Script" path="res://scripts/locations/postal_agency.gd" id="1"]
+[ext_resource type="PackedScene" path="res://scenes/characters/player.tscn" id="2"]
+[ext_resource type="PackedScene" path="res://scenes/ui/hud.tscn" id="3"]
+[ext_resource type="Script" path="res://scripts/interaction/interactable.gd" id="4"]
+[ext_resource type="Texture2D" path="res://assets/art/backgrounds/postal_agency_v1.png" id="5"]
+[ext_resource type="Texture2D" path="res://assets/art/characters/fang_yun_v1.png" id="6"]
+[ext_resource type="Texture2D" path="res://assets/art/characters/luo_yao_v1.png" id="7"]
+
+[sub_resource type="RectangleShape2D" id="Floor"]
+size = Vector2(1280, 100)
+[sub_resource type="RectangleShape2D" id="Wall"]
+size = Vector2(40, 720)
+[sub_resource type="RectangleShape2D" id="Prop"]
+size = Vector2(105, 210)
+[sub_resource type="RectangleShape2D" id="Person"]
+size = Vector2(90, 290)
+[sub_resource type="RectangleShape2D" id="Door"]
+size = Vector2(70, 320)
+
+[node name="PostalAgency" type="Node2D"]
+script = ExtResource("1")
+[node name="Background" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(640, 360)
+scale = Vector2(0.76555, 0.76514)
+texture = ExtResource("5")
+[node name="LocationTitle" type="Label" parent="."]
+offset_left = 420.0
+offset_top = 82.0
+offset_right = 860.0
+offset_bottom = 122.0
+theme_override_colors/font_color = Color(0.78, 0.7, 0.56, 1)
+theme_override_font_sizes/font_size = 25
+text = "七码头 · 停用邮政代办所"
+horizontal_alignment = 1
+[node name="Floor" type="StaticBody2D" parent="."]
+position = Vector2(640, 670)
+collision_layer = 1
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Floor"]
+shape = SubResource("Floor")
+[node name="LeftWall" type="StaticBody2D" parent="."]
+position = Vector2(-20, 360)
+collision_layer = 1
+[node name="CollisionShape2D" type="CollisionShape2D" parent="LeftWall"]
+shape = SubResource("Wall")
+[node name="RightWall" type="StaticBody2D" parent="."]
+position = Vector2(1300, 360)
+collision_layer = 1
+[node name="CollisionShape2D" type="CollisionShape2D" parent="RightWall"]
+shape = SubResource("Wall")
+[node name="Player" parent="." instance=ExtResource("2")]
+position = Vector2(90, 620)
+[node name="BackDoor" type="Area2D" parent="."]
+position = Vector2(45, 520)
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("4")
+display_name = "返回临时归档室"
+[node name="CollisionShape2D" type="CollisionShape2D" parent="BackDoor"]
+shape = SubResource("Door")
+[node name="LeaseCard" type="Area2D" parent="."]
+position = Vector2(190, 520)
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("4")
+display_name = "检查信箱租用卡"
+conversation_id = "lease_first"
+repeat_conversation_id = "lease_repeat"
+evidence_id = "E505"
+evidence_title = "停用信箱租用卡"
+evidence_description = "柜位登记用途是互助阅报组，不对应单个自然人或秘密组织。"
+[node name="CollisionShape2D" type="CollisionShape2D" parent="LeaseCard"]
+shape = SubResource("Prop")
+[node name="KeyLedger" type="Area2D" parent="."]
+position = Vector2(345, 520)
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("4")
+display_name = "检查钥匙轮换簿"
+conversation_id = "keys_first"
+repeat_conversation_id = "keys_repeat"
+evidence_id = "E506"
+evidence_title = "钥匙轮换簿"
+evidence_description = "四个不重叠保管时段只记交接凭证，任何人都无法长期控制信箱。"
+[node name="CollisionShape2D" type="CollisionShape2D" parent="KeyLedger"]
+shape = SubResource("Prop")
+[node name="RouteStamps" type="Area2D" parent="."]
+position = Vector2(500, 520)
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("4")
+display_name = "比较两条投递路戳"
+conversation_id = "routes_first"
+repeat_conversation_id = "routes_repeat"
+evidence_id = "E507"
+evidence_title = "相隔二十分钟的两条路戳"
+evidence_description = "两封信同日相隔二十分钟投入，而两条路线最短通行需要九十分钟。"
+[node name="CollisionShape2D" type="CollisionShape2D" parent="RouteStamps"]
+shape = SubResource("Prop")
+[node name="KnowledgeNotes" type="Area2D" parent="."]
+position = Vector2(655, 520)
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("4")
+display_name = "整理知识边界批注"
+conversation_id = "knowledge_first"
+repeat_conversation_id = "knowledge_repeat"
+evidence_id = "E508"
+evidence_title = "各封信的知识边界"
+evidence_description = "每名寄信人只知道公开层或经手层，连错误都不同，不存在全知视角。"
+[node name="CollisionShape2D" type="CollisionShape2D" parent="KnowledgeNotes"]
+shape = SubResource("Prop")
+[node name="FangYun" type="Area2D" parent="."]
+position = Vector2(790, 538)
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("4")
+display_name = "询问方芸"
+conversation_id = "fang_first"
+repeat_conversation_id = "fang_repeat"
+[node name="CollisionShape2D" type="CollisionShape2D" parent="FangYun"]
+position = Vector2(0, -66)
+shape = SubResource("Person")
+[node name="CharacterSprite" type="Sprite2D" parent="FangYun"]
+texture_filter = 1
+position = Vector2(0, -66)
+scale = Vector2(0.195, 0.195)
+texture = ExtResource("6")
+[node name="LuoYao" type="Area2D" parent="."]
+position = Vector2(930, 538)
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("4")
+display_name = "询问罗遥"
+conversation_id = "luo_first"
+repeat_conversation_id = "luo_repeat"
+[node name="CollisionShape2D" type="CollisionShape2D" parent="LuoYao"]
+position = Vector2(0, -66)
+shape = SubResource("Person")
+[node name="CharacterSprite" type="Sprite2D" parent="LuoYao"]
+texture_filter = 1
+position = Vector2(0, -66)
+scale = Vector2(-0.195, 0.195)
+texture = ExtResource("7")
+[node name="DeductionBoard" type="Area2D" parent="."]
+position = Vector2(1080, 520)
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("4")
+display_name = "重建保管路线"
+[node name="CollisionShape2D" type="CollisionShape2D" parent="DeductionBoard"]
+shape = SubResource("Prop")
+[node name="RecordDoor" type="Area2D" parent="."]
+position = Vector2(1240, 520)
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("4")
+display_name = "进入共同记录后室"
+[node name="CollisionShape2D" type="CollisionShape2D" parent="RecordDoor"]
+shape = SubResource("Door")
+[node name="HUD" parent="." instance=ExtResource("3")]

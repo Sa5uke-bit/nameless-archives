@@ -1,0 +1,22 @@
+{
+  "fingerprint": "dbb376f37ac91bd8b202dd4f19ad109d2bb2f0d973dbf7a92e10c5335e0c0bf7",
+  "job": {
+    "id": "chapter_05_agency.d52_success.002",
+    "instructions": "三十六岁女性，前售票员和档案志愿者，音色温和清楚，观察力强，带压住的内疚。现实主义表演，不柔弱，不故作神秘。当前处于对质、承认或推理推进段落，增加紧张与确定感，但不要喊叫或煽情。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "罗遥",
+    "text": "后室里保存着我们怎样删改转交副本。那部分并不总是做对了。",
+    "voice": "Serena",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "0c00c1ee-635e-9bb6-b4d3-c94e07069dda",
+  "schema_version": 1,
+  "usage": {
+    "characters": 54
+  }
+}

@@ -1,0 +1,146 @@
+{
+  "conversations": {
+    "intro": [
+      {
+        "speaker": "旁白",
+        "text": "天光进入七码头。四封信被放在同一张桌上，第一次没有任何人躲在下一次转交之后。",
+        "voice": "res://assets/audio/dialogue/chapter_05/narrator/chapter_05_finale_intro_00.wav",
+        "voice_bus": "Voice"
+      },
+      {
+        "speaker": "顾宁",
+        "text": "缺口方框最早是我画的。它不是我的名字，只是提醒收到信的人：这里还有一段没有写完。",
+        "voice": "res://assets/audio/dialogue/chapter_05/gu_ning/chapter_05_finale_intro_01.wav",
+        "voice_bus": "Voice"
+      },
+      {
+        "speaker": "方芸",
+        "text": "我借过它为自己求证，也拒绝过别人替我公开全部真相。",
+        "voice": "res://assets/audio/dialogue/chapter_05/fang_yun/chapter_05_finale_intro_02.wav",
+        "voice_bus": "Voice"
+      },
+      {
+        "speaker": "罗遥",
+        "text": "我传过信，不知道寄信人的真名。",
+        "voice": "res://assets/audio/dialogue/chapter_05/luo_yao/chapter_05_finale_intro_03.wav",
+        "voice_bus": "Voice"
+      },
+      {
+        "speaker": "蒋禾",
+        "text": "我删过地址，也要求写回一个名字。我们从来没有完全同意彼此。",
+        "voice": "res://assets/audio/dialogue/chapter_05/jiang_he/chapter_05_finale_intro_04.wav",
+        "voice_bus": "Voice"
+      },
+      {
+        "speaker": "侦探",
+        "text": "正因为没有一个共同答案，最后的记录必须说明每项结论从哪里来。",
+        "voice": "res://assets/audio/dialogue/chapter_05/detective/chapter_05_finale_intro_05.wav",
+        "voice_bus": "Voice"
+      }
+    ],
+    "truth_correct_1": [
+      {
+        "speaker": "侦探",
+        "text": "共同记号只说明采用同一转交格式。四种材料痕迹和形成顺序证明，经手者并不相同。",
+        "voice": "res://assets/audio/dialogue/chapter_05/detective/chapter_05_finale_truth_correct_1_00.wav",
+        "voice_bus": "Voice"
+      },
+      {
+        "speaker": "顾宁",
+        "text": "第一章的一个名字可以由多人借用；这一次，一枚署名也一样。",
+        "voice": "res://assets/audio/dialogue/chapter_05/gu_ning/chapter_05_finale_truth_correct_1_01.wav",
+        "voice_bus": "Voice"
+      }
+    ],
+    "truth_correct_2": [
+      {
+        "speaker": "侦探",
+        "text": "北线与南码头路戳相隔二十分钟，路线下限却是九十分钟。至少那两封信不是一人连续投递。",
+        "voice": "res://assets/audio/dialogue/chapter_05/detective/chapter_05_finale_truth_correct_2_00.wav",
+        "voice_bus": "Voice"
+      },
+      {
+        "speaker": "罗遥",
+        "text": "路线证明到这里就够了，不需要猜出所有手。",
+        "voice": "res://assets/audio/dialogue/chapter_05/luo_yao/chapter_05_finale_truth_correct_2_01.wav",
+        "voice_bus": "Voice"
+      }
+    ],
+    "truth_correct_3": [
+      {
+        "speaker": "侦探",
+        "text": "删节本没有改变责任结论，也保留了出处；它的问题是没有逐项取得当事人的同意。",
+        "voice": "res://assets/audio/dialogue/chapter_05/detective/chapter_05_finale_truth_correct_3_00.wav",
+        "voice_bus": "Voice"
+      },
+      {
+        "speaker": "蒋禾",
+        "text": "善意可以解释黑线从哪里来，不能自动替黑线取得权利。",
+        "voice": "res://assets/audio/dialogue/chapter_05/jiang_he/chapter_05_finale_truth_correct_3_01.wav",
+        "voice_bus": "Voice"
+      }
+    ],
+    "truth_correct_4": [
+      {
+        "speaker": "侦探",
+        "text": "公开可复核的责任链，保护不必要身份，标出来源不足，把原件交给可审计的独立封存。",
+        "voice": "res://assets/audio/dialogue/chapter_05/detective/chapter_05_finale_truth_correct_4_00.wav",
+        "voice_bus": "Voice"
+      },
+      {
+        "speaker": "方芸",
+        "text": "这样我的清白不再需要程书瑜的现址作脚注。",
+        "voice": "res://assets/audio/dialogue/chapter_05/fang_yun/chapter_05_finale_truth_correct_4_01.wav",
+        "voice_bus": "Voice"
+      }
+    ],
+    "truth_wrong": [
+      {
+        "speaker": "侦探",
+        "text": "这句话把共同格式误作共同作者，或把真实材料误作必须公开。我需要回到证据能证明的边界。",
+        "voice": "res://assets/audio/dialogue/chapter_05/detective/chapter_05_finale_truth_wrong_00.wav",
+        "voice_bus": "Voice"
+      }
+    ],
+    "final_statement": [
+      {
+        "speaker": "侦探",
+        "text": "没有一个人安排五起案件。每名求助者只把自己能够证明、愿意交出的那一段送到下一站。",
+        "voice": "res://assets/audio/dialogue/chapter_05/detective/chapter_05_finale_final_statement_00.wav",
+        "voice_bus": "Voice"
+      },
+      {
+        "speaker": "顾宁",
+        "text": "那么最后一个委托，不是找到我们之中的首领。",
+        "voice": "res://assets/audio/dialogue/chapter_05/gu_ning/chapter_05_finale_final_statement_01.wav",
+        "voice_bus": "Voice"
+      },
+      {
+        "speaker": "侦探",
+        "text": "是调查我自己的档案：它如何使用别人的名字，又准备把这些名字交给谁。",
+        "voice": "res://assets/audio/dialogue/chapter_05/detective/chapter_05_finale_final_statement_02.wav",
+        "voice_bus": "Voice"
+      },
+      {
+        "speaker": "旁白",
+        "text": "桌上留下三种封面。每一种都承认真相，却让真相以不同代价进入世界。",
+        "voice": "res://assets/audio/dialogue/chapter_05/narrator/chapter_05_finale_final_statement_03.wav",
+        "voice_bus": "Voice"
+      }
+    ],
+    "index_locked": [
+      {
+        "speaker": "侦探",
+        "text": "这份索引技术上已经成立，但我此前没有建立足够的分层同意。不能在终局突然把旧选择改写成已经获得的授权。",
+        "voice": "res://assets/audio/dialogue/chapter_05/detective/chapter_05_finale_index_locked_00.wav",
+        "voice_bus": "Voice"
+      },
+      {
+        "speaker": "蒋禾",
+        "text": "记录可以以后更正。现在先诚实写下你真正拥有的边界。",
+        "voice": "res://assets/audio/dialogue/chapter_05/jiang_he/chapter_05_finale_index_locked_01.wav",
+        "voice_bus": "Voice"
+      }
+    ]
+  }
+}

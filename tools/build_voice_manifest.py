@@ -132,6 +132,16 @@ CAST_CHAPTER_04: dict[str, dict[str, str]] = {
     },
 }
 
+CAST_CHAPTER_05: dict[str, dict[str, str]] = {
+    "侦探": CAST_CHAPTER_01["侦探"],
+    "旁白": CAST_CHAPTER_01["旁白"],
+    "顾宁": CAST_CHAPTER_01["顾宁"],
+    "方芸": CAST_CHAPTER_02["方芸"],
+    "罗遥": CAST_CHAPTER_03["罗遥"],
+    "蒋禾": CAST_CHAPTER_04["蒋禾"],
+    "温岑": CAST_CHAPTER_04["温岑"],
+}
+
 CHAPTER_CONFIGS = {
     "1": {
         "dialogue_files": CHAPTER_01_DIALOGUE_FILES,
@@ -157,6 +167,12 @@ CHAPTER_CONFIGS = {
         "voice_root": "res://assets/audio/dialogue/chapter_04",
         "cast": CAST_CHAPTER_04,
     },
+    "5": {
+        "dialogue_files": tuple(sorted((PROJECT_ROOT / "data/dialogue").glob("chapter_05_*.json"))),
+        "manifest_path": PROJECT_ROOT / "data/voice/chapter_05_full.jsonl",
+        "voice_root": "res://assets/audio/dialogue/chapter_05",
+        "cast": CAST_CHAPTER_05,
+    },
 }
 
 PRESSURE_MARKERS = (
@@ -176,6 +192,11 @@ PRESSURE_MARKERS = (
     "d42_success",
     "d43_success",
     "overlay_success",
+    "d51_success",
+    "d52_success",
+    "d53_success",
+    "index_success",
+    "index_locked",
 )
 QUIET_MARKERS = (
     "repeat",

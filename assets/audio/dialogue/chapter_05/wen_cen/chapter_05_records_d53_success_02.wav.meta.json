@@ -1,0 +1,22 @@
+{
+  "fingerprint": "0ec8e1c11a43c2c1584185ff77e8a3069653a51646de194c3863c65967b8663f",
+  "job": {
+    "id": "chapter_05_records.d53_success.002",
+    "instructions": "五十八岁中国男性退休投递员，嗓音略粗、语速偏慢，带风霜与内疚。口语自然克制，不使用说书腔或慈祥长者腔。当前处于对质、承认或推理推进段落，增加紧张与确定感，但不要喊叫或煽情。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "温岑",
+    "text": "中间那张空桌，就是留给这件事的。",
+    "voice": "Vincent",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "2dc2741c-a65e-998e-82e2-060e1a0b37ab",
+  "schema_version": 1,
+  "usage": {
+    "characters": 30
+  }
+}

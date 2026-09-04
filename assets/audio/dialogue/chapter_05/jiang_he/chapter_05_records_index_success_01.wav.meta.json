@@ -1,0 +1,22 @@
+{
+  "fingerprint": "96fdc5652e7267d375dd3a796a06a22a6de613e3a92279e42f2d19a54ecdb54f",
+  "job": {
+    "id": "chapter_05_records.index_success.001",
+    "instructions": "二十二岁中国女性，音色清楚偏低，年轻但不稚嫩。长期谨慎，表达事实时坚定，不使用哭腔、少女感或戏剧化受害者表演。当前处于对质、承认或推理推进段落，增加紧张与确定感，但不要喊叫或煽情。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "蒋禾",
+    "text": "这不是替所有人决定同一个答案。至少每个人知道自己的决定写在哪里。",
+    "voice": "Vivian",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "79b8c331-b2dd-9a05-a9b9-6eb58af7eb69",
+  "schema_version": 1,
+  "usage": {
+    "characters": 62
+  }
+}

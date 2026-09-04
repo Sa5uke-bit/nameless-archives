@@ -1,0 +1,22 @@
+{
+  "fingerprint": "ec2a837855b398b0845500d05f5b8cd61a263d7b59a12c803c33d0c5a3ed9004",
+  "job": {
+    "id": "chapter_05_agency.fang_first.002",
+    "instructions": "三十六岁女性，声音温和但有清楚边界，长期疲惫而谨慎。现实主义表演，不柔弱，不故作神秘。按日常基线自然陈述，停顿清楚，不额外渲染悬疑。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "方芸",
+    "text": "是。共同的是出口，不是答案。",
+    "voice": "Serena",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "cb31f440-948f-9a4f-b3d4-79e34134758c",
+  "schema_version": 1,
+  "usage": {
+    "characters": 25
+  }
+}

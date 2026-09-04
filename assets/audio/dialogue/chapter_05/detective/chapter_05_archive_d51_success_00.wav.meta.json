@@ -1,0 +1,22 @@
+{
+  "fingerprint": "96c9f1ca25a5e772de526e033e87ae3b66e928d4ad3f16fee7f2b93cdd97be58",
+  "job": {
+    "id": "chapter_05_archive.d51_success.000",
+    "instructions": "三十多岁的职业侦探，低中音，沉稳清晰，带分析感。现实主义表演，不故作深沉，不使用播音腔。当前处于对质、承认或推理推进段落，增加紧张与确定感，但不要喊叫或煽情。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "侦探",
+    "text": "共同记号是一条约定，不是一枚个人签名。四种纸、折法、笔迹和形成顺序指向不同经手者。",
+    "voice": "Moon",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "93ddf188-64b2-973f-b177-d9ac8d2cfae8",
+  "schema_version": 1,
+  "usage": {
+    "characters": 77
+  }
+}

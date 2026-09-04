@@ -37,6 +37,12 @@ CHAPTER_CONFIGS = {
         "dialogue_glob": "chapter_04_*.json",
         "resource_prefix": "res://assets/audio/dialogue/chapter_04/",
     },
+    "5": {
+        "manifest_path": PROJECT_ROOT / "data/voice/chapter_05_full.jsonl",
+        "audio_root": PROJECT_ROOT / "assets/audio/dialogue/chapter_05",
+        "dialogue_glob": "chapter_05_*.json",
+        "resource_prefix": "res://assets/audio/dialogue/chapter_05/",
+    },
 }
 
 

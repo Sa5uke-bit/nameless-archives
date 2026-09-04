@@ -1,0 +1,22 @@
+{
+  "fingerprint": "ac281b1dbe940d39cc5c3b681f11e9ea8aecd8bec76819574afa1fbd0b4d2df5",
+  "job": {
+    "id": "chapter_05_finale.final_statement.000",
+    "instructions": "三十多岁的职业侦探，低中音，沉稳清晰，带分析感。现实主义表演，不故作深沉，不使用播音腔。按日常基线自然陈述，停顿清楚，不额外渲染悬疑。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "侦探",
+    "text": "没有一个人安排五起案件。每名求助者只把自己能够证明、愿意交出的那一段送到下一站。",
+    "voice": "Moon",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "6323c9bd-0b8f-9fe6-84d3-d223ddaf81ad",
+  "schema_version": 1,
+  "usage": {
+    "characters": 77
+  }
+}

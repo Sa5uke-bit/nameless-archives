@@ -1,0 +1,22 @@
+{
+  "fingerprint": "94fafa1e16d7dafcde70a42d62b3b1ad073727cbfeea13b8d12d0b3329b58e6b",
+  "job": {
+    "id": "chapter_05_archive.letter_one_first.000",
+    "instructions": "三十多岁的职业侦探，低中音，沉稳清晰，带分析感。现实主义表演，不故作深沉，不使用播音腔。按日常基线自然陈述，停顿清楚，不额外渲染悬疑。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "侦探",
+    "text": "普通账簿纸，先写正文，再补记号。墨水在交叉处的上下顺序很清楚。",
+    "voice": "Moon",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "5d75fff2-78b1-9059-a26f-231381666794",
+  "schema_version": 1,
+  "usage": {
+    "characters": 58
+  }
+}

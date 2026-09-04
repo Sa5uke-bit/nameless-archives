@@ -1,0 +1,22 @@
+{
+  "fingerprint": "5983c0592b3150e1d3f4a596f37929017fe1821efdaba286f4fdf6bb6011b547",
+  "job": {
+    "id": "chapter05_fang_neutral",
+    "instructions": "三十六岁中国女性，温和而有清楚边界，现实主义表演，疲惫但不柔弱。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "方芸",
+    "text": "共同的是一条出口，不是所有人的答案。",
+    "voice": "Serena",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "54327700-da7f-9635-9e9d-2a5330ec9e45",
+  "schema_version": 1,
+  "usage": {
+    "characters": 34
+  }
+}

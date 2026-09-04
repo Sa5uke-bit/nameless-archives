@@ -1,0 +1,22 @@
+{
+  "fingerprint": "8699643e2a3fd7609badd411c7650cc1e2d8c05461a6c2913ce33e7560462a92",
+  "job": {
+    "id": "chapter_05_records.rumor_repeat.000",
+    "instructions": "三十多岁的职业侦探，低中音，沉稳清晰，带分析感。现实主义表演，不故作深沉，不使用播音腔。当前是复查、回忆或含混段落，音量稍低、语速略慢，保留自然余韵。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "侦探",
+    "text": "这页可以作为待核线索保存，不能进入已证结论。",
+    "voice": "Moon",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "e4c2c9c8-f392-988e-8691-82cfe91c370f",
+  "schema_version": 1,
+  "usage": {
+    "characters": 42
+  }
+}

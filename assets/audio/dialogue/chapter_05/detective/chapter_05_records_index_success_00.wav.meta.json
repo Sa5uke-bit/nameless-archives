@@ -1,0 +1,22 @@
+{
+  "fingerprint": "c76f6d2e38b28f061801a0d28fc1fed0df60a7fd7aa1ab5f21cfb10404f55135",
+  "job": {
+    "id": "chapter_05_records.index_success.000",
+    "instructions": "三十多岁的职业侦探，低中音，沉稳清晰，带分析感。现实主义表演，不故作深沉，不使用播音腔。当前处于对质、承认或推理推进段落，增加紧张与确定感，但不要喊叫或煽情。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "侦探",
+    "text": "责任结论与证据编号进入公开层；非必要身份受保护；传闻标明来源不足；原件和同意表封存供核验。",
+    "voice": "Moon",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "4641df25-45b7-9411-b0e6-14ed2b4be179",
+  "schema_version": 1,
+  "usage": {
+    "characters": 86
+  }
+}

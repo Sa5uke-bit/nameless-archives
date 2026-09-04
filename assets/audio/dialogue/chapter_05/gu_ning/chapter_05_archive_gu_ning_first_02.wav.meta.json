@@ -1,0 +1,22 @@
+{
+  "fingerprint": "9e8c69ee938630b7d0e7f2d46c1ac07f14f1160e9f0a84824309c63691fdbae6",
+  "job": {
+    "id": "chapter_05_archive.gu_ning_first.002",
+    "instructions": "三十多岁女性，低沉冷静，措辞利落，习惯掌控局面。情绪内收，避免讲课腔和夸张哭腔。按日常基线自然陈述，停顿清楚，不额外渲染悬疑。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "顾宁",
+    "text": "不认识。要是认识，这条路就不会比一张名单安全。",
+    "voice": "Elias",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "9badaf02-70c1-905a-8646-beb9f9593e05",
+  "schema_version": 1,
+  "usage": {
+    "characters": 43
+  }
+}

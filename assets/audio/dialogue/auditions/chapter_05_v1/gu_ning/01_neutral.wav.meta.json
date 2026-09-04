@@ -1,0 +1,22 @@
+{
+  "fingerprint": "89c4f60f44c5b77edf72ba59e0563a18548357899cfaaf04445faa766c6172d3",
+  "job": {
+    "id": "chapter05_gu_neutral",
+    "instructions": "三十多岁中国女性，低沉冷静，措辞利落，情绪内收。平静承认有限责任，不故作神秘。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "顾宁",
+    "text": "那个缺口方框最早是我画的，但后来写在它前面的句子不属于我。",
+    "voice": "Elias",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "287ea281-1a03-9e91-93f9-01c1625d24d5",
+  "schema_version": 1,
+  "usage": {
+    "characters": 56
+  }
+}

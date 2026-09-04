@@ -1,0 +1,22 @@
+{
+  "fingerprint": "6c7a16bf7cd496c39438eca328812bf309d45735834346c1dc19d06405ca7d3f",
+  "job": {
+    "id": "chapter05_luo_neutral",
+    "instructions": "三十六岁中国女性，温和清楚，观察力强，承认知识边界，日常口语。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "罗遥",
+    "text": "我可以为路戳作证，不能替信封里面的人作证。",
+    "voice": "Serena",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "ad6cf1f7-3a80-9c27-ae46-52cceea599fe",
+  "schema_version": 1,
+  "usage": {
+    "characters": 40
+  }
+}
