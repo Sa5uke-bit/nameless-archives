@@ -40,6 +40,9 @@ func set_location(location_id: String) -> void:
 		"finale":
 			sea_player.volume_db = -24.0
 			rain_player.volume_db = -16.0
+		"theater_stage", "theater_wardrobe", "theater_backstage", "theater_finale":
+			sea_player.volume_db = -36.0
+			rain_player.volume_db = -29.0
 		"ending":
 			sea_player.volume_db = -30.0
 			rain_player.volume_db = -27.0

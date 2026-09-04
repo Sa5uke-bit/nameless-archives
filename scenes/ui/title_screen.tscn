@@ -64,7 +64,7 @@ alignment = 1
 layout_mode = 2
 theme_override_colors/font_color = Color(0.64, 0.68, 0.7, 1)
 theme_override_font_sizes/font_size = 17
-text = "第一章"
+text = "无名档案 · 当前可玩章节"
 horizontal_alignment = 1
 
 [node name="Title" type="Label" parent="Center/VBox"]
@@ -93,7 +93,14 @@ unique_name_in_owner = true
 custom_minimum_size = Vector2(0, 54)
 layout_mode = 2
 theme_override_font_sizes/font_size = 20
-text = "开始调查"
+text = "第一章 · 不存在的住客"
+
+[node name="Chapter2Button" type="Button" parent="Center/VBox"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(0, 54)
+layout_mode = 2
+theme_override_font_sizes/font_size = 20
+text = "第二章 · 谢幕之后（灰盒）"
 
 [node name="ContinueButton" type="Button" parent="Center/VBox"]
 unique_name_in_owner = true
@@ -120,9 +127,10 @@ offset_bottom = -18.0
 grow_horizontal = 0
 grow_vertical = 0
 theme_override_colors/font_color = Color(0.45, 0.52, 0.55, 1)
-text = "开发灰盒 · v0.1"
+text = "可玩开发版 · v0.2"
 horizontal_alignment = 2
 
 [connection signal="pressed" from="Center/VBox/StartButton" to="." method="_on_start_button_pressed"]
+[connection signal="pressed" from="Center/VBox/Chapter2Button" to="." method="_on_chapter_two_button_pressed"]
 [connection signal="pressed" from="Center/VBox/ContinueButton" to="." method="_on_continue_button_pressed"]
 [connection signal="pressed" from="Center/VBox/QuitButton" to="." method="_on_quit_button_pressed"]

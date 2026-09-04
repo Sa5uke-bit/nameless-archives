@@ -1,6 +1,7 @@
 extends Control
 
 signal start_requested
+signal chapter_two_requested
 signal continue_requested
 signal quit_requested
 
@@ -20,6 +21,10 @@ func _on_start_button_pressed() -> void:
 
 func _on_continue_button_pressed() -> void:
 	continue_requested.emit()
+
+
+func _on_chapter_two_button_pressed() -> void:
+	chapter_two_requested.emit()
 
 
 func _on_quit_button_pressed() -> void:

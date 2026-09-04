@@ -7,16 +7,21 @@ signal ending_requested(ending_id: String)
 signal title_requested
 
 const DEFAULT_SAVE_PATH := "user://chapter_01_save.json"
+const DEFAULT_PROFILE_PATH := "user://progression.json"
 const SAVE_VERSION := 1
+const PROFILE_VERSION := 1
 
 var evidence: Dictionary = {}
 var flags: Dictionary = {}
+var profile: Dictionary = {}
 var persistence_enabled := true
 var save_path := DEFAULT_SAVE_PATH
+var profile_path := DEFAULT_PROFILE_PATH
 
 
 func _ready() -> void:
 	_ensure_input_actions()
+	load_profile()
 
 
 func reset_case() -> void:
@@ -123,6 +128,56 @@ func clear_save() -> void:
 	if not persistence_enabled or not FileAccess.file_exists(save_path):
 		return
 	DirAccess.remove_absolute(ProjectSettings.globalize_path(save_path))
+
+
+func record_chapter_outcome(chapter_id: String, ending_id: String) -> void:
+	if chapter_id.is_empty() or ending_id.is_empty():
+		return
+	var outcomes: Dictionary = profile.get("chapter_outcomes", {})
+	outcomes[chapter_id] = ending_id
+	profile["chapter_outcomes"] = outcomes
+	_save_profile()
+
+
+func get_chapter_outcome(chapter_id: String, default_value: String = "") -> String:
+	var outcomes: Variant = profile.get("chapter_outcomes", {})
+	if typeof(outcomes) != TYPE_DICTIONARY:
+		return default_value
+	return str((outcomes as Dictionary).get(chapter_id, default_value))
+
+
+func load_profile() -> bool:
+	if not persistence_enabled or not FileAccess.file_exists(profile_path):
+		return false
+	var file := FileAccess.open(profile_path, FileAccess.READ)
+	if file == null:
+		return false
+	var parsed: Variant = JSON.parse_string(file.get_as_text())
+	if typeof(parsed) != TYPE_DICTIONARY:
+		push_warning("Progression profile is not a JSON object")
+		return false
+	if int(parsed.get("version", 0)) != PROFILE_VERSION:
+		push_warning("Unsupported progression profile version")
+		return false
+	var loaded_profile: Variant = parsed.get("profile", {})
+	if typeof(loaded_profile) != TYPE_DICTIONARY:
+		return false
+	profile = loaded_profile
+	return true
+
+
+func _save_profile() -> bool:
+	if not persistence_enabled:
+		return false
+	var file := FileAccess.open(profile_path, FileAccess.WRITE)
+	if file == null:
+		push_error("Unable to write progression profile: %s" % profile_path)
+		return false
+	file.store_string(JSON.stringify({
+		"version": PROFILE_VERSION,
+		"profile": profile,
+	}, "\t"))
+	return true
 
 
 func _save_if_active() -> void:

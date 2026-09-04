@@ -1,0 +1,138 @@
+[gd_scene load_steps=2 format=3]
+
+[ext_resource type="Script" path="res://scripts/ui/tape_comparison.gd" id="1_tape"]
+
+[node name="TapeComparison" type="CanvasLayer"]
+layer = 25
+script = ExtResource("1_tape")
+
+[node name="Root" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Backdrop" type="ColorRect" parent="Root"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(0.01, 0.015, 0.022, 0.92)
+
+[node name="Center" type="CenterContainer" parent="Root"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Panel" type="PanelContainer" parent="Root/Center"]
+custom_minimum_size = Vector2(1080, 620)
+layout_mode = 2
+
+[node name="Margin" type="MarginContainer" parent="Root/Center/Panel"]
+layout_mode = 2
+theme_override_constants/margin_left = 30
+theme_override_constants/margin_top = 24
+theme_override_constants/margin_right = 30
+theme_override_constants/margin_bottom = 24
+
+[node name="VBox" type="VBoxContainer" parent="Root/Center/Panel/Margin"]
+layout_mode = 2
+theme_override_constants/separation = 12
+
+[node name="Title" type="Label" parent="Root/Center/Panel/Margin/VBox"]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.9, 0.83, 0.62, 1)
+theme_override_font_sizes/font_size = 28
+text = "磁带对照 · 原声与副本"
+horizontal_alignment = 1
+
+[node name="Columns" type="HBoxContainer" parent="Root/Center/Panel/Margin/VBox"]
+custom_minimum_size = Vector2(0, 255)
+layout_mode = 2
+theme_override_constants/separation = 18
+
+[node name="APanel" type="PanelContainer" parent="Root/Center/Panel/Margin/VBox/Columns"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="AText" type="RichTextLabel" parent="Root/Center/Panel/Margin/VBox/Columns/APanel"]
+layout_mode = 2
+theme_override_colors/default_color = Color(0.82, 0.84, 0.82, 1)
+theme_override_font_sizes/normal_font_size = 17
+bbcode_enabled = true
+text = "[color=#d9c99d][b]A 带 · ‘后台全程记录’[/b][/color]\n\n00:00  持续掌声\n00:08  底噪突然变窄\n00:09  女声：‘别找我。’\n00:10  轻咳一次\n00:13  金属铃\n00:15  金属铃\n00:17  零散掌声"
+
+[node name="BPanel" type="PanelContainer" parent="Root/Center/Panel/Margin/VBox/Columns"]
+layout_mode = 2
+size_flags_horizontal = 3
+
+[node name="BText" type="RichTextLabel" parent="Root/Center/Panel/Margin/VBox/Columns/BPanel"]
+layout_mode = 2
+theme_override_colors/default_color = Color(0.82, 0.84, 0.82, 1)
+theme_override_font_sizes/normal_font_size = 17
+bbcode_enabled = true
+text = "[color=#d9c99d][b]B 带 · ‘9/18 试录 2’[/b][/color]\n\n20:13  纸张翻动\n20:16  女声：‘别找我。’\n20:17  轻咳一次\n20:20  金属铃\n20:22  金属铃\n20:23  ‘雨声器还没试。’\n20:27  模拟雨声"
+
+[node name="Prompt" type="Label" parent="Root/Center/Panel/Margin/VBox"]
+layout_mode = 2
+text = "选择两盒磁带中完全相同、并且连续出现的声音："
+
+[node name="Checks" type="HBoxContainer" parent="Root/Center/Panel/Margin/VBox"]
+layout_mode = 2
+theme_override_constants/separation = 12
+
+[node name="PhraseCheck" type="CheckButton" parent="Root/Center/Panel/Margin/VBox/Checks"]
+unique_name_in_owner = true
+layout_mode = 2
+text = "‘别找我’"
+
+[node name="CoughCheck" type="CheckButton" parent="Root/Center/Panel/Margin/VBox/Checks"]
+unique_name_in_owner = true
+layout_mode = 2
+text = "轻咳"
+
+[node name="BellCheck" type="CheckButton" parent="Root/Center/Panel/Margin/VBox/Checks"]
+unique_name_in_owner = true
+layout_mode = 2
+text = "两次提示铃"
+
+[node name="ApplauseCheck" type="CheckButton" parent="Root/Center/Panel/Margin/VBox/Checks"]
+unique_name_in_owner = true
+layout_mode = 2
+text = "掌声"
+
+[node name="RainCheck" type="CheckButton" parent="Root/Center/Panel/Margin/VBox/Checks"]
+unique_name_in_owner = true
+layout_mode = 2
+text = "雨声器"
+
+[node name="Feedback" type="Label" parent="Root/Center/Panel/Margin/VBox"]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_colors/font_color = Color(0.68, 0.75, 0.72, 1)
+text = "标记两盒磁带中完全相同、足以证明复制关系的声音。"
+horizontal_alignment = 1
+
+[node name="Buttons" type="HBoxContainer" parent="Root/Center/Panel/Margin/VBox"]
+layout_mode = 2
+alignment = 1
+
+[node name="Submit" type="Button" parent="Root/Center/Panel/Margin/VBox/Buttons"]
+custom_minimum_size = Vector2(220, 48)
+layout_mode = 2
+text = "确认对照"
+
+[node name="Close" type="Button" parent="Root/Center/Panel/Margin/VBox/Buttons"]
+custom_minimum_size = Vector2(160, 48)
+layout_mode = 2
+text = "稍后再看"
+
+[connection signal="pressed" from="Root/Center/Panel/Margin/VBox/Buttons/Submit" to="." method="_on_submit_pressed"]
+[connection signal="pressed" from="Root/Center/Panel/Margin/VBox/Buttons/Close" to="." method="_on_close_pressed"]

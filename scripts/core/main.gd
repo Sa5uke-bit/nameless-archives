@@ -6,6 +6,10 @@ const LOCATION_PATHS := {
 	"room_307": "res://scenes/locations/room_307.tscn",
 	"laundry": "res://scenes/locations/laundry.tscn",
 	"finale": "res://scenes/locations/finale.tscn",
+	"theater_stage": "res://scenes/locations/theater_stage.tscn",
+	"theater_wardrobe": "res://scenes/locations/theater_wardrobe.tscn",
+	"theater_backstage": "res://scenes/locations/theater_backstage.tscn",
+	"theater_finale": "res://scenes/locations/theater_finale.tscn",
 }
 
 var current_screen: Node
@@ -24,13 +28,25 @@ func _show_title_screen() -> void:
 	current_screen = TITLE_SCREEN.instantiate()
 	add_child(current_screen)
 	current_screen.start_requested.connect(_start_new_case)
+	current_screen.chapter_two_requested.connect(_start_chapter_two)
 	current_screen.continue_requested.connect(_continue_case)
 	current_screen.quit_requested.connect(_quit_game)
 
 
 func _start_new_case() -> void:
 	GameState.reset_case()
+	GameState.set_flag("current_chapter", "chapter_01")
 	GameState.request_location("lobby")
+
+
+func _start_chapter_two() -> void:
+	GameState.reset_case()
+	GameState.set_flag("current_chapter", "chapter_02")
+	GameState.set_flag(
+		"chapter_01_ending",
+		GameState.get_chapter_outcome("chapter_01", "name")
+	)
+	GameState.request_location("theater_stage")
 
 
 func _continue_case() -> void:

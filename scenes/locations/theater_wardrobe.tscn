@@ -1,0 +1,122 @@
+[gd_scene load_steps=10 format=3]
+
+[ext_resource type="Script" path="res://scripts/locations/theater_wardrobe.gd" id="1_script"]
+[ext_resource type="Script" path="res://scripts/locations/theater_art.gd" id="2_art"]
+[ext_resource type="PackedScene" path="res://scenes/characters/player.tscn" id="3_player"]
+[ext_resource type="PackedScene" path="res://scenes/ui/hud.tscn" id="4_hud"]
+[ext_resource type="Script" path="res://scripts/interaction/interactable.gd" id="5_interactable"]
+
+[sub_resource type="RectangleShape2D" id="FloorShape"]
+size = Vector2(1280, 100)
+
+[sub_resource type="RectangleShape2D" id="WallShape"]
+size = Vector2(40, 720)
+
+[sub_resource type="RectangleShape2D" id="ObjectShape"]
+size = Vector2(150, 230)
+
+[sub_resource type="RectangleShape2D" id="DoorShape"]
+size = Vector2(100, 330)
+
+[node name="TheaterWardrobe" type="Node2D"]
+script = ExtResource("1_script")
+
+[node name="Art" type="Node2D" parent="."]
+script = ExtResource("2_art")
+area = "wardrobe"
+
+[node name="LocationTitle" type="Label" parent="."]
+offset_left = 460.0
+offset_top = 116.0
+offset_right = 820.0
+offset_bottom = 156.0
+theme_override_colors/font_color = Color(0.78, 0.7, 0.56, 1)
+theme_override_font_sizes/font_size = 25
+text = "潮声剧场 · 服装库"
+horizontal_alignment = 1
+
+[node name="Floor" type="StaticBody2D" parent="."]
+position = Vector2(640, 670)
+collision_layer = 1
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Floor"]
+shape = SubResource("FloorShape")
+
+[node name="LeftWall" type="StaticBody2D" parent="."]
+position = Vector2(-20, 360)
+collision_layer = 1
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="LeftWall"]
+shape = SubResource("WallShape")
+
+[node name="RightWall" type="StaticBody2D" parent="."]
+position = Vector2(1300, 360)
+collision_layer = 1
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="RightWall"]
+shape = SubResource("WallShape")
+
+[node name="Player" parent="." instance=ExtResource("3_player")]
+position = Vector2(135, 620)
+
+[node name="BackDoor" type="Area2D" parent="."]
+position = Vector2(65, 520)
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("5_interactable")
+display_name = "返回舞台"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="BackDoor"]
+shape = SubResource("DoorShape")
+
+[node name="Costume" type="Area2D" parent="."]
+position = Vector2(460, 515)
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("5_interactable")
+display_name = "检查备用戏服"
+conversation_id = "costume_first"
+repeat_conversation_id = "costume_repeat"
+evidence_id = "E202"
+evidence_title = "备用戏服的长档暗扣"
+evidence_description = "C-02 从短档放长五厘米并放松腰封，调整尺寸符合比程书瑜更高大的杨佩。"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Costume"]
+shape = SubResource("ObjectShape")
+
+[node name="Shoes" type="Area2D" parent="."]
+position = Vector2(680, 525)
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("5_interactable")
+display_name = "对照两双舞台鞋"
+conversation_id = "shoes_first"
+repeat_conversation_id = "shoes_repeat"
+evidence_id = "E203"
+evidence_title = "谢幕照片中的方扣鞋"
+evidence_description = "照片露出的暗铆钉方扣属于杨佩的 38 码替补鞋；程书瑜的圆扣鞋留在化妆间。"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Shoes"]
+shape = SubResource("ObjectShape")
+
+[node name="DeductionBoard" type="Area2D" parent="."]
+position = Vector2(875, 515)
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("5_interactable")
+display_name = "整理谢幕者推理"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="DeductionBoard"]
+shape = SubResource("ObjectShape")
+
+[node name="BackstageDoor" type="Area2D" parent="."]
+position = Vector2(1185, 520)
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("5_interactable")
+display_name = "进入音控后台"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="BackstageDoor"]
+shape = SubResource("DoorShape")
+
+[node name="HUD" parent="." instance=ExtResource("4_hud")]
