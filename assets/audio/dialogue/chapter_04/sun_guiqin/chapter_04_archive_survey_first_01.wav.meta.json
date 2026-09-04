@@ -1,0 +1,22 @@
+{
+  "fingerprint": "cc7831376fd8c562d5738f5159106acd5c0d9bc4482be596a28341cc0ce39d3d",
+  "job": {
+    "id": "chapter_04_archive.survey_first.001",
+    "instructions": "六十三岁中国女性退休生活老师，中低音，咬字清楚，严肃而有保护欲。现实主义表演，不训话、不煽情、不使用播音腔。按日常基线自然陈述，停顿清楚，不额外渲染悬疑。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "孙桂琴",
+    "text": "连‘附属’写成‘付属’的错字都一样。",
+    "voice": "Maia",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "52cebb43-8288-9a54-8269-a8eff621b327",
+  "schema_version": 1,
+  "usage": {
+    "characters": 31
+  }
+}

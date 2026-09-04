@@ -1,0 +1,22 @@
+{
+  "fingerprint": "9d371795bfafa815e93b8de99a80d3567b9beb676aa50952a736e7530d884bd5",
+  "job": {
+    "id": "chapter_04_negative.negative_first.001",
+    "instructions": "二十二岁中国女性，音色清楚偏低，年轻但不稚嫩。长期谨慎，表达事实时坚定，不使用哭腔、少女感或戏剧化受害者表演。按日常基线自然陈述，停顿清楚，不额外渲染悬疑。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "蒋禾",
+    "text": "右下角还在。门边那块搪瓷牌上是十四。",
+    "voice": "Vivian",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "b4f77542-282c-9f00-84b0-752ffd8d97df",
+  "schema_version": 1,
+  "usage": {
+    "characters": 34
+  }
+}

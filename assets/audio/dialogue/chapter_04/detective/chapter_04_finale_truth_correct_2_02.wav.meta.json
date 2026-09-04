@@ -1,0 +1,22 @@
+{
+  "fingerprint": "65ca4fc82c02b81c09bdc03bbc6e8b94d7e11dc8b0b9c35506cbe8697278ecbf",
+  "job": {
+    "id": "chapter_04_finale.truth_correct_2.002",
+    "instructions": "三十多岁的职业侦探，低中音，沉稳清晰，带分析感。现实主义表演，不故作深沉，不使用播音腔。当前处于对质、承认或推理推进段落，增加紧张与确定感，但不要喊叫或煽情。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "侦探",
+    "text": "所以它们只能证明一次修改被抄了三遍，不能证明现场从未存在。",
+    "voice": "Moon",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "1b8afac5-ab97-9801-8fb6-0c98bb6c5b54",
+  "schema_version": 1,
+  "usage": {
+    "characters": 56
+  }
+}

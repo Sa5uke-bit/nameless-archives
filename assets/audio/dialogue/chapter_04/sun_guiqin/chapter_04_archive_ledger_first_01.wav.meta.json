@@ -1,0 +1,22 @@
+{
+  "fingerprint": "2d2719f91b710c86fa879d0307fb27198f18b98945b7251a6fb92111bacaef91",
+  "job": {
+    "id": "chapter_04_archive.ledger_first.001",
+    "instructions": "六十三岁中国女性退休生活老师，中低音，咬字清楚，严肃而有保护欲。现实主义表演，不训话、不煽情、不使用播音腔。按日常基线自然陈述，停顿清楚，不额外渲染悬疑。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "孙桂琴",
+    "text": "边注日期在火灾后第六天。可归档目录把它排成了火灾前的常规重编号。",
+    "voice": "Maia",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "b177de99-011c-99bd-8d09-1bfd693236a5",
+  "schema_version": 1,
+  "usage": {
+    "characters": 62
+  }
+}

@@ -1,0 +1,224 @@
+[gd_scene load_steps=13 format=3]
+
+[ext_resource type="Script" path="res://scripts/locations/news_negative_room.gd" id="1"]
+[ext_resource type="PackedScene" path="res://scenes/characters/player.tscn" id="2"]
+[ext_resource type="PackedScene" path="res://scenes/ui/hud.tscn" id="3"]
+[ext_resource type="PackedScene" path="res://scenes/ui/address_overlay.tscn" id="4"]
+[ext_resource type="Script" path="res://scripts/interaction/interactable.gd" id="5"]
+[ext_resource type="Texture2D" path="res://assets/art/backgrounds/news_negative_room_v1.png" id="6"]
+[ext_resource type="Texture2D" path="res://assets/art/characters/jiang_he_v1.png" id="7"]
+[ext_resource type="Texture2D" path="res://assets/art/characters/sun_guiqin_v1.png" id="8"]
+[sub_resource type="RectangleShape2D" id="Floor"]
+size = Vector2(1280, 100)
+[sub_resource type="RectangleShape2D" id="Wall"]
+size = Vector2(40, 720)
+[sub_resource type="RectangleShape2D" id="Small"]
+size = Vector2(82, 220)
+[sub_resource type="RectangleShape2D" id="Person"]
+size = Vector2(88, 290)
+[sub_resource type="RectangleShape2D" id="Door"]
+size = Vector2(58, 320)
+[node name="NewsNegativeRoom" type="Node2D"]
+script = ExtResource("1")
+[node name="Background" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(640, 360)
+scale = Vector2(0.76555, 0.76514)
+texture = ExtResource("6")
+[node name="LocationTitle" type="Label" parent="."]
+offset_left = 390.0
+offset_top = 104.0
+offset_right = 890.0
+offset_bottom = 144.0
+theme_override_colors/font_color = Color(0.78, 0.7, 0.56, 1)
+theme_override_font_sizes/font_size = 25
+text = "澄湾晚报 · 底片库与测绘台"
+horizontal_alignment = 1
+[node name="Floor" type="StaticBody2D" parent="."]
+position = Vector2(640, 670)
+collision_layer = 1
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Floor"]
+shape = SubResource("Floor")
+[node name="LeftWall" type="StaticBody2D" parent="."]
+position = Vector2(-20, 360)
+collision_layer = 1
+[node name="CollisionShape2D" type="CollisionShape2D" parent="LeftWall"]
+shape = SubResource("Wall")
+[node name="RightWall" type="StaticBody2D" parent="."]
+position = Vector2(1300, 360)
+collision_layer = 1
+[node name="CollisionShape2D" type="CollisionShape2D" parent="RightWall"]
+shape = SubResource("Wall")
+[node name="Player" parent="." instance=ExtResource("2")]
+position = Vector2(70, 620)
+[node name="BackDoor" type="Area2D" parent="."]
+position = Vector2(25, 515)
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("5")
+display_name = "返回档案修订室"
+[node name="CollisionShape2D" type="CollisionShape2D" parent="BackDoor"]
+shape = SubResource("Door")
+[node name="FullNegative" type="Area2D" parent="."]
+position = Vector2(105, 515)
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("5")
+display_name = "检查完整火场底片"
+conversation_id = "negative_first"
+repeat_conversation_id = "negative_repeat"
+evidence_id = "E408"
+evidence_title = "完整底片齿孔与连续编号"
+evidence_description = "整卷编号连续，证明公开照片来自这张仍拍到 14 号门牌的原片。"
+[node name="CollisionShape2D" type="CollisionShape2D" parent="FullNegative"]
+shape = SubResource("Small")
+[node name="LayoutFrame" type="Area2D" parent="."]
+position = Vector2(195, 515)
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("5")
+display_name = "对照报纸排版框"
+conversation_id = "layout_first"
+repeat_conversation_id = "layout_repeat"
+evidence_id = "E409"
+evidence_title = "报纸排版裁切框"
+evidence_description = "裁边恰好排除门牌却保留空墙，稿边带测绘复核组退改章。"
+[node name="CollisionShape2D" type="CollisionShape2D" parent="LayoutFrame"]
+shape = SubResource("Small")
+[node name="SurveyPhoto" type="Area2D" parent="."]
+position = Vector2(285, 515)
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("5")
+display_name = "核对测绘照片登记"
+conversation_id = "survey_photo_first"
+repeat_conversation_id = "survey_photo_repeat"
+evidence_id = "E410"
+evidence_title = "测绘照片登记顺序"
+evidence_description = "完整照片先归档，删去门牌的新版图三天后制作。"
+[node name="CollisionShape2D" type="CollisionShape2D" parent="SurveyPhoto"]
+shape = SubResource("Small")
+[node name="OverlayDesk" type="Area2D" parent="."]
+position = Vector2(385, 515)
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("5")
+display_name = "打开地址叠合灯箱"
+[node name="CollisionShape2D" type="CollisionShape2D" parent="OverlayDesk"]
+shape = SubResource("Small")
+[node name="PowerOrder" type="Area2D" parent="."]
+position = Vector2(480, 515)
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("5")
+display_name = "阅读断电工单"
+conversation_id = "power_order_first"
+repeat_conversation_id = "power_order_repeat"
+evidence_id = "E411"
+evidence_title = "违规断电工单"
+evidence_description = "附屋被写成空置且未做住户确认，冯启昌签发提前施工。"
+[node name="CollisionShape2D" type="CollisionShape2D" parent="PowerOrder"]
+shape = SubResource("Small")
+[node name="SealedGate" type="Area2D" parent="."]
+position = Vector2(575, 515)
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("5")
+display_name = "检查侧门封闭验收单"
+conversation_id = "sealed_gate_first"
+repeat_conversation_id = "sealed_gate_repeat"
+evidence_id = "E412"
+evidence_title = "侧门封闭验收单"
+evidence_description = "火灾前一天封住附屋通往巷道的门，由冯启昌签收。"
+[node name="CollisionShape2D" type="CollisionShape2D" parent="SealedGate"]
+shape = SubResource("Small")
+[node name="CompensationSheet" type="Area2D" parent="."]
+position = Vector2(670, 515)
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("5")
+display_name = "核对补偿户数手算表"
+conversation_id = "compensation_first"
+repeat_conversation_id = "compensation_repeat"
+evidence_id = "E413"
+evidence_title = "补偿户数手算表"
+evidence_description = "合并 14 号后补偿户数由 47 减至 46，预算差额被圈出。"
+[node name="CollisionShape2D" type="CollisionShape2D" parent="CompensationSheet"]
+shape = SubResource("Small")
+[node name="HospitalRecord" type="Area2D" parent="."]
+position = Vector2(765, 515)
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("5")
+display_name = "对照医院与接送记录"
+conversation_id = "hospital_first"
+repeat_conversation_id = "hospital_repeat"
+evidence_id = "E414"
+evidence_title = "亲属来源交叉记录"
+evidence_description = "医院联系人、同址照片与孙桂琴的长期接送记录共同支持蒋禾与蒋兰的关系。"
+[node name="CollisionShape2D" type="CollisionShape2D" parent="HospitalRecord"]
+shape = SubResource("Small")
+[node name="RedactedReports" type="Area2D" parent="."]
+position = Vector2(860, 515)
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("5")
+display_name = "检查删节调查摘要"
+conversation_id = "reports_first"
+repeat_conversation_id = "reports_repeat"
+evidence_id = "E415"
+evidence_title = "前三章调查摘要删节副本"
+evidence_description = "副本删去私人身份但保留原证据编号；复写顺序指向七码头代办所。"
+[node name="CollisionShape2D" type="CollisionShape2D" parent="RedactedReports"]
+shape = SubResource("Small")
+[node name="JiangHe" type="Area2D" parent="."]
+position = Vector2(965, 535)
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("5")
+display_name = "询问蒋禾"
+conversation_id = "hospital_first"
+repeat_conversation_id = "hospital_repeat"
+[node name="CollisionShape2D" type="CollisionShape2D" parent="JiangHe"]
+position = Vector2(0, -65)
+shape = SubResource("Person")
+[node name="CharacterSprite" type="Sprite2D" parent="JiangHe"]
+texture_filter = 1
+position = Vector2(0, -65)
+scale = Vector2(0.185, 0.185)
+texture = ExtResource("7")
+[node name="SunGuiqin" type="Area2D" parent="."]
+position = Vector2(1060, 535)
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("5")
+display_name = "询问孙桂琴"
+conversation_id = "sealed_gate_first"
+repeat_conversation_id = "sealed_gate_repeat"
+[node name="CollisionShape2D" type="CollisionShape2D" parent="SunGuiqin"]
+position = Vector2(0, -65)
+shape = SubResource("Person")
+[node name="CharacterSprite" type="Sprite2D" parent="SunGuiqin"]
+texture_filter = 1
+position = Vector2(0, -65)
+scale = Vector2(-0.185, 0.185)
+texture = ExtResource("8")
+[node name="DeductionBoard" type="Area2D" parent="."]
+position = Vector2(1150, 515)
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("5")
+display_name = "判断门牌删改时点"
+[node name="CollisionShape2D" type="CollisionShape2D" parent="DeductionBoard"]
+shape = SubResource("Small")
+[node name="FinalDoor" type="Area2D" parent="."]
+position = Vector2(1260, 515)
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("5")
+display_name = "进入拆迁复核会"
+[node name="CollisionShape2D" type="CollisionShape2D" parent="FinalDoor"]
+shape = SubResource("Door")
+[node name="HUD" parent="." instance=ExtResource("3")]
+[node name="AddressOverlay" parent="." instance=ExtResource("4")]
+

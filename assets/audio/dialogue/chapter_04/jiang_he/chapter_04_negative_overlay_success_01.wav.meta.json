@@ -1,0 +1,22 @@
+{
+  "fingerprint": "d9a591401932ac2a73aa0f716add8e26ecebe9332850e20a697d03c9efe10fc8",
+  "job": {
+    "id": "chapter_04_negative.overlay_success.001",
+    "instructions": "二十二岁中国女性，音色清楚偏低，年轻但不稚嫩。长期谨慎，表达事实时坚定，不使用哭腔、少女感或戏剧化受害者表演。当前处于对质、承认或推理推进段落，增加紧张与确定感，但不要喊叫或煽情。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "蒋禾",
+    "text": "底片按窗框和排水沟落下时，十四号门牌正好在新版边界之外。",
+    "voice": "Vivian",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "23a4f9f0-65f5-961c-b51b-fac54c6bf61e",
+  "schema_version": 1,
+  "usage": {
+    "characters": 54
+  }
+}

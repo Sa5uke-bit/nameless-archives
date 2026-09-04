@@ -1,0 +1,22 @@
+{
+  "fingerprint": "05bf54e0a2bae9270b56d42ada1b7ee4d787567a60b5231333e749ce0b61994e",
+  "job": {
+    "id": "chapter_04_negative.sealed_gate_repeat.000",
+    "instructions": "三十多岁的职业侦探，低中音，沉稳清晰，带分析感。现实主义表演，不故作深沉，不使用播音腔。当前是复查、回忆或含混段落，音量稍低、语速略慢，保留自然余韵。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "侦探",
+    "text": "封门不是火灾后的临时管制，而是火灾前的施工动作。",
+    "voice": "Moon",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "3419034f-57bf-9101-9648-1c45a46056fd",
+  "schema_version": 1,
+  "usage": {
+    "characters": 46
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "fingerprint": "69924170594f6ac0458e60d15b331146c5506b2269974742a806228e3c90662c",
+  "job": {
+    "id": "chapter_04_finale.final_statement.000",
+    "instructions": "五十八岁中国男性退休投递员，嗓音略粗、语速偏慢，带风霜与内疚。口语自然克制，不使用说书腔或慈祥长者腔。按日常基线自然陈述，停顿清楚，不额外渲染悬疑。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "温岑",
+    "text": "旧投递路线、断电工单和裁切原片都可以交给复核组。共同信箱的名单不属于火灾责任。",
+    "voice": "Vincent",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "1572791c-d20a-9916-9f62-87e5a6c49c7f",
+  "schema_version": 1,
+  "usage": {
+    "characters": 75
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "fingerprint": "97d5bc50b163c3e15bf2bae3fe5c0420508639a8e56a09cc35f6ea50807e59e4",
+  "job": {
+    "id": "chapter_04_finale.intro.001",
+    "instructions": "五十九岁中国男性前测绘负责人，低中音平稳，习惯使用程序化措辞控制谈话。防御而不咆哮，不冷笑，不做脸谱化反派。按日常基线自然陈述，停顿清楚，不额外渲染悬疑。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "冯启昌",
+    "text": "你可以证明那里住过人，但不能把所有程序缺口都写成我的故意。",
+    "voice": "Arthur",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "9d749637-5fc5-9dc5-85ef-166d17fd80e3",
+  "schema_version": 1,
+  "usage": {
+    "characters": 56
+  }
+}

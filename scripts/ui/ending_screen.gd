@@ -19,6 +19,10 @@ func _ready() -> void:
 		_show_calibration_ending()
 	elif ending_id == "broadcast":
 		_show_broadcast_ending()
+	elif ending_id == "doorplate":
+		_show_doorplate_ending()
+	elif ending_id == "base_map":
+		_show_base_map_ending()
 	elif ending_id == "archive":
 		_show_archive_ending()
 	else:
@@ -88,6 +92,26 @@ func _show_broadcast_ending() -> void:
 		"完整邮袋、诊所页和所有匿名信件被同时公开。陈默的旧指控迅速崩塌，黄维国截留信件、冒领工资和改写笔录的行为受到更广泛追查。\n\n"
 		+ "但公开记录也给出了余真受伤后的路径，并把数名寄信人重新暴露在旧关系里。纠正一个被强加的时间，不等于有权替所有人宣布他们如今在哪里。\n\n"
 		+ "邮袋夹层里，两份侦探报告的删节复印件与不同笔迹的信并排放着。共同记号没有说明谁在指挥，只证明此前每一封信都可能来自不同的人。"
+	)
+
+
+func _show_doorplate_ending() -> void:
+	ending_label.text = "第四章结局"
+	ending_title.text = "门牌"
+	ending_text.text = (
+		"邮政、学校与供水留下的生活记录，让临潮街十四号重新进入复核卷。蒋禾与蒋兰的关系不再依赖那张被覆盖的户籍索引；冯启昌签发的断电、封门和裁切指示分别接受调查。\n\n"
+		+ "公开材料写回十四号、蒋兰和蒋禾，也保留孙桂琴自愿作证的来源。其他旧住户现址与匿名转交名单被单独封存，没有成为证明冯启昌责任的代价。\n\n"
+		+ "温岑交来前三章报告的删节副本。上面的结论没有被改写，姓名却由另一个人决定是否留下。侦探沿复写顺序和投递路线，第一次主动走向七码头的共同信箱。"
+	)
+
+
+func _show_base_map_ending() -> void:
+	ending_label.text = "第四章结局"
+	ending_title.text = "底图"
+	ending_text.text = (
+		"完整底图、住户清单、断电工单与未裁底片同时公开。十四号迅速成为旧城区补偿复核的焦点，蒋禾与蒋兰的关系得到承认，冯启昌无法再把火灾归结为一个不存在地址里的意外。\n\n"
+		+ "公开压力推进得更快，也把已经离开临潮街的人重新标到地图上。共同信箱的转交路径出现在报道里，有人因此停止使用它。\n\n"
+		+ "前三章报告的删节副本证明，另一群人一直在把事实与身份分开保存。侦探沿复写顺序和投递路线，第一次主动走向七码头的共同信箱。"
 	)
 
 

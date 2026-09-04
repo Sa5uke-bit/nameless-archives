@@ -1,0 +1,53 @@
+[gd_scene load_steps=9 format=3]
+
+[ext_resource type="Script" path="res://scripts/locations/demolition_hearing.gd" id="1"]
+[ext_resource type="PackedScene" path="res://scenes/ui/hud.tscn" id="2"]
+[ext_resource type="Texture2D" path="res://assets/art/backgrounds/demolition_hearing_v1.png" id="3"]
+[ext_resource type="Texture2D" path="res://assets/art/characters/detective_v1.png" id="4"]
+[ext_resource type="Texture2D" path="res://assets/art/characters/jiang_he_v1.png" id="5"]
+[ext_resource type="Texture2D" path="res://assets/art/characters/wen_cen_v1.png" id="6"]
+[ext_resource type="Texture2D" path="res://assets/art/characters/sun_guiqin_v1.png" id="7"]
+[ext_resource type="Texture2D" path="res://assets/art/characters/feng_qichang_v1.png" id="8"]
+[node name="DemolitionHearing" type="Node2D"]
+script = ExtResource("1")
+[node name="Background" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(640, 360)
+scale = Vector2(0.76555, 0.76514)
+texture = ExtResource("3")
+[node name="LocationTitle" type="Label" parent="."]
+offset_left = 390.0
+offset_top = 104.0
+offset_right = 890.0
+offset_bottom = 144.0
+theme_override_colors/font_color = Color(0.78, 0.7, 0.56, 1)
+theme_override_font_sizes/font_size = 25
+text = "临潮街拆迁复核会 · 十四号"
+horizontal_alignment = 1
+[node name="Detective" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(150, 490)
+scale = Vector2(0.19, 0.19)
+texture = ExtResource("4")
+[node name="JiangHe" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(380, 490)
+scale = Vector2(0.19, 0.19)
+texture = ExtResource("5")
+[node name="WenCen" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(610, 490)
+scale = Vector2(-0.19, 0.19)
+texture = ExtResource("6")
+[node name="SunGuiqin" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(825, 490)
+scale = Vector2(0.19, 0.19)
+texture = ExtResource("7")
+[node name="FengQichang" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(1060, 490)
+scale = Vector2(-0.19, 0.19)
+texture = ExtResource("8")
+[node name="HUD" parent="." instance=ExtResource("2")]
+

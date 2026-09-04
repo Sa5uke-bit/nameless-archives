@@ -1,0 +1,22 @@
+{
+  "fingerprint": "f8bc4bdd6eddcf1e898b1d7bc41a491a24d5f91d26c1d9192aec4bc621110292",
+  "job": {
+    "id": "chapter_04_courtyard.intro_public.002",
+    "instructions": "五十八岁中国男性退休投递员，嗓音略粗、语速偏慢，带风霜与内疚。口语自然克制，不使用说书腔或慈祥长者腔。按日常基线自然陈述，停顿清楚，不额外渲染悬疑。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "温岑",
+    "text": "我送过。信箱在附屋门边，不在十二号主屋里。",
+    "voice": "Vincent",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "d5f70e17-2bee-99b5-9bc5-ef31ff52f454",
+  "schema_version": 1,
+  "usage": {
+    "characters": 39
+  }
+}

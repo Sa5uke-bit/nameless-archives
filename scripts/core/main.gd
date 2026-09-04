@@ -14,6 +14,10 @@ const LOCATION_PATHS := {
 	"bus_ticket_office": "res://scenes/locations/bus_ticket_office.tscn",
 	"bus_dispatch": "res://scenes/locations/bus_dispatch.tscn",
 	"bus_finale": "res://scenes/locations/bus_finale.tscn",
+	"old_courtyard": "res://scenes/locations/old_courtyard.tscn",
+	"archive_revision_room": "res://scenes/locations/archive_revision_room.tscn",
+	"news_negative_room": "res://scenes/locations/news_negative_room.tscn",
+	"demolition_hearing": "res://scenes/locations/demolition_hearing.tscn",
 }
 
 var current_screen: Node
@@ -34,6 +38,7 @@ func _show_title_screen() -> void:
 	current_screen.start_requested.connect(_start_new_case)
 	current_screen.chapter_two_requested.connect(_start_chapter_two)
 	current_screen.chapter_three_requested.connect(_start_chapter_three)
+	current_screen.chapter_four_requested.connect(_start_chapter_four)
 	current_screen.continue_requested.connect(_continue_case)
 	current_screen.quit_requested.connect(_quit_game)
 
@@ -66,6 +71,24 @@ func _start_chapter_three() -> void:
 		GameState.get_chapter_outcome("chapter_01", "name")
 	)
 	GameState.request_location("bus_concourse")
+
+
+func _start_chapter_four() -> void:
+	GameState.reset_case()
+	GameState.set_flag("current_chapter", "chapter_04")
+	GameState.set_flag(
+		"chapter_03_ending",
+		GameState.get_chapter_outcome("chapter_03", "calibration")
+	)
+	GameState.set_flag(
+		"chapter_02_ending",
+		GameState.get_chapter_outcome("chapter_02", "clear")
+	)
+	GameState.set_flag(
+		"chapter_01_ending",
+		GameState.get_chapter_outcome("chapter_01", "name")
+	)
+	GameState.request_location("old_courtyard")
 
 
 func _continue_case() -> void:

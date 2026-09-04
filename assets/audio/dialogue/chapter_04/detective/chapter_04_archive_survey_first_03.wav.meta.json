@@ -1,0 +1,22 @@
+{
+  "fingerprint": "686bde63aca5649dd0b56c12bfe39164d9732fc053a5eaf610a8dd9dfa6e8fd9",
+  "job": {
+    "id": "chapter_04_archive.survey_first.003",
+    "instructions": "三十多岁的职业侦探，低中音，沉稳清晰，带分析感。现实主义表演，不故作深沉，不使用播音腔。按日常基线自然陈述，停顿清楚，不额外渲染悬疑。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "侦探",
+    "text": "它代表地图不是第二个独立现场判断。",
+    "voice": "Moon",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "02a2fe9d-ede9-9c3e-912c-7ffbf5d403c4",
+  "schema_version": 1,
+  "usage": {
+    "characters": 33
+  }
+}

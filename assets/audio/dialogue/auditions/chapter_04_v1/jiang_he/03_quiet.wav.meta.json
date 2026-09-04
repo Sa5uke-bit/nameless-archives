@@ -1,0 +1,22 @@
+{
+  "fingerprint": "ec3fd0524a819f0b7b39c959534d65cc2af6f7651dd89bed2fb2937a19d5cd37",
+  "job": {
+    "id": "chapter04_jiang_quiet",
+    "instructions": "二十二岁中国女性，音量稍低，克制但有明确边界，保留自然停顿。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "蒋禾",
+    "text": "我不需要他们把房子重新砌回来。我需要记录承认我从哪里活下来。",
+    "voice": "Vivian",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "0743b611-a5ec-9af2-83aa-a1dba2467723",
+  "schema_version": 1,
+  "usage": {
+    "characters": 58
+  }
+}

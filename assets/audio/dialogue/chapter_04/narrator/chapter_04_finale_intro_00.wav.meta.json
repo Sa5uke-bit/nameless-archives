@@ -1,0 +1,22 @@
+{
+  "fingerprint": "d40a5744a972575c41981e30e9265cdc027011a73330be3521dca5e917859f62",
+  "job": {
+    "id": "chapter_04_finale.intro.000",
+    "instructions": "成熟男性叙述者，清楚客观，有轻微纪录片质感但不过分正式。保持克制，不使用恐怖预告腔。按日常基线自然陈述，停顿清楚，不额外渲染悬疑。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "旁白",
+    "text": "两版地图在复核桌上重合。新版边界覆盖旧线，却遮不住底片里仍挂在门边的数字。",
+    "voice": "Neil",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "5c8f65f0-e56a-95d7-a2e8-5acf8a01f8fa",
+  "schema_version": 1,
+  "usage": {
+    "characters": 71
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "fingerprint": "6ca4f2243fb6550f520e4def6a270bc3ead7b87d5a77234339df69348666b54d",
+  "job": {
+    "id": "chapter_04_courtyard.school_first.001",
+    "instructions": "三十多岁的职业侦探，低中音，沉稳清晰，带分析感。现实主义表演，不故作深沉，不使用播音腔。按日常基线自然陈述，停顿清楚，不额外渲染悬疑。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "侦探",
+    "text": "连续三个学期都写十四号，蒋兰的签名也没有变化。",
+    "voice": "Moon",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "45efa7b4-73f1-93b9-a9bd-9d69486df1fb",
+  "schema_version": 1,
+  "usage": {
+    "characters": 44
+  }
+}

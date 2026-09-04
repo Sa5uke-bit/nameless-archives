@@ -1,0 +1,22 @@
+{
+  "fingerprint": "9e39c01c152718ffa8ddde34f4f7519d4d11c7871829f1e7bc9aad42a6291128",
+  "job": {
+    "id": "chapter_04_negative.overlay_success.002",
+    "instructions": "三十多岁的职业侦探，低中音，沉稳清晰，带分析感。现实主义表演，不故作深沉，不使用播音腔。当前处于对质、承认或推理推进段落，增加紧张与确定感，但不要喊叫或煽情。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "侦探",
+    "text": "最后叠入排版框，门牌才从公众能看到的照片里消失。",
+    "voice": "Moon",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "8d067fee-6ca8-9a1e-874f-ed0172d470f8",
+  "schema_version": 1,
+  "usage": {
+    "characters": 46
+  }
+}

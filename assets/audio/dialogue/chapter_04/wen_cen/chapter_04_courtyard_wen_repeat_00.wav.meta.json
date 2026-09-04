@@ -1,0 +1,22 @@
+{
+  "fingerprint": "d7d7910b363f974ec61e49cc257d7ef9b41ae971a65dd37a69ef46bf25e7a142",
+  "job": {
+    "id": "chapter_04_courtyard.wen_repeat.000",
+    "instructions": "五十八岁中国男性退休投递员，嗓音略粗、语速偏慢，带风霜与内疚。口语自然克制，不使用说书腔或慈祥长者腔。当前是复查、回忆或含混段落，音量稍低、语速略慢，保留自然余韵。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "温岑",
+    "text": "投递簿的路线页在区档案室。那里会写是谁通知改段。",
+    "voice": "Vincent",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "b348ab52-1ac4-915b-a82b-361750c8c126",
+  "schema_version": 1,
+  "usage": {
+    "characters": 46
+  }
+}

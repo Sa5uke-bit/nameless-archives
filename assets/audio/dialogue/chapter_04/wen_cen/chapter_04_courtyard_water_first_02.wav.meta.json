@@ -1,0 +1,22 @@
+{
+  "fingerprint": "7b60f99054a5e6b7c6e53ef4e16e155a4d425b738e7497e8028eb406bc7abf17",
+  "job": {
+    "id": "chapter_04_courtyard.water_first.002",
+    "instructions": "五十八岁中国男性退休投递员，嗓音略粗、语速偏慢，带风霜与内疚。口语自然克制，不使用说书腔或慈祥长者腔。按日常基线自然陈述，停顿清楚，不额外渲染悬疑。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "温岑",
+    "text": "产权可以没分，生活却早就分开了。",
+    "voice": "Vincent",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "95efd86e-a4e0-9ece-8999-895d098fdcd2",
+  "schema_version": 1,
+  "usage": {
+    "characters": 30
+  }
+}

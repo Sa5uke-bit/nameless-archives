@@ -1,0 +1,22 @@
+{
+  "fingerprint": "ebaab52c1f397efa856ae51e3730c417cc0906b87b3608ff8c330e1886202b90",
+  "job": {
+    "id": "chapter_04_courtyard.jiang_repeat.000",
+    "instructions": "二十二岁中国女性，音色清楚偏低，年轻但不稚嫩。长期谨慎，表达事实时坚定，不使用哭腔、少女感或戏剧化受害者表演。当前是复查、回忆或含混段落，音量稍低、语速略慢，保留自然余韵。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "蒋禾",
+    "text": "我不需要他们把房子重新砌回来。我需要记录承认我从哪里活下来。",
+    "voice": "Vivian",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "0f9bad03-cba7-947b-a1c3-0e39db0aee10",
+  "schema_version": 1,
+  "usage": {
+    "characters": 58
+  }
+}

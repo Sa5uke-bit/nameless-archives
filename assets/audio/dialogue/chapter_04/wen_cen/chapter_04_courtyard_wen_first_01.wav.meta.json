@@ -1,0 +1,22 @@
+{
+  "fingerprint": "8fad0d932b086d495bcd0b08d0ec58479bc691868277186486dd5ec6b79e0a43",
+  "job": {
+    "id": "chapter_04_courtyard.wen_first.001",
+    "instructions": "五十八岁中国男性退休投递员，嗓音略粗、语速偏慢，带风霜与内疚。口语自然克制，不使用说书腔或慈祥长者腔。按日常基线自然陈述，停顿清楚，不额外渲染悬疑。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "温岑",
+    "text": "那时我以为只是改号。后来才明白，每退一封信，就像再说一遍那里没人。",
+    "voice": "Vincent",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "9eb67558-52ec-93d5-bbd7-d1bab81f914b",
+  "schema_version": 1,
+  "usage": {
+    "characters": 62
+  }
+}

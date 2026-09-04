@@ -1,0 +1,22 @@
+{
+  "fingerprint": "52156d1252adc9c6f68084431f742cbea5c247ac07d8064d4ba7004ea2041e16",
+  "job": {
+    "id": "chapter_04_negative.hospital_first.002",
+    "instructions": "六十三岁中国女性退休生活老师，中低音，咬字清楚，严肃而有保护欲。现实主义表演，不训话、不煽情、不使用播音腔。按日常基线自然陈述，停顿清楚，不额外渲染悬疑。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "孙桂琴",
+    "text": "我愿意说明蒋兰一直以监护人身份接送她。",
+    "voice": "Maia",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "241f472c-bc28-9cb2-886e-3e417cd384dc",
+  "schema_version": 1,
+  "usage": {
+    "characters": 37
+  }
+}

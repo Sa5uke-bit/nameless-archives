@@ -1,0 +1,22 @@
+{
+  "fingerprint": "eb939107c49267f82585e2c45a0ee3791d0b3f3098cb0be7a01791b2da0e05f8",
+  "job": {
+    "id": "chapter_04_finale.truth_correct_2.001",
+    "instructions": "五十九岁中国男性前测绘负责人，低中音平稳，习惯使用程序化措辞控制谈话。防御而不咆哮，不冷笑，不做脸谱化反派。当前处于对质、承认或推理推进段落，增加紧张与确定感，但不要喊叫或煽情。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "冯启昌",
+    "text": "统一引用是工作方法。",
+    "voice": "Arthur",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "ede3506c-4f50-9cf3-be81-e7607d1df2e5",
+  "schema_version": 1,
+  "usage": {
+    "characters": 19
+  }
+}

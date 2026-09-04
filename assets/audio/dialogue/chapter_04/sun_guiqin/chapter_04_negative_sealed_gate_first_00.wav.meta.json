@@ -1,0 +1,22 @@
+{
+  "fingerprint": "cc5b466a04777c1ba7adfe99119f4fd18a31214d3cf11529be9c49f9e54ceaec",
+  "job": {
+    "id": "chapter_04_negative.sealed_gate_first.000",
+    "instructions": "六十三岁中国女性退休生活老师，中低音，咬字清楚，严肃而有保护欲。现实主义表演，不训话、不煽情、不使用播音腔。按日常基线自然陈述，停顿清楚，不额外渲染悬疑。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "孙桂琴",
+    "text": "侧门封闭验收单是火灾前一天签的。铁丝型号和现场照片一致。",
+    "voice": "Maia",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "d4c5b107-2cab-94a8-8fed-0c96586c0dc0",
+  "schema_version": 1,
+  "usage": {
+    "characters": 54
+  }
+}

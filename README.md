@@ -1,13 +1,13 @@
 # 《无名档案》2D 侦探剧情游戏
 
 > 工作目录：`Narrative2D`
-> 文档版本：v1.1
-> 状态：前三章均已完成，可从选章界面独立通关
+> 文档版本：v1.2
+> 状态：前四章均已完成，可从选章界面独立通关
 > 更新日期：2026-09-04
 
 ## 0. 当前可运行版本
 
-标题画面可以选择第一章《不存在的住客》、第二章《谢幕之后》或第三章《停在四点十七分》，并显示各章已经达成的结局。前三章均有完整调查流程、统一风格场景与人物美术、全量对白配音和双结局；第二章使用可试听的 A/B 磁带对照，第三章新增带证据冲突反馈的时间基准校准，并轻量继承前章的公开范围。
+标题画面可以选择第一章《不存在的住客》、第二章《谢幕之后》、第三章《停在四点十七分》或第四章《被删去的地址》，并显示各章已经达成的结局。前四章均有完整调查流程、统一风格场景与人物美术、全量对白配音和双结局；第四章新增受约束的地图/照片叠合，并把来源完整度、公开范围和当事人同意保存到跨章结果中。
 
 首玩前内容打磨已完成：乔雯现在会提供一份必须核对但不直接给出答案的矛盾证词；林小满在姓名揭晓前会通过工时、未使用的车票和取回证件的计划留下生活痕迹；遗漏跨场景关键线索时，当前目标会给出不揭晓结论的回查提示。
 
@@ -37,6 +37,9 @@
 - 第三章四段正式场景、四名章节角色、16 条证据、三轮推理、时间基准校准、四项最终陈述和《校正》/《报时》双结局；
 - 第三章全量 AI 对白配音、12 条角色试听、可复现语音清单与格式/引用校验；
 - 第三章自动通关与视觉捕获测试，并继续通过第一、二章回归测试。
+- 第四章四段正式场景、四名章节角色、15 条证据、三轮推理、地址图层叠合、四项最终陈述和《门牌》/《底图》双结局；
+- 第四章 128 条全量 AI 对白配音、12 条角色试听、可复现语音清单与格式/引用校验；
+- 第四章自动通关、视觉捕获与跨章结果持久化测试。
 
 ### 启动方法
 
@@ -58,6 +61,7 @@ D:\IndieGame\Narrative2D\builds\windows\不存在的住客.exe
 & 'D:\Godot\Godot_v4.6.2\Godot_v4.6.2-stable_win64_console.exe' --headless --path 'D:\IndieGame\Narrative2D' 'res://tests/smoke_test.tscn'
 & 'D:\Godot\Godot_v4.6.2\Godot_v4.6.2-stable_win64_console.exe' --headless --path 'D:\IndieGame\Narrative2D' 'res://tests/chapter_02_smoke_test.tscn'
 & 'D:\Godot\Godot_v4.6.2\Godot_v4.6.2-stable_win64_console.exe' --headless --path 'D:\IndieGame\Narrative2D' 'res://tests/chapter_03_smoke_test.tscn'
+& 'D:\Godot\Godot_v4.6.2\Godot_v4.6.2-stable_win64_console.exe' --headless --path 'D:\IndieGame\Narrative2D' 'res://tests/chapter_04_smoke_test.tscn'
 ```
 
 ### 当前操作
@@ -68,6 +72,7 @@ D:\IndieGame\Narrative2D\builds\windows\不存在的住客.exe
 - 鼠标左键：推进对白、点击选择与界面按钮；
 - 录音比对时：分别播放 A/B 带，勾选其中连续重复的声音片段，再提交比对；
 - 时间校准时：按独立记录所示的实际先后点击事件卡，点击右侧已排事件可撤回；
+- 地址叠合时：按来源形成顺序叠入旧图、新图、完整底片与排版框；
 - `A` / `D` 或左右方向键：移动；
 - `E` 或空格：调查、继续对白；
 - `Tab`：打开或关闭调查笔记；
@@ -86,8 +91,8 @@ D:\IndieGame\Narrative2D\builds\windows\不存在的住客.exe
 ### 当前已知缺口
 
 - 玩家侦探已有四帧迈步循环；静止 NPC 仍使用单张立绘，尚未制作转身、说话和情绪动作；
-- 已有环境声、交互音效和三章完整配音；尚未加入配乐与更完整的空间音频变化，AI 语音的个别读音、停顿、表演和场景内音量仍需真人完整听测；
-- 第二、三章已完成自动全流程验证，但尚未经过不知情玩家实机试玩；因此线索强度、移动节奏和谜题难度属于待观察的平衡项，不冒充为已获外部验证；
+- 已有环境声、交互音效和四章完整配音；尚未加入配乐与更完整的空间音频变化，AI 语音的个别读音、停顿、表演和场景内音量仍需真人完整听测；
+- 第二至第四章已完成自动全流程验证，但尚未经过不知情玩家实机试玩；因此线索强度、移动节奏和谜题难度属于待观察的平衡项，不冒充为已获外部验证；
 - 录音谜题准确表达“同一片段被复制进另一盒带”的证据关系，不要求玩家执行设备接线；具体双卡机型与司法鉴定程序仍未写成剧情事实；
 - 暂未制作独立的制作人员页和手柄适配；
 - 只按 1280×720 基准分辨率验证过画面，其他窗口比例仍需检查；
@@ -95,9 +100,9 @@ D:\IndieGame\Narrative2D\builds\windows\不存在的住客.exe
 
 ### 下一开发目标
 
-下一轮进入第四章的独立案件设计，并继续收集前三章的自然试玩反馈。第三章优先观察玩家是否会把“四个相同读数”误认为“四个独立来源”，以及时间校准界面的证据提示是否过强或过弱；不以固定试玩人数阻断后续开发。
+下一轮进入最终章《共同的名字》，复用前四章的来源判断并完成最后一份记录。第四章优先观察玩家能否区分生活地址、产权和档案来源，以及叠图提示是否过强或过弱；不以固定试玩人数阻断制作。
 
-当前采用的五项 CC0 声音已登记在 [`docs/THIRD_PARTY_ASSETS.md`](docs/THIRD_PARTY_ASSETS.md)；项目原创生成美术及提示词记录在 [`docs/GENERATED_ART.md`](docs/GENERATED_ART.md)；配音选角、生成参数与确认流程记录在 [`docs/VOICE_PRODUCTION.md`](docs/VOICE_PRODUCTION.md)。第一章试玩参照 [`docs/PLAYTEST_GUIDE.md`](docs/PLAYTEST_GUIDE.md)，第二章流程参照 [`docs/playtests/CHAPTER_02_GAMEPLAY_GUIDE.md`](docs/playtests/CHAPTER_02_GAMEPLAY_GUIDE.md)，第三章真相与测试重点见 [`docs/CHAPTER_03.md`](docs/CHAPTER_03.md) 和 [`docs/playtests/CHAPTER_03_GAMEPLAY_GUIDE.md`](docs/playtests/CHAPTER_03_GAMEPLAY_GUIDE.md)。
+当前采用的五项 CC0 声音已登记在 [`docs/THIRD_PARTY_ASSETS.md`](docs/THIRD_PARTY_ASSETS.md)；项目原创生成美术及提示词记录在 [`docs/GENERATED_ART.md`](docs/GENERATED_ART.md)；配音选角、生成参数与确认流程记录在 [`docs/VOICE_PRODUCTION.md`](docs/VOICE_PRODUCTION.md)。第一章试玩参照 [`docs/PLAYTEST_GUIDE.md`](docs/PLAYTEST_GUIDE.md)，第二章流程参照 [`docs/playtests/CHAPTER_02_GAMEPLAY_GUIDE.md`](docs/playtests/CHAPTER_02_GAMEPLAY_GUIDE.md)，第三章见 [`docs/playtests/CHAPTER_03_GAMEPLAY_GUIDE.md`](docs/playtests/CHAPTER_03_GAMEPLAY_GUIDE.md)，第四章见 [`docs/CHAPTER_04.md`](docs/CHAPTER_04.md) 和 [`docs/playtests/CHAPTER_04_GAMEPLAY_GUIDE.md`](docs/playtests/CHAPTER_04_GAMEPLAY_GUIDE.md)。
 
 ## 1. 项目目标
 
@@ -191,6 +196,7 @@ D:\IndieGame\Narrative2D\builds\windows\不存在的住客.exe
 - 第一章情节与线索链草案：[`docs/CHAPTER_01.md`](docs/CHAPTER_01.md)；
 - 第二章谜题、时间线、线索链与制作状态：[`docs/CHAPTER_02.md`](docs/CHAPTER_02.md)；
 - 第三章时间诡计、校准机制、责任链与制作状态：[`docs/CHAPTER_03.md`](docs/CHAPTER_03.md)；
+- 第四章地址删改、叠图机制与责任链：[`docs/CHAPTER_04.md`](docs/CHAPTER_04.md)；
 - 第二章纸面材料、主持指南与实机测试表：[`docs/playtests/`](docs/playtests/)；
 - 五章总体结构、贯穿伏笔与选择继承：[`docs/SERIES_BIBLE.md`](docs/SERIES_BIBLE.md)；
 - 早期候选案件与玩法脑暴：[`docs/CASE_CONCEPTS.md`](docs/CASE_CONCEPTS.md)。
@@ -240,7 +246,7 @@ Narrative2D/
 ├─ assets/
 │  ├─ art/backgrounds/
 │  ├─ art/characters/
-│  └─ audio/（环境声、音效、三章配音与第二章磁带谜题音频）
+│  └─ audio/（环境声、音效、四章配音与第二章磁带谜题音频）
 ├─ data/
 │  ├─ dialogue/
 │  └─ voice/
@@ -257,6 +263,7 @@ Narrative2D/
 │  ├─ CHAPTER_01.md
 │  ├─ CHAPTER_02.md
 │  ├─ CHAPTER_03.md
+│  ├─ CHAPTER_04.md
 │  ├─ SERIES_BIBLE.md
 │  ├─ playtests/
 │  ├─ GENERATED_ART.md

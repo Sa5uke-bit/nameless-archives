@@ -1,0 +1,22 @@
+{
+  "fingerprint": "bbcdb04ef7fcc7edfc9a0a2bfa5e596e05ca4579be1e8f8da34fa8530e52e20b",
+  "job": {
+    "id": "chapter04_jiang_pressure",
+    "instructions": "二十二岁中国女性，压住愤怒，句子清楚坚定，不喊叫、不煽情。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "蒋禾",
+    "text": "他们不是没拍到我们的门。他们拍到以后，决定别人不该看见。",
+    "voice": "Vivian",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "7f99b543-afce-9b64-a321-e07656980853",
+  "schema_version": 1,
+  "usage": {
+    "characters": 53
+  }
+}

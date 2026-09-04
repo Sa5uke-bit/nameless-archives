@@ -1,0 +1,149 @@
+[gd_scene load_steps=12 format=3]
+
+[ext_resource type="Script" path="res://scripts/locations/archive_revision_room.gd" id="1"]
+[ext_resource type="PackedScene" path="res://scenes/characters/player.tscn" id="2"]
+[ext_resource type="PackedScene" path="res://scenes/ui/hud.tscn" id="3"]
+[ext_resource type="Script" path="res://scripts/interaction/interactable.gd" id="4"]
+[ext_resource type="Texture2D" path="res://assets/art/backgrounds/archive_revision_room_v1.png" id="5"]
+[ext_resource type="Texture2D" path="res://assets/art/characters/sun_guiqin_v1.png" id="6"]
+[ext_resource type="Texture2D" path="res://assets/art/characters/feng_qichang_v1.png" id="7"]
+[sub_resource type="RectangleShape2D" id="Floor"]
+size = Vector2(1280, 100)
+[sub_resource type="RectangleShape2D" id="Wall"]
+size = Vector2(40, 720)
+[sub_resource type="RectangleShape2D" id="Small"]
+size = Vector2(100, 220)
+[sub_resource type="RectangleShape2D" id="Person"]
+size = Vector2(92, 290)
+[sub_resource type="RectangleShape2D" id="Door"]
+size = Vector2(66, 320)
+[node name="ArchiveRevisionRoom" type="Node2D"]
+script = ExtResource("1")
+[node name="Background" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(640, 360)
+scale = Vector2(0.76555, 0.76514)
+texture = ExtResource("5")
+[node name="LocationTitle" type="Label" parent="."]
+offset_left = 410.0
+offset_top = 104.0
+offset_right = 870.0
+offset_bottom = 144.0
+theme_override_colors/font_color = Color(0.78, 0.7, 0.56, 1)
+theme_override_font_sizes/font_size = 25
+text = "澄湾区档案馆 · 修订室"
+horizontal_alignment = 1
+[node name="Floor" type="StaticBody2D" parent="."]
+position = Vector2(640, 670)
+collision_layer = 1
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Floor"]
+shape = SubResource("Floor")
+[node name="LeftWall" type="StaticBody2D" parent="."]
+position = Vector2(-20, 360)
+collision_layer = 1
+[node name="CollisionShape2D" type="CollisionShape2D" parent="LeftWall"]
+shape = SubResource("Wall")
+[node name="RightWall" type="StaticBody2D" parent="."]
+position = Vector2(1300, 360)
+collision_layer = 1
+[node name="CollisionShape2D" type="CollisionShape2D" parent="RightWall"]
+shape = SubResource("Wall")
+[node name="Player" parent="." instance=ExtResource("2")]
+position = Vector2(85, 620)
+[node name="BackDoor" type="Area2D" parent="."]
+position = Vector2(35, 515)
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("4")
+display_name = "返回十二号旧院"
+[node name="CollisionShape2D" type="CollisionShape2D" parent="BackDoor"]
+shape = SubResource("Door")
+[node name="LedgerPage" type="Area2D" parent="."]
+position = Vector2(185, 515)
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("4")
+display_name = "检查门牌底册覆盖页"
+conversation_id = "ledger_first"
+repeat_conversation_id = "ledger_repeat"
+evidence_id = "E404"
+evidence_title = "门牌底册覆盖页"
+evidence_description = "14 号原栏被覆盖并在火灾后六天注记为并入 12 号附屋。"
+[node name="CollisionShape2D" type="CollisionShape2D" parent="LedgerPage"]
+shape = SubResource("Small")
+[node name="SurveyIndex" type="Area2D" parent="."]
+position = Vector2(345, 515)
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("4")
+display_name = "对照两版测绘图签"
+conversation_id = "survey_first"
+repeat_conversation_id = "survey_repeat"
+evidence_id = "E405"
+evidence_title = "两版测绘图签"
+evidence_description = "新版地图引用底册修订号临字-27，并复制‘付属’错字。"
+[node name="CollisionShape2D" type="CollisionShape2D" parent="SurveyIndex"]
+shape = SubResource("Small")
+[node name="HouseholdCard" type="Area2D" parent="."]
+position = Vector2(505, 515)
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("4")
+display_name = "阅读户籍索引引用卡"
+conversation_id = "household_first"
+repeat_conversation_id = "household_repeat"
+evidence_id = "E406"
+evidence_title = "户籍索引引用卡"
+evidence_description = "索引没有现场核查签名，只按临字-27把 14 号改录为 12 号附屋。"
+[node name="CollisionShape2D" type="CollisionShape2D" parent="HouseholdCard"]
+shape = SubResource("Small")
+[node name="SunGuiqin" type="Area2D" parent="."]
+position = Vector2(690, 535)
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("4")
+display_name = "询问孙桂琴"
+conversation_id = "sun_first"
+repeat_conversation_id = "sun_repeat"
+[node name="CollisionShape2D" type="CollisionShape2D" parent="SunGuiqin"]
+position = Vector2(0, -65)
+shape = SubResource("Person")
+[node name="CharacterSprite" type="Sprite2D" parent="SunGuiqin"]
+texture_filter = 1
+position = Vector2(0, -65)
+scale = Vector2(0.195, 0.195)
+texture = ExtResource("6")
+[node name="FengQichang" type="Area2D" parent="."]
+position = Vector2(870, 535)
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("4")
+display_name = "询问冯启昌"
+conversation_id = "feng_first"
+repeat_conversation_id = "feng_repeat"
+[node name="CollisionShape2D" type="CollisionShape2D" parent="FengQichang"]
+position = Vector2(0, -65)
+shape = SubResource("Person")
+[node name="CharacterSprite" type="Sprite2D" parent="FengQichang"]
+texture_filter = 1
+position = Vector2(0, -65)
+scale = Vector2(-0.195, 0.195)
+texture = ExtResource("7")
+[node name="DeductionBoard" type="Area2D" parent="."]
+position = Vector2(1060, 515)
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("4")
+display_name = "整理官方档案来源"
+[node name="CollisionShape2D" type="CollisionShape2D" parent="DeductionBoard"]
+shape = SubResource("Small")
+[node name="NegativeDoor" type="Area2D" parent="."]
+position = Vector2(1240, 515)
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("4")
+display_name = "前往报社底片库"
+[node name="CollisionShape2D" type="CollisionShape2D" parent="NegativeDoor"]
+shape = SubResource("Door")
+[node name="HUD" parent="." instance=ExtResource("3")]
+

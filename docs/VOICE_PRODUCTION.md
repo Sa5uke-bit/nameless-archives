@@ -1,8 +1,8 @@
-# 三章配音与录音制作记录
+# 四章配音与录音制作记录
 
-> 当前阶段：第一至第三章正式全量配音均已生成并接入
+> 当前阶段：第一至第四章正式全量配音均已生成并接入
 > 生成方式：阿里云百炼 `qwen3-tts-instruct-flash`，AI 合成语音
-> 状态：共 357 条正式对白已生成、导入并通过自动检查，等待完整实机听感复核
+> 状态：共 485 条正式对白已生成、导入并通过自动检查，等待完整实机听感复核
 
 ## 1. 制作范围
 
@@ -165,7 +165,25 @@ python tools/validate_voice_pack.py --chapter 3
 
 批量生成期间发生过两次网络超时。工具没有自动重试不确定请求；续跑依赖已经写入的参数指纹侧录跳过完成项，最终 126 条全部通过唯一请求 ID 校验，没有盲目覆盖整个语音包。
 
-## 9. 来源与使用说明
+## 9. 第四章《被删去的地址》
+
+第四章正式清单为 [`data/voice/chapter_04_full.jsonl`](../data/voice/chapter_04_full.jsonl)，输出位于 `assets/audio/dialogue/chapter_04/`。共 128 条、3548 个剧本文字，总时长约 805.92 秒（13 分 26 秒），WAV 数据约 38.69 MB；全部为单声道、16 位、24 kHz PCM，128 个请求 ID 与参数指纹均唯一有效。
+
+| 发声身份 | 内置音色 | 表演方向 |
+| --- | --- | --- |
+| 蒋禾 | `Vivian` | 年轻但不稚嫩，压住脆弱，陈述事实时坚定，避免受害者哭腔 |
+| 温岑 | `Vincent` | 风霜、略粗、偏慢，内疚而不说书 |
+| 孙桂琴 | `Maia` | 中低音、严肃、有保护欲，不训话、不煽情 |
+| 冯启昌 | `Arthur` | 程序化控制感，防御而不咆哮，不脸谱化 |
+
+试听清单为 [`data/voice/chapter_04_auditions_v1.jsonl`](../data/voice/chapter_04_auditions_v1.jsonl)，四人各三条，输出位于 `assets/audio/dialogue/auditions/chapter_04_v1/`。正式批次发生两次网络超时，续跑只补齐未完成项，并依据侧录指纹跳过已有文件；没有整体覆盖。自动检查已覆盖清单、对白引用、WAV 解码、声道、位深、采样率、文件长度、内容指纹和唯一请求 ID。当前仍未完成逐条人耳听测。
+
+```powershell
+python tools/build_voice_manifest.py --chapter 4 --check
+python tools/validate_voice_pack.py --chapter 4
+```
+
+## 10. 来源与使用说明
 
 - 服务：阿里云百炼大模型服务平台；
 - 模型：`qwen3-tts-instruct-flash`；

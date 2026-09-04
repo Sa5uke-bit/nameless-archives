@@ -1,0 +1,22 @@
+{
+  "fingerprint": "9d02766d1af3ea6fe765b2b436eb3c72939a5a182f62ba70f9640977a20fbdfe",
+  "job": {
+    "id": "chapter_04_negative.survey_photo_first.000",
+    "instructions": "三十多岁的职业侦探，低中音，沉稳清晰，带分析感。现实主义表演，不故作深沉，不使用播音腔。按日常基线自然陈述，停顿清楚，不额外渲染悬疑。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "侦探",
+    "text": "完整测绘照片先登记，三天后才附上删去门牌的新版图。",
+    "voice": "Moon",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "1cb8d391-f820-9746-a5fa-8436c8cce7c9",
+  "schema_version": 1,
+  "usage": {
+    "characters": 48
+  }
+}

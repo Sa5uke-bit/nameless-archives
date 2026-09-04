@@ -1,0 +1,22 @@
+{
+  "fingerprint": "a9225301be82eca9857b5b9543251a771cb172386e114de9050b933fafc47d4f",
+  "job": {
+    "id": "chapter04_wen_quiet",
+    "instructions": "五十八岁中国男性，低声提供关键去向，语速稍慢，不故作神秘。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "温岑",
+    "text": "复写顺序和旧投递路线能带你找到七码头代办所。",
+    "voice": "Vincent",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "82f0b4cd-9d68-9af1-86b0-80d8a1cbb6e3",
+  "schema_version": 1,
+  "usage": {
+    "characters": 43
+  }
+}

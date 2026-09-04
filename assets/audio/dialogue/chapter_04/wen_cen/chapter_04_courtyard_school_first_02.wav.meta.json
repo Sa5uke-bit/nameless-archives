@@ -1,0 +1,22 @@
+{
+  "fingerprint": "9b53b782879f3337208e5c1d3066d43296906f28e1031c9161fe85b7061a1ecf",
+  "job": {
+    "id": "chapter_04_courtyard.school_first.002",
+    "instructions": "五十八岁中国男性退休投递员，嗓音略粗、语速偏慢，带风霜与内疚。口语自然克制，不使用说书腔或慈祥长者腔。按日常基线自然陈述，停顿清楚，不额外渲染悬疑。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "温岑",
+    "text": "学校和邮局不会共用拆迁办的门牌底册。",
+    "voice": "Vincent",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "7557c093-7bac-9f94-8383-a732a5ad31ca",
+  "schema_version": 1,
+  "usage": {
+    "characters": 35
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "fingerprint": "d1ffefb0f04babc109bc0591e041c69f025f0e3fe7f05f39d99d9b96c98e4de9",
+  "job": {
+    "id": "chapter_04_archive.feng_repeat.000",
+    "instructions": "五十九岁中国男性前测绘负责人，低中音平稳，习惯使用程序化措辞控制谈话。防御而不咆哮，不冷笑，不做脸谱化反派。当前是复查、回忆或含混段落，音量稍低、语速略慢，保留自然余韵。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "冯启昌",
+    "text": "底片库里只有报社旧照片。构图裁边不属于档案修改。",
+    "voice": "Arthur",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "81d8d485-ec56-9cc0-8af9-cd39edf84a01",
+  "schema_version": 1,
+  "usage": {
+    "characters": 46
+  }
+}

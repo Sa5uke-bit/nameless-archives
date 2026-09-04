@@ -1,0 +1,22 @@
+{
+  "fingerprint": "038cf11259772524ab86c6fa021276deb4fad757dcfab0b72343c4ae206273d7",
+  "job": {
+    "id": "chapter_04_negative.intro.000",
+    "instructions": "成熟男性叙述者，清楚客观，有轻微纪录片质感但不过分正式。保持克制，不使用恐怖预告腔。按日常基线自然陈述，停顿清楚，不额外渲染悬疑。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "旁白",
+    "text": "底片库只亮着一盏琥珀色安全灯。发光测绘台把两版地图照成两层互不重合的街道。",
+    "voice": "Neil",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "a4fa4339-d59a-947a-93aa-f36222ca351b",
+  "schema_version": 1,
+  "usage": {
+    "characters": 72
+  }
+}

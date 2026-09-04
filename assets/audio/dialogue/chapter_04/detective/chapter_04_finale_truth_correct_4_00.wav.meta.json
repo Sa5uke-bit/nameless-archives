@@ -1,0 +1,22 @@
+{
+  "fingerprint": "f94adccd9f67e6a9c4f659fed523793906d9fb1c635d36f23a14601cc05896db",
+  "job": {
+    "id": "chapter_04_finale.truth_correct_4.000",
+    "instructions": "三十多岁的职业侦探，低中音，沉稳清晰，带分析感。现实主义表演，不故作深沉，不使用播音腔。当前处于对质、承认或推理推进段落，增加紧张与确定感，但不要喊叫或煽情。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "侦探",
+    "text": "你把有人居住的附屋写成空置，签发断电并验收封门；火灾后再用覆盖与裁切少计一户补偿。",
+    "voice": "Moon",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "b350970e-c829-9f49-8eea-0e26f8486dc6",
+  "schema_version": 1,
+  "usage": {
+    "characters": 79
+  }
+}

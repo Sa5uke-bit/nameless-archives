@@ -1,0 +1,22 @@
+{
+  "fingerprint": "5ed65a856741d116a7c6789bdc79959dd57d7201aef45b63537e2c93f3907f48",
+  "job": {
+    "id": "chapter_04_courtyard.archive_locked.000",
+    "instructions": "二十二岁中国女性，音色清楚偏低，年轻但不稚嫩。长期谨慎，表达事实时坚定，不使用哭腔、少女感或戏剧化受害者表演。按日常基线自然陈述，停顿清楚，不额外渲染悬疑。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "蒋禾",
+    "text": "档案室只会再给你看三份写着‘不存在’的纸。先证明这里有过实际生活。",
+    "voice": "Vivian",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "2af1bc25-418f-936e-824e-a3ad738be800",
+  "schema_version": 1,
+  "usage": {
+    "characters": 62
+  }
+}

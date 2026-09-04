@@ -1,0 +1,22 @@
+{
+  "fingerprint": "8bc479611067628531728f5ef5861067bebc393dd5906d6de9170e27bee95477",
+  "job": {
+    "id": "chapter_04_courtyard.d41_success.002",
+    "instructions": "五十八岁中国男性退休投递员，嗓音略粗、语速偏慢，带风霜与内疚。口语自然克制，不使用说书腔或慈祥长者腔。当前处于对质、承认或推理推进段落，增加紧张与确定感，但不要喊叫或煽情。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "温岑",
+    "text": "该去看官方材料为什么一起忘了它。",
+    "voice": "Vincent",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "0cfc9e9e-6a30-9d09-879a-ec31d579a3a1",
+  "schema_version": 1,
+  "usage": {
+    "characters": 31
+  }
+}

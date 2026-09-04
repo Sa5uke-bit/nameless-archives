@@ -1,0 +1,22 @@
+{
+  "fingerprint": "6c288fa56eb3ca756f5fb62a4ed392a64cc2c92c6bae587cb98685694884bba7",
+  "job": {
+    "id": "chapter_04_courtyard.jiang_first.001",
+    "instructions": "二十二岁中国女性，音色清楚偏低，年轻但不稚嫩。长期谨慎，表达事实时坚定，不使用哭腔、少女感或戏剧化受害者表演。按日常基线自然陈述，停顿清楚，不额外渲染悬疑。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "蒋禾",
+    "text": "他们不是说蒋兰和我没有关系。他们说，没有地址就没办法核实。",
+    "voice": "Vivian",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "8a75de7e-bc3b-953a-8d2d-935ddb231b0c",
+  "schema_version": 1,
+  "usage": {
+    "characters": 55
+  }
+}

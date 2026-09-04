@@ -1,0 +1,22 @@
+{
+  "fingerprint": "471236e4eaa6553531cd14af2f665500f51f5ecf0fe3ca2319a0ce5aba448ceb",
+  "job": {
+    "id": "chapter04_feng_pressure",
+    "instructions": "五十九岁中国男性，防御中露出真实动机，语气紧但不喊叫、不做反派腔。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "冯启昌",
+    "text": "工程已经超期。多一户，就要重新停工核算。",
+    "voice": "Arthur",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "59d031f0-b310-90dc-87f4-5338e48692fe",
+  "schema_version": 1,
+  "usage": {
+    "characters": 37
+  }
+}

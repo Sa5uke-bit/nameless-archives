@@ -1,0 +1,246 @@
+{
+  "conversations": {
+    "intro_protection": [
+      {
+        "speaker": "旁白",
+        "text": "临潮街的拆迁编号已经刷到十二号院门口。雨水把白漆冲成一道没有边界的痕。",
+        "voice": "res://assets/audio/dialogue/chapter_04/narrator/chapter_04_courtyard_intro_protection_00.wav",
+        "voice_bus": "Voice"
+      },
+      {
+        "speaker": "蒋禾",
+        "text": "他们说十四号从来不存在。可我十二岁以前，每一封信都送到那里。",
+        "voice": "res://assets/audio/dialogue/chapter_04/jiang_he/chapter_04_courtyard_intro_protection_01.wav",
+        "voice_bus": "Voice"
+      },
+      {
+        "speaker": "温岑",
+        "text": "我送过。信箱在附屋门边，不在十二号主屋里。",
+        "voice": "res://assets/audio/dialogue/chapter_04/wen_cen/chapter_04_courtyard_intro_protection_02.wav",
+        "voice_bus": "Voice"
+      },
+      {
+        "speaker": "侦探",
+        "text": "我会先区分谁记得它，再找不依赖记忆的记录。",
+        "voice": "res://assets/audio/dialogue/chapter_04/detective/chapter_04_courtyard_intro_protection_03.wav",
+        "voice_bus": "Voice"
+      },
+      {
+        "speaker": "蒋禾",
+        "text": "罗遥说，你知道证据够用之后，哪些地址不必再写。",
+        "voice": "res://assets/audio/dialogue/chapter_04/jiang_he/chapter_04_courtyard_intro_protection_04.wav",
+        "voice_bus": "Voice"
+      }
+    ],
+    "intro_public": [
+      {
+        "speaker": "旁白",
+        "text": "临潮街的拆迁编号已经刷到十二号院门口。雨水把白漆冲成一道没有边界的痕。",
+        "voice": "res://assets/audio/dialogue/chapter_04/narrator/chapter_04_courtyard_intro_public_00.wav",
+        "voice_bus": "Voice"
+      },
+      {
+        "speaker": "蒋禾",
+        "text": "他们说十四号从来不存在。可我十二岁以前，每一封信都送到那里。",
+        "voice": "res://assets/audio/dialogue/chapter_04/jiang_he/chapter_04_courtyard_intro_public_01.wav",
+        "voice_bus": "Voice"
+      },
+      {
+        "speaker": "温岑",
+        "text": "我送过。信箱在附屋门边，不在十二号主屋里。",
+        "voice": "res://assets/audio/dialogue/chapter_04/wen_cen/chapter_04_courtyard_intro_public_02.wav",
+        "voice_bus": "Voice"
+      },
+      {
+        "speaker": "蒋禾",
+        "text": "你上次公开了整只邮袋。这里还有活着的人，我需要先知道你会写到哪一步。",
+        "voice": "res://assets/audio/dialogue/chapter_04/jiang_he/chapter_04_courtyard_intro_public_03.wav",
+        "voice_bus": "Voice"
+      },
+      {
+        "speaker": "侦探",
+        "text": "先证明事实。公开范围由证据、责任和当事人的同意分别决定。",
+        "voice": "res://assets/audio/dialogue/chapter_04/detective/chapter_04_courtyard_intro_public_04.wav",
+        "voice_bus": "Voice"
+      }
+    ],
+    "envelope_first": [
+      {
+        "speaker": "温岑",
+        "text": "退信封是我从旧投递柜里留下的。邮戳在火灾前两年。",
+        "voice": "res://assets/audio/dialogue/chapter_04/wen_cen/chapter_04_courtyard_envelope_first_00.wav",
+        "voice_bus": "Voice"
+      },
+      {
+        "speaker": "侦探",
+        "text": "地址栏完整写着临潮街十四号，投递段落章也对应这条巷子。",
+        "voice": "res://assets/audio/dialogue/chapter_04/detective/chapter_04_courtyard_envelope_first_01.wav",
+        "voice_bus": "Voice"
+      },
+      {
+        "speaker": "蒋禾",
+        "text": "收件人是我姨妈蒋兰。她不是住在十二号里的人。",
+        "voice": "res://assets/audio/dialogue/chapter_04/jiang_he/chapter_04_courtyard_envelope_first_02.wav",
+        "voice_bus": "Voice"
+      }
+    ],
+    "envelope_repeat": [
+      {
+        "speaker": "侦探",
+        "text": "邮政系统曾把十四号当成独立投递点，而且记录早于争议。",
+        "voice": "res://assets/audio/dialogue/chapter_04/detective/chapter_04_courtyard_envelope_repeat_00.wav",
+        "voice_bus": "Voice"
+      }
+    ],
+    "school_first": [
+      {
+        "speaker": "蒋禾",
+        "text": "孙老师把这页接送簿给了我。学校原档只剩抄写本。",
+        "voice": "res://assets/audio/dialogue/chapter_04/jiang_he/chapter_04_courtyard_school_first_00.wav",
+        "voice_bus": "Voice"
+      },
+      {
+        "speaker": "侦探",
+        "text": "连续三个学期都写十四号，蒋兰的签名也没有变化。",
+        "voice": "res://assets/audio/dialogue/chapter_04/detective/chapter_04_courtyard_school_first_01.wav",
+        "voice_bus": "Voice"
+      },
+      {
+        "speaker": "温岑",
+        "text": "学校和邮局不会共用拆迁办的门牌底册。",
+        "voice": "res://assets/audio/dialogue/chapter_04/wen_cen/chapter_04_courtyard_school_first_02.wav",
+        "voice_bus": "Voice"
+      }
+    ],
+    "school_repeat": [
+      {
+        "speaker": "侦探",
+        "text": "这是另一个独立形成的生活地址，不是居民事后统一口径。",
+        "voice": "res://assets/audio/dialogue/chapter_04/detective/chapter_04_courtyard_school_repeat_00.wav",
+        "voice_bus": "Voice"
+      }
+    ],
+    "water_first": [
+      {
+        "speaker": "侦探",
+        "text": "主屋总表后还有一只分表，铅封号单独登记。",
+        "voice": "res://assets/audio/dialogue/chapter_04/detective/chapter_04_courtyard_water_first_00.wav",
+        "voice_bus": "Voice"
+      },
+      {
+        "speaker": "蒋禾",
+        "text": "姨妈每月把自己的数抄在门背后，再给十二号房东水费。",
+        "voice": "res://assets/audio/dialogue/chapter_04/jiang_he/chapter_04_courtyard_water_first_01.wav",
+        "voice_bus": "Voice"
+      },
+      {
+        "speaker": "温岑",
+        "text": "产权可以没分，生活却早就分开了。",
+        "voice": "res://assets/audio/dialogue/chapter_04/wen_cen/chapter_04_courtyard_water_first_02.wav",
+        "voice_bus": "Voice"
+      }
+    ],
+    "water_repeat": [
+      {
+        "speaker": "侦探",
+        "text": "独立计量支路证明附屋并非临时堆物间。",
+        "voice": "res://assets/audio/dialogue/chapter_04/detective/chapter_04_courtyard_water_repeat_00.wav",
+        "voice_bus": "Voice"
+      }
+    ],
+    "jiang_first": [
+      {
+        "speaker": "蒋禾",
+        "text": "火灾后，表格上没有我的家庭地址，也没有能被承认的监护人。",
+        "voice": "res://assets/audio/dialogue/chapter_04/jiang_he/chapter_04_courtyard_jiang_first_00.wav",
+        "voice_bus": "Voice"
+      },
+      {
+        "speaker": "蒋禾",
+        "text": "他们不是说蒋兰和我没有关系。他们说，没有地址就没办法核实。",
+        "voice": "res://assets/audio/dialogue/chapter_04/jiang_he/chapter_04_courtyard_jiang_first_01.wav",
+        "voice_bus": "Voice"
+      },
+      {
+        "speaker": "侦探",
+        "text": "这次要恢复的不只是一个数字，而是数字曾经连接的人。",
+        "voice": "res://assets/audio/dialogue/chapter_04/detective/chapter_04_courtyard_jiang_first_02.wav",
+        "voice_bus": "Voice"
+      }
+    ],
+    "jiang_repeat": [
+      {
+        "speaker": "蒋禾",
+        "text": "我不需要他们把房子重新砌回来。我需要记录承认我从哪里活下来。",
+        "voice": "res://assets/audio/dialogue/chapter_04/jiang_he/chapter_04_courtyard_jiang_repeat_00.wav",
+        "voice_bus": "Voice"
+      }
+    ],
+    "wen_first": [
+      {
+        "speaker": "温岑",
+        "text": "火灾以后有人让我把十四号的退信都并到十二号。我照做了。",
+        "voice": "res://assets/audio/dialogue/chapter_04/wen_cen/chapter_04_courtyard_wen_first_00.wav",
+        "voice_bus": "Voice"
+      },
+      {
+        "speaker": "温岑",
+        "text": "那时我以为只是改号。后来才明白，每退一封信，就像再说一遍那里没人。",
+        "voice": "res://assets/audio/dialogue/chapter_04/wen_cen/chapter_04_courtyard_wen_first_01.wav",
+        "voice_bus": "Voice"
+      }
+    ],
+    "wen_repeat": [
+      {
+        "speaker": "温岑",
+        "text": "投递簿的路线页在区档案室。那里会写是谁通知改段。",
+        "voice": "res://assets/audio/dialogue/chapter_04/wen_cen/chapter_04_courtyard_wen_repeat_00.wav",
+        "voice_bus": "Voice"
+      }
+    ],
+    "d41_not_ready": [
+      {
+        "speaker": "侦探",
+        "text": "居民记忆可以指路，但还不足以反驳三套官方档案。我需要三个互不依赖的生活记录。",
+        "voice": "res://assets/audio/dialogue/chapter_04/detective/chapter_04_courtyard_d41_not_ready_00.wav",
+        "voice_bus": "Voice"
+      }
+    ],
+    "d41_success": [
+      {
+        "speaker": "侦探",
+        "text": "邮政投递、学校接送和供水计量分别形成，却都把附屋当成十四号。",
+        "voice": "res://assets/audio/dialogue/chapter_04/detective/chapter_04_courtyard_d41_success_00.wav",
+        "voice_bus": "Voice"
+      },
+      {
+        "speaker": "蒋禾",
+        "text": "所以没有产权证，只能证明它不独立拥有土地，不能证明我们没在那里生活。",
+        "voice": "res://assets/audio/dialogue/chapter_04/jiang_he/chapter_04_courtyard_d41_success_01.wav",
+        "voice_bus": "Voice"
+      },
+      {
+        "speaker": "温岑",
+        "text": "该去看官方材料为什么一起忘了它。",
+        "voice": "res://assets/audio/dialogue/chapter_04/wen_cen/chapter_04_courtyard_d41_success_02.wav",
+        "voice_bus": "Voice"
+      }
+    ],
+    "archive_locked": [
+      {
+        "speaker": "蒋禾",
+        "text": "档案室只会再给你看三份写着‘不存在’的纸。先证明这里有过实际生活。",
+        "voice": "res://assets/audio/dialogue/chapter_04/jiang_he/chapter_04_courtyard_archive_locked_00.wav",
+        "voice_bus": "Voice"
+      }
+    ],
+    "enter_archive": [
+      {
+        "speaker": "温岑",
+        "text": "我认识保管修订页的人。带上三种记录，她就有理由把底册原页调出来。",
+        "voice": "res://assets/audio/dialogue/chapter_04/wen_cen/chapter_04_courtyard_enter_archive_00.wav",
+        "voice_bus": "Voice"
+      }
+    ]
+  }
+}

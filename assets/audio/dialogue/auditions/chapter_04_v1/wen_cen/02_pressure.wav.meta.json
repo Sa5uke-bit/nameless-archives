@@ -1,0 +1,22 @@
+{
+  "fingerprint": "268e518c55b95af0e863692b9787f2a3e25ac649c8f17bedeb9b36acdaeeac64",
+  "job": {
+    "id": "chapter04_wen_pressure",
+    "instructions": "五十八岁中国男性，带内疚但不哭诉，稍停顿后收住情绪。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "温岑",
+    "text": "每退一封信，就像再说一遍那里没人。",
+    "voice": "Vincent",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "35a68860-1ecc-973d-955c-e2127970fa7b",
+  "schema_version": 1,
+  "usage": {
+    "characters": 32
+  }
+}

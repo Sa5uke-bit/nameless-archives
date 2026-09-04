@@ -1,0 +1,138 @@
+{
+  "conversations": {
+    "intro": [
+      {
+        "speaker": "旁白",
+        "text": "两版地图在复核桌上重合。新版边界覆盖旧线，却遮不住底片里仍挂在门边的数字。",
+        "voice": "res://assets/audio/dialogue/chapter_04/narrator/chapter_04_finale_intro_00.wav",
+        "voice_bus": "Voice"
+      },
+      {
+        "speaker": "冯启昌",
+        "text": "你可以证明那里住过人，但不能把所有程序缺口都写成我的故意。",
+        "voice": "res://assets/audio/dialogue/chapter_04/feng_qichang/chapter_04_finale_intro_01.wav",
+        "voice_bus": "Voice"
+      },
+      {
+        "speaker": "蒋禾",
+        "text": "那就逐项说。哪一项是缺口，哪一项有你的签名。",
+        "voice": "res://assets/audio/dialogue/chapter_04/jiang_he/chapter_04_finale_intro_02.wav",
+        "voice_bus": "Voice"
+      },
+      {
+        "speaker": "侦探",
+        "text": "我会区分地址、来源、修改和责任。它们不是同一个问题。",
+        "voice": "res://assets/audio/dialogue/chapter_04/detective/chapter_04_finale_intro_03.wav",
+        "voice_bus": "Voice"
+      }
+    ],
+    "truth_wrong": [
+      {
+        "speaker": "冯启昌",
+        "text": "这只是猜测。你的说法没有解释材料怎样形成，也没有排除更简单的原因。",
+        "voice": "res://assets/audio/dialogue/chapter_04/feng_qichang/chapter_04_finale_truth_wrong_00.wav",
+        "voice_bus": "Voice"
+      },
+      {
+        "speaker": "侦探",
+        "text": "重新回到证据来源。结论必须能被不在这间屋里的人复核。",
+        "voice": "res://assets/audio/dialogue/chapter_04/detective/chapter_04_finale_truth_wrong_01.wav",
+        "voice_bus": "Voice"
+      }
+    ],
+    "truth_correct_1": [
+      {
+        "speaker": "侦探",
+        "text": "十四号不必有独立产权，才算被实际使用。投递戳、接送地址和水费分表来自三个系统。",
+        "voice": "res://assets/audio/dialogue/chapter_04/detective/chapter_04_finale_truth_correct_1_00.wav",
+        "voice_bus": "Voice"
+      },
+      {
+        "speaker": "孙桂琴",
+        "text": "它们在火灾前就分别留下了同一个生活地址。",
+        "voice": "res://assets/audio/dialogue/chapter_04/sun_guiqin/chapter_04_finale_truth_correct_1_01.wav",
+        "voice_bus": "Voice"
+      }
+    ],
+    "truth_correct_2": [
+      {
+        "speaker": "侦探",
+        "text": "底册先覆盖门牌；地图和户籍索引都引用临字二十七，还复制了同一个错字。",
+        "voice": "res://assets/audio/dialogue/chapter_04/detective/chapter_04_finale_truth_correct_2_00.wav",
+        "voice_bus": "Voice"
+      },
+      {
+        "speaker": "冯启昌",
+        "text": "统一引用是工作方法。",
+        "voice": "res://assets/audio/dialogue/chapter_04/feng_qichang/chapter_04_finale_truth_correct_2_01.wav",
+        "voice_bus": "Voice"
+      },
+      {
+        "speaker": "侦探",
+        "text": "所以它们只能证明一次修改被抄了三遍，不能证明现场从未存在。",
+        "voice": "res://assets/audio/dialogue/chapter_04/detective/chapter_04_finale_truth_correct_2_02.wav",
+        "voice_bus": "Voice"
+      }
+    ],
+    "truth_correct_3": [
+      {
+        "speaker": "侦探",
+        "text": "连续底片先拍到十四号，测绘完整照片也先归档。新版边界与报纸裁切随后才删去门牌。",
+        "voice": "res://assets/audio/dialogue/chapter_04/detective/chapter_04_finale_truth_correct_3_00.wav",
+        "voice_bus": "Voice"
+      },
+      {
+        "speaker": "蒋禾",
+        "text": "消失发生在记录里，不发生在火灾以前。",
+        "voice": "res://assets/audio/dialogue/chapter_04/jiang_he/chapter_04_finale_truth_correct_3_01.wav",
+        "voice_bus": "Voice"
+      }
+    ],
+    "truth_correct_4": [
+      {
+        "speaker": "侦探",
+        "text": "你把有人居住的附屋写成空置，签发断电并验收封门；火灾后再用覆盖与裁切少计一户补偿。",
+        "voice": "res://assets/audio/dialogue/chapter_04/detective/chapter_04_finale_truth_correct_4_00.wav",
+        "voice_bus": "Voice"
+      },
+      {
+        "speaker": "冯启昌",
+        "text": "工程已经超期。多一户，就要重新停工核算。",
+        "voice": "res://assets/audio/dialogue/chapter_04/feng_qichang/chapter_04_finale_truth_correct_4_01.wav",
+        "voice_bus": "Voice"
+      },
+      {
+        "speaker": "蒋禾",
+        "text": "所以你让表格按时完成，让里面的人来不及出去。",
+        "voice": "res://assets/audio/dialogue/chapter_04/jiang_he/chapter_04_finale_truth_correct_4_02.wav",
+        "voice_bus": "Voice"
+      }
+    ],
+    "final_statement": [
+      {
+        "speaker": "温岑",
+        "text": "旧投递路线、断电工单和裁切原片都可以交给复核组。共同信箱的名单不属于火灾责任。",
+        "voice": "res://assets/audio/dialogue/chapter_04/wen_cen/chapter_04_finale_final_statement_00.wav",
+        "voice_bus": "Voice"
+      },
+      {
+        "speaker": "孙桂琴",
+        "text": "我愿意实名证明接送簿。蒋禾也应当自己决定哪些身份进入公开卷。",
+        "voice": "res://assets/audio/dialogue/chapter_04/sun_guiqin/chapter_04_finale_final_statement_01.wav",
+        "voice_bus": "Voice"
+      },
+      {
+        "speaker": "蒋禾",
+        "text": "把十四号和蒋兰写回来。其他仍靠匿名生活的人，不要用我的名字替他们同意。",
+        "voice": "res://assets/audio/dialogue/chapter_04/jiang_he/chapter_04_finale_final_statement_02.wav",
+        "voice_bus": "Voice"
+      },
+      {
+        "speaker": "侦探",
+        "text": "最后一项不是判断真相，而是决定记录的边界。",
+        "voice": "res://assets/audio/dialogue/chapter_04/detective/chapter_04_finale_final_statement_03.wav",
+        "voice_bus": "Voice"
+      }
+    ]
+  }
+}

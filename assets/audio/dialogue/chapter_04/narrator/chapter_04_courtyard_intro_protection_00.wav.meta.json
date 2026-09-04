@@ -1,0 +1,22 @@
+{
+  "fingerprint": "d6f43d1e9db1448422816456c1e005062f13229d2307f3e6ea74b3d3d53feb66",
+  "job": {
+    "id": "chapter_04_courtyard.intro_protection.000",
+    "instructions": "成熟男性叙述者，清楚客观，有轻微纪录片质感但不过分正式。保持克制，不使用恐怖预告腔。按日常基线自然陈述，停顿清楚，不额外渲染悬疑。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "旁白",
+    "text": "临潮街的拆迁编号已经刷到十二号院门口。雨水把白漆冲成一道没有边界的痕。",
+    "voice": "Neil",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "f0d91850-6350-928a-a8da-fa2007b8e9a6",
+  "schema_version": 1,
+  "usage": {
+    "characters": 68
+  }
+}

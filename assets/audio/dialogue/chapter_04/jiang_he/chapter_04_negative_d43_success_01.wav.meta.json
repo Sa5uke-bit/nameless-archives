@@ -1,0 +1,22 @@
+{
+  "fingerprint": "990d2ce925dc5d99ecdaaa6ae3db3241c2ad065f85dbc5e6993d855dcbda62f3",
+  "job": {
+    "id": "chapter_04_negative.d43_success.001",
+    "instructions": "二十二岁中国女性，音色清楚偏低，年轻但不稚嫩。长期谨慎，表达事实时坚定，不使用哭腔、少女感或戏剧化受害者表演。当前处于对质、承认或推理推进段落，增加紧张与确定感，但不要喊叫或煽情。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "蒋禾",
+    "text": "他们不是没拍到我们的门。他们拍到以后，决定别人不该看见。",
+    "voice": "Vivian",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "03503df4-5f7a-9eee-9f78-0ff943792d45",
+  "schema_version": 1,
+  "usage": {
+    "characters": 53
+  }
+}

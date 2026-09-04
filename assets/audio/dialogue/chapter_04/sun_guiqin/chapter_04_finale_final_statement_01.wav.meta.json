@@ -1,0 +1,22 @@
+{
+  "fingerprint": "8517628d1da6cc287b67f1bca568a6d1ae59936e24cd624531ffaba5642c01c6",
+  "job": {
+    "id": "chapter_04_finale.final_statement.001",
+    "instructions": "六十三岁中国女性退休生活老师，中低音，咬字清楚，严肃而有保护欲。现实主义表演，不训话、不煽情、不使用播音腔。按日常基线自然陈述，停顿清楚，不额外渲染悬疑。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "孙桂琴",
+    "text": "我愿意实名证明接送簿。蒋禾也应当自己决定哪些身份进入公开卷。",
+    "voice": "Maia",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "fee498e3-ae55-99a5-b9bc-601e990f89f9",
+  "schema_version": 1,
+  "usage": {
+    "characters": 58
+  }
+}

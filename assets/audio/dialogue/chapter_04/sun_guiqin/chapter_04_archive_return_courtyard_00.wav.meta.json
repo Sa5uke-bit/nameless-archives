@@ -1,0 +1,22 @@
+{
+  "fingerprint": "8a87f6d80cccb750de616fa69ee94ad468c6c1503b424df4899e98f89af70cd8",
+  "job": {
+    "id": "chapter_04_archive.return_courtyard.000",
+    "instructions": "六十三岁中国女性退休生活老师，中低音，咬字清楚，严肃而有保护欲。现实主义表演，不训话、不煽情、不使用播音腔。按日常基线自然陈述，停顿清楚，不额外渲染悬疑。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "孙桂琴",
+    "text": "院里的生活记录不会消失。查完可以再回来核对。",
+    "voice": "Maia",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "9e383012-77dd-990b-a67d-46df9db9de2c",
+  "schema_version": 1,
+  "usage": {
+    "characters": 42
+  }
+}

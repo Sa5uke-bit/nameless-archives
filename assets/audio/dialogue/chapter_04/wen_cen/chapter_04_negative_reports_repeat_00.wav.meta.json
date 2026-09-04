@@ -1,0 +1,22 @@
+{
+  "fingerprint": "9c7a124a7d93cf953a8e1f782951579f8c99a9e957b175855f36c79df15fbe80",
+  "job": {
+    "id": "chapter_04_negative.reports_repeat.000",
+    "instructions": "五十八岁中国男性退休投递员，嗓音略粗、语速偏慢，带风霜与内疚。口语自然克制，不使用说书腔或慈祥长者腔。当前是复查、回忆或含混段落，音量稍低、语速略慢，保留自然余韵。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "温岑",
+    "text": "复写顺序和旧投递路线能带你找到七码头代办所。那里是共同信箱最后一次登记的位置。",
+    "voice": "Vincent",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "65605bd7-6f3c-9bf0-b8ee-de03c7c5f56a",
+  "schema_version": 1,
+  "usage": {
+    "characters": 76
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "fingerprint": "03e5bdd5ca1760875b63fd2017a4ded4edb906068fc0a49c78e691d140bfe022",
+  "job": {
+    "id": "chapter_04_archive.intro.000",
+    "instructions": "成熟男性叙述者，清楚客观，有轻微纪录片质感但不过分正式。保持克制，不使用恐怖预告腔。按日常基线自然陈述，停顿清楚，不额外渲染悬疑。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "旁白",
+    "text": "区档案修订室里，地图挂在墙上，门牌底册和户籍索引分列两柜。它们看起来像三个答案。",
+    "voice": "Neil",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "b8f80bd4-247f-93af-9c6a-edc8f64340de",
+  "schema_version": 1,
+  "usage": {
+    "characters": 76
+  }
+}

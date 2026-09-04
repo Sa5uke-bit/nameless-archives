@@ -1,0 +1,22 @@
+{
+  "fingerprint": "7b1544738cf96166793ca6f173e5d101e2b52ece80b512adeedd010610761ea8",
+  "job": {
+    "id": "chapter04_feng_quiet",
+    "instructions": "五十九岁中国男性，压低声音，以专业怀疑回避责任，不故作阴森。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "冯启昌",
+    "text": "你还没有证明十四号被故意移走。",
+    "voice": "Arthur",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "683eea8f-729a-9e49-9b56-35c48b49e7c9",
+  "schema_version": 1,
+  "usage": {
+    "characters": 29
+  }
+}

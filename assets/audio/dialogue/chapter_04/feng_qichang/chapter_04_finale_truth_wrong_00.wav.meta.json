@@ -1,0 +1,22 @@
+{
+  "fingerprint": "f614465e3a0d16fff3e4747ab4162f5d029255b524bf588ef51ec792964875e1",
+  "job": {
+    "id": "chapter_04_finale.truth_wrong.000",
+    "instructions": "五十九岁中国男性前测绘负责人，低中音平稳，习惯使用程序化措辞控制谈话。防御而不咆哮，不冷笑，不做脸谱化反派。当前处于对质、承认或推理推进段落，增加紧张与确定感，但不要喊叫或煽情。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "冯启昌",
+    "text": "这只是猜测。你的说法没有解释材料怎样形成，也没有排除更简单的原因。",
+    "voice": "Arthur",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "9a59577e-41ca-96e5-94a7-4870ac9033d5",
+  "schema_version": 1,
+  "usage": {
+    "characters": 63
+  }
+}

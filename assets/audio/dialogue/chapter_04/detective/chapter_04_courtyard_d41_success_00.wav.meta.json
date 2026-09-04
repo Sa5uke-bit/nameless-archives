@@ -1,0 +1,22 @@
+{
+  "fingerprint": "aa942327eb1ae9cbec5ce9441b972200b869a598ad96bbcb46b9469f7edfdd3f",
+  "job": {
+    "id": "chapter_04_courtyard.d41_success.000",
+    "instructions": "三十多岁的职业侦探，低中音，沉稳清晰，带分析感。现实主义表演，不故作深沉，不使用播音腔。当前处于对质、承认或推理推进段落，增加紧张与确定感，但不要喊叫或煽情。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "侦探",
+    "text": "邮政投递、学校接送和供水计量分别形成，却都把附屋当成十四号。",
+    "voice": "Moon",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "d480c9af-5bb1-90cf-be07-97d343377cb2",
+  "schema_version": 1,
+  "usage": {
+    "characters": 57
+  }
+}

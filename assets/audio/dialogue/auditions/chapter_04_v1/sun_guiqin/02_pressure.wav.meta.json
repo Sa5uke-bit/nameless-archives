@@ -1,0 +1,22 @@
+{
+  "fingerprint": "229acf76d6ba4b0016fd5d1e5c4bdce432d9e88435cc528c0b5987f541183860",
+  "job": {
+    "id": "chapter04_sun_pressure",
+    "instructions": "六十三岁中国女性，严肃而内疚，增加确定感但不训话、不煽情。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "孙桂琴",
+    "text": "我当年只在询问里说了门。笔录最后写成院门拥堵，没有十四号。",
+    "voice": "Maia",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "87d3eb16-ba80-9914-806f-55d8a7881ab8",
+  "schema_version": 1,
+  "usage": {
+    "characters": 55
+  }
+}

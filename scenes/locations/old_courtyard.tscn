@@ -1,0 +1,143 @@
+[gd_scene load_steps=12 format=3]
+
+[ext_resource type="Script" path="res://scripts/locations/old_courtyard.gd" id="1"]
+[ext_resource type="PackedScene" path="res://scenes/characters/player.tscn" id="2"]
+[ext_resource type="PackedScene" path="res://scenes/ui/hud.tscn" id="3"]
+[ext_resource type="Script" path="res://scripts/interaction/interactable.gd" id="4"]
+[ext_resource type="Texture2D" path="res://assets/art/backgrounds/old_courtyard_v1.png" id="5"]
+[ext_resource type="Texture2D" path="res://assets/art/characters/jiang_he_v1.png" id="6"]
+[ext_resource type="Texture2D" path="res://assets/art/characters/wen_cen_v1.png" id="7"]
+
+[sub_resource type="RectangleShape2D" id="Floor"]
+size = Vector2(1280, 100)
+[sub_resource type="RectangleShape2D" id="Wall"]
+size = Vector2(40, 720)
+[sub_resource type="RectangleShape2D" id="Small"]
+size = Vector2(100, 220)
+[sub_resource type="RectangleShape2D" id="Person"]
+size = Vector2(92, 290)
+[sub_resource type="RectangleShape2D" id="Door"]
+size = Vector2(66, 320)
+
+[node name="OldCourtyard" type="Node2D"]
+script = ExtResource("1")
+[node name="Background" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(640, 360)
+scale = Vector2(0.76555, 0.76514)
+texture = ExtResource("5")
+[node name="LocationTitle" type="Label" parent="."]
+offset_left = 420.0
+offset_top = 104.0
+offset_right = 860.0
+offset_bottom = 144.0
+theme_override_colors/font_color = Color(0.78, 0.7, 0.56, 1)
+theme_override_font_sizes/font_size = 25
+text = "临潮街 · 十二号旧院"
+horizontal_alignment = 1
+[node name="Floor" type="StaticBody2D" parent="."]
+position = Vector2(640, 670)
+collision_layer = 1
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Floor"]
+shape = SubResource("Floor")
+[node name="LeftWall" type="StaticBody2D" parent="."]
+position = Vector2(-20, 360)
+collision_layer = 1
+[node name="CollisionShape2D" type="CollisionShape2D" parent="LeftWall"]
+shape = SubResource("Wall")
+[node name="RightWall" type="StaticBody2D" parent="."]
+position = Vector2(1300, 360)
+collision_layer = 1
+[node name="CollisionShape2D" type="CollisionShape2D" parent="RightWall"]
+shape = SubResource("Wall")
+[node name="Player" parent="." instance=ExtResource("2")]
+position = Vector2(90, 620)
+[node name="PostalEnvelope" type="Area2D" parent="."]
+position = Vector2(190, 515)
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("4")
+display_name = "检查旧投递信封"
+conversation_id = "envelope_first"
+repeat_conversation_id = "envelope_repeat"
+evidence_id = "E401"
+evidence_title = "十四号旧信封投递戳"
+evidence_description = "火灾前的独立邮政记录把附屋作为临潮街 14 号投递点。"
+[node name="CollisionShape2D" type="CollisionShape2D" parent="PostalEnvelope"]
+shape = SubResource("Small")
+[node name="SchoolPickup" type="Area2D" parent="."]
+position = Vector2(335, 515)
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("4")
+display_name = "阅读学校接送簿副页"
+conversation_id = "school_first"
+repeat_conversation_id = "school_repeat"
+evidence_id = "E402"
+evidence_title = "学校接送簿副页"
+evidence_description = "连续三个学期以 14 号为接送地址，蒋兰持续以监护人身份签名。"
+[node name="CollisionShape2D" type="CollisionShape2D" parent="SchoolPickup"]
+shape = SubResource("Small")
+[node name="WaterSubmeter" type="Area2D" parent="."]
+position = Vector2(480, 515)
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("4")
+display_name = "检查水费分表铅封"
+conversation_id = "water_first"
+repeat_conversation_id = "water_repeat"
+evidence_id = "E403"
+evidence_title = "水费分表铅封"
+evidence_description = "12 号院内存在独立计量支路，铅封编号对应附屋住户。"
+[node name="CollisionShape2D" type="CollisionShape2D" parent="WaterSubmeter"]
+shape = SubResource("Small")
+[node name="JiangHe" type="Area2D" parent="."]
+position = Vector2(660, 535)
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("4")
+display_name = "询问蒋禾"
+conversation_id = "jiang_first"
+repeat_conversation_id = "jiang_repeat"
+[node name="CollisionShape2D" type="CollisionShape2D" parent="JiangHe"]
+position = Vector2(0, -65)
+shape = SubResource("Person")
+[node name="CharacterSprite" type="Sprite2D" parent="JiangHe"]
+texture_filter = 1
+position = Vector2(0, -65)
+scale = Vector2(0.195, 0.195)
+texture = ExtResource("6")
+[node name="WenCen" type="Area2D" parent="."]
+position = Vector2(850, 535)
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("4")
+display_name = "询问温岑"
+conversation_id = "wen_first"
+repeat_conversation_id = "wen_repeat"
+[node name="CollisionShape2D" type="CollisionShape2D" parent="WenCen"]
+position = Vector2(0, -65)
+shape = SubResource("Person")
+[node name="CharacterSprite" type="Sprite2D" parent="WenCen"]
+texture_filter = 1
+position = Vector2(0, -65)
+scale = Vector2(-0.195, 0.195)
+texture = ExtResource("7")
+[node name="DeductionBoard" type="Area2D" parent="."]
+position = Vector2(1040, 515)
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("4")
+display_name = "整理地址使用证据"
+[node name="CollisionShape2D" type="CollisionShape2D" parent="DeductionBoard"]
+shape = SubResource("Small")
+[node name="ArchiveDoor" type="Area2D" parent="."]
+position = Vector2(1240, 515)
+collision_layer = 2
+collision_mask = 0
+script = ExtResource("4")
+display_name = "前往区档案修订室"
+[node name="CollisionShape2D" type="CollisionShape2D" parent="ArchiveDoor"]
+shape = SubResource("Door")
+[node name="HUD" parent="." instance=ExtResource("3")]
+

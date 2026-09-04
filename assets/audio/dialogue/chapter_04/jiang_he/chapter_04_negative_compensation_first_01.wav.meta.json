@@ -1,0 +1,22 @@
+{
+  "fingerprint": "20590342b7a6712e6cec08de5133ec232cb825f4b36e3f6250df099db744e525",
+  "job": {
+    "id": "chapter_04_negative.compensation_first.001",
+    "instructions": "二十二岁中国女性，音色清楚偏低，年轻但不稚嫩。长期谨慎，表达事实时坚定，不使用哭腔、少女感或戏剧化受害者表演。按日常基线自然陈述，停顿清楚，不额外渲染悬疑。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "蒋禾",
+    "text": "少掉的不只是赔偿。少掉一户，断电和封门就像没碰过住人的房子。",
+    "voice": "Vivian",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "4f5b0b48-1113-943d-a401-db1bbf5a303e",
+  "schema_version": 1,
+  "usage": {
+    "characters": 57
+  }
+}

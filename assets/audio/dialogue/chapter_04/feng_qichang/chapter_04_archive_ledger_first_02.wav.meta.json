@@ -1,0 +1,22 @@
+{
+  "fingerprint": "c09e7d08d90852d85e4ee5d559d24aac7aad10247cba758c119b64a90adbb68a",
+  "job": {
+    "id": "chapter_04_archive.ledger_first.002",
+    "instructions": "五十九岁中国男性前测绘负责人，低中音平稳，习惯使用程序化措辞控制谈话。防御而不咆哮，不冷笑，不做脸谱化反派。按日常基线自然陈述，停顿清楚，不额外渲染悬疑。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "冯启昌",
+    "text": "整理旧城区时补写日期很常见，不能据此推断恶意。",
+    "voice": "Arthur",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "635dec28-7e0b-9c7a-8b89-ed9919faa2c5",
+  "schema_version": 1,
+  "usage": {
+    "characters": 44
+  }
+}

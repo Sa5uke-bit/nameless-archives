@@ -1,0 +1,22 @@
+{
+  "fingerprint": "f0a6f281477e3f7221ab281fd869311e12e13934ddaaf9c16d14de351dbc83ff",
+  "job": {
+    "id": "chapter_04_negative.survey_photo_repeat.000",
+    "instructions": "三十多岁的职业侦探，低中音，沉稳清晰，带分析感。现实主义表演，不故作深沉，不使用播音腔。当前是复查、回忆或含混段落，音量稍低、语速略慢，保留自然余韵。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "侦探",
+    "text": "原图、照片与覆盖版都有独立登记时点，修改方向无法倒置。",
+    "voice": "Moon",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "b187ec72-0164-9917-b2a9-4fcab93a17b1",
+  "schema_version": 1,
+  "usage": {
+    "characters": 51
+  }
+}

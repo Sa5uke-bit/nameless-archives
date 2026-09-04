@@ -1,0 +1,216 @@
+{
+  "conversations": {
+    "intro": [
+      {
+        "speaker": "旁白",
+        "text": "区档案修订室里，地图挂在墙上，门牌底册和户籍索引分列两柜。它们看起来像三个答案。",
+        "voice": "res://assets/audio/dialogue/chapter_04/narrator/chapter_04_archive_intro_00.wav",
+        "voice_bus": "Voice"
+      },
+      {
+        "speaker": "孙桂琴",
+        "text": "蒋禾的接送簿副页是我留下的。正式学籍册后来只抄了门牌底册上的十二号。",
+        "voice": "res://assets/audio/dialogue/chapter_04/sun_guiqin/chapter_04_archive_intro_01.wav",
+        "voice_bus": "Voice"
+      },
+      {
+        "speaker": "冯启昌",
+        "text": "非正式附屋当然有人住过。住过，不等于行政上存在一个十四号。",
+        "voice": "res://assets/audio/dialogue/chapter_04/feng_qichang/chapter_04_archive_intro_02.wav",
+        "voice_bus": "Voice"
+      },
+      {
+        "speaker": "侦探",
+        "text": "正因为如此，我要查的不是哪张纸权威，而是哪张纸先写。",
+        "voice": "res://assets/audio/dialogue/chapter_04/detective/chapter_04_archive_intro_03.wav",
+        "voice_bus": "Voice"
+      }
+    ],
+    "ledger_first": [
+      {
+        "speaker": "侦探",
+        "text": "底册原页有刮改。十四号一栏被薄纸覆盖，边注写‘并十二号附屋’。",
+        "voice": "res://assets/audio/dialogue/chapter_04/detective/chapter_04_archive_ledger_first_00.wav",
+        "voice_bus": "Voice"
+      },
+      {
+        "speaker": "孙桂琴",
+        "text": "边注日期在火灾后第六天。可归档目录把它排成了火灾前的常规重编号。",
+        "voice": "res://assets/audio/dialogue/chapter_04/sun_guiqin/chapter_04_archive_ledger_first_01.wav",
+        "voice_bus": "Voice"
+      },
+      {
+        "speaker": "冯启昌",
+        "text": "整理旧城区时补写日期很常见，不能据此推断恶意。",
+        "voice": "res://assets/audio/dialogue/chapter_04/feng_qichang/chapter_04_archive_ledger_first_02.wav",
+        "voice_bus": "Voice"
+      }
+    ],
+    "ledger_repeat": [
+      {
+        "speaker": "侦探",
+        "text": "覆盖页是后续材料共同引用的源头，修订日期不能被目录顺序掩盖。",
+        "voice": "res://assets/audio/dialogue/chapter_04/detective/chapter_04_archive_ledger_repeat_00.wav",
+        "voice_bus": "Voice"
+      }
+    ],
+    "survey_first": [
+      {
+        "speaker": "侦探",
+        "text": "新版测绘图签引用‘临字二十七’，正是覆盖页的修订号。",
+        "voice": "res://assets/audio/dialogue/chapter_04/detective/chapter_04_archive_survey_first_00.wav",
+        "voice_bus": "Voice"
+      },
+      {
+        "speaker": "孙桂琴",
+        "text": "连‘附属’写成‘付属’的错字都一样。",
+        "voice": "res://assets/audio/dialogue/chapter_04/sun_guiqin/chapter_04_archive_survey_first_01.wav",
+        "voice_bus": "Voice"
+      },
+      {
+        "speaker": "冯启昌",
+        "text": "引用统一底册是规范，不代表地图错误。",
+        "voice": "res://assets/audio/dialogue/chapter_04/feng_qichang/chapter_04_archive_survey_first_02.wav",
+        "voice_bus": "Voice"
+      },
+      {
+        "speaker": "侦探",
+        "text": "它代表地图不是第二个独立现场判断。",
+        "voice": "res://assets/audio/dialogue/chapter_04/detective/chapter_04_archive_survey_first_03.wav",
+        "voice_bus": "Voice"
+      }
+    ],
+    "survey_repeat": [
+      {
+        "speaker": "侦探",
+        "text": "修订号和相同错字让复制关系可见。",
+        "voice": "res://assets/audio/dialogue/chapter_04/detective/chapter_04_archive_survey_repeat_00.wav",
+        "voice_bus": "Voice"
+      }
+    ],
+    "household_first": [
+      {
+        "speaker": "孙桂琴",
+        "text": "户籍索引卡没有现场核查人签名，备注只写‘据临字二十七改录’。",
+        "voice": "res://assets/audio/dialogue/chapter_04/sun_guiqin/chapter_04_archive_household_first_00.wav",
+        "voice_bus": "Voice"
+      },
+      {
+        "speaker": "侦探",
+        "text": "它并未独立确认无人居住，只把覆盖后的地址继续抄了一遍。",
+        "voice": "res://assets/audio/dialogue/chapter_04/detective/chapter_04_archive_household_first_01.wav",
+        "voice_bus": "Voice"
+      },
+      {
+        "speaker": "冯启昌",
+        "text": "三个部门采用同一标准，不等于有人造假。",
+        "voice": "res://assets/audio/dialogue/chapter_04/feng_qichang/chapter_04_archive_household_first_02.wav",
+        "voice_bus": "Voice"
+      }
+    ],
+    "household_repeat": [
+      {
+        "speaker": "侦探",
+        "text": "户籍索引的知识边界停在那张修订页，没有回到现场。",
+        "voice": "res://assets/audio/dialogue/chapter_04/detective/chapter_04_archive_household_repeat_00.wav",
+        "voice_bus": "Voice"
+      }
+    ],
+    "sun_first": [
+      {
+        "speaker": "孙桂琴",
+        "text": "蒋兰每次来接孩子，都从十四号那道侧门走。火灾那天，门被铁丝封着。",
+        "voice": "res://assets/audio/dialogue/chapter_04/sun_guiqin/chapter_04_archive_sun_first_00.wav",
+        "voice_bus": "Voice"
+      },
+      {
+        "speaker": "孙桂琴",
+        "text": "我当年只在询问里说了门。笔录最后写成‘院门拥堵’，没有十四号。",
+        "voice": "res://assets/audio/dialogue/chapter_04/sun_guiqin/chapter_04_archive_sun_first_01.wav",
+        "voice_bus": "Voice"
+      }
+    ],
+    "sun_repeat": [
+      {
+        "speaker": "孙桂琴",
+        "text": "我愿意实名说明接送簿来源。蒋禾的现住址不需要写进去。",
+        "voice": "res://assets/audio/dialogue/chapter_04/sun_guiqin/chapter_04_archive_sun_repeat_00.wav",
+        "voice_bus": "Voice"
+      }
+    ],
+    "feng_first": [
+      {
+        "speaker": "冯启昌",
+        "text": "我负责的是测绘复核，不是消防调查。你把十二年前的每一张纸都堆到我桌上，也不能改变产权事实。",
+        "voice": "res://assets/audio/dialogue/chapter_04/feng_qichang/chapter_04_archive_feng_first_00.wav",
+        "voice_bus": "Voice"
+      },
+      {
+        "speaker": "侦探",
+        "text": "我不会用产权证明生活，也不会用生活记录证明产权。我在追查每份材料的用途和来源。",
+        "voice": "res://assets/audio/dialogue/chapter_04/detective/chapter_04_archive_feng_first_01.wav",
+        "voice_bus": "Voice"
+      }
+    ],
+    "feng_repeat": [
+      {
+        "speaker": "冯启昌",
+        "text": "底片库里只有报社旧照片。构图裁边不属于档案修改。",
+        "voice": "res://assets/audio/dialogue/chapter_04/feng_qichang/chapter_04_archive_feng_repeat_00.wav",
+        "voice_bus": "Voice"
+      }
+    ],
+    "d42_not_ready": [
+      {
+        "speaker": "侦探",
+        "text": "三套材料内容一致还不够。我需要看见引用号、修改时间和复制痕迹。",
+        "voice": "res://assets/audio/dialogue/chapter_04/detective/chapter_04_archive_d42_not_ready_00.wav",
+        "voice_bus": "Voice"
+      }
+    ],
+    "d42_success": [
+      {
+        "speaker": "侦探",
+        "text": "门牌底册先覆盖十四号；地图与户籍索引都引用临字二十七，并复制同一错字。",
+        "voice": "res://assets/audio/dialogue/chapter_04/detective/chapter_04_archive_d42_success_00.wav",
+        "voice_bus": "Voice"
+      },
+      {
+        "speaker": "孙桂琴",
+        "text": "看似三份官方证明，实际只有一次没有回访现场的修改。",
+        "voice": "res://assets/audio/dialogue/chapter_04/sun_guiqin/chapter_04_archive_d42_success_01.wav",
+        "voice_bus": "Voice"
+      },
+      {
+        "speaker": "冯启昌",
+        "text": "就算来源相同，也只能说明程序简化。你还没有证明十四号被故意移走。",
+        "voice": "res://assets/audio/dialogue/chapter_04/feng_qichang/chapter_04_archive_d42_success_02.wav",
+        "voice_bus": "Voice"
+      }
+    ],
+    "return_courtyard": [
+      {
+        "speaker": "孙桂琴",
+        "text": "院里的生活记录不会消失。查完可以再回来核对。",
+        "voice": "res://assets/audio/dialogue/chapter_04/sun_guiqin/chapter_04_archive_return_courtyard_00.wav",
+        "voice_bus": "Voice"
+      }
+    ],
+    "negative_locked": [
+      {
+        "speaker": "冯启昌",
+        "text": "先把三套档案的来源关系说清楚。否则底片只会让你看见自己想看见的门牌。",
+        "voice": "res://assets/audio/dialogue/chapter_04/feng_qichang/chapter_04_archive_negative_locked_00.wav",
+        "voice_bus": "Voice"
+      }
+    ],
+    "enter_negative": [
+      {
+        "speaker": "孙桂琴",
+        "text": "报社留着整卷底片，测绘科留着新版照片。把它们放到同一张灯箱上。",
+        "voice": "res://assets/audio/dialogue/chapter_04/sun_guiqin/chapter_04_archive_enter_negative_00.wav",
+        "voice_bus": "Voice"
+      }
+    ]
+  }
+}

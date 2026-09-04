@@ -1,0 +1,22 @@
+{
+  "fingerprint": "9347894f5ec8a81d05bd88969ce5563ec29671776ef8bca6d1d13eeb81106897",
+  "job": {
+    "id": "chapter_04_archive.d42_success.001",
+    "instructions": "六十三岁中国女性退休生活老师，中低音，咬字清楚，严肃而有保护欲。现实主义表演，不训话、不煽情、不使用播音腔。当前处于对质、承认或推理推进段落，增加紧张与确定感，但不要喊叫或煽情。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "孙桂琴",
+    "text": "看似三份官方证明，实际只有一次没有回访现场的修改。",
+    "voice": "Maia",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "4867d581-cb80-91d1-933f-73b5c948404f",
+  "schema_version": 1,
+  "usage": {
+    "characters": 48
+  }
+}

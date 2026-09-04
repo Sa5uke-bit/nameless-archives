@@ -1,0 +1,22 @@
+{
+  "fingerprint": "910dd985719830dd3290dac65495acd4cca17ed844bfab561c327e007d610dea",
+  "job": {
+    "id": "chapter_04_negative.layout_first.002",
+    "instructions": "六十三岁中国女性退休生活老师，中低音，咬字清楚，严肃而有保护欲。现实主义表演，不训话、不煽情、不使用播音腔。按日常基线自然陈述，停顿清楚，不额外渲染悬疑。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "孙桂琴",
+    "text": "稿边有测绘复核组的退改章。",
+    "voice": "Maia",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "9007666b-ed02-9232-bbe5-54ac03d36f97",
+  "schema_version": 1,
+  "usage": {
+    "characters": 25
+  }
+}

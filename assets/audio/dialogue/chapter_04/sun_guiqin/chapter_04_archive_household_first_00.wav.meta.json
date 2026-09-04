@@ -1,0 +1,22 @@
+{
+  "fingerprint": "72b8834aa51dc5dcf8bc529fb32052b7412fdb404d7bf027a12d2de6a9f47711",
+  "job": {
+    "id": "chapter_04_archive.household_first.000",
+    "instructions": "六十三岁中国女性退休生活老师，中低音，咬字清楚，严肃而有保护欲。现实主义表演，不训话、不煽情、不使用播音腔。按日常基线自然陈述，停顿清楚，不额外渲染悬疑。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "孙桂琴",
+    "text": "户籍索引卡没有现场核查人签名，备注只写‘据临字二十七改录’。",
+    "voice": "Maia",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "9a5c0b7e-0779-9eac-9499-a22464476f1a",
+  "schema_version": 1,
+  "usage": {
+    "characters": 56
+  }
+}

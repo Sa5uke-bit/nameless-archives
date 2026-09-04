@@ -1,0 +1,22 @@
+{
+  "fingerprint": "db94a4a5884d352f7f5e64e4a9c1712c70207b0411cd5207744b6bbbe8474cdc",
+  "job": {
+    "id": "chapter_04_finale.intro.003",
+    "instructions": "三十多岁的职业侦探，低中音，沉稳清晰，带分析感。现实主义表演，不故作深沉，不使用播音腔。按日常基线自然陈述，停顿清楚，不额外渲染悬疑。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "侦探",
+    "text": "我会区分地址、来源、修改和责任。它们不是同一个问题。",
+    "voice": "Moon",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "3e270c34-e9f3-9e1a-afd4-d0293edfa19e",
+  "schema_version": 1,
+  "usage": {
+    "characters": 48
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "fingerprint": "a3ab78f076defe540c9df8b73c0dcecf7f867ecee149ba911f2de0ed447c5e66",
+  "job": {
+    "id": "chapter_04_courtyard.intro_protection.004",
+    "instructions": "二十二岁中国女性，音色清楚偏低，年轻但不稚嫩。长期谨慎，表达事实时坚定，不使用哭腔、少女感或戏剧化受害者表演。按日常基线自然陈述，停顿清楚，不额外渲染悬疑。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "蒋禾",
+    "text": "罗遥说，你知道证据够用之后，哪些地址不必再写。",
+    "voice": "Vivian",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "8ef7c8dc-1ceb-986f-b321-fbc7fac4abda",
+  "schema_version": 1,
+  "usage": {
+    "characters": 43
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "fingerprint": "e097e7d6b35d494aed69597b3e636371a3210601fc1b9f57260d672159c3f636",
+  "job": {
+    "id": "chapter_04_finale.truth_correct_1.000",
+    "instructions": "三十多岁的职业侦探，低中音，沉稳清晰，带分析感。现实主义表演，不故作深沉，不使用播音腔。当前处于对质、承认或推理推进段落，增加紧张与确定感，但不要喊叫或煽情。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "侦探",
+    "text": "十四号不必有独立产权，才算被实际使用。投递戳、接送地址和水费分表来自三个系统。",
+    "voice": "Moon",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "f16079db-1234-90ab-945f-521d85c36596",
+  "schema_version": 1,
+  "usage": {
+    "characters": 74
+  }
+}

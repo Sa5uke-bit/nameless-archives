@@ -1,0 +1,22 @@
+{
+  "fingerprint": "b233057ef8403982e8e7c67450dd3ac7a53599c2361aea98271eba08772361e0",
+  "job": {
+    "id": "chapter_04_negative.hospital_repeat.000",
+    "instructions": "三十多岁的职业侦探，低中音，沉稳清晰，带分析感。现实主义表演，不故作深沉，不使用播音腔。当前是复查、回忆或含混段落，音量稍低、语速略慢，保留自然余韵。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "侦探",
+    "text": "亲属关系来自多项相符记录，不依赖被覆盖的户籍索引。",
+    "voice": "Moon",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "754ac1fe-1208-9c8f-91f3-1d5422b99766",
+  "schema_version": 1,
+  "usage": {
+    "characters": 48
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "fingerprint": "3712740b89303eb8fa22b4210111c3d75d0a9673b3773d886053362adef24a28",
+  "job": {
+    "id": "chapter_04_archive.feng_first.000",
+    "instructions": "五十九岁中国男性前测绘负责人，低中音平稳，习惯使用程序化措辞控制谈话。防御而不咆哮，不冷笑，不做脸谱化反派。按日常基线自然陈述，停顿清楚，不额外渲染悬疑。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "冯启昌",
+    "text": "我负责的是测绘复核，不是消防调查。你把十二年前的每一张纸都堆到我桌上，也不能改变产权事实。",
+    "voice": "Arthur",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "47571771-a00a-93c2-8c3a-663a53137ff9",
+  "schema_version": 1,
+  "usage": {
+    "characters": 86
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "fingerprint": "34f657379a947b9428523ed7440d17eb698a5a9616fb9be6bed1c5c96bedd902",
+  "job": {
+    "id": "chapter_04_archive.household_first.002",
+    "instructions": "五十九岁中国男性前测绘负责人，低中音平稳，习惯使用程序化措辞控制谈话。防御而不咆哮，不冷笑，不做脸谱化反派。按日常基线自然陈述，停顿清楚，不额外渲染悬疑。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "冯启昌",
+    "text": "三个部门采用同一标准，不等于有人造假。",
+    "voice": "Arthur",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "62db6d1d-619d-93a5-89c2-9c0424a5450d",
+  "schema_version": 1,
+  "usage": {
+    "characters": 36
+  }
+}

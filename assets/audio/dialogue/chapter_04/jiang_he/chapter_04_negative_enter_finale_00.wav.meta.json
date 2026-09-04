@@ -1,0 +1,22 @@
+{
+  "fingerprint": "be8d83a41bbd32c753cba7a548912fdf767e4ef5175b8390212669c06d7f8b59",
+  "job": {
+    "id": "chapter_04_negative.enter_finale.000",
+    "instructions": "二十二岁中国女性，音色清楚偏低，年轻但不稚嫩。长期谨慎，表达事实时坚定，不使用哭腔、少女感或戏剧化受害者表演。当前处于对质、承认或推理推进段落，增加紧张与确定感，但不要喊叫或煽情。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "蒋禾",
+    "text": "冯启昌已经坐在复核桌另一边。把十四号写回去之前，先让他听见每张纸从哪里来。",
+    "voice": "Vivian",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "a50cbc81-172f-9436-b902-2564c68b26eb",
+  "schema_version": 1,
+  "usage": {
+    "characters": 71
+  }
+}

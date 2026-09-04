@@ -1,0 +1,22 @@
+{
+  "fingerprint": "a13cb86a7ef721e3611ed2f3fe3784d195f590814b5c8203615a4def8b329f62",
+  "job": {
+    "id": "chapter_04_finale.truth_correct_1.001",
+    "instructions": "六十三岁中国女性退休生活老师，中低音，咬字清楚，严肃而有保护欲。现实主义表演，不训话、不煽情、不使用播音腔。当前处于对质、承认或推理推进段落，增加紧张与确定感，但不要喊叫或煽情。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "孙桂琴",
+    "text": "它们在火灾前就分别留下了同一个生活地址。",
+    "voice": "Maia",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "a3faa4c0-347c-913f-9ede-42d0a27c24c2",
+  "schema_version": 1,
+  "usage": {
+    "characters": 39
+  }
+}

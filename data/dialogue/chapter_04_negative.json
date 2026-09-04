@@ -1,0 +1,312 @@
+{
+  "conversations": {
+    "intro": [
+      {
+        "speaker": "旁白",
+        "text": "底片库只亮着一盏琥珀色安全灯。发光测绘台把两版地图照成两层互不重合的街道。",
+        "voice": "res://assets/audio/dialogue/chapter_04/narrator/chapter_04_negative_intro_00.wav",
+        "voice_bus": "Voice"
+      },
+      {
+        "speaker": "蒋禾",
+        "text": "公开报纸里的照片只剩十二号主屋。原底片一直没人让我看。",
+        "voice": "res://assets/audio/dialogue/chapter_04/jiang_he/chapter_04_negative_intro_01.wav",
+        "voice_bus": "Voice"
+      },
+      {
+        "speaker": "侦探",
+        "text": "先确认原片，再叠合边界。裁切和拍摄不能被当成同一个动作。",
+        "voice": "res://assets/audio/dialogue/chapter_04/detective/chapter_04_negative_intro_02.wav",
+        "voice_bus": "Voice"
+      }
+    ],
+    "negative_first": [
+      {
+        "speaker": "侦探",
+        "text": "整卷齿孔连续，前后帧编号没有断裂。这张就是报纸照片的原底片。",
+        "voice": "res://assets/audio/dialogue/chapter_04/detective/chapter_04_negative_negative_first_00.wav",
+        "voice_bus": "Voice"
+      },
+      {
+        "speaker": "蒋禾",
+        "text": "右下角还在。门边那块搪瓷牌上是十四。",
+        "voice": "res://assets/audio/dialogue/chapter_04/jiang_he/chapter_04_negative_negative_first_01.wav",
+        "voice_bus": "Voice"
+      },
+      {
+        "speaker": "孙桂琴",
+        "text": "底片拍下了它，公开照片却没有。",
+        "voice": "res://assets/audio/dialogue/chapter_04/sun_guiqin/chapter_04_negative_negative_first_02.wav",
+        "voice_bus": "Voice"
+      }
+    ],
+    "negative_repeat": [
+      {
+        "speaker": "侦探",
+        "text": "齿孔与连续编号排除了事后补拍另一张照片的解释。",
+        "voice": "res://assets/audio/dialogue/chapter_04/detective/chapter_04_negative_negative_repeat_00.wav",
+        "voice_bus": "Voice"
+      }
+    ],
+    "layout_first": [
+      {
+        "speaker": "侦探",
+        "text": "排版稿的裁切框向左收了很窄的一条，恰好去掉门牌，却保留大片空墙。",
+        "voice": "res://assets/audio/dialogue/chapter_04/detective/chapter_04_negative_layout_first_00.wav",
+        "voice_bus": "Voice"
+      },
+      {
+        "speaker": "蒋禾",
+        "text": "这不是为了让照片更紧凑。留下空墙，删掉的只有数字。",
+        "voice": "res://assets/audio/dialogue/chapter_04/jiang_he/chapter_04_negative_layout_first_01.wav",
+        "voice_bus": "Voice"
+      },
+      {
+        "speaker": "孙桂琴",
+        "text": "稿边有测绘复核组的退改章。",
+        "voice": "res://assets/audio/dialogue/chapter_04/sun_guiqin/chapter_04_negative_layout_first_02.wav",
+        "voice_bus": "Voice"
+      }
+    ],
+    "layout_repeat": [
+      {
+        "speaker": "侦探",
+        "text": "裁切选择本身可复核：构图理由解释不了那片被保留的空墙。",
+        "voice": "res://assets/audio/dialogue/chapter_04/detective/chapter_04_negative_layout_repeat_00.wav",
+        "voice_bus": "Voice"
+      }
+    ],
+    "survey_photo_first": [
+      {
+        "speaker": "侦探",
+        "text": "完整测绘照片先登记，三天后才附上删去门牌的新版图。",
+        "voice": "res://assets/audio/dialogue/chapter_04/detective/chapter_04_negative_survey_photo_first_00.wav",
+        "voice_bus": "Voice"
+      },
+      {
+        "speaker": "孙桂琴",
+        "text": "顺序清楚：不是门牌先消失才无法画，而是先看见，再决定不画。",
+        "voice": "res://assets/audio/dialogue/chapter_04/sun_guiqin/chapter_04_negative_survey_photo_first_01.wav",
+        "voice_bus": "Voice"
+      }
+    ],
+    "survey_photo_repeat": [
+      {
+        "speaker": "侦探",
+        "text": "原图、照片与覆盖版都有独立登记时点，修改方向无法倒置。",
+        "voice": "res://assets/audio/dialogue/chapter_04/detective/chapter_04_negative_survey_photo_repeat_00.wav",
+        "voice_bus": "Voice"
+      }
+    ],
+    "overlay_locked": [
+      {
+        "speaker": "侦探",
+        "text": "灯箱不能替缺失材料猜答案。先找到完整底片、排版框和测绘照片登记。",
+        "voice": "res://assets/audio/dialogue/chapter_04/detective/chapter_04_negative_overlay_locked_00.wav",
+        "voice_bus": "Voice"
+      }
+    ],
+    "overlay_repeat": [
+      {
+        "speaker": "侦探",
+        "text": "旧图、新图、原底片与排版框已经落在同一组固定锚点上。",
+        "voice": "res://assets/audio/dialogue/chapter_04/detective/chapter_04_negative_overlay_repeat_00.wav",
+        "voice_bus": "Voice"
+      }
+    ],
+    "overlay_success": [
+      {
+        "speaker": "侦探",
+        "text": "水塔和主屋墙角没有移动。旧图的附屋轮廓在新版中被并入十二号。",
+        "voice": "res://assets/audio/dialogue/chapter_04/detective/chapter_04_negative_overlay_success_00.wav",
+        "voice_bus": "Voice"
+      },
+      {
+        "speaker": "蒋禾",
+        "text": "底片按窗框和排水沟落下时，十四号门牌正好在新版边界之外。",
+        "voice": "res://assets/audio/dialogue/chapter_04/jiang_he/chapter_04_negative_overlay_success_01.wav",
+        "voice_bus": "Voice"
+      },
+      {
+        "speaker": "侦探",
+        "text": "最后叠入排版框，门牌才从公众能看到的照片里消失。",
+        "voice": "res://assets/audio/dialogue/chapter_04/detective/chapter_04_negative_overlay_success_02.wav",
+        "voice_bus": "Voice"
+      }
+    ],
+    "d43_not_ready": [
+      {
+        "speaker": "侦探",
+        "text": "我还不能判断门牌是在拍摄前、制图时还是排版时消失。需要把来源叠到同一坐标。",
+        "voice": "res://assets/audio/dialogue/chapter_04/detective/chapter_04_negative_d43_not_ready_00.wav",
+        "voice_bus": "Voice"
+      }
+    ],
+    "d43_success": [
+      {
+        "speaker": "侦探",
+        "text": "完整影像先存在。十四号随后被并入新版边界，并在报纸排版中被准确裁掉。",
+        "voice": "res://assets/audio/dialogue/chapter_04/detective/chapter_04_negative_d43_success_00.wav",
+        "voice_bus": "Voice"
+      },
+      {
+        "speaker": "蒋禾",
+        "text": "他们不是没拍到我们的门。他们拍到以后，决定别人不该看见。",
+        "voice": "res://assets/audio/dialogue/chapter_04/jiang_he/chapter_04_negative_d43_success_01.wav",
+        "voice_bus": "Voice"
+      },
+      {
+        "speaker": "孙桂琴",
+        "text": "现在该查谁在修改之后得到好处，又签过哪些现场指示。",
+        "voice": "res://assets/audio/dialogue/chapter_04/sun_guiqin/chapter_04_negative_d43_success_02.wav",
+        "voice_bus": "Voice"
+      }
+    ],
+    "power_order_first": [
+      {
+        "speaker": "侦探",
+        "text": "断电工单写着‘空置附屋’，没有住户确认，却有冯启昌的提前施工签字。",
+        "voice": "res://assets/audio/dialogue/chapter_04/detective/chapter_04_negative_power_order_first_00.wav",
+        "voice_bus": "Voice"
+      },
+      {
+        "speaker": "蒋禾",
+        "text": "姨妈那天还在家。恢复供电不到半小时，墙里的临时线就烧起来了。",
+        "voice": "res://assets/audio/dialogue/chapter_04/jiang_he/chapter_04_negative_power_order_first_01.wav",
+        "voice_bus": "Voice"
+      }
+    ],
+    "power_order_repeat": [
+      {
+        "speaker": "侦探",
+        "text": "工单把有人居住的附屋写成空置，直接绕过安全确认。",
+        "voice": "res://assets/audio/dialogue/chapter_04/detective/chapter_04_negative_power_order_repeat_00.wav",
+        "voice_bus": "Voice"
+      }
+    ],
+    "sealed_gate_first": [
+      {
+        "speaker": "孙桂琴",
+        "text": "侧门封闭验收单是火灾前一天签的。铁丝型号和现场照片一致。",
+        "voice": "res://assets/audio/dialogue/chapter_04/sun_guiqin/chapter_04_negative_sealed_gate_first_00.wav",
+        "voice_bus": "Voice"
+      },
+      {
+        "speaker": "侦探",
+        "text": "冯启昌不仅知道附屋存在，还验收了唯一通向巷道的门。",
+        "voice": "res://assets/audio/dialogue/chapter_04/detective/chapter_04_negative_sealed_gate_first_01.wav",
+        "voice_bus": "Voice"
+      }
+    ],
+    "sealed_gate_repeat": [
+      {
+        "speaker": "侦探",
+        "text": "封门不是火灾后的临时管制，而是火灾前的施工动作。",
+        "voice": "res://assets/audio/dialogue/chapter_04/detective/chapter_04_negative_sealed_gate_repeat_00.wav",
+        "voice_bus": "Voice"
+      }
+    ],
+    "compensation_first": [
+      {
+        "speaker": "侦探",
+        "text": "手算表先列四十七户，合并十四号后改为四十六户，预算差额另行圈出。",
+        "voice": "res://assets/audio/dialogue/chapter_04/detective/chapter_04_negative_compensation_first_00.wav",
+        "voice_bus": "Voice"
+      },
+      {
+        "speaker": "蒋禾",
+        "text": "少掉的不只是赔偿。少掉一户，断电和封门就像没碰过住人的房子。",
+        "voice": "res://assets/audio/dialogue/chapter_04/jiang_he/chapter_04_negative_compensation_first_01.wav",
+        "voice_bus": "Voice"
+      }
+    ],
+    "compensation_repeat": [
+      {
+        "speaker": "侦探",
+        "text": "覆盖门牌与减少补偿户数存在直接可见的利益联系。",
+        "voice": "res://assets/audio/dialogue/chapter_04/detective/chapter_04_negative_compensation_repeat_00.wav",
+        "voice_bus": "Voice"
+      }
+    ],
+    "hospital_first": [
+      {
+        "speaker": "蒋禾",
+        "text": "医院记下了我的旧手术疤和血型，蒋兰的急救页也在同一本册里。",
+        "voice": "res://assets/audio/dialogue/chapter_04/jiang_he/chapter_04_negative_hospital_first_00.wav",
+        "voice_bus": "Voice"
+      },
+      {
+        "speaker": "侦探",
+        "text": "血型本身不能确认亲属，但与她长期接送签名、同址照片和手术联系人一致。",
+        "voice": "res://assets/audio/dialogue/chapter_04/detective/chapter_04_negative_hospital_first_01.wav",
+        "voice_bus": "Voice"
+      },
+      {
+        "speaker": "孙桂琴",
+        "text": "我愿意说明蒋兰一直以监护人身份接送她。",
+        "voice": "res://assets/audio/dialogue/chapter_04/sun_guiqin/chapter_04_negative_hospital_first_02.wav",
+        "voice_bus": "Voice"
+      }
+    ],
+    "hospital_repeat": [
+      {
+        "speaker": "侦探",
+        "text": "亲属关系来自多项相符记录，不依赖被覆盖的户籍索引。",
+        "voice": "res://assets/audio/dialogue/chapter_04/detective/chapter_04_negative_hospital_repeat_00.wav",
+        "voice_bus": "Voice"
+      }
+    ],
+    "reports_first": [
+      {
+        "speaker": "温岑",
+        "text": "这些是前三次调查摘要。有人删去了姓名、诊所和去向，又给每项结论留下原证据编号。",
+        "voice": "res://assets/audio/dialogue/chapter_04/wen_cen/chapter_04_negative_reports_first_00.wav",
+        "voice_bus": "Voice"
+      },
+      {
+        "speaker": "侦探",
+        "text": "删节没有改写客观结论。它把可转交事实和私人身份分开了。",
+        "voice": "res://assets/audio/dialogue/chapter_04/detective/chapter_04_negative_reports_first_01.wav",
+        "voice_bus": "Voice"
+      },
+      {
+        "speaker": "蒋禾",
+        "text": "可没有人问过当事人想删什么。保护别人，也可能变成替别人决定。",
+        "voice": "res://assets/audio/dialogue/chapter_04/jiang_he/chapter_04_negative_reports_first_02.wav",
+        "voice_bus": "Voice"
+      }
+    ],
+    "reports_repeat": [
+      {
+        "speaker": "温岑",
+        "text": "复写顺序和旧投递路线能带你找到七码头代办所。那里是共同信箱最后一次登记的位置。",
+        "voice": "res://assets/audio/dialogue/chapter_04/wen_cen/chapter_04_negative_reports_repeat_00.wav",
+        "voice_bus": "Voice"
+      }
+    ],
+    "return_archive": [
+      {
+        "speaker": "孙桂琴",
+        "text": "修订室的原页还在那里，需要时可以回去复核。",
+        "voice": "res://assets/audio/dialogue/chapter_04/sun_guiqin/chapter_04_negative_return_archive_00.wav",
+        "voice_bus": "Voice"
+      }
+    ],
+    "finale_locked": [
+      {
+        "speaker": "侦探",
+        "text": "复核会需要完整责任链：火灾前的动作、删改利益、亲属来源和报告转交缺一不可。",
+        "voice": "res://assets/audio/dialogue/chapter_04/detective/chapter_04_negative_finale_locked_00.wav",
+        "voice_bus": "Voice"
+      }
+    ],
+    "enter_finale": [
+      {
+        "speaker": "蒋禾",
+        "text": "冯启昌已经坐在复核桌另一边。把十四号写回去之前，先让他听见每张纸从哪里来。",
+        "voice": "res://assets/audio/dialogue/chapter_04/jiang_he/chapter_04_negative_enter_finale_00.wav",
+        "voice_bus": "Voice"
+      }
+    ]
+  }
+}

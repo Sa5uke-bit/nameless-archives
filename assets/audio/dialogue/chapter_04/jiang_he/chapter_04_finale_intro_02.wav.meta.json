@@ -1,0 +1,22 @@
+{
+  "fingerprint": "b27c1ea46fc518dc77026232334842a8d2745f79dbe813011c866ec0aa307a4d",
+  "job": {
+    "id": "chapter_04_finale.intro.002",
+    "instructions": "二十二岁中国女性，音色清楚偏低，年轻但不稚嫩。长期谨慎，表达事实时坚定，不使用哭腔、少女感或戏剧化受害者表演。按日常基线自然陈述，停顿清楚，不额外渲染悬疑。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "蒋禾",
+    "text": "那就逐项说。哪一项是缺口，哪一项有你的签名。",
+    "voice": "Vivian",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "272fdbd3-a904-9542-989a-27f1b40e0616",
+  "schema_version": 1,
+  "usage": {
+    "characters": 41
+  }
+}

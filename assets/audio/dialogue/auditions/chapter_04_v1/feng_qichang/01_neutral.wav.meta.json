@@ -1,0 +1,22 @@
+{
+  "fingerprint": "89288f415b32dd93033f7963731780ee9def271a889d79684125ed6b396c85ca",
+  "job": {
+    "id": "chapter04_feng_neutral",
+    "instructions": "五十九岁中国男性前测绘负责人，低中音平稳，以程序化措辞控制谈话，不冷笑。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "冯启昌",
+    "text": "住过，不等于行政上存在一个十四号。",
+    "voice": "Arthur",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "891c09aa-1eb3-9325-8097-158c90dd4283",
+  "schema_version": 1,
+  "usage": {
+    "characters": 32
+  }
+}

@@ -136,6 +136,16 @@ func record_chapter_outcome(chapter_id: String, ending_id: String) -> void:
 	var outcomes: Dictionary = profile.get("chapter_outcomes", {})
 	outcomes[chapter_id] = ending_id
 	profile["chapter_outcomes"] = outcomes
+	var results: Dictionary = profile.get("chapter_results", {})
+	var chapter_result: Dictionary = {}
+	var prefix := "%s_" % chapter_id
+	for flag_name: Variant in flags.keys():
+		var key := str(flag_name)
+		if key.begins_with(prefix):
+			chapter_result[key.trim_prefix(prefix)] = flags[flag_name]
+	if not chapter_result.is_empty():
+		results[chapter_id] = chapter_result
+		profile["chapter_results"] = results
 	_save_profile()
 
 
@@ -144,6 +154,14 @@ func get_chapter_outcome(chapter_id: String, default_value: String = "") -> Stri
 	if typeof(outcomes) != TYPE_DICTIONARY:
 		return default_value
 	return str((outcomes as Dictionary).get(chapter_id, default_value))
+
+
+func get_chapter_result(chapter_id: String) -> Dictionary:
+	var results: Variant = profile.get("chapter_results", {})
+	if typeof(results) != TYPE_DICTIONARY:
+		return {}
+	var result: Variant = (results as Dictionary).get(chapter_id, {})
+	return (result as Dictionary).duplicate(true) if typeof(result) == TYPE_DICTIONARY else {}
 
 
 func load_profile() -> bool:

@@ -1,0 +1,22 @@
+{
+  "fingerprint": "e284ce1e9d6e0c351e13a2bfb089cc9de6ea422e4c95a2da9bb0e46408a162e9",
+  "job": {
+    "id": "chapter_04_courtyard.intro_public.003",
+    "instructions": "二十二岁中国女性，音色清楚偏低，年轻但不稚嫩。长期谨慎，表达事实时坚定，不使用哭腔、少女感或戏剧化受害者表演。按日常基线自然陈述，停顿清楚，不额外渲染悬疑。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "蒋禾",
+    "text": "你上次公开了整只邮袋。这里还有活着的人，我需要先知道你会写到哪一步。",
+    "voice": "Vivian",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "164b2a50-3c61-9625-85c8-49b3e13ec479",
+  "schema_version": 1,
+  "usage": {
+    "characters": 65
+  }
+}

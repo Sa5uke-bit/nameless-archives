@@ -1,0 +1,22 @@
+{
+  "fingerprint": "032890fc47af464c7456d0a21412d578186fa6ca1a735bfd8f3cd60c05acba5f",
+  "job": {
+    "id": "chapter_04_negative.d43_success.002",
+    "instructions": "六十三岁中国女性退休生活老师，中低音，咬字清楚，严肃而有保护欲。现实主义表演，不训话、不煽情、不使用播音腔。当前处于对质、承认或推理推进段落，增加紧张与确定感，但不要喊叫或煽情。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "孙桂琴",
+    "text": "现在该查谁在修改之后得到好处，又签过哪些现场指示。",
+    "voice": "Maia",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "3bdde71c-c990-9018-b056-893f8cb21402",
+  "schema_version": 1,
+  "usage": {
+    "characters": 48
+  }
+}

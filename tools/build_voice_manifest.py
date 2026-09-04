@@ -107,6 +107,31 @@ CAST_CHAPTER_03: dict[str, dict[str, str]] = {
     },
 }
 
+CAST_CHAPTER_04: dict[str, dict[str, str]] = {
+    "侦探": CAST_CHAPTER_01["侦探"],
+    "旁白": CAST_CHAPTER_01["旁白"],
+    "蒋禾": {
+        "slug": "jiang_he",
+        "voice": "Vivian",
+        "base": "二十二岁中国女性，音色清楚偏低，年轻但不稚嫩。长期谨慎，表达事实时坚定，不使用哭腔、少女感或戏剧化受害者表演。",
+    },
+    "温岑": {
+        "slug": "wen_cen",
+        "voice": "Vincent",
+        "base": "五十八岁中国男性退休投递员，嗓音略粗、语速偏慢，带风霜与内疚。口语自然克制，不使用说书腔或慈祥长者腔。",
+    },
+    "孙桂琴": {
+        "slug": "sun_guiqin",
+        "voice": "Maia",
+        "base": "六十三岁中国女性退休生活老师，中低音，咬字清楚，严肃而有保护欲。现实主义表演，不训话、不煽情、不使用播音腔。",
+    },
+    "冯启昌": {
+        "slug": "feng_qichang",
+        "voice": "Arthur",
+        "base": "五十九岁中国男性前测绘负责人，低中音平稳，习惯使用程序化措辞控制谈话。防御而不咆哮，不冷笑，不做脸谱化反派。",
+    },
+}
+
 CHAPTER_CONFIGS = {
     "1": {
         "dialogue_files": CHAPTER_01_DIALOGUE_FILES,
@@ -126,6 +151,12 @@ CHAPTER_CONFIGS = {
         "voice_root": "res://assets/audio/dialogue/chapter_03",
         "cast": CAST_CHAPTER_03,
     },
+    "4": {
+        "dialogue_files": tuple(sorted((PROJECT_ROOT / "data/dialogue").glob("chapter_04_*.json"))),
+        "manifest_path": PROJECT_ROOT / "data/voice/chapter_04_full.jsonl",
+        "voice_root": "res://assets/audio/dialogue/chapter_04",
+        "cast": CAST_CHAPTER_04,
+    },
 }
 
 PRESSURE_MARKERS = (
@@ -141,6 +172,10 @@ PRESSURE_MARKERS = (
     "d32_success",
     "d33_success",
     "timeline_success",
+    "d41_success",
+    "d42_success",
+    "d43_success",
+    "overlay_success",
 )
 QUIET_MARKERS = (
     "repeat",

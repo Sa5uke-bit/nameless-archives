@@ -1,0 +1,22 @@
+{
+  "fingerprint": "3c2c7054c8e8817cd5d842dd6aeca57b31426874ef065e9fe7e9cc74b7cba00f",
+  "job": {
+    "id": "chapter_04_courtyard.d41_success.001",
+    "instructions": "二十二岁中国女性，音色清楚偏低，年轻但不稚嫩。长期谨慎，表达事实时坚定，不使用哭腔、少女感或戏剧化受害者表演。当前处于对质、承认或推理推进段落，增加紧张与确定感，但不要喊叫或煽情。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "蒋禾",
+    "text": "所以没有产权证，只能证明它不独立拥有土地，不能证明我们没在那里生活。",
+    "voice": "Vivian",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "4022be7f-2079-9f19-9766-0ccf8f49d65d",
+  "schema_version": 1,
+  "usage": {
+    "characters": 65
+  }
+}

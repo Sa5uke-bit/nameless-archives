@@ -1,0 +1,22 @@
+{
+  "fingerprint": "9edcf081cbae3f03727ba3074fee08ca3f58cdfd402fd41b487e59573db507fe",
+  "job": {
+    "id": "chapter_04_archive.negative_locked.000",
+    "instructions": "五十九岁中国男性前测绘负责人，低中音平稳，习惯使用程序化措辞控制谈话。防御而不咆哮，不冷笑，不做脸谱化反派。按日常基线自然陈述，停顿清楚，不额外渲染悬疑。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "冯启昌",
+    "text": "先把三套档案的来源关系说清楚。否则底片只会让你看见自己想看见的门牌。",
+    "voice": "Arthur",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "41642d4e-4e57-9343-a75a-66f49bbd1dce",
+  "schema_version": 1,
+  "usage": {
+    "characters": 66
+  }
+}

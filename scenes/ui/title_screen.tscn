@@ -109,6 +109,13 @@ layout_mode = 2
 theme_override_font_sizes/font_size = 20
 text = "第三章 · 停在四点十七分"
 
+[node name="Chapter4Button" type="Button" parent="Center/VBox"]
+unique_name_in_owner = true
+custom_minimum_size = Vector2(0, 54)
+layout_mode = 2
+theme_override_font_sizes/font_size = 20
+text = "第四章 · 被删去的地址"
+
 [node name="ContinueButton" type="Button" parent="Center/VBox"]
 unique_name_in_owner = true
 custom_minimum_size = Vector2(0, 48)
@@ -134,11 +141,12 @@ offset_bottom = -18.0
 grow_horizontal = 0
 grow_vertical = 0
 theme_override_colors/font_color = Color(0.45, 0.52, 0.55, 1)
-text = "三章完整版 · v0.4"
+text = "四章完整版 · v0.5"
 horizontal_alignment = 2
 
 [connection signal="pressed" from="Center/VBox/StartButton" to="." method="_on_start_button_pressed"]
 [connection signal="pressed" from="Center/VBox/Chapter2Button" to="." method="_on_chapter_two_button_pressed"]
 [connection signal="pressed" from="Center/VBox/Chapter3Button" to="." method="_on_chapter_three_button_pressed"]
+[connection signal="pressed" from="Center/VBox/Chapter4Button" to="." method="_on_chapter_four_button_pressed"]
 [connection signal="pressed" from="Center/VBox/ContinueButton" to="." method="_on_continue_button_pressed"]
 [connection signal="pressed" from="Center/VBox/QuitButton" to="." method="_on_quit_button_pressed"]

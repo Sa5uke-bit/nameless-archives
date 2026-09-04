@@ -1,0 +1,22 @@
+{
+  "fingerprint": "d314a6c8a4f25e3974dcba4c2d7ac20441bdb156a028c4e1140b281f0cd3a074",
+  "job": {
+    "id": "chapter_04_negative.reports_first.002",
+    "instructions": "二十二岁中国女性，音色清楚偏低，年轻但不稚嫩。长期谨慎，表达事实时坚定，不使用哭腔、少女感或戏剧化受害者表演。按日常基线自然陈述，停顿清楚，不额外渲染悬疑。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "蒋禾",
+    "text": "可没有人问过当事人想删什么。保护别人，也可能变成替别人决定。",
+    "voice": "Vivian",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "c9499b87-3a2f-9ab1-95e3-093ef429db90",
+  "schema_version": 1,
+  "usage": {
+    "characters": 57
+  }
+}

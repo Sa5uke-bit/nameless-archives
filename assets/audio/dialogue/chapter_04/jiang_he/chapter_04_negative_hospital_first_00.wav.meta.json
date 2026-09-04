@@ -1,0 +1,22 @@
+{
+  "fingerprint": "86609ebd0d30c676946c64dbf5a3ba5507b0129a9b02bed485aea20cdd30b3cd",
+  "job": {
+    "id": "chapter_04_negative.hospital_first.000",
+    "instructions": "二十二岁中国女性，音色清楚偏低，年轻但不稚嫩。长期谨慎，表达事实时坚定，不使用哭腔、少女感或戏剧化受害者表演。按日常基线自然陈述，停顿清楚，不额外渲染悬疑。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "蒋禾",
+    "text": "医院记下了我的旧手术疤和血型，蒋兰的急救页也在同一本册里。",
+    "voice": "Vivian",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "a3011ede-4630-997d-9ad9-960fe0e01c86",
+  "schema_version": 1,
+  "usage": {
+    "characters": 56
+  }
+}
