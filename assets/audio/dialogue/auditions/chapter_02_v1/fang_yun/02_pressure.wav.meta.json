@@ -1,0 +1,22 @@
+{
+  "fingerprint": "2c16d5d458d72abc256ae725215f7e80d00c45169a3162d87af1b670aedb09e9",
+  "job": {
+    "id": "chapter_02_audition.fang_yun.pressure",
+    "instructions": "三十六岁中国女性，声音温和但有清楚边界，长期疲惫而谨慎。被迫重提旧事，压住委屈，后半句更低，不哭喊。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "方芸",
+    "text": "我以为只替一个戴面具的谢幕。没人告诉我，书瑜不会回来。",
+    "voice": "Serena",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "955fc906-f331-94e3-89c7-2849cf057b7c",
+  "schema_version": 1,
+  "usage": {
+    "characters": 51
+  }
+}

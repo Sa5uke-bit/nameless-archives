@@ -1,10 +1,22 @@
-[gd_scene load_steps=2 format=3]
+[gd_scene load_steps=4 format=3]
 
 [ext_resource type="Script" path="res://scripts/ui/tape_comparison.gd" id="1_tape"]
+[ext_resource type="AudioStream" path="res://assets/audio/tape/chapter_02/tape_a_farewell.wav" id="2_tape_a"]
+[ext_resource type="AudioStream" path="res://assets/audio/tape/chapter_02/tape_b_rehearsal.wav" id="3_tape_b"]
 
 [node name="TapeComparison" type="CanvasLayer"]
 layer = 25
 script = ExtResource("1_tape")
+
+[node name="TapeAPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("2_tape_a")
+volume_db = -2.0
+bus = &"SFX"
+
+[node name="TapeBPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("3_tape_b")
+volume_db = -2.0
+bus = &"SFX"
 
 [node name="Root" type="Control" parent="."]
 layout_mode = 3
@@ -62,23 +74,48 @@ theme_override_constants/separation = 18
 layout_mode = 2
 size_flags_horizontal = 3
 
-[node name="AText" type="RichTextLabel" parent="Root/Center/Panel/Margin/VBox/Columns/APanel"]
+[node name="AVBox" type="VBoxContainer" parent="Root/Center/Panel/Margin/VBox/Columns/APanel"]
+layout_mode = 2
+
+[node name="AText" type="RichTextLabel" parent="Root/Center/Panel/Margin/VBox/Columns/APanel/AVBox"]
+custom_minimum_size = Vector2(0, 205)
 layout_mode = 2
 theme_override_colors/default_color = Color(0.82, 0.84, 0.82, 1)
 theme_override_font_sizes/normal_font_size = 17
 bbcode_enabled = true
 text = "[color=#d9c99d][b]A 带 · ‘后台全程记录’[/b][/color]\n\n00:00  持续掌声\n00:08  底噪突然变窄\n00:09  女声：‘别找我。’\n00:10  轻咳一次\n00:13  金属铃\n00:15  金属铃\n00:17  零散掌声"
 
+[node name="PlayA" type="Button" parent="Root/Center/Panel/Margin/VBox/Columns/APanel/AVBox"]
+custom_minimum_size = Vector2(0, 42)
+layout_mode = 2
+text = "▶ 播放 A 带"
+
 [node name="BPanel" type="PanelContainer" parent="Root/Center/Panel/Margin/VBox/Columns"]
 layout_mode = 2
 size_flags_horizontal = 3
 
-[node name="BText" type="RichTextLabel" parent="Root/Center/Panel/Margin/VBox/Columns/BPanel"]
+[node name="BVBox" type="VBoxContainer" parent="Root/Center/Panel/Margin/VBox/Columns/BPanel"]
+layout_mode = 2
+
+[node name="BText" type="RichTextLabel" parent="Root/Center/Panel/Margin/VBox/Columns/BPanel/BVBox"]
+custom_minimum_size = Vector2(0, 205)
 layout_mode = 2
 theme_override_colors/default_color = Color(0.82, 0.84, 0.82, 1)
 theme_override_font_sizes/normal_font_size = 17
 bbcode_enabled = true
-text = "[color=#d9c99d][b]B 带 · ‘9/18 试录 2’[/b][/color]\n\n20:13  纸张翻动\n20:16  女声：‘别找我。’\n20:17  轻咳一次\n20:20  金属铃\n20:22  金属铃\n20:23  ‘雨声器还没试。’\n20:27  模拟雨声"
+text = "[color=#d9c99d][b]B 带 · ‘9/18 试录 2’[/b][/color]\n\n18:03  纸张翻动\n18:06  女声：‘别找我。’\n18:08  轻咳一次\n18:10  金属铃\n18:12  金属铃\n18:13  ‘雨声器还没试。’\n18:16  模拟雨声"
+
+[node name="PlayB" type="Button" parent="Root/Center/Panel/Margin/VBox/Columns/BPanel/BVBox"]
+custom_minimum_size = Vector2(0, 42)
+layout_mode = 2
+text = "▶ 播放 B 带"
+
+[node name="PlaybackStatus" type="Label" parent="Root/Center/Panel/Margin/VBox"]
+unique_name_in_owner = true
+layout_mode = 2
+theme_override_colors/font_color = Color(0.66, 0.77, 0.8, 1)
+text = "尚未播放"
+horizontal_alignment = 1
 
 [node name="Prompt" type="Label" parent="Root/Center/Panel/Margin/VBox"]
 layout_mode = 2
@@ -134,5 +171,13 @@ custom_minimum_size = Vector2(160, 48)
 layout_mode = 2
 text = "稍后再看"
 
+[node name="Stop" type="Button" parent="Root/Center/Panel/Margin/VBox/Buttons"]
+custom_minimum_size = Vector2(130, 48)
+layout_mode = 2
+text = "停止播放"
+
+[connection signal="pressed" from="Root/Center/Panel/Margin/VBox/Columns/APanel/AVBox/PlayA" to="." method="_on_tape_a_pressed"]
+[connection signal="pressed" from="Root/Center/Panel/Margin/VBox/Columns/BPanel/BVBox/PlayB" to="." method="_on_tape_b_pressed"]
 [connection signal="pressed" from="Root/Center/Panel/Margin/VBox/Buttons/Submit" to="." method="_on_submit_pressed"]
 [connection signal="pressed" from="Root/Center/Panel/Margin/VBox/Buttons/Close" to="." method="_on_close_pressed"]
+[connection signal="pressed" from="Root/Center/Panel/Margin/VBox/Buttons/Stop" to="." method="_on_stop_pressed"]

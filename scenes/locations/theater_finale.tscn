@@ -1,13 +1,26 @@
-[gd_scene load_steps=4 format=3]
+[gd_scene load_steps=10 format=3]
 
 [ext_resource type="Script" path="res://scripts/locations/theater_finale.gd" id="1_script"]
 [ext_resource type="Script" path="res://scripts/locations/theater_art.gd" id="2_art"]
 [ext_resource type="PackedScene" path="res://scenes/ui/hud.tscn" id="3_hud"]
+[ext_resource type="Texture2D" path="res://assets/art/backgrounds/theater_finale_v1.png" id="4_background"]
+[ext_resource type="Texture2D" path="res://assets/art/characters/detective_v1.png" id="5_detective"]
+[ext_resource type="Texture2D" path="res://assets/art/characters/fang_yun_v1.png" id="6_fang"]
+[ext_resource type="Texture2D" path="res://assets/art/characters/yang_pei_v1.png" id="7_yang"]
+[ext_resource type="Texture2D" path="res://assets/art/characters/xu_zheng_v1.png" id="8_xu"]
+[ext_resource type="Texture2D" path="res://assets/art/characters/liang_shaokang_v1.png" id="9_liang"]
 
 [node name="TheaterFinale" type="Node2D"]
 script = ExtResource("1_script")
 
+[node name="Background" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(640, 360)
+scale = Vector2(0.76555, 0.76514)
+texture = ExtResource("4_background")
+
 [node name="Art" type="Node2D" parent="."]
+visible = false
 script = ExtResource("2_art")
 area = "finale"
 
@@ -20,5 +33,35 @@ theme_override_colors/font_color = Color(0.78, 0.7, 0.56, 1)
 theme_override_font_sizes/font_size = 25
 text = "潮声剧场 · 最后的记录"
 horizontal_alignment = 1
+
+[node name="Detective" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(185, 480)
+scale = Vector2(0.19, 0.19)
+texture = ExtResource("5_detective")
+
+[node name="FangYun" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(400, 480)
+scale = Vector2(0.19, 0.19)
+texture = ExtResource("6_fang")
+
+[node name="YangPei" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(610, 480)
+scale = Vector2(-0.19, 0.19)
+texture = ExtResource("7_yang")
+
+[node name="XuZheng" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(820, 480)
+scale = Vector2(0.19, 0.19)
+texture = ExtResource("8_xu")
+
+[node name="LiangShaokang" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(1060, 480)
+scale = Vector2(-0.19, 0.19)
+texture = ExtResource("9_liang")
 
 [node name="HUD" parent="." instance=ExtResource("3_hud")]

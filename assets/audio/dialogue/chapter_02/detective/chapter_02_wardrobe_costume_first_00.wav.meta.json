@@ -1,0 +1,22 @@
+{
+  "fingerprint": "49aba9ad10a27e30c2dda3dc01b58275cbef3b0d997156447c6ade0fb24540bd",
+  "job": {
+    "id": "chapter_02_wardrobe.costume_first.000",
+    "instructions": "三十多岁的职业侦探，低中音，沉稳清晰，带分析感。现实主义表演，不故作深沉，不使用播音腔。按日常基线自然陈述，停顿清楚，不额外渲染悬疑。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "侦探",
+    "text": "C-01 停在短档。备用的 C-02 被放长五厘米，腰封也调到更宽的位置。",
+    "voice": "Moon",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "85652501-c4a7-9b8b-ad62-4f786745c16f",
+  "schema_version": 1,
+  "usage": {
+    "characters": 60
+  }
+}

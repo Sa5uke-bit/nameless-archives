@@ -1,0 +1,22 @@
+{
+  "fingerprint": "7bdce23148f0db95ba8a25cd0e500b2a2cc099ac56c91a6b363d87b7d97fc107",
+  "job": {
+    "id": "chapter_02_backstage.liang_first.001",
+    "instructions": "三十多岁的职业侦探，低中音，沉稳清晰，带分析感。现实主义表演，不故作深沉，不使用播音腔。按日常基线自然陈述，停顿清楚，不额外渲染悬疑。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "侦探",
+    "text": "复杂的是你们如何把不同来源拼成一条时间线。",
+    "voice": "Moon",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "bca17869-06f7-92ce-906d-ee7c6e6ec82a",
+  "schema_version": 1,
+  "usage": {
+    "characters": 41
+  }
+}

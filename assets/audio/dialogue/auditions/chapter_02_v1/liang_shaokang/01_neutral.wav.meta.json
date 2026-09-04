@@ -1,0 +1,22 @@
+{
+  "fingerprint": "5ce6d0d97c8b6716547a7954571d71d49c6e230140e9d324b66286aded469a1a",
+  "job": {
+    "id": "chapter_02_audition.liang_shaokang.neutral",
+    "instructions": "五十七岁中国男性管理者，低中音，清楚、缓慢、习惯支配谈话。像在陈述无须争辩的制度常识，不慈祥，不说书，不做反派腔。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "梁绍康",
+    "text": "剧团出了事，我复核资产很正常。",
+    "voice": "Eldric Sage",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "09bf49a0-aac7-9729-b99b-8deac5236a4d",
+  "schema_version": 1,
+  "usage": {
+    "characters": 28
+  }
+}

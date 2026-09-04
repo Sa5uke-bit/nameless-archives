@@ -1,0 +1,22 @@
+{
+  "fingerprint": "eac036f0772e2ab167f229db3e57c1f7591762124a33056017e281a09b4e01db",
+  "job": {
+    "id": "chapter_02_wardrobe.wardrobe_intro.000",
+    "instructions": "成熟男性叙述者，清楚客观，有轻微纪录片质感但不过分正式。保持克制，不使用恐怖预告腔。按日常基线自然陈述，停顿清楚，不额外渲染悬疑。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "旁白",
+    "text": "两套灰白长裙并排挂在暗处。九年的灰尘没有盖住被重新扣过的暗扣。",
+    "voice": "Neil",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "fe85858b-b3b7-9b4d-8f2b-54b22e3abe86",
+  "schema_version": 1,
+  "usage": {
+    "characters": 60
+  }
+}

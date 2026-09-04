@@ -1,0 +1,22 @@
+{
+  "fingerprint": "519fad2fc5ec44c4ec8cd3da0a81416a45cba84029e5baa2c64127cba145c1b6",
+  "job": {
+    "id": "chapter_02_audition.liang_shaokang.quiet",
+    "instructions": "五十七岁中国男性管理者，低中音，清楚、缓慢、习惯支配谈话。冷静缩小问题，把不同事实故意并列；不愤怒咆哮，结尾略微压低。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "梁绍康",
+    "text": "工作带整理过又怎样？程书瑜自愿走，方芸碰过衣服，胸针也确实不见了。",
+    "voice": "Eldric Sage",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "78bbaab2-7bb5-9eb4-a4a3-8d63438366a4",
+  "schema_version": 1,
+  "usage": {
+    "characters": 62
+  }
+}

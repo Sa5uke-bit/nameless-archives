@@ -1,0 +1,13 @@
+{
+  "asset": "tape_b_rehearsal",
+  "sample_rate": 24000,
+  "channels": 1,
+  "sample_width_bits": 16,
+  "duration_seconds": 18.0,
+  "source_voice": "source/farewell.wav",
+  "source_stagehand": "source/rain_machine.wav",
+  "copied_fragment_start_seconds": 2.6,
+  "copied_fragment_duration_seconds": 7.4,
+  "generation": "deterministic procedural mix; shared fragment copied byte-for-byte before final mix",
+  "license": "original project asset; spoken sources are AI-synthesized from original text"
+}

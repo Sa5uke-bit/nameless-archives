@@ -1,0 +1,22 @@
+{
+  "fingerprint": "55493e13c97505803acd7c3bae056d874247e28af8cf352d0ee9ec1cf4e8d5d5",
+  "job": {
+    "id": "chapter_02_finale.truth_correct_2.001",
+    "instructions": "二十八岁男性音响师，中音偏轻，聪明直接，有一点紧张。说话具体，不阳光活泼，不使用播音腔。当前处于对质、承认或推理推进段落，增加紧张与确定感，但不要喊叫或煽情。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "徐峥",
+    "text": "我做了整理带。把‘原带’写上去的人不是我。",
+    "voice": "Ethan",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "ffa9fd05-bf07-9605-8831-1d0085f21cee",
+  "schema_version": 1,
+  "usage": {
+    "characters": 38
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "fingerprint": "68f9f74399905f24a329fc82cd6ed842df152cbf6e652180c22120ee4c556f7a",
+  "job": {
+    "id": "chapter_02_stage.yang_first.000",
+    "instructions": "三十三岁女性，曾是舞台替补演员，嗓音清亮而控制严密。保留舞台训练形成的清楚咬字，收住俏皮感和少女感。按日常基线自然陈述，停顿清楚，不额外渲染悬疑。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "杨佩",
+    "text": "几百名观众都说书瑜完成了谢幕。你要为了方芸，改写所有人的眼睛？",
+    "voice": "Vivian",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "98c93374-46e9-9b04-9376-eee596b9ecff",
+  "schema_version": 1,
+  "usage": {
+    "characters": 59
+  }
+}

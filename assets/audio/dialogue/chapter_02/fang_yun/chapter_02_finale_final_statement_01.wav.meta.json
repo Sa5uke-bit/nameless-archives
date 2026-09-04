@@ -1,0 +1,22 @@
+{
+  "fingerprint": "fd5ed3276ee4ab4ab1fece4ba6ddd978befb7e1910cb5d92649908420b75630b",
+  "job": {
+    "id": "chapter_02_finale.final_statement.001",
+    "instructions": "三十六岁女性，声音温和但有清楚边界，长期疲惫而谨慎。现实主义表演，不柔弱，不故作神秘。按日常基线自然陈述，停顿清楚，不额外渲染悬疑。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "方芸",
+    "text": "我还有一张她后来寄来的明信片。它能吸引更多人看这桩案子，也会把帮助她离开的人重新暴露。",
+    "voice": "Serena",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "aed0f0d0-f333-9a8c-88a4-3ef378e02055",
+  "schema_version": 1,
+  "usage": {
+    "characters": 83
+  }
+}

@@ -1,10 +1,11 @@
-[gd_scene load_steps=10 format=3]
+[gd_scene load_steps=11 format=3]
 
 [ext_resource type="Script" path="res://scripts/locations/theater_wardrobe.gd" id="1_script"]
 [ext_resource type="Script" path="res://scripts/locations/theater_art.gd" id="2_art"]
 [ext_resource type="PackedScene" path="res://scenes/characters/player.tscn" id="3_player"]
 [ext_resource type="PackedScene" path="res://scenes/ui/hud.tscn" id="4_hud"]
 [ext_resource type="Script" path="res://scripts/interaction/interactable.gd" id="5_interactable"]
+[ext_resource type="Texture2D" path="res://assets/art/backgrounds/theater_wardrobe_v1.png" id="6_background"]
 
 [sub_resource type="RectangleShape2D" id="FloorShape"]
 size = Vector2(1280, 100)
@@ -21,7 +22,14 @@ size = Vector2(100, 330)
 [node name="TheaterWardrobe" type="Node2D"]
 script = ExtResource("1_script")
 
+[node name="Background" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(640, 360)
+scale = Vector2(0.76555, 0.76514)
+texture = ExtResource("6_background")
+
 [node name="Art" type="Node2D" parent="."]
+visible = false
 script = ExtResource("2_art")
 area = "wardrobe"
 

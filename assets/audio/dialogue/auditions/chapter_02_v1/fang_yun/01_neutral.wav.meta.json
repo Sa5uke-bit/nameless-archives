@@ -1,0 +1,22 @@
+{
+  "fingerprint": "44c93f390eac783702dd9fd78f1697af5971ee914bf67c02ddfb7aa572708332",
+  "job": {
+    "id": "chapter_02_audition.fang_yun.neutral",
+    "instructions": "三十六岁中国女性，声音温和但有清楚边界，长期疲惫而谨慎。日常陈述，语速稍慢，现实主义表演，不柔弱，不故作神秘。P-17 读作 P 十七。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "方芸",
+    "text": "两套长裙、舞台鞋和 P-17 胸针。终场后，杨佩让我隔着帘子调整备用衣。",
+    "voice": "Serena",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "4e5198b0-5e3a-93b7-b469-f3f85caec8f0",
+  "schema_version": 1,
+  "usage": {
+    "characters": 62
+  }
+}

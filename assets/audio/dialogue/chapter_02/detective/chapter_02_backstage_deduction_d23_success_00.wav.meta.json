@@ -1,0 +1,22 @@
+{
+  "fingerprint": "cd8a587762d64fd8abb96a4f9d2e6d07481e41b4ebb8e74c7aad2e3aab87f6af",
+  "job": {
+    "id": "chapter_02_backstage.deduction_d23_success.000",
+    "instructions": "三十多岁的职业侦探，低中音，沉稳清晰，带分析感。现实主义表演，不故作深沉，不使用播音腔。当前处于对质、承认或推理推进段落，增加紧张与确定感，但不要喊叫或煽情。P-17读作“P十七”。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "侦探",
+    "text": "P-17 在程书瑜离开后仍完成谢幕，方芸随后归还。梁绍康用经理钥匙再次开柜，三天后以本人姓名典当。",
+    "voice": "Moon",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "892015a0-ffcc-9f2c-8426-41d1c1b9e80a",
+  "schema_version": 1,
+  "usage": {
+    "characters": 89
+  }
+}

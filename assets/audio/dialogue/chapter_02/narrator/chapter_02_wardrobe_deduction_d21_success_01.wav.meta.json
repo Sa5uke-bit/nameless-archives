@@ -1,0 +1,22 @@
+{
+  "fingerprint": "24dc89c4ff1dd727c33d66cdc2132809384219032198e808c000dd36e88dd36e",
+  "job": {
+    "id": "chapter_02_wardrobe.deduction_d21_success.001",
+    "instructions": "成熟男性叙述者，清楚客观，有轻微纪录片质感但不过分正式。保持克制，不使用恐怖预告腔。当前处于对质、承认或推理推进段落，增加紧张与确定感，但不要喊叫或煽情。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "旁白",
+    "text": "第一项推理完成：面具后的谢幕者。",
+    "voice": "Neil",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "f4325ef2-931e-9736-8039-99aa48223bf5",
+  "schema_version": 1,
+  "usage": {
+    "characters": 30
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "fingerprint": "5d828ca62d9c25f2cb1cab846b7abeb1177f55e829f9940d5776de9d1a809103",
+  "job": {
+    "id": "chapter_02_tape.stagehand.rain_machine",
+    "instructions": "二十多岁中国男性场务，离麦克风稍远，随口提醒同事，语速自然，不要播音腔，不夸张。只读给出的句子。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "旧录音中的场务",
+    "text": "雨声器还没试。",
+    "voice": "Ethan",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "72ca9763-81b6-9d0e-ae38-32e9acdd9b5a",
+  "schema_version": 1,
+  "usage": {
+    "characters": 13
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "fingerprint": "853de9df73ac1d77dfc48097d2361033ca4895e34ac12bfe0622dc6e70dd934a",
+  "job": {
+    "id": "chapter_02_stage.stage_intro_archive.000",
+    "instructions": "成熟男性叙述者，清楚客观，有轻微纪录片质感但不过分正式。保持克制，不使用恐怖预告腔。按日常基线自然陈述，停顿清楚，不额外渲染悬疑。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "旁白",
+    "text": "归潮旅馆案结束数周后，第二只没有寄件人姓名的信封出现在侦探桌上。",
+    "voice": "Neil",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "95291da8-b4a6-94fa-ae35-ec411cb97a2c",
+  "schema_version": 1,
+  "usage": {
+    "characters": 62
+  }
+}

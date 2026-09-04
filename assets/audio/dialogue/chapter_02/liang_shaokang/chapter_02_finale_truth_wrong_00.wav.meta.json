@@ -1,0 +1,22 @@
+{
+  "fingerprint": "6c2c5fc7d72f715ccb86c9e35ec1a0f79ef011d3e5d71f0f86516326459548e7",
+  "job": {
+    "id": "chapter_02_finale.truth_wrong.000",
+    "instructions": "五十七岁男性管理者，低中音，清楚缓慢，习惯支配谈话。声音不高，不慈祥，不说书，不做脸谱化反派表演。当前处于对质、承认或推理推进段落，增加紧张与确定感，但不要喊叫或煽情。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "梁绍康",
+    "text": "这只是猜测。你的材料并不能支持这句话。",
+    "voice": "Eldric Sage",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "3008ea42-ab88-9ae5-9e18-9636a86d2e04",
+  "schema_version": 1,
+  "usage": {
+    "characters": 36
+  }
+}

@@ -1,8 +1,8 @@
-# 第一章配音制作记录
+# 两章配音与录音制作记录
 
-> 当前阶段：正式全量配音已生成并接入
+> 当前阶段：第一、二章正式全量配音均已生成并接入
 > 生成方式：阿里云百炼 `qwen3-tts-instruct-flash`，AI 合成语音
-> 状态：135 条语音已生成、导入并通过自动检查，等待完整实机听感复核
+> 状态：共 231 条正式对白已生成、导入并通过自动检查，等待完整实机听感复核
 
 ## 1. 制作范围
 
@@ -53,22 +53,23 @@
 从剧情数据重建或检查清单：
 
 ```powershell
-python tools/build_voice_manifest.py
-python tools/build_voice_manifest.py --check
+python tools/build_voice_manifest.py --chapter 1
+python tools/build_voice_manifest.py --chapter 1 --check
 ```
 
 使用本机环境变量中的 `DASHSCOPE_API_KEY` 生成语音：
 
 ```powershell
-python C:\Users\SASUKE\.codex\skills\aliyun-bailian-speech\scripts\bailian_speech.py batch `
-  --manifest data/voice/chapter_01_full.jsonl `
-  --output-dir assets/audio/dialogue/chapter_01
+python C:\Users\SASUKE\.codex\skills\aliyun-bailian-speech\scripts\bailian_speech.py speak-batch `
+  --input data/voice/chapter_01_full.jsonl `
+  --output-dir assets/audio/dialogue/chapter_01 `
+  --confirm-batch --requests-per-minute 10
 ```
 
 校验语音包、剧情引用和 WAV 格式：
 
 ```powershell
-python tools/validate_voice_pack.py
+python tools/validate_voice_pack.py --chapter 1
 ```
 
 `build_voice_manifest.py` 同时将 `voice` 与 `voice_bus` 字段写入四个章节对白 JSON；重复执行应保持结果不变。修改剧本文本后，应先重建清单，再只重新生成指纹变化的音频。
@@ -97,7 +98,45 @@ Godot 4.6.2 已导入全部正式 WAV；完整冒烟测试覆盖正常对白、�
 
 发现问题时记录“角色、台词开头、问题、希望的方向”，优先只调整一条或一个变量，不重新生成无关文件。
 
-## 7. 来源与使用说明
+## 7. 第二章《谢幕之后》
+
+第二章正式清单为 [`data/voice/chapter_02_full.jsonl`](../data/voice/chapter_02_full.jsonl)，输出位于 `assets/audio/dialogue/chapter_02/`。共 96 条、2760 个剧本文字，总时长约 613.68 秒（10 分 14 秒），WAV 数据约 29.46 MB；全部为单声道、16 位、24 kHz PCM，96 个请求 ID 与参数指纹均唯一且有效。
+
+第二章沿用侦探 `Moon` 与旁白 `Neil`，新增角色映射如下：
+
+| 发声身份 | 内置音色 | 表演方向 |
+| --- | --- | --- |
+| 方芸 | `Serena` | 温和但有清楚边界，长期疲惫而谨慎，不塑造成软弱受害者 |
+| 杨佩 | `Vivian` | 受过舞台训练，清楚、有控制力，情绪藏在准确咬字之后 |
+| 徐峥 | `Ethan` | 年轻音响师，略轻、直接、有一点紧张，避免喜剧化 |
+| 梁绍康 | `Eldric Sage` | 年长剧场经理，体面、平稳、善于回避，避免脸谱化反派腔 |
+
+试听清单为 [`data/voice/chapter_02_auditions_v1.jsonl`](../data/voice/chapter_02_auditions_v1.jsonl)，四人各有中性、受压与低声三条，共 12 条、约 72.96 秒，输出位于 `assets/audio/dialogue/auditions/chapter_02_v1/`。正式生成与检查命令：
+
+```powershell
+python tools/build_voice_manifest.py --chapter 2
+python tools/build_voice_manifest.py --chapter 2 --check
+python C:\Users\SASUKE\.codex\skills\aliyun-bailian-speech\scripts\bailian_speech.py speak-batch `
+  --input data/voice/chapter_02_full.jsonl `
+  --output-dir assets/audio/dialogue/chapter_02 `
+  --confirm-batch --requests-per-minute 10
+python tools/validate_voice_pack.py --chapter 2
+```
+
+### 可播放磁带谜题
+
+磁带中的程书瑜台词“别找我”与场务台词“雨声器还没试”分别由 `Maia`、`Ethan` 合成，源清单为 [`data/voice/chapter_02_tape_source.jsonl`](../data/voice/chapter_02_tape_source.jsonl)。`tools/build_tape_puzzle_audio.py` 读取两条源录音，程序生成轻咳、两次金属铃、掌声、纸张声、底噪和模拟雨声，再输出：
+
+- `assets/audio/tape/chapter_02/tape_a_farewell.wav`：掌声环境中的整理副本；
+- `assets/audio/tape/chapter_02/tape_b_rehearsal.wav`：带有纸张声、场务提示与雨声器的连续排练带。
+
+两段均为 18 秒、单声道、16 位、24 kHz PCM。核心 7.4 秒片段只生成一次，再分别混入 A/B 两种上下文，因此“台词—轻咳—双铃”的复制关系在声音本身成立，不依赖界面文字宣告。所有合成源和混音输出都有旁置元数据；程序声音为项目原创生成资产，无外部声音素材许可依赖。重建命令：
+
+```powershell
+python tools/build_tape_puzzle_audio.py
+```
+
+## 8. 来源与使用说明
 
 - 服务：阿里云百炼大模型服务平台；
 - 模型：`qwen3-tts-instruct-flash`；

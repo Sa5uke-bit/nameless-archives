@@ -1,0 +1,22 @@
+{
+  "fingerprint": "8427e50ecc3955e10a61ecd7315338a671cb7961181ef069094e7c1ef70bdd26",
+  "job": {
+    "id": "chapter_02_finale.truth_correct_1.001",
+    "instructions": "三十三岁女性，曾是舞台替补演员，嗓音清亮而控制严密。保留舞台训练形成的清楚咬字，收住俏皮感和少女感。当前处于对质、承认或推理推进段落，增加紧张与确定感，但不要喊叫或煽情。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "杨佩",
+    "text": "我替她站了最后一次。方芸只知道这一次替位。",
+    "voice": "Vivian",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "4a0a8644-29a3-9ad1-88a8-e97240319d31",
+  "schema_version": 1,
+  "usage": {
+    "characters": 40
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "fingerprint": "906335ffbd415c86e9d4c54817d2a4ebe4ed8dbd88b127426389ace283ab8200",
+  "job": {
+    "id": "chapter_02_finale.final_statement.002",
+    "instructions": "三十多岁的职业侦探，低中音，沉稳清晰，带分析感。现实主义表演，不故作深沉，不使用播音腔。按日常基线自然陈述，停顿清楚，不额外渲染悬疑。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "侦探",
+    "text": "客观真相已经确定。现在要决定的是，哪部分真相有必要进入公开记录。",
+    "voice": "Moon",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "ab1c16d7-e839-9248-9b28-67a437a9dddf",
+  "schema_version": 1,
+  "usage": {
+    "characters": 61
+  }
+}

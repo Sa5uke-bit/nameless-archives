@@ -1,10 +1,13 @@
-[gd_scene load_steps=10 format=3]
+[gd_scene load_steps=13 format=3]
 
 [ext_resource type="Script" path="res://scripts/locations/theater_stage.gd" id="1_script"]
 [ext_resource type="Script" path="res://scripts/locations/theater_art.gd" id="2_art"]
 [ext_resource type="PackedScene" path="res://scenes/characters/player.tscn" id="3_player"]
 [ext_resource type="PackedScene" path="res://scenes/ui/hud.tscn" id="4_hud"]
 [ext_resource type="Script" path="res://scripts/interaction/interactable.gd" id="5_interactable"]
+[ext_resource type="Texture2D" path="res://assets/art/backgrounds/theater_stage_v1.png" id="6_background"]
+[ext_resource type="Texture2D" path="res://assets/art/characters/fang_yun_v1.png" id="7_fang"]
+[ext_resource type="Texture2D" path="res://assets/art/characters/yang_pei_v1.png" id="8_yang"]
 
 [sub_resource type="RectangleShape2D" id="FloorShape"]
 size = Vector2(1280, 100)
@@ -21,7 +24,14 @@ size = Vector2(120, 300)
 [node name="TheaterStage" type="Node2D"]
 script = ExtResource("1_script")
 
+[node name="Background" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(640, 360)
+scale = Vector2(0.76555, 0.76514)
+texture = ExtResource("6_background")
+
 [node name="Art" type="Node2D" parent="."]
+visible = false
 script = ExtResource("2_art")
 area = "stage"
 
@@ -90,12 +100,20 @@ evidence_description = "方芸承认按杨佩要求调整备用衣，但只知�
 position = Vector2(0, -65)
 shape = SubResource("PersonShape")
 
+[node name="CharacterSprite" type="Sprite2D" parent="FangYun"]
+texture_filter = 1
+position = Vector2(0, -65)
+scale = Vector2(0.205, 0.205)
+texture = ExtResource("7_fang")
+
 [node name="FangLabel" type="Label" parent="."]
 offset_left = 650.0
-offset_top = 330.0
+offset_top = 265.0
 offset_right = 730.0
-offset_bottom = 360.0
+offset_bottom = 295.0
 theme_override_colors/font_color = Color(0.67, 0.7, 0.69, 1)
+theme_override_colors/font_outline_color = Color(0.03, 0.04, 0.05, 0.95)
+theme_override_constants/outline_size = 4
 text = "方芸"
 horizontal_alignment = 1
 
@@ -112,12 +130,20 @@ repeat_conversation_id = "yang_repeat"
 position = Vector2(0, -65)
 shape = SubResource("PersonShape")
 
+[node name="CharacterSprite" type="Sprite2D" parent="YangPei"]
+texture_filter = 1
+position = Vector2(0, -65)
+scale = Vector2(-0.205, 0.205)
+texture = ExtResource("8_yang")
+
 [node name="YangLabel" type="Label" parent="."]
 offset_left = 835.0
-offset_top = 330.0
+offset_top = 265.0
 offset_right = 915.0
-offset_bottom = 360.0
+offset_bottom = 295.0
 theme_override_colors/font_color = Color(0.67, 0.7, 0.69, 1)
+theme_override_colors/font_outline_color = Color(0.03, 0.04, 0.05, 0.95)
+theme_override_constants/outline_size = 4
 text = "杨佩"
 horizontal_alignment = 1
 

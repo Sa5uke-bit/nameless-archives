@@ -1,0 +1,22 @@
+{
+  "fingerprint": "e5a04e2f06015bdc5ace66722485543a51461c952e342fc027f94f5b001b606d",
+  "job": {
+    "id": "chapter_02_stage.fang_first.002",
+    "instructions": "三十多岁的职业侦探，低中音，沉稳清晰，带分析感。现实主义表演，不故作深沉，不使用播音腔。按日常基线自然陈述，停顿清楚，不额外渲染悬疑。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "侦探",
+    "text": "你知道她要替程书瑜谢幕？",
+    "voice": "Moon",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "af9fe65c-c509-95b0-b7bd-3aced9c87f81",
+  "schema_version": 1,
+  "usage": {
+    "characters": 23
+  }
+}

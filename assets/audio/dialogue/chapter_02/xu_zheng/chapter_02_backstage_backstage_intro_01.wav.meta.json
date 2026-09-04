@@ -1,0 +1,22 @@
+{
+  "fingerprint": "68e78f7924167f76f3f289b2096ee656fc0146f37dbdef2f1e483e0e1a30c0be",
+  "job": {
+    "id": "chapter_02_backstage.backstage_intro.001",
+    "instructions": "二十八岁男性音响师，中音偏轻，聪明直接，有一点紧张。说话具体，不阳光活泼，不使用播音腔。按日常基线自然陈述，停顿清楚，不额外渲染悬疑。A带和B带分别按英文字母A、B加中文“带”来读。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "徐峥",
+    "text": "旧案听的是 A 带。九年后，我在柜体后面找到了排练用的 B 带。",
+    "voice": "Ethan",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "9481dec1-36a9-9e1b-add5-ac8f6d8c80e9",
+  "schema_version": 1,
+  "usage": {
+    "characters": 55
+  }
+}

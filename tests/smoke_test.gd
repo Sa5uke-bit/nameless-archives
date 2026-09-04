@@ -317,6 +317,11 @@ func _run() -> void:
 	_check(ending.name == "EndingScreen", "ending screen opens")
 	var ending_title: Label = ending.get_node("Center/Panel/Margin/VBox/EndingTitle")
 	_check(ending_title.text == "姓名", "selected ending content is rendered")
+	_check(
+		ending.get_node("Center/Panel/Margin/VBox/EndingText").text.contains("共同记号")
+		or ending.get_node("Center/Panel/Margin/VBox/EndingText").text.contains("辨认的记号"),
+		"chapter one ending contains the chapter two handoff"
+	)
 	ending._on_return_button_pressed()
 	await get_tree().process_frame
 	_check(main.current_screen.name == "TitleScreen", "ending returns to the title screen")
@@ -355,6 +360,9 @@ func _run() -> void:
 	GameState.clear_save()
 	GameState.save_path = GameState.DEFAULT_SAVE_PATH
 	GameState.persistence_enabled = false
+	main.queue_free()
+	await get_tree().process_frame
+	await get_tree().process_frame
 
 	_finish()
 

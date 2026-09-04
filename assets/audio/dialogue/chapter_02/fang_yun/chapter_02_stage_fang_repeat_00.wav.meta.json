@@ -1,0 +1,22 @@
+{
+  "fingerprint": "174eb2a205e8a8d68a277c73d8df4222a187b4cbd652cd5de026e28bc99c0a93",
+  "job": {
+    "id": "chapter_02_stage.fang_repeat.000",
+    "instructions": "三十六岁女性，声音温和但有清楚边界，长期疲惫而谨慎。现实主义表演，不柔弱，不故作神秘。当前是复查、回忆或含混段落，音量稍低、语速略慢，保留自然余韵。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "方芸",
+    "text": "知道一次替位，不等于知道一场逃离。九年前没有人肯区分这两件事。",
+    "voice": "Serena",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "94eaf96f-37de-9229-ba76-3b7fb352dd42",
+  "schema_version": 1,
+  "usage": {
+    "characters": 59
+  }
+}

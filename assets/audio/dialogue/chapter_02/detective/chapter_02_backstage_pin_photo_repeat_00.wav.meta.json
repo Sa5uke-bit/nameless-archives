@@ -1,0 +1,22 @@
+{
+  "fingerprint": "12246951bde4608d2acf73a27be5094c5093fd201d58dd07185cd0a2e901867c",
+  "job": {
+    "id": "chapter_02_backstage.pin_photo_repeat.000",
+    "instructions": "三十多岁的职业侦探，低中音，沉稳清晰，带分析感。现实主义表演，不故作深沉，不使用播音腔。当前是复查、回忆或含混段落，音量稍低、语速略慢，保留自然余韵。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "侦探",
+    "text": "没有脸的照片不能确认演员，却足以确认一枚有独特缺口的胸针。",
+    "voice": "Moon",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "3f0ef431-8bc1-9b92-a013-c622249017e3",
+  "schema_version": 1,
+  "usage": {
+    "characters": 56
+  }
+}

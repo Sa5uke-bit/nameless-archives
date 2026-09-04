@@ -1,0 +1,22 @@
+{
+  "fingerprint": "d1ce2088afcedeccf8023fc74fb14db059b3efad71bc1135923baed98e54c4ae",
+  "job": {
+    "id": "chapter_02_backstage.tape_a_first.001",
+    "instructions": "二十八岁男性音响师，中音偏轻，聪明直接，有一点紧张。说话具体，不阳光活泼，不使用播音腔。按日常基线自然陈述，停顿清楚，不额外渲染悬疑。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "徐峥",
+    "text": "旧报道把它写成书瑜在后台留下的告别。",
+    "voice": "Ethan",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "b2511256-2c5d-96a4-9437-c453fcf02281",
+  "schema_version": 1,
+  "usage": {
+    "characters": 35
+  }
+}

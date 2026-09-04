@@ -1,0 +1,22 @@
+{
+  "fingerprint": "827643b48abb5e3a1aeda9a1b7392a2225a3613d59fa69e8fb29cadec75f1872",
+  "job": {
+    "id": "chapter_02_stage.stage_intro_name.002",
+    "instructions": "三十六岁女性，声音温和但有清楚边界，长期疲惫而谨慎。现实主义表演，不柔弱，不故作神秘。按日常基线自然陈述，停顿清楚，不额外渲染悬疑。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "方芸",
+    "text": "你在旅馆留下的报告没有写出所有人的名字。所以我愿意先让你看看这张照片。",
+    "voice": "Serena",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "f67db221-9a92-99cf-b314-a0cd86fd6812",
+  "schema_version": 1,
+  "usage": {
+    "characters": 68
+  }
+}

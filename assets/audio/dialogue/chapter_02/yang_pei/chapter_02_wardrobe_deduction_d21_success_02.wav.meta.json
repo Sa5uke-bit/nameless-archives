@@ -1,0 +1,22 @@
+{
+  "fingerprint": "78d45d4262feb30948bc7c1260e56f672c540f269fb573fa52e6084fee428165",
+  "job": {
+    "id": "chapter_02_wardrobe.deduction_d21_success.002",
+    "instructions": "三十三岁女性，曾是舞台替补演员，嗓音清亮而控制严密。保留舞台训练形成的清楚咬字，收住俏皮感和少女感。当前处于对质、承认或推理推进段落，增加紧张与确定感，但不要喊叫或煽情。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "杨佩",
+    "text": "是我。书瑜只说让我替她挡过那一晚。我以为第二天她会自己解释。",
+    "voice": "Vivian",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "2f850832-0b78-93c3-b5fd-730330b0a2c3",
+  "schema_version": 1,
+  "usage": {
+    "characters": 57
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "fingerprint": "09955b8c5e91db61ac4cbe29a35cb6bfe045911455a59d09da84006739a27775",
+  "job": {
+    "id": "chapter_02_audition.yang_pei.pressure",
+    "instructions": "三十三岁中国女性，曾是舞台替补演员，嗓音清亮而控制严密。用反问保护旧秘密，略带舞台训练形成的清晰咬字，但不夸张、不喊叫。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "杨佩",
+    "text": "几百名观众都说书瑜完成了谢幕。你要为了方芸，改写所有人的眼睛？",
+    "voice": "Vivian",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "35414c7f-0825-96b7-be94-62bd1ab93761",
+  "schema_version": 1,
+  "usage": {
+    "characters": 59
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "fingerprint": "3b374cc4404c7d09433783e7db401c72b0be1aae0436350aacbbd1118ae3238d",
+  "job": {
+    "id": "chapter_02_audition.xu_zheng.quiet",
+    "instructions": "二十八岁中国男性音响师，中音偏轻，聪明、直接，有一点紧张。压低声音解释旧事，技术人员式的具体，不卖惨。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "徐峥",
+    "text": "我制作过整理带，但当年不知道它会被当作原始证据。先把两盒磁带的来源证明清楚。",
+    "voice": "Ethan",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "141570cd-1f51-9218-a0e7-127d2b5dfa90",
+  "schema_version": 1,
+  "usage": {
+    "characters": 73
+  }
+}

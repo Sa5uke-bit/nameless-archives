@@ -1,0 +1,22 @@
+{
+  "fingerprint": "f8aa15d7ad850a8bf06ded5a293412dadcd66094b35d9dbebfdb1bb9718772ae",
+  "job": {
+    "id": "chapter_02_stage.stage_intro_archive.003",
+    "instructions": "三十多岁的职业侦探，低中音，沉稳清晰，带分析感。现实主义表演，不故作深沉，不使用播音腔。按日常基线自然陈述，停顿清楚，不额外渲染悬疑。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "侦探",
+    "text": "那就先让材料自己说话。九年前，观众究竟看见了什么？",
+    "voice": "Moon",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "bc806d0f-628b-921f-97ce-d48055a113eb",
+  "schema_version": 1,
+  "usage": {
+    "characters": 47
+  }
+}

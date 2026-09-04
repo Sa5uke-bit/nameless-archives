@@ -23,14 +23,25 @@ func _run() -> void:
 	_check(main.current_screen.name == "TitleScreen", "title screen opens")
 	_check(main.current_screen.has_signal("chapter_two_requested"), "title exposes chapter two")
 	_check(main.current_screen.get_node("Center/VBox/Chapter2Button") != null, "chapter two button exists")
+	_check(
+		main.current_screen.get_node("Center/VBox/StartButton").text.contains("档案"),
+		"chapter selection shows the completed chapter one outcome"
+	)
 
 	main.current_screen.chapter_two_requested.emit()
 	await get_tree().process_frame
 	await get_tree().process_frame
 	var stage: Node = main.current_screen
 	_check(stage.name == "TheaterStage", "chapter two opens the theater stage")
+	_check(
+		stage.get_node("Background").texture.resource_path.ends_with("theater_stage_v1.png"),
+		"stage uses the formal chapter two background"
+	)
+	_check(stage.get_node("FangYun/CharacterSprite").texture != null, "Fang Yun art is loaded")
+	_check(stage.get_node("YangPei/CharacterSprite").texture != null, "Yang Pei art is loaded")
 	var hud: InvestigationHUD = stage.get_node("HUD")
 	_check(hud.dialogue_panel.visible, "chapter two introduction opens")
+	_check(hud.dialogue_voice_player.stream != null, "chapter two introduction voice is loaded")
 	hud._advance_dialogue()
 	hud._advance_dialogue()
 	_check(hud.dialogue_text.text.contains("完整档案"), "chapter one archive ending changes the introduction")
@@ -50,6 +61,10 @@ func _run() -> void:
 
 	var wardrobe: Node = main.current_screen
 	_check(wardrobe.name == "TheaterWardrobe", "stage routes to the wardrobe")
+	_check(
+		wardrobe.get_node("Background").texture.resource_path.ends_with("theater_wardrobe_v1.png"),
+		"wardrobe uses the formal chapter two background"
+	)
 	hud = wardrobe.get_node("HUD")
 	_close_dialogue(hud)
 	await _check_targets_reachable(wardrobe, ["BackDoor", "Costume", "Shoes", "DeductionBoard", "BackstageDoor"])
@@ -71,6 +86,8 @@ func _run() -> void:
 
 	var backstage: Node = main.current_screen
 	_check(backstage.name == "TheaterBackstage", "wardrobe routes to backstage")
+	_check(backstage.get_node("XuZheng/CharacterSprite").texture != null, "Xu Zheng art is loaded")
+	_check(backstage.get_node("Liang/CharacterSprite").texture != null, "Liang Shaokang art is loaded")
 	hud = backstage.get_node("HUD")
 	_close_dialogue(hud)
 	await _check_targets_reachable(
@@ -92,6 +109,14 @@ func _run() -> void:
 	backstage._on_interaction_requested(backstage.get_node("TapeConsole"))
 	var tape_ui: TapeComparisonUI = backstage.get_node("TapeComparison")
 	_check(tape_ui.root.visible, "tape comparison interface opens")
+	_check(tape_ui.tape_a_player.stream.get_length() >= 17.9, "tape A audio is loaded")
+	_check(tape_ui.tape_b_player.stream.get_length() >= 17.9, "tape B audio is loaded")
+	tape_ui._on_tape_a_pressed()
+	_check(tape_ui.tape_a_player.playing, "tape A can be played")
+	tape_ui._on_tape_b_pressed()
+	_check(not tape_ui.tape_a_player.playing and tape_ui.tape_b_player.playing, "tape B replaces tape A")
+	tape_ui._on_stop_pressed()
+	_check(not tape_ui.tape_b_player.playing, "tape playback can be stopped")
 	tape_ui.phrase_check.button_pressed = true
 	tape_ui.cough_check.button_pressed = true
 	tape_ui.bell_check.button_pressed = true
@@ -131,6 +156,10 @@ func _run() -> void:
 
 	var finale: Node = main.current_screen
 	_check(finale.name == "TheaterFinale", "complete deductions open the theater finale")
+	_check(
+		finale.get_node("Background").texture.resource_path.ends_with("theater_finale_v1.png"),
+		"finale uses the formal chapter two background"
+	)
 	hud = finale.get_node("HUD")
 	_close_dialogue(hud)
 	await get_tree().process_frame
@@ -161,6 +190,10 @@ func _run() -> void:
 	ending._on_return_button_pressed()
 	await get_tree().process_frame
 	_check(main.current_screen.name == "TitleScreen", "chapter two ending returns to chapter selection")
+	_check(
+		main.current_screen.get_node("Center/VBox/Chapter2Button").text.contains("清白"),
+		"chapter selection shows the completed chapter two outcome"
+	)
 
 	var test_profile_path := "user://chapter_02_smoke_progression.json"
 	GameState.profile_path = test_profile_path
@@ -175,6 +208,11 @@ func _run() -> void:
 	)
 	if FileAccess.file_exists(test_profile_path):
 		DirAccess.remove_absolute(ProjectSettings.globalize_path(test_profile_path))
+	GameState.persistence_enabled = false
+	GameState.profile_path = GameState.DEFAULT_PROFILE_PATH
+	main.queue_free()
+	await get_tree().process_frame
+	await get_tree().process_frame
 
 	_finish()
 

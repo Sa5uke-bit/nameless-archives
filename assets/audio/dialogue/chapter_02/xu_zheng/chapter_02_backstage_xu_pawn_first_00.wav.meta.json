@@ -1,0 +1,22 @@
+{
+  "fingerprint": "ea798c53bdfd55ecb2c11df17ec3cd27db77b58063abbb07085aaae16fe3f3ba",
+  "job": {
+    "id": "chapter_02_backstage.xu_pawn_first.000",
+    "instructions": "二十八岁男性音响师，中音偏轻，聪明直接，有一点紧张。说话具体，不阳光活泼，不使用播音腔。按日常基线自然陈述，停顿清楚，不额外渲染悬疑。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "徐峥",
+    "text": "清点财务箱时还找到这张典当存根。送当人是梁绍康。",
+    "voice": "Ethan",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "48e29a97-8431-9b6a-94f6-994d97f243b2",
+  "schema_version": 1,
+  "usage": {
+    "characters": 46
+  }
+}

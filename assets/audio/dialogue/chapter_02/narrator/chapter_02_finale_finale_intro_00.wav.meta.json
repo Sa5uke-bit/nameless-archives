@@ -1,0 +1,22 @@
+{
+  "fingerprint": "31d87a8b35ff2a37f59736f1b6ede773f957ed31120a05a7e68a1922bebb1335",
+  "job": {
+    "id": "chapter_02_finale.finale_intro.000",
+    "instructions": "成熟男性叙述者，清楚客观，有轻微纪录片质感但不过分正式。保持克制，不使用恐怖预告腔。当前处于对质、承认或推理推进段落，增加紧张与确定感，但不要喊叫或煽情。A带和B带分别按英文字母A、B加中文“带”来读。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "旁白",
+    "text": "舞台只亮着一盏工作灯。A 带、B 带、黄色副联和典当存根依次放在旧道具桌上。",
+    "voice": "Neil",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "497b928c-4f37-9aaa-bac8-5a21ef3c2efd",
+  "schema_version": 1,
+  "usage": {
+    "characters": 68
+  }
+}

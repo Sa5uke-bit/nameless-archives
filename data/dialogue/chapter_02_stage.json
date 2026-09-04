@@ -1,46 +1,156 @@
 {
   "conversations": {
     "stage_intro_name": [
-      {"speaker": "旁白", "text": "归潮旅馆案结束数周后，第二只没有寄件人姓名的信封出现在侦探桌上。"},
-      {"speaker": "侦探", "text": "一张旧节目单，一张谢幕照片。信里说：他们听见她离开，却没有听见是谁留下。"},
-      {"speaker": "方芸", "text": "你在旅馆留下的报告没有写出所有人的名字。所以我愿意先让你看看这张照片。"},
-      {"speaker": "侦探", "text": "先不谈信是谁寄的。九年前，观众究竟看见了什么？"}
+      {
+        "speaker": "旁白",
+        "text": "归潮旅馆案结束数周后，第二只没有寄件人姓名的信封出现在侦探桌上。",
+        "voice": "res://assets/audio/dialogue/chapter_02/narrator/chapter_02_stage_stage_intro_name_00.wav",
+        "voice_bus": "Voice"
+      },
+      {
+        "speaker": "侦探",
+        "text": "一张旧节目单，一张谢幕照片。信里说：他们听见她离开，却没有听见是谁留下。",
+        "voice": "res://assets/audio/dialogue/chapter_02/detective/chapter_02_stage_stage_intro_name_01.wav",
+        "voice_bus": "Voice"
+      },
+      {
+        "speaker": "方芸",
+        "text": "你在旅馆留下的报告没有写出所有人的名字。所以我愿意先让你看看这张照片。",
+        "voice": "res://assets/audio/dialogue/chapter_02/fang_yun/chapter_02_stage_stage_intro_name_02.wav",
+        "voice_bus": "Voice"
+      },
+      {
+        "speaker": "侦探",
+        "text": "先不谈信是谁寄的。九年前，观众究竟看见了什么？",
+        "voice": "res://assets/audio/dialogue/chapter_02/detective/chapter_02_stage_stage_intro_name_03.wav",
+        "voice_bus": "Voice"
+      }
     ],
     "stage_intro_archive": [
-      {"speaker": "旁白", "text": "归潮旅馆案结束数周后，第二只没有寄件人姓名的信封出现在侦探桌上。"},
-      {"speaker": "侦探", "text": "一张旧节目单，一张谢幕照片。信里说：他们听见她离开，却没有听见是谁留下。"},
-      {"speaker": "方芸", "text": "你曾把一份完整档案交出去。这里的人会给你材料，但不代表会相信你怎么使用它们。"},
-      {"speaker": "侦探", "text": "那就先让材料自己说话。九年前，观众究竟看见了什么？"}
+      {
+        "speaker": "旁白",
+        "text": "归潮旅馆案结束数周后，第二只没有寄件人姓名的信封出现在侦探桌上。",
+        "voice": "res://assets/audio/dialogue/chapter_02/narrator/chapter_02_stage_stage_intro_archive_00.wav",
+        "voice_bus": "Voice"
+      },
+      {
+        "speaker": "侦探",
+        "text": "一张旧节目单，一张谢幕照片。信里说：他们听见她离开，却没有听见是谁留下。",
+        "voice": "res://assets/audio/dialogue/chapter_02/detective/chapter_02_stage_stage_intro_archive_01.wav",
+        "voice_bus": "Voice"
+      },
+      {
+        "speaker": "方芸",
+        "text": "你曾把一份完整档案交出去。这里的人会给你材料，但不代表会相信你怎么使用它们。",
+        "voice": "res://assets/audio/dialogue/chapter_02/fang_yun/chapter_02_stage_stage_intro_archive_02.wav",
+        "voice_bus": "Voice"
+      },
+      {
+        "speaker": "侦探",
+        "text": "那就先让材料自己说话。九年前，观众究竟看见了什么？",
+        "voice": "res://assets/audio/dialogue/chapter_02/detective/chapter_02_stage_stage_intro_archive_03.wav",
+        "voice_bus": "Voice"
+      }
     ],
     "photo_first": [
-      {"speaker": "侦探", "text": "底片连续，场次没有问题。但这个谢幕造型戴着面具，薄纱又遮住眼睛。"},
-      {"speaker": "侦探", "text": "照片证明女主角造型站在台上，不能单独证明造型里的人是程书瑜。"}
+      {
+        "speaker": "侦探",
+        "text": "底片连续，场次没有问题。但这个谢幕造型戴着面具，薄纱又遮住眼睛。",
+        "voice": "res://assets/audio/dialogue/chapter_02/detective/chapter_02_stage_photo_first_00.wav",
+        "voice_bus": "Voice"
+      },
+      {
+        "speaker": "侦探",
+        "text": "照片证明女主角造型站在台上，不能单独证明造型里的人是程书瑜。",
+        "voice": "res://assets/audio/dialogue/chapter_02/detective/chapter_02_stage_photo_first_01.wav",
+        "voice_bus": "Voice"
+      }
     ],
     "photo_repeat": [
-      {"speaker": "侦探", "text": "先把‘看见角色’和‘认出演员’分开。旧案没有这样做。"}
+      {
+        "speaker": "侦探",
+        "text": "先把‘看见角色’和‘认出演员’分开。旧案没有这样做。",
+        "voice": "res://assets/audio/dialogue/chapter_02/detective/chapter_02_stage_photo_repeat_00.wav",
+        "voice_bus": "Voice"
+      }
     ],
     "fang_first": [
-      {"speaker": "侦探", "text": "当晚是你负责女主角的衣服？"},
-      {"speaker": "方芸", "text": "两套长裙、舞台鞋和 P-17 胸针。终场后，杨佩让我隔着帘子调整备用衣。"},
-      {"speaker": "侦探", "text": "你知道她要替程书瑜谢幕？"},
-      {"speaker": "方芸", "text": "我以为只替一个戴面具的谢幕。没人告诉我，书瑜不会回来。"}
+      {
+        "speaker": "侦探",
+        "text": "当晚是你负责女主角的衣服？",
+        "voice": "res://assets/audio/dialogue/chapter_02/detective/chapter_02_stage_fang_first_00.wav",
+        "voice_bus": "Voice"
+      },
+      {
+        "speaker": "方芸",
+        "text": "两套长裙、舞台鞋和 P-17 胸针。终场后，杨佩让我隔着帘子调整备用衣。",
+        "voice": "res://assets/audio/dialogue/chapter_02/fang_yun/chapter_02_stage_fang_first_01.wav",
+        "voice_bus": "Voice"
+      },
+      {
+        "speaker": "侦探",
+        "text": "你知道她要替程书瑜谢幕？",
+        "voice": "res://assets/audio/dialogue/chapter_02/detective/chapter_02_stage_fang_first_02.wav",
+        "voice_bus": "Voice"
+      },
+      {
+        "speaker": "方芸",
+        "text": "我以为只替一个戴面具的谢幕。没人告诉我，书瑜不会回来。",
+        "voice": "res://assets/audio/dialogue/chapter_02/fang_yun/chapter_02_stage_fang_first_03.wav",
+        "voice_bus": "Voice"
+      }
     ],
     "fang_repeat": [
-      {"speaker": "方芸", "text": "知道一次替位，不等于知道一场逃离。九年前没有人肯区分这两件事。"}
+      {
+        "speaker": "方芸",
+        "text": "知道一次替位，不等于知道一场逃离。九年前没有人肯区分这两件事。",
+        "voice": "res://assets/audio/dialogue/chapter_02/fang_yun/chapter_02_stage_fang_repeat_00.wav",
+        "voice_bus": "Voice"
+      }
     ],
     "yang_first": [
-      {"speaker": "杨佩", "text": "几百名观众都说书瑜完成了谢幕。你要为了方芸，改写所有人的眼睛？"},
-      {"speaker": "侦探", "text": "我只想知道，他们看见的是脸，还是一个角色。"},
-      {"speaker": "杨佩", "text": "服装库还保留两套衣服。看完再来问我。"}
+      {
+        "speaker": "杨佩",
+        "text": "几百名观众都说书瑜完成了谢幕。你要为了方芸，改写所有人的眼睛？",
+        "voice": "res://assets/audio/dialogue/chapter_02/yang_pei/chapter_02_stage_yang_first_00.wav",
+        "voice_bus": "Voice"
+      },
+      {
+        "speaker": "侦探",
+        "text": "我只想知道，他们看见的是脸，还是一个角色。",
+        "voice": "res://assets/audio/dialogue/chapter_02/detective/chapter_02_stage_yang_first_01.wav",
+        "voice_bus": "Voice"
+      },
+      {
+        "speaker": "杨佩",
+        "text": "服装库还保留两套衣服。看完再来问我。",
+        "voice": "res://assets/audio/dialogue/chapter_02/yang_pei/chapter_02_stage_yang_first_02.wav",
+        "voice_bus": "Voice"
+      }
     ],
     "yang_repeat": [
-      {"speaker": "杨佩", "text": "那晚的谢幕没有人摘下面具。旧报道却把‘女主角’直接写成了‘程书瑜’。"}
+      {
+        "speaker": "杨佩",
+        "text": "那晚的谢幕没有人摘下面具。旧报道却把‘女主角’直接写成了‘程书瑜’。",
+        "voice": "res://assets/audio/dialogue/chapter_02/yang_pei/chapter_02_stage_yang_repeat_00.wav",
+        "voice_bus": "Voice"
+      }
     ],
     "wardrobe_locked": [
-      {"speaker": "侦探", "text": "先记录谢幕照片，并问清方芸为什么碰过备用衣。"}
+      {
+        "speaker": "侦探",
+        "text": "先记录谢幕照片，并问清方芸为什么碰过备用衣。",
+        "voice": "res://assets/audio/dialogue/chapter_02/detective/chapter_02_stage_wardrobe_locked_00.wav",
+        "voice_bus": "Voice"
+      }
     ],
     "enter_wardrobe": [
-      {"speaker": "方芸", "text": "右边是服装库。两套衣服和两双鞋都还在，别只看标签。"}
+      {
+        "speaker": "方芸",
+        "text": "右边是服装库。两套衣服和两双鞋都还在，别只看标签。",
+        "voice": "res://assets/audio/dialogue/chapter_02/fang_yun/chapter_02_stage_enter_wardrobe_00.wav",
+        "voice_bus": "Voice"
+      }
     ]
   }
 }

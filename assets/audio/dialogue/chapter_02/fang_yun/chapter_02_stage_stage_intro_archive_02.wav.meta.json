@@ -1,0 +1,22 @@
+{
+  "fingerprint": "c0c6450a2557ca41944793046803fce84be23f132cf0e79d693e9589b2de165a",
+  "job": {
+    "id": "chapter_02_stage.stage_intro_archive.002",
+    "instructions": "三十六岁女性，声音温和但有清楚边界，长期疲惫而谨慎。现实主义表演，不柔弱，不故作神秘。按日常基线自然陈述，停顿清楚，不额外渲染悬疑。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "方芸",
+    "text": "你曾把一份完整档案交出去。这里的人会给你材料，但不代表会相信你怎么使用它们。",
+    "voice": "Serena",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "97fb2115-d2cc-9f04-9a41-c37861692933",
+  "schema_version": 1,
+  "usage": {
+    "characters": 73
+  }
+}

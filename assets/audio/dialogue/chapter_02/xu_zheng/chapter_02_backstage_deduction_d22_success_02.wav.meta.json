@@ -1,0 +1,22 @@
+{
+  "fingerprint": "461211442a723cca2b9bdbe3e32c7072b8124b2297095d84d68a2267d3fdba9f",
+  "job": {
+    "id": "chapter_02_backstage.deduction_d22_success.002",
+    "instructions": "二十八岁男性音响师，中音偏轻，聪明直接，有一点紧张。说话具体，不阳光活泼，不使用播音腔。当前处于对质、承认或推理推进段落，增加紧张与确定感，但不要喊叫或煽情。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "徐峥",
+    "text": "梁经理让我做的是整理副本。他后来亲手在盒子上写了‘原带’。",
+    "voice": "Ethan",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "541d8c0d-44a0-914a-a3bb-d27db29f8e41",
+  "schema_version": 1,
+  "usage": {
+    "characters": 54
+  }
+}

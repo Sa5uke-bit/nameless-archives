@@ -1,0 +1,22 @@
+{
+  "fingerprint": "1220d64ea5bd86184935d008a79dc045b6f4fb165357e682039201761a85855d",
+  "job": {
+    "id": "chapter_02_backstage.deduction_d23_not_ready.000",
+    "instructions": "三十多岁的职业侦探，低中音，沉稳清晰，带分析感。现实主义表演，不故作深沉，不使用播音腔。按日常基线自然陈述，停顿清楚，不额外渲染悬疑。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "侦探",
+    "text": "要重建胸针路径，还需要谢幕底片、归还副联、开柜记录和最终去向。",
+    "voice": "Moon",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "2552b36e-471a-95db-89df-6a9288e33a39",
+  "schema_version": 1,
+  "usage": {
+    "characters": 58
+  }
+}

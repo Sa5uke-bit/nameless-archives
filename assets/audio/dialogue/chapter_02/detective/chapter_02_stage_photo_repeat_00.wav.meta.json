@@ -1,0 +1,22 @@
+{
+  "fingerprint": "cc08aebfb9c61d347d923ad0b1cae1fe49c96e9c5e193de363c774835ec10fb5",
+  "job": {
+    "id": "chapter_02_stage.photo_repeat.000",
+    "instructions": "三十多岁的职业侦探，低中音，沉稳清晰，带分析感。现实主义表演，不故作深沉，不使用播音腔。当前是复查、回忆或含混段落，音量稍低、语速略慢，保留自然余韵。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "侦探",
+    "text": "先把‘看见角色’和‘认出演员’分开。旧案没有这样做。",
+    "voice": "Moon",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "2a4d7cb3-e14f-9639-9446-fe697344c3a9",
+  "schema_version": 1,
+  "usage": {
+    "characters": 46
+  }
+}

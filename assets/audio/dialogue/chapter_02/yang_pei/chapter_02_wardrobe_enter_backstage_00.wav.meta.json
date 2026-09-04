@@ -1,0 +1,22 @@
+{
+  "fingerprint": "ff54b2408fbaec3e9cc1ef756efd9d817628d3506b25233dbd78fb5dbb0b24a7",
+  "job": {
+    "id": "chapter_02_wardrobe.enter_backstage.000",
+    "instructions": "三十三岁女性，曾是舞台替补演员，嗓音清亮而控制严密。保留舞台训练形成的清楚咬字，收住俏皮感和少女感。按日常基线自然陈述，停顿清楚，不额外渲染悬疑。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "杨佩",
+    "text": "你想听书瑜的声音，就去音控间。别把工作带标签当成时间。",
+    "voice": "Vivian",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "3f8cfd2f-cfc5-9093-8a03-d8985adf2bed",
+  "schema_version": 1,
+  "usage": {
+    "characters": 51
+  }
+}

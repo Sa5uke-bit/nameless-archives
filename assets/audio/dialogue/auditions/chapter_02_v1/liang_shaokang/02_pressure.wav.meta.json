@@ -1,0 +1,22 @@
+{
+  "fingerprint": "f3f75ee2a9b47fffc9b46208f9398753e2c282f83556606d2d9e41b337ee8784",
+  "job": {
+    "id": "chapter_02_audition.liang_shaokang.pressure",
+    "instructions": "五十七岁中国男性管理者，低中音，清楚、缓慢、习惯支配谈话。权威受到挑战后仍不提高音量，用轻蔑和停顿施压，避免脸谱化奸笑。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "梁绍康",
+    "text": "你把几张旧纸排成故事，就以为能替九年前的人作证？",
+    "voice": "Eldric Sage",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "0846256a-aeba-960f-b863-9a8693411219",
+  "schema_version": 1,
+  "usage": {
+    "characters": 46
+  }
+}

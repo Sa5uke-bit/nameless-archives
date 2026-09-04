@@ -1,0 +1,22 @@
+{
+  "fingerprint": "fc64dcab6788e598deb2cdabde30821ad9f49ff6e5f9535fc2c065ce973a3edd",
+  "job": {
+    "id": "chapter_02_audition.xu_zheng.neutral",
+    "instructions": "二十八岁中国男性音响师，中音偏轻，聪明、直接，有一点紧张。说明设备事实，语速适中，不阳光活泼，不使用播音腔。A 带和 B 带分别读作 A 带、B 带。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "徐峥",
+    "text": "旧案听的是 A 带。九年后，我在柜体后面找到了排练用的 B 带。",
+    "voice": "Ethan",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "894c04d1-4b04-9bab-9b71-4d957a4f9d40",
+  "schema_version": 1,
+  "usage": {
+    "characters": 55
+  }
+}

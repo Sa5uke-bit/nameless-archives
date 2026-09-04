@@ -1,0 +1,22 @@
+{
+  "fingerprint": "8ce8e85b923472a1d93979ab0a9d3878f410f52b2b057a9fe2dead3a68e0ad75",
+  "job": {
+    "id": "chapter_02_backstage.liang_first.000",
+    "instructions": "五十七岁男性管理者，低中音，清楚缓慢，习惯支配谈话。声音不高，不慈祥，不说书，不做脸谱化反派表演。按日常基线自然陈述，停顿清楚，不额外渲染悬疑。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "梁绍康",
+    "text": "一名演员拿着珠宝失踪，服装助理又帮她换衣。事情并没有你们写得那么复杂。",
+    "voice": "Eldric Sage",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "53545af4-9db3-935c-919e-7112d56ddef0",
+  "schema_version": 1,
+  "usage": {
+    "characters": 67
+  }
+}

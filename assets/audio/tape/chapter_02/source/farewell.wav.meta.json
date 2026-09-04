@@ -1,0 +1,22 @@
+{
+  "fingerprint": "d84bd996cf29f1f4059cd2cf42760b0b773c4ce499c04522a5fd27edaf4b557d",
+  "job": {
+    "id": "chapter_02_tape.cheng_shuyu.farewell",
+    "instructions": "二十多岁中国女性，舞台演员。像在空剧场里试录一句台词，声音克制、清楚、略有距离感，不哭泣，不耳语，不要恐怖片腔调。只读给出的三个字。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "程书瑜（旧录音）",
+    "text": "别找我。",
+    "voice": "Maia",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "a08a3e0e-0d30-9cec-8e47-d4d5e81ee5a3",
+  "schema_version": 1,
+  "usage": {
+    "characters": 7
+  }
+}

@@ -1,0 +1,2 @@
+{"id":"chapter_02_tape.cheng_shuyu.farewell","speaker":"程书瑜（旧录音）","text":"别找我。","out":"farewell.wav","model":"qwen3-tts-instruct-flash","voice":"Maia","language_type":"Chinese","instructions":"二十多岁中国女性，舞台演员。像在空剧场里试录一句台词，声音克制、清楚、略有距离感，不哭泣，不耳语，不要恐怖片腔调。只读给出的三个字。","optimize_instructions":true}
+{"id":"chapter_02_tape.stagehand.rain_machine","speaker":"旧录音中的场务","text":"雨声器还没试。","out":"rain_machine.wav","model":"qwen3-tts-instruct-flash","voice":"Ethan","language_type":"Chinese","instructions":"二十多岁中国男性场务，离麦克风稍远，随口提醒同事，语速自然，不要播音腔，不夸张。只读给出的句子。","optimize_instructions":true}

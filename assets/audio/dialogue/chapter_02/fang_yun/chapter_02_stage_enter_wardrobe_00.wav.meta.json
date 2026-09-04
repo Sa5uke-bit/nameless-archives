@@ -1,0 +1,22 @@
+{
+  "fingerprint": "90ece968fb65a98fe774103b24b4322553e3e230990c80d1edb0cfeaa83d3ae8",
+  "job": {
+    "id": "chapter_02_stage.enter_wardrobe.000",
+    "instructions": "三十六岁女性，声音温和但有清楚边界，长期疲惫而谨慎。现实主义表演，不柔弱，不故作神秘。按日常基线自然陈述，停顿清楚，不额外渲染悬疑。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "方芸",
+    "text": "右边是服装库。两套衣服和两双鞋都还在，别只看标签。",
+    "voice": "Serena",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "bd3ef4b4-a089-9857-89ab-d76a81d946c2",
+  "schema_version": 1,
+  "usage": {
+    "characters": 47
+  }
+}

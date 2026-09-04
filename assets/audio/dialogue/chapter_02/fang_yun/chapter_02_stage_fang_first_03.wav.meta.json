@@ -1,0 +1,22 @@
+{
+  "fingerprint": "f0ef0deae86020e472f19d34dbe2d3c7e723bcee9e935c2a1404c4a34951b459",
+  "job": {
+    "id": "chapter_02_stage.fang_first.003",
+    "instructions": "三十六岁女性，声音温和但有清楚边界，长期疲惫而谨慎。现实主义表演，不柔弱，不故作神秘。按日常基线自然陈述，停顿清楚，不额外渲染悬疑。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "方芸",
+    "text": "我以为只替一个戴面具的谢幕。没人告诉我，书瑜不会回来。",
+    "voice": "Serena",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "baea4e61-aa81-9689-9e73-5c3fe4c5dd0e",
+  "schema_version": 1,
+  "usage": {
+    "characters": 51
+  }
+}

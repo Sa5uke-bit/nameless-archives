@@ -1,0 +1,22 @@
+{
+  "fingerprint": "51a5218d5aae76f04cc7ce90a0d678b9a8e4d9be41fe498e2493d1e4918fb9b0",
+  "job": {
+    "id": "chapter_02_backstage.liang_after_d22.000",
+    "instructions": "五十七岁男性管理者，低中音，清楚缓慢，习惯支配谈话。声音不高，不慈祥，不说书，不做脸谱化反派表演。按日常基线自然陈述，停顿清楚，不额外渲染悬疑。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "梁绍康",
+    "text": "工作带整理过又怎样？程书瑜自愿走，方芸碰过衣服，胸针也确实不见了。",
+    "voice": "Eldric Sage",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "ccf77f9b-68bd-9b14-bbd0-f069ba657f3c",
+  "schema_version": 1,
+  "usage": {
+    "characters": 62
+  }
+}

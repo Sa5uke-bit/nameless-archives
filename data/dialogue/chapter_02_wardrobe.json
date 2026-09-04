@@ -1,39 +1,114 @@
 {
   "conversations": {
     "wardrobe_intro": [
-      {"speaker": "旁白", "text": "两套灰白长裙并排挂在暗处。九年的灰尘没有盖住被重新扣过的暗扣。"},
-      {"speaker": "侦探", "text": "如果替位发生过，衣服必须先适合另一个人的身体。"}
+      {
+        "speaker": "旁白",
+        "text": "两套灰白长裙并排挂在暗处。九年的灰尘没有盖住被重新扣过的暗扣。",
+        "voice": "res://assets/audio/dialogue/chapter_02/narrator/chapter_02_wardrobe_wardrobe_intro_00.wav",
+        "voice_bus": "Voice"
+      },
+      {
+        "speaker": "侦探",
+        "text": "如果替位发生过，衣服必须先适合另一个人的身体。",
+        "voice": "res://assets/audio/dialogue/chapter_02/detective/chapter_02_wardrobe_wardrobe_intro_01.wav",
+        "voice_bus": "Voice"
+      }
     ],
     "costume_first": [
-      {"speaker": "侦探", "text": "C-01 停在短档。备用的 C-02 被放长五厘米，腰封也调到更宽的位置。"},
-      {"speaker": "侦探", "text": "演出前一周的库存照里，两件都在短档。调整发生在那之后。"}
+      {
+        "speaker": "侦探",
+        "text": "C-01 停在短档。备用的 C-02 被放长五厘米，腰封也调到更宽的位置。",
+        "voice": "res://assets/audio/dialogue/chapter_02/detective/chapter_02_wardrobe_costume_first_00.wav",
+        "voice_bus": "Voice"
+      },
+      {
+        "speaker": "侦探",
+        "text": "演出前一周的库存照里，两件都在短档。调整发生在那之后。",
+        "voice": "res://assets/audio/dialogue/chapter_02/detective/chapter_02_wardrobe_costume_first_01.wav",
+        "voice_bus": "Voice"
+      }
     ],
     "costume_repeat": [
-      {"speaker": "侦探", "text": "C-02 的尺寸更接近身高一米六八的杨佩，不是程书瑜。"}
+      {
+        "speaker": "侦探",
+        "text": "C-02 的尺寸更接近身高一米六八的杨佩，不是程书瑜。",
+        "voice": "res://assets/audio/dialogue/chapter_02/detective/chapter_02_wardrobe_costume_repeat_00.wav",
+        "voice_bus": "Voice"
+      }
     ],
     "shoes_first": [
-      {"speaker": "侦探", "text": "程书瑜的圆扣鞋是三十六码，鞋尖留着终场蓝色颜料。它在化妆间。"},
-      {"speaker": "侦探", "text": "谢幕照片露出的却是方扣鞋，暗色补铆钉的位置与杨佩这双三十八码鞋完全一致。"}
+      {
+        "speaker": "侦探",
+        "text": "程书瑜的圆扣鞋是三十六码，鞋尖留着终场蓝色颜料。它在化妆间。",
+        "voice": "res://assets/audio/dialogue/chapter_02/detective/chapter_02_wardrobe_shoes_first_00.wav",
+        "voice_bus": "Voice"
+      },
+      {
+        "speaker": "侦探",
+        "text": "谢幕照片露出的却是方扣鞋，暗色补铆钉的位置与杨佩这双三十八码鞋完全一致。",
+        "voice": "res://assets/audio/dialogue/chapter_02/detective/chapter_02_wardrobe_shoes_first_01.wav",
+        "voice_bus": "Voice"
+      }
     ],
     "shoes_repeat": [
-      {"speaker": "侦探", "text": "照片没有脸，却拍到了只有杨佩那双鞋才有的补铆钉。"}
+      {
+        "speaker": "侦探",
+        "text": "照片没有脸，却拍到了只有杨佩那双鞋才有的补铆钉。",
+        "voice": "res://assets/audio/dialogue/chapter_02/detective/chapter_02_wardrobe_shoes_repeat_00.wav",
+        "voice_bus": "Voice"
+      }
     ],
     "deduction_d21_not_ready": [
-      {"speaker": "侦探", "text": "还缺少能把照片、方芸的证词、备用衣尺寸和鞋扣联系起来的事实。"}
+      {
+        "speaker": "侦探",
+        "text": "还缺少能把照片、方芸的证词、备用衣尺寸和鞋扣联系起来的事实。",
+        "voice": "res://assets/audio/dialogue/chapter_02/detective/chapter_02_wardrobe_deduction_d21_not_ready_00.wav",
+        "voice_bus": "Voice"
+      }
     ],
     "deduction_d21_success": [
-      {"speaker": "侦探", "text": "观众看见的是女主角造型，不是程书瑜的脸。C-02 被调到杨佩的尺寸，照片里也是她的方扣鞋。"},
-      {"speaker": "旁白", "text": "第一项推理完成：面具后的谢幕者。"},
-      {"speaker": "杨佩", "text": "是我。书瑜只说让我替她挡过那一晚。我以为第二天她会自己解释。"}
+      {
+        "speaker": "侦探",
+        "text": "观众看见的是女主角造型，不是程书瑜的脸。C-02 被调到杨佩的尺寸，照片里也是她的方扣鞋。",
+        "voice": "res://assets/audio/dialogue/chapter_02/detective/chapter_02_wardrobe_deduction_d21_success_00.wav",
+        "voice_bus": "Voice"
+      },
+      {
+        "speaker": "旁白",
+        "text": "第一项推理完成：面具后的谢幕者。",
+        "voice": "res://assets/audio/dialogue/chapter_02/narrator/chapter_02_wardrobe_deduction_d21_success_01.wav",
+        "voice_bus": "Voice"
+      },
+      {
+        "speaker": "杨佩",
+        "text": "是我。书瑜只说让我替她挡过那一晚。我以为第二天她会自己解释。",
+        "voice": "res://assets/audio/dialogue/chapter_02/yang_pei/chapter_02_wardrobe_deduction_d21_success_02.wav",
+        "voice_bus": "Voice"
+      }
     ],
     "return_stage": [
-      {"speaker": "侦探", "text": "先回舞台。照片和证词还可以复查。"}
+      {
+        "speaker": "侦探",
+        "text": "先回舞台。照片和证词还可以复查。",
+        "voice": "res://assets/audio/dialogue/chapter_02/detective/chapter_02_wardrobe_return_stage_00.wav",
+        "voice_bus": "Voice"
+      }
     ],
     "backstage_locked": [
-      {"speaker": "侦探", "text": "仅凭两件旧衣服还不能指认替位者。先在工作桌提交完整推理。"}
+      {
+        "speaker": "侦探",
+        "text": "仅凭两件旧衣服还不能指认替位者。先在工作桌提交完整推理。",
+        "voice": "res://assets/audio/dialogue/chapter_02/detective/chapter_02_wardrobe_backstage_locked_00.wav",
+        "voice_bus": "Voice"
+      }
     ],
     "enter_backstage": [
-      {"speaker": "杨佩", "text": "你想听书瑜的声音，就去音控间。别把工作带标签当成时间。"}
+      {
+        "speaker": "杨佩",
+        "text": "你想听书瑜的声音，就去音控间。别把工作带标签当成时间。",
+        "voice": "res://assets/audio/dialogue/chapter_02/yang_pei/chapter_02_wardrobe_enter_backstage_00.wav",
+        "voice_bus": "Voice"
+      }
     ]
   }
 }

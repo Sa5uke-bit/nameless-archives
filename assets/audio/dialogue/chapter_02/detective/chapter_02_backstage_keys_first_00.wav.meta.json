@@ -1,0 +1,22 @@
+{
+  "fingerprint": "4a3bd54b66904202a4b38ec076b03a37dad718b2f2a6ed7fa4731daaf05d5aa5",
+  "job": {
+    "id": "chapter_02_backstage.keys_first.000",
+    "instructions": "三十多岁的职业侦探，低中音，沉稳清晰，带分析感。现实主义表演，不故作深沉，不使用播音腔。按日常基线自然陈述，停顿清楚，不额外渲染悬疑。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "侦探",
+    "text": "方芸二十一点四十分交回工作钥匙。二十二点零五分，梁绍康独自领走经理钥匙十三分钟。",
+    "voice": "Moon",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "38064746-8c01-9a13-b20e-522554bf209e",
+  "schema_version": 1,
+  "usage": {
+    "characters": 77
+  }
+}

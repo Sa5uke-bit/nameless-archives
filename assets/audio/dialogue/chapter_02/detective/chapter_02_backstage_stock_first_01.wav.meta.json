@@ -1,0 +1,22 @@
+{
+  "fingerprint": "5b3db862b4f531328fe69fea38c685c66fa08cdac73565a3850d60841ac4ac47",
+  "job": {
+    "id": "chapter_02_backstage.stock_first.001",
+    "instructions": "三十多岁的职业侦探，低中音，沉稳清晰，带分析感。现实主义表演，不故作深沉，不使用播音腔。按日常基线自然陈述，停顿清楚，不额外渲染悬疑。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "侦探",
+    "text": "一盒第二天才出库的磁带，不可能是前一晚的原带。",
+    "voice": "Moon",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "4cd1412c-d232-99a3-8d8a-c85567246b78",
+  "schema_version": 1,
+  "usage": {
+    "characters": 44
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "fingerprint": "5755ef020fa67ec99756b3bb677d6b2b30cded0f82462a57118f2219faf88686",
+  "job": {
+    "id": "chapter_02_backstage.finale_locked.000",
+    "instructions": "三十多岁的职业侦探，低中音，沉稳清晰，带分析感。现实主义表演，不故作深沉，不使用播音腔。当前处于对质、承认或推理推进段落，增加紧张与确定感，但不要喊叫或煽情。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "侦探",
+    "text": "还不能只凭怀疑面对梁绍康。先完成录音来源和胸针路径两项推理。",
+    "voice": "Moon",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "ed6448b9-315b-91ed-ab8e-5edf9a8e2450",
+  "schema_version": 1,
+  "usage": {
+    "characters": 58
+  }
+}

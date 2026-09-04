@@ -1,0 +1,22 @@
+{
+  "fingerprint": "6ac111c4bd370b0706673bb3012f483772a958cc23da4d66b53dfa1bc764b20f",
+  "job": {
+    "id": "chapter_02_backstage.xu_pawn_repeat.000",
+    "instructions": "二十八岁男性音响师，中音偏轻，聪明直接，有一点紧张。说话具体，不阳光活泼，不使用播音腔。当前是复查、回忆或含混段落，音量稍低、语速略慢，保留自然余韵。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "徐峥",
+    "text": "存根日期是失踪案三天后。旧卷宗里没有梁经理所谓的追回记录。",
+    "voice": "Ethan",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "9a3cd988-4101-902a-9c4b-52fea3bba5e9",
+  "schema_version": 1,
+  "usage": {
+    "characters": 56
+  }
+}

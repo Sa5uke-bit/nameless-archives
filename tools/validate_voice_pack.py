@@ -1,8 +1,9 @@
 #!/usr/bin/env python3
-"""Validate chapter-one generated voice files against dialogue data and metadata."""
+"""Validate generated voice files against chapter dialogue data and metadata."""
 
 from __future__ import annotations
 
+import argparse
 import json
 import wave
 from pathlib import Path
@@ -10,16 +11,27 @@ from typing import Any
 
 
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
-MANIFEST_PATH = PROJECT_ROOT / "data/voice/chapter_01_full.jsonl"
-AUDIO_ROOT = PROJECT_ROOT / "assets/audio/dialogue/chapter_01"
 DIALOGUE_DIR = PROJECT_ROOT / "data/dialogue"
-RESOURCE_PREFIX = "res://assets/audio/dialogue/chapter_01/"
+CHAPTER_CONFIGS = {
+    "1": {
+        "manifest_path": PROJECT_ROOT / "data/voice/chapter_01_full.jsonl",
+        "audio_root": PROJECT_ROOT / "assets/audio/dialogue/chapter_01",
+        "dialogue_glob": "chapter_01_*.json",
+        "resource_prefix": "res://assets/audio/dialogue/chapter_01/",
+    },
+    "2": {
+        "manifest_path": PROJECT_ROOT / "data/voice/chapter_02_full.jsonl",
+        "audio_root": PROJECT_ROOT / "assets/audio/dialogue/chapter_02",
+        "dialogue_glob": "chapter_02_*.json",
+        "resource_prefix": "res://assets/audio/dialogue/chapter_02/",
+    },
+}
 
 
-def _load_manifest() -> list[dict[str, Any]]:
+def _load_manifest(manifest_path: Path) -> list[dict[str, Any]]:
     jobs: list[dict[str, Any]] = []
     for line_number, line in enumerate(
-        MANIFEST_PATH.read_text(encoding="utf-8-sig").splitlines(), start=1
+        manifest_path.read_text(encoding="utf-8-sig").splitlines(), start=1
     ):
         if not line.strip():
             continue
@@ -30,22 +42,30 @@ def _load_manifest() -> list[dict[str, Any]]:
     return jobs
 
 
-def _dialogue_voice_paths() -> set[str]:
+def _dialogue_voice_paths(dialogue_glob: str, resource_prefix: str) -> set[str]:
     paths: set[str] = set()
-    for dialogue_path in sorted(DIALOGUE_DIR.glob("chapter_01_*.json")):
+    for dialogue_path in sorted(DIALOGUE_DIR.glob(dialogue_glob)):
         data = json.loads(dialogue_path.read_text(encoding="utf-8"))
         for lines in data["conversations"].values():
             for line in lines:
                 voice = str(line.get("voice", ""))
                 if voice:
-                    if not voice.startswith(RESOURCE_PREFIX):
+                    if not voice.startswith(resource_prefix):
                         raise ValueError(f"Unexpected voice resource path: {voice}")
-                    paths.add(voice.removeprefix(RESOURCE_PREFIX))
+                    paths.add(voice.removeprefix(resource_prefix))
     return paths
 
 
 def main() -> int:
-    jobs = _load_manifest()
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument("--chapter", choices=sorted(CHAPTER_CONFIGS), default="1")
+    args = parser.parse_args()
+    config = CHAPTER_CONFIGS[args.chapter]
+    manifest_path: Path = config["manifest_path"]
+    audio_root: Path = config["audio_root"]
+    dialogue_glob: str = config["dialogue_glob"]
+    resource_prefix: str = config["resource_prefix"]
+    jobs = _load_manifest(manifest_path)
     errors: list[str] = []
     expected_outputs: set[str] = set()
     request_ids: set[str] = set()
@@ -64,7 +84,7 @@ def main() -> int:
         voices.add(str(job.get("voice", "")))
         speakers.add(str(job.get("speaker", "")))
 
-        audio_path = AUDIO_ROOT / output
+        audio_path = audio_root / output
         meta_path = audio_path.with_name(audio_path.name + ".meta.json")
         if not audio_path.is_file():
             errors.append(f"missing audio: {output}")
@@ -108,7 +128,7 @@ def main() -> int:
         request_ids.add(request_id)
 
     actual_wavs = {
-        path.relative_to(AUDIO_ROOT).as_posix() for path in AUDIO_ROOT.rglob("*.wav")
+        path.relative_to(audio_root).as_posix() for path in audio_root.rglob("*.wav")
     }
     if actual_wavs != expected_outputs:
         for extra in sorted(actual_wavs - expected_outputs):
@@ -116,7 +136,7 @@ def main() -> int:
         for missing in sorted(expected_outputs - actual_wavs):
             errors.append(f"manifest output absent: {missing}")
 
-    dialogue_paths = _dialogue_voice_paths()
+    dialogue_paths = _dialogue_voice_paths(dialogue_glob, resource_prefix)
     if dialogue_paths != expected_outputs:
         for extra in sorted(dialogue_paths - expected_outputs):
             errors.append(f"dialogue references unlisted audio: {extra}")

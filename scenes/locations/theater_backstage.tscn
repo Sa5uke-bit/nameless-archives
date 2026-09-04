@@ -1,4 +1,4 @@
-[gd_scene load_steps=12 format=3]
+[gd_scene load_steps=15 format=3]
 
 [ext_resource type="Script" path="res://scripts/locations/theater_backstage.gd" id="1_script"]
 [ext_resource type="Script" path="res://scripts/locations/theater_art.gd" id="2_art"]
@@ -6,6 +6,9 @@
 [ext_resource type="PackedScene" path="res://scenes/ui/hud.tscn" id="4_hud"]
 [ext_resource type="Script" path="res://scripts/interaction/interactable.gd" id="5_interactable"]
 [ext_resource type="PackedScene" path="res://scenes/ui/tape_comparison.tscn" id="6_tape"]
+[ext_resource type="Texture2D" path="res://assets/art/backgrounds/theater_backstage_v1.png" id="7_background"]
+[ext_resource type="Texture2D" path="res://assets/art/characters/xu_zheng_v1.png" id="8_xu"]
+[ext_resource type="Texture2D" path="res://assets/art/characters/liang_shaokang_v1.png" id="9_liang"]
 
 [sub_resource type="RectangleShape2D" id="FloorShape"]
 size = Vector2(1280, 100)
@@ -25,7 +28,14 @@ size = Vector2(72, 330)
 [node name="TheaterBackstage" type="Node2D"]
 script = ExtResource("1_script")
 
+[node name="Background" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(640, 360)
+scale = Vector2(0.76555, 0.76514)
+texture = ExtResource("7_background")
+
 [node name="Art" type="Node2D" parent="."]
+visible = false
 script = ExtResource("2_art")
 area = "backstage"
 
@@ -134,6 +144,12 @@ display_name = "询问徐峥"
 position = Vector2(0, -65)
 shape = SubResource("PersonShape")
 
+[node name="CharacterSprite" type="Sprite2D" parent="XuZheng"]
+texture_filter = 1
+position = Vector2(0, -65)
+scale = Vector2(0.205, 0.205)
+texture = ExtResource("8_xu")
+
 [node name="Liang" type="Area2D" parent="."]
 position = Vector2(995, 535)
 collision_layer = 2
@@ -144,6 +160,12 @@ display_name = "询问梁绍康"
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Liang"]
 position = Vector2(0, -65)
 shape = SubResource("PersonShape")
+
+[node name="CharacterSprite" type="Sprite2D" parent="Liang"]
+texture_filter = 1
+position = Vector2(0, -65)
+scale = Vector2(-0.205, 0.205)
+texture = ExtResource("9_liang")
 
 [node name="DeductionBoard" type="Area2D" parent="."]
 position = Vector2(1110, 520)
@@ -167,19 +189,23 @@ shape = SubResource("DoorShape")
 
 [node name="XuLabel" type="Label" parent="."]
 offset_left = 835.0
-offset_top = 330.0
+offset_top = 265.0
 offset_right = 915.0
-offset_bottom = 360.0
+offset_bottom = 295.0
 theme_override_colors/font_color = Color(0.67, 0.7, 0.69, 1)
+theme_override_colors/font_outline_color = Color(0.03, 0.04, 0.05, 0.95)
+theme_override_constants/outline_size = 4
 text = "徐峥"
 horizontal_alignment = 1
 
 [node name="LiangLabel" type="Label" parent="."]
 offset_left = 945.0
-offset_top = 330.0
+offset_top = 265.0
 offset_right = 1045.0
-offset_bottom = 360.0
+offset_bottom = 295.0
 theme_override_colors/font_color = Color(0.67, 0.7, 0.69, 1)
+theme_override_colors/font_outline_color = Color(0.03, 0.04, 0.05, 0.95)
+theme_override_constants/outline_size = 4
 text = "梁绍康"
 horizontal_alignment = 1
 

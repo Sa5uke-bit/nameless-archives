@@ -1,0 +1,22 @@
+{
+  "fingerprint": "753be311ff62a16a15588ed98674cc2b60a8cfb56a6260a1c3c209132c754178",
+  "job": {
+    "id": "chapter_02_stage.yang_repeat.000",
+    "instructions": "三十三岁女性，曾是舞台替补演员，嗓音清亮而控制严密。保留舞台训练形成的清楚咬字，收住俏皮感和少女感。当前是复查、回忆或含混段落，音量稍低、语速略慢，保留自然余韵。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "杨佩",
+    "text": "那晚的谢幕没有人摘下面具。旧报道却把‘女主角’直接写成了‘程书瑜’。",
+    "voice": "Vivian",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "6bdfd08d-66b3-9585-abb3-8c4d1c13b1a1",
+  "schema_version": 1,
+  "usage": {
+    "characters": 62
+  }
+}

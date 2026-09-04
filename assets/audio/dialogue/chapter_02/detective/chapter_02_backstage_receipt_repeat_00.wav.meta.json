@@ -1,0 +1,22 @@
+{
+  "fingerprint": "5ae7a785cf453fb563b6aab65f54d370ed80abcfffea41ac3fb8627ef88c0291",
+  "job": {
+    "id": "chapter_02_backstage.receipt_repeat.000",
+    "instructions": "三十多岁的职业侦探，低中音，沉稳清晰，带分析感。现实主义表演，不故作深沉，不使用播音腔。当前是复查、回忆或含混段落，音量稍低、语速略慢，保留自然余韵。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "侦探",
+    "text": "副联可以被质疑，但编号、装订齿和物品特征不能一起忽略。",
+    "voice": "Moon",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "e4c8f335-0546-9bac-8c6d-a82fa64fa29e",
+  "schema_version": 1,
+  "usage": {
+    "characters": 51
+  }
+}

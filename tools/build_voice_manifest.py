@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Build the chapter-one Bailian manifest and attach voice paths to dialogue JSON."""
+"""Build a Bailian voice manifest and attach voice paths to chapter dialogue JSON."""
 
 from __future__ import annotations
 
@@ -11,17 +11,15 @@ from typing import Any
 
 
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
-DIALOGUE_FILES = (
+CHAPTER_01_DIALOGUE_FILES = (
     PROJECT_ROOT / "data/dialogue/chapter_01_prologue.json",
     PROJECT_ROOT / "data/dialogue/chapter_01_room_307.json",
     PROJECT_ROOT / "data/dialogue/chapter_01_laundry.json",
     PROJECT_ROOT / "data/dialogue/chapter_01_finale.json",
 )
-MANIFEST_PATH = PROJECT_ROOT / "data/voice/chapter_01_full.jsonl"
-VOICE_ROOT = "res://assets/audio/dialogue/chapter_01"
 MODEL = "qwen3-tts-instruct-flash"
 
-CAST: dict[str, dict[str, str]] = {
+CAST_CHAPTER_01: dict[str, dict[str, str]] = {
     "侦探": {
         "slug": "detective",
         "voice": "Moon",
@@ -56,6 +54,46 @@ CAST: dict[str, dict[str, str]] = {
         "slug": "mystery",
         "voice": "Elias",
         "base": "使用顾宁同一声音身份，低声、急促、像一句被旧金属传声管截断的话。来源遥远但仍是现实人声，不表现成鬼魂。",
+    },
+}
+
+CAST_CHAPTER_02: dict[str, dict[str, str]] = {
+    "侦探": CAST_CHAPTER_01["侦探"],
+    "旁白": CAST_CHAPTER_01["旁白"],
+    "方芸": {
+        "slug": "fang_yun",
+        "voice": "Serena",
+        "base": "三十六岁女性，声音温和但有清楚边界，长期疲惫而谨慎。现实主义表演，不柔弱，不故作神秘。",
+    },
+    "杨佩": {
+        "slug": "yang_pei",
+        "voice": "Vivian",
+        "base": "三十三岁女性，曾是舞台替补演员，嗓音清亮而控制严密。保留舞台训练形成的清楚咬字，收住俏皮感和少女感。",
+    },
+    "徐峥": {
+        "slug": "xu_zheng",
+        "voice": "Ethan",
+        "base": "二十八岁男性音响师，中音偏轻，聪明直接，有一点紧张。说话具体，不阳光活泼，不使用播音腔。",
+    },
+    "梁绍康": {
+        "slug": "liang_shaokang",
+        "voice": "Eldric Sage",
+        "base": "五十七岁男性管理者，低中音，清楚缓慢，习惯支配谈话。声音不高，不慈祥，不说书，不做脸谱化反派表演。",
+    },
+}
+
+CHAPTER_CONFIGS = {
+    "1": {
+        "dialogue_files": CHAPTER_01_DIALOGUE_FILES,
+        "manifest_path": PROJECT_ROOT / "data/voice/chapter_01_full.jsonl",
+        "voice_root": "res://assets/audio/dialogue/chapter_01",
+        "cast": CAST_CHAPTER_01,
+    },
+    "2": {
+        "dialogue_files": tuple(sorted((PROJECT_ROOT / "data/dialogue").glob("chapter_02_*.json"))),
+        "manifest_path": PROJECT_ROOT / "data/voice/chapter_02_full.jsonl",
+        "voice_root": "res://assets/audio/dialogue/chapter_02",
+        "cast": CAST_CHAPTER_02,
     },
 }
 
@@ -95,16 +133,24 @@ def _instructions(cast: dict[str, str], conversation_id: str, speaker: str, text
     parts = [cast["base"], _mood_direction(conversation_id, speaker)]
     if "307" in text:
         parts.append("数字307读作“三零七”。")
+    if "P-17" in text:
+        parts.append("P-17读作“P十七”。")
+    if "A 带" in text or "B 带" in text:
+        parts.append("A带和B带分别按英文字母A、B加中文“带”来读。")
     return "".join(parts)
 
 
-def _build() -> tuple[dict[Path, dict[str, Any]], list[dict[str, Any]]]:
+def _build(
+    dialogue_files: tuple[Path, ...],
+    voice_root: str,
+    cast_map: dict[str, dict[str, str]],
+) -> tuple[dict[Path, dict[str, Any]], list[dict[str, Any]]]:
     updated_files: dict[Path, dict[str, Any]] = {}
     jobs: list[dict[str, Any]] = []
     seen_ids: set[str] = set()
     seen_outputs: set[str] = set()
 
-    for dialogue_path in DIALOGUE_FILES:
+    for dialogue_path in dialogue_files:
         data = json.loads(dialogue_path.read_text(encoding="utf-8"))
         updated = copy.deepcopy(data)
         conversations = updated.get("conversations")
@@ -125,12 +171,12 @@ def _build() -> tuple[dict[Path, dict[str, Any]], list[dict[str, Any]]]:
                     raise ValueError(
                         f"Dialogue line has no text: {dialogue_path}:{conversation_id}:{line_index}"
                     )
-                if speaker not in CAST:
+                if speaker not in cast_map:
                     line.pop("voice", None)
                     line.pop("voice_bus", None)
                     continue
 
-                cast = CAST[speaker]
+                cast = cast_map[speaker]
                 job_id = f"{dialogue_path.stem}.{conversation_id}.{line_index:03d}"
                 output = (
                     f"{cast['slug']}/{dialogue_path.stem}_{conversation_id}_{line_index:02d}.wav"
@@ -142,7 +188,7 @@ def _build() -> tuple[dict[Path, dict[str, Any]], list[dict[str, Any]]]:
                 seen_ids.add(job_id)
                 seen_outputs.add(output)
 
-                line["voice"] = f"{VOICE_ROOT}/{output}"
+                line["voice"] = f"{voice_root}/{output}"
                 line["voice_bus"] = "VoiceDuct" if speaker == "？？？" else "Voice"
                 jobs.append(
                     {
@@ -165,14 +211,18 @@ def _manifest_text(jobs: list[dict[str, Any]]) -> str:
     return "".join(json.dumps(job, ensure_ascii=False, separators=(",", ":")) + "\n" for job in jobs)
 
 
-def _check(updated_files: dict[Path, dict[str, Any]], jobs: list[dict[str, Any]]) -> int:
+def _check(
+    updated_files: dict[Path, dict[str, Any]],
+    jobs: list[dict[str, Any]],
+    manifest_path: Path,
+) -> int:
     mismatches: list[str] = []
     for path, expected in updated_files.items():
         if path.read_text(encoding="utf-8") != _dumps(expected):
             mismatches.append(str(path.relative_to(PROJECT_ROOT)))
     expected_manifest = _manifest_text(jobs)
-    if not MANIFEST_PATH.is_file() or MANIFEST_PATH.read_text(encoding="utf-8") != expected_manifest:
-        mismatches.append(str(MANIFEST_PATH.relative_to(PROJECT_ROOT)))
+    if not manifest_path.is_file() or manifest_path.read_text(encoding="utf-8") != expected_manifest:
+        mismatches.append(str(manifest_path.relative_to(PROJECT_ROOT)))
     if mismatches:
         print("Voice data needs rebuilding:")
         for mismatch in mismatches:
@@ -185,15 +235,21 @@ def _check(updated_files: dict[Path, dict[str, Any]], jobs: list[dict[str, Any]]
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--check", action="store_true", help="Verify generated data without writing")
+    parser.add_argument("--chapter", choices=sorted(CHAPTER_CONFIGS), default="1")
     args = parser.parse_args()
-    updated_files, jobs = _build()
+    config = CHAPTER_CONFIGS[args.chapter]
+    dialogue_files = config["dialogue_files"]
+    manifest_path = config["manifest_path"]
+    voice_root = config["voice_root"]
+    cast_map = config["cast"]
+    updated_files, jobs = _build(dialogue_files, voice_root, cast_map)
     if args.check:
-        return _check(updated_files, jobs)
+        return _check(updated_files, jobs, manifest_path)
 
     for path, updated in updated_files.items():
         path.write_text(_dumps(updated), encoding="utf-8")
-    MANIFEST_PATH.parent.mkdir(parents=True, exist_ok=True)
-    MANIFEST_PATH.write_text(_manifest_text(jobs), encoding="utf-8")
+    manifest_path.parent.mkdir(parents=True, exist_ok=True)
+    manifest_path.write_text(_manifest_text(jobs), encoding="utf-8")
     speakers = sorted({job["speaker"] for job in jobs})
     print(
         json.dumps(
@@ -201,7 +257,7 @@ def main() -> int:
                 "jobs": len(jobs),
                 "characters": sum(len(job["text"]) for job in jobs),
                 "speakers": speakers,
-                "manifest": str(MANIFEST_PATH.relative_to(PROJECT_ROOT)),
+                "manifest": str(manifest_path.relative_to(PROJECT_ROOT)),
             },
             ensure_ascii=False,
             indent=2,

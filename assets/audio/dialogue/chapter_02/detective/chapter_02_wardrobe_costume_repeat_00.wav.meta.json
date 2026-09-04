@@ -1,0 +1,22 @@
+{
+  "fingerprint": "0a5faa3bb3a7c889a9bd68a67844c660f4015f4ad52170d2ffd65f25e22540ca",
+  "job": {
+    "id": "chapter_02_wardrobe.costume_repeat.000",
+    "instructions": "三十多岁的职业侦探，低中音，沉稳清晰，带分析感。现实主义表演，不故作深沉，不使用播音腔。当前是复查、回忆或含混段落，音量稍低、语速略慢，保留自然余韵。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "侦探",
+    "text": "C-02 的尺寸更接近身高一米六八的杨佩，不是程书瑜。",
+    "voice": "Moon",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "48280184-83e2-9d76-acbe-fefbaf5ca501",
+  "schema_version": 1,
+  "usage": {
+    "characters": 47
+  }
+}

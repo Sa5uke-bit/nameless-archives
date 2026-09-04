@@ -1,0 +1,22 @@
+{
+  "fingerprint": "81b97bacf600325078bec893dc89d6a21b4b56b8d75819618aa203ee43b40a1f",
+  "job": {
+    "id": "chapter_02_backstage.deduction_d23_success.001",
+    "instructions": "成熟男性叙述者，清楚客观，有轻微纪录片质感但不过分正式。保持克制，不使用恐怖预告腔。当前处于对质、承认或推理推进段落，增加紧张与确定感，但不要喊叫或煽情。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "旁白",
+    "text": "第三项推理完成：留在剧场的胸针。",
+    "voice": "Neil",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "195de254-adf1-9a28-8a6a-7e6464d92242",
+  "schema_version": 1,
+  "usage": {
+    "characters": 30
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "fingerprint": "a9f497be7613d270171d2403ad92cb2d7c0e6a4515657c6c8af01784d249d3e6",
+  "job": {
+    "id": "chapter_02_audition.yang_pei.neutral",
+    "instructions": "三十三岁中国女性，曾是舞台替补演员，嗓音清亮而控制严密。礼貌但防备，语速自然，收住俏皮感和少女感。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "杨佩",
+    "text": "服装库还保留两套衣服。看完再来问我。",
+    "voice": "Vivian",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "969380e6-16cf-9053-a5d1-cef7c681542d",
+  "schema_version": 1,
+  "usage": {
+    "characters": 34
+  }
+}

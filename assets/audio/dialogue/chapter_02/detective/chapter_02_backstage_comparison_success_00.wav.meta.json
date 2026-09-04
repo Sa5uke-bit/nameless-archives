@@ -1,0 +1,22 @@
+{
+  "fingerprint": "bd6df7e5e2e6c0fe3beccebef7eeee7fb51d5125e6b5ff5223aa81c9f892e4ed",
+  "job": {
+    "id": "chapter_02_backstage.comparison_success.000",
+    "instructions": "三十多岁的职业侦探，低中音，沉稳清晰，带分析感。现实主义表演，不故作深沉，不使用播音腔。当前处于对质、承认或推理推进段落，增加紧张与确定感，但不要喊叫或煽情。A带和B带分别按英文字母A、B加中文“带”来读。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "侦探",
+    "text": "‘别找我’、轻咳和双铃的间隔完全相同。B 带之后还连续录到雨声器测试和十八点零六的报时。",
+    "voice": "Moon",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "e2d88372-c864-91f6-a943-12da97ba4dd3",
+  "schema_version": 1,
+  "usage": {
+    "characters": 81
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "fingerprint": "5d1e44786282d9bfd9e9ab8b1aa75aaf5984224fa13565d831f3e004a31d5b09",
+  "job": {
+    "id": "chapter_02_backstage.stock_repeat.000",
+    "instructions": "三十多岁的职业侦探，低中音，沉稳清晰，带分析感。现实主义表演，不故作深沉，不使用播音腔。当前是复查、回忆或含混段落，音量稍低、语速略慢，保留自然余韵。",
+    "language_type": "Chinese",
+    "model": "qwen3-tts-instruct-flash",
+    "optimize_instructions": true,
+    "response_format": "wav",
+    "sample_rate": 24000,
+    "speaker": "侦探",
+    "text": "‘原带’写在盒子上，盘芯批号却把它留在了第二天。",
+    "voice": "Moon",
+    "volume": 50
+  },
+  "provider": "aliyun-bailian",
+  "request_id": "c25343d5-06db-9ca6-a908-e0552618575e",
+  "schema_version": 1,
+  "usage": {
+    "characters": 44
+  }
+}
