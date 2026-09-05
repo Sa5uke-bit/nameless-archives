@@ -2,6 +2,7 @@ class_name InvestigationHUD
 extends CanvasLayer
 
 const CONVERSATION_ACTOR := preload("res://scripts/characters/conversation_actor.gd")
+const SAVE_SLOTS := preload("res://scripts/ui/save_slots.gd")
 
 signal dialogue_finished(context: String)
 signal modal_changed(controls_enabled: bool)
@@ -81,6 +82,7 @@ func _ready() -> void:
 	guide_panel.hide()
 	toast_timer.timeout.connect(evidence_toast.hide)
 	_setup_settings_ui()
+	_setup_save_actions()
 	_setup_conversation_actors(get_parent())
 
 
@@ -338,12 +340,42 @@ func _close_notebook() -> void:
 
 
 func _open_pause() -> void:
+	_capture_player_position()
+	$PausePanel/Margin/VBox/SaveHint.text = "当前存档 %d · 自动保存只更新当前档位 · 可另存到其他档位保留分支" % GameState.active_slot
 	_refresh_settings_ui()
 	pause_backdrop.show()
 	pause_panel.show()
 	modal_changed.emit(false)
 	_update_prompt_visibility()
 	%ResumeButton.grab_focus()
+
+
+func _capture_player_position() -> void:
+	var player := get_parent().get_node_or_null("Player")
+	if player != null:
+		GameState.flags["player_x"] = player.position.x
+
+
+func _setup_save_actions() -> void:
+	var row := %ResumeButton.get_parent()
+	for mode in ["save", "load"]:
+		var button := Button.new()
+		button.text = "保存调查" if mode == "save" else "读取存档"
+		button.size_flags_horizontal = Control.SIZE_EXPAND_FILL
+		row.add_child(button)
+		row.move_child(button, 1)
+		button.pressed.connect(_open_save_slots.bind(mode))
+
+
+func _open_save_slots(mode: String) -> void:
+	_capture_player_position()
+	var picker := SAVE_SLOTS.new()
+	picker.slot_mode = mode
+	add_child(picker)
+	picker.closed.connect(%ResumeButton.grab_focus)
+	picker.saved.connect(func(slot: int):
+		$PausePanel/Margin/VBox/SaveHint.text = "已保存至存档 %d · 后续自动保存将更新这个档位" % slot)
+	picker.popup_centered()
 
 
 func _close_pause() -> void:
@@ -426,6 +458,10 @@ func _on_reset_bindings_pressed() -> void:
 
 
 func _on_return_title_button_pressed() -> void:
+	_capture_player_position()
+	if GameState.persistence_enabled and not GameState.save_case():
+		$PausePanel/Margin/VBox/SaveHint.text = "保存失败，尚未返回标题。请检查磁盘或尝试另一个档位。"
+		return
 	_cancel_pending_binding()
 	pause_backdrop.hide()
 	pause_panel.hide()

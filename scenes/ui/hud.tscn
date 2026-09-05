@@ -682,7 +682,7 @@ text = "保存并返回标题"
 [node name="SaveHint" type="Label" parent="PausePanel/Margin/VBox"]
 layout_mode = 2
 theme_override_colors/font_color = Color(0.55, 0.62, 0.64, 1)
-text = "设置立即生效并自动保存 · 调查进度会在获得线索与推进剧情时自动保存"
+text = "最多 3 个档位 · 剧情自动保存到当前档位 · 可另存到其他档位保留分支"
 horizontal_alignment = 1
 autowrap_mode = 2
 

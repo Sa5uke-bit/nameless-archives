@@ -31,6 +31,7 @@ func _ready() -> void:
 	GameState.location_requested.connect(_show_location)
 	GameState.ending_requested.connect(_show_ending)
 	GameState.title_requested.connect(_show_title_screen)
+	GameState.slot_load_requested.connect(_resume_loaded_case)
 	_show_title_screen()
 
 
@@ -116,7 +117,17 @@ func _start_chapter_five() -> void:
 
 func _continue_case() -> void:
 	if not GameState.load_case():
-		_start_new_case()
+		return
+	_resume_loaded_case()
+
+
+func _resume_loaded_case() -> void:
+	if GameState.get_flag("profile_only", false):
+		_show_title_screen()
+		return
+	var ending_id := str(GameState.get_flag("ending_id", ""))
+	if not ending_id.is_empty():
+		_show_ending(ending_id)
 		return
 	var location_id := str(GameState.get_flag("current_location", "lobby"))
 	_show_location(location_id)
@@ -131,6 +142,9 @@ func _show_location(location_id: String) -> void:
 	_clear_current_screen()
 	current_screen = location_scene.instantiate()
 	add_child(current_screen)
+	var player := current_screen.get_node_or_null("Player")
+	if player != null and GameState.flags.has("player_x"):
+		player.position.x = clampf(float(GameState.flags.player_x), 28.0, 1252.0)
 	AudioManager.set_location(location_id)
 
 

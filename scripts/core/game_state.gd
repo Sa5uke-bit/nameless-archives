@@ -5,10 +5,20 @@ signal case_reset
 signal location_requested(location_id: String)
 signal ending_requested(ending_id: String)
 signal title_requested
+signal slot_load_requested
 
-const DEFAULT_SAVE_PATH := "user://chapter_01_save.json"
+const DEFAULT_SAVE_PATH := "user://slot_1.json"
+const LEGACY_SAVE_PATH := "user://chapter_01_save.json"
 const DEFAULT_PROFILE_PATH := "user://progression.json"
-const SAVE_VERSION := 1
+const SAVE_VERSION := 2
+const SLOT_COUNT := 3
+const LOCATION_NAMES := {
+	"lobby": "归潮旅馆", "room_307": "307 房间", "laundry": "洗衣房", "finale": "旅馆终幕",
+	"theater_stage": "剧场舞台", "theater_wardrobe": "服装间", "theater_backstage": "后台", "theater_finale": "剧场终幕",
+	"bus_concourse": "车站大厅", "bus_ticket_office": "售票室", "bus_dispatch": "调度室", "bus_finale": "车站终幕",
+	"old_courtyard": "旧院", "archive_revision_room": "档案修订室", "news_negative_room": "底片室", "demolition_hearing": "复核终幕",
+	"final_archive_room": "归档室", "postal_agency": "邮政代办所", "shared_record_room": "记录后室", "shared_mailbox_finale": "共同信箱",
+}
 const PROFILE_VERSION := 1
 const CHAPTERS := ["chapter_01", "chapter_02", "chapter_03", "chapter_04", "chapter_05"]
 
@@ -28,17 +38,26 @@ var profile: Dictionary = {}
 var persistence_enabled := true
 var save_path := DEFAULT_SAVE_PATH
 var profile_path := DEFAULT_PROFILE_PATH
+var slot_directory := "user://"
+var active_slot := 1
 
 
 func _ready() -> void:
 	_ensure_input_actions()
-	load_profile()
+	migrate_legacy()
+	var newest := -1
+	for slot in range(1, SLOT_COUNT + 1):
+		var data := read_slot(slot)
+		if not data.is_empty() and int(data.get("saved_at", 0)) > newest:
+			newest = int(data.get("saved_at", 0))
+			active_slot = slot
+			profile = data.get("profile", {}).duplicate(true)
+	save_path = get_slot_path(active_slot)
 
 
 func reset_case() -> void:
 	evidence.clear()
 	flags.clear()
-	clear_save()
 	case_reset.emit()
 
 
@@ -80,6 +99,7 @@ func get_flag(flag_name: String, default_value: Variant = false) -> Variant:
 
 
 func request_location(location_id: String) -> void:
+	flags.erase("player_x")
 	set_flag("current_location", location_id)
 	location_requested.emit(location_id)
 
@@ -100,39 +120,130 @@ func has_save() -> bool:
 func save_case() -> bool:
 	if not persistence_enabled:
 		return false
-	var file := FileAccess.open(save_path, FileAccess.WRITE)
-	if file == null:
-		push_error("Unable to write save file: %s" % save_path)
-		return false
 	var save_data := {
 		"version": SAVE_VERSION,
 		"evidence": evidence,
 		"flags": flags,
+		"profile": profile,
+		"saved_at": int(Time.get_unix_time_from_system()),
 	}
-	file.store_string(JSON.stringify(save_data, "\t"))
-	return true
+	return _write_json(save_path, save_data)
 
 
 func load_case() -> bool:
 	if not has_save():
 		return false
-	var file := FileAccess.open(save_path, FileAccess.READ)
+	var parsed := _read_save(save_path)
+	if parsed.is_empty():
+		return false
+	evidence = parsed.evidence.duplicate(true)
+	flags = parsed.flags.duplicate(true)
+	profile = parsed.get("profile", {}).duplicate(true)
+	return true
+
+
+func get_slot_path(slot: int) -> String:
+	return slot_directory.path_join("slot_%d.json" % slot) if slot >= 1 and slot <= SLOT_COUNT else ""
+
+
+func read_slot(slot: int) -> Dictionary:
+	return _read_save(get_slot_path(slot)) if persistence_enabled else {}
+
+
+func load_slot(slot: int) -> bool:
+	var data := read_slot(slot)
+	if data.is_empty():
+		return false
+	evidence = data.evidence.duplicate(true)
+	flags = data.flags.duplicate(true)
+	profile = data.get("profile", {}).duplicate(true)
+	active_slot = slot
+	save_path = get_slot_path(slot)
+	return true
+
+
+func save_to_slot(slot: int) -> bool:
+	var target := get_slot_path(slot)
+	if target.is_empty() or not persistence_enabled:
+		return false
+	var previous := save_path
+	save_path = target
+	if not save_case():
+		save_path = previous
+		return false
+	active_slot = slot
+	return true
+
+
+func begin_slot(slot: int) -> bool:
+	# Create the complete initial checkpoint before replacing the active session.
+	var target := get_slot_path(slot)
+	if target.is_empty() or not persistence_enabled:
+		return false
+	var data := {"version": SAVE_VERSION, "evidence": {}, "profile": {},
+		"flags": {"current_chapter": "chapter_01", "current_location": "lobby"},
+		"saved_at": int(Time.get_unix_time_from_system())}
+	if not _write_json(target, data):
+		return false
+	return load_slot(slot)
+
+
+func _read_save(path: String) -> Dictionary:
+	if path.is_empty() or not FileAccess.file_exists(path):
+		return {}
+	var file := FileAccess.open(path, FileAccess.READ)
+	if file == null:
+		return {}
+	var parser := JSON.new()
+	if parser.parse(file.get_as_text()) != OK:
+		return {}
+	var data: Variant = parser.data
+	if data is not Dictionary or int(data.get("version", 0)) not in [1, SAVE_VERSION]:
+		return {}
+	if data.get("evidence") is not Dictionary or data.get("flags") is not Dictionary or data.get("profile", {}) is not Dictionary:
+		return {}
+	if not LOCATION_NAMES.has(str(data.flags.get("current_location", ""))):
+		return {}
+	return data
+
+
+func _write_json(path: String, data: Dictionary) -> bool:
+	var temporary := path + ".tmp"
+	var file := FileAccess.open(temporary, FileAccess.WRITE)
 	if file == null:
 		return false
-	var parsed: Variant = JSON.parse_string(file.get_as_text())
-	if typeof(parsed) != TYPE_DICTIONARY:
-		push_error("Save file is not a JSON object")
+	file.store_string(JSON.stringify(data, "\t"))
+	file.flush()
+	var error := file.get_error()
+	file.close()
+	if error != OK:
 		return false
-	if int(parsed.get("version", 0)) != SAVE_VERSION:
-		push_warning("Unsupported save version")
+	return DirAccess.rename_absolute(temporary, path) == OK
+
+
+func migrate_legacy(legacy_save: String = LEGACY_SAVE_PATH, legacy_profile: String = DEFAULT_PROFILE_PATH) -> bool:
+	# Preserve originals; never replace any of the three existing slot files.
+	if not persistence_enabled:
 		return false
-	var loaded_evidence: Variant = parsed.get("evidence", {})
-	var loaded_flags: Variant = parsed.get("flags", {})
-	if typeof(loaded_evidence) != TYPE_DICTIONARY or typeof(loaded_flags) != TYPE_DICTIONARY:
-		return false
-	evidence = loaded_evidence
-	flags = loaded_flags
-	return true
+	for slot in range(1, SLOT_COUNT + 1):
+		if FileAccess.file_exists(get_slot_path(slot)):
+			return false
+	var data := _read_save(legacy_save)
+	var old_profile: Dictionary = {}
+	if FileAccess.file_exists(legacy_profile):
+		var file := FileAccess.open(legacy_profile, FileAccess.READ)
+		if file != null:
+			var parsed: Variant = JSON.parse_string(file.get_as_text())
+			if parsed is Dictionary and parsed.get("profile") is Dictionary:
+				old_profile = parsed.profile
+	if data.is_empty():
+		if old_profile.is_empty():
+			return false
+		data = {"evidence": {}, "flags": {"current_location": "lobby", "current_chapter": "chapter_01", "profile_only": true}}
+	data["version"] = SAVE_VERSION
+	data["profile"] = old_profile
+	data["saved_at"] = int(Time.get_unix_time_from_system())
+	return _write_json(get_slot_path(1), data)
 
 
 func clear_save() -> void:
@@ -198,6 +309,8 @@ func load_profile() -> bool:
 func _save_profile() -> bool:
 	if not persistence_enabled:
 		return false
+	if profile_path == DEFAULT_PROFILE_PATH:
+		return save_case()
 	var file := FileAccess.open(profile_path, FileAccess.WRITE)
 	if file == null:
 		push_error("Unable to write progression profile: %s" % profile_path)

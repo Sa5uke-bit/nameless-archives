@@ -34,7 +34,7 @@ func _ready() -> void:
 	else:
 		_show_name_ending()
 	GameState.record_chapter_outcome(chapter_id, ending_id)
-	GameState.clear_save()
+	GameState.save_case()
 	return_button.text = "返回章节选择"
 	return_button.grab_focus()
 
