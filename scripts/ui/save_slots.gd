@@ -3,12 +3,15 @@ extends Window
 
 signal closed
 signal saved(slot: int)
+signal deleted(slot: int)
 
 var slot_mode := "load"
 var buttons: Array[Button] = []
+var delete_buttons: Array[Button] = []
 var status_label: Label
 var confirmation: ConfirmationDialog
 var pending_slot := 0
+var pending_delete := false
 
 
 func _ready() -> void:
@@ -37,12 +40,22 @@ func _ready() -> void:
 	hint.add_theme_font_size_override("font_size", 18)
 	box.add_child(hint)
 	for slot in range(1, GameState.SLOT_COUNT + 1):
+		var row := HBoxContainer.new()
+		row.add_theme_constant_override("separation", 12)
+		box.add_child(row)
 		var button := Button.new()
+		button.size_flags_horizontal = Control.SIZE_EXPAND_FILL
 		button.custom_minimum_size = Vector2(0, 98)
-		button.add_theme_font_size_override("font_size", 20)
+		button.add_theme_font_size_override("font_size", 18)
 		button.pressed.connect(_choose.bind(slot))
-		box.add_child(button)
+		row.add_child(button)
 		buttons.append(button)
+		var remove := Button.new()
+		remove.text = "删除"
+		remove.custom_minimum_size.x = 76
+		remove.pressed.connect(_choose_delete.bind(slot))
+		row.add_child(remove)
+		delete_buttons.append(remove)
 	status_label = Label.new()
 	status_label.autowrap_mode = TextServer.AUTOWRAP_WORD_SMART
 	status_label.add_theme_font_size_override("font_size", 17)
@@ -71,10 +84,11 @@ func _refresh() -> void:
 		var data := GameState.read_slot(slot)
 		var exists := FileAccess.file_exists(GameState.get_slot_path(slot))
 		var button := buttons[slot - 1]
+		delete_buttons[slot - 1].disabled = not exists
 		button.disabled = slot_mode == "load" and data.is_empty()
 		var active := " · 当前" if slot == GameState.active_slot and exists else ""
 		if data.is_empty():
-			button.text = "存档 %d%s\n%s" % [slot, active, "无法读取 · 可覆盖重建" if exists else "空档位"]
+			button.text = "存档 %d%s\n%s" % [slot, active, "无法读取 · 可覆盖或删除" if exists else ("空档位 · 点击保存" if slot_mode == "save" else "空档位")]
 			continue
 		var saved_flags: Dictionary = data.flags
 		var chapter := str(saved_flags.get("current_chapter", "chapter_01")).trim_prefix("chapter_").to_int()
@@ -86,12 +100,16 @@ func _refresh() -> void:
 		var timestamp := int(data.get("saved_at", 0))
 		var local_time := timestamp + int(Time.get_time_zone_from_system().bias) * 60
 		var date := Time.get_datetime_string_from_unix_time(local_time).replace("T", " ")
-		button.text = "存档 %d%s · 第 %d 章 · %s\n%s · %d 条线索" % [slot, active, chapter, place, date, data.evidence.size()]
+		var action := " · 点击覆盖" if slot_mode == "save" else ""
+		button.text = "存档 %d%s · 第 %d 章 · %s\n%s · %d 条线索%s" % [slot, active, chapter, place, date, data.evidence.size(), action]
 	status_label.text = "读取后恢复该档的线索、章节进度和结局。" if slot_mode == "load" else "覆盖已有档位前会再次确认。其他档位不会改变。"
 
 
 func _choose(slot: int) -> void:
+	pending_delete = false
 	pending_slot = slot
+	confirmation.title = "确认覆盖存档"
+	confirmation.ok_button_text = "覆盖"
 	if slot_mode != "load" and FileAccess.file_exists(GameState.get_slot_path(slot)):
 		confirmation.dialog_text = "覆盖存档 %d？\n该档原有调查进度将被替换。" % slot
 		confirmation.popup_centered(Vector2i(470, 170))
@@ -100,7 +118,30 @@ func _choose(slot: int) -> void:
 		_commit()
 
 
+func _choose_delete(slot: int) -> void:
+	pending_slot = slot
+	pending_delete = true
+	confirmation.title = "确认删除存档"
+	confirmation.ok_button_text = "删除"
+	confirmation.dialog_text = "删除存档 %d？此操作无法撤销。\n其他档位不会改变。" % slot
+	if slot == GameState.active_slot:
+		confirmation.dialog_text += "\n当前游戏可继续，但需重新手动保存后才会恢复自动保存。"
+	confirmation.popup_centered(Vector2i(620, 200))
+	confirmation.get_cancel_button().grab_focus()
+
+
 func _commit() -> void:
+	if pending_delete:
+		if not GameState.delete_slot(pending_slot):
+			status_label.text = "删除失败，存档仍保留。请检查文件权限。"
+			return
+		deleted.emit(pending_slot)
+		_refresh()
+		status_label.text = "已删除存档 %d。" % pending_slot
+		if GameState.active_slot == 0:
+			status_label.text += " 当前游戏未绑定档位，请手动保存以恢复自动保存。"
+		pending_delete = false
+		return
 	var success := false
 	match slot_mode:
 		"load": success = GameState.load_slot(pending_slot)

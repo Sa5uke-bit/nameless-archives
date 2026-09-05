@@ -31,6 +31,8 @@ func _ready() -> void:
 	continue_button.text = "读取存档 · 3 个档位"
 	start_button.tooltip_text = "选择档位，从第一章开始新的独立调查。覆盖已有档位时会确认。"
 	$Center/VBox/ChapterLabel.text = "无名档案 · 当前档位 %d 的章节" % GameState.active_slot
+	if GameState.active_slot == 0:
+		$Center/VBox/ChapterLabel.text = "无名档案 · 未选择存档"
 	start_button.grab_focus()
 
 
@@ -102,6 +104,12 @@ func _open_slots(mode: String) -> void:
 	picker.slot_mode = mode
 	add_child(picker)
 	picker.closed.connect(continue_button.grab_focus)
+	picker.deleted.connect(func(_slot: int):
+		if GameState.active_slot == 0:
+			GameState.profile = {}
+			GameState.flags = {}
+			GameState.evidence = {}
+		_ready())
 	picker.popup_centered()
 
 

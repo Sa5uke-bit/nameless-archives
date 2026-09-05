@@ -342,6 +342,8 @@ func _close_notebook() -> void:
 func _open_pause() -> void:
 	_capture_player_position()
 	$PausePanel/Margin/VBox/SaveHint.text = "当前存档 %d · 自动保存只更新当前档位 · 可另存到其他档位保留分支" % GameState.active_slot
+	if GameState.active_slot == 0:
+		$PausePanel/Margin/VBox/SaveHint.text = "当前未绑定档位 · 请手动保存以恢复自动保存"
 	_refresh_settings_ui()
 	pause_backdrop.show()
 	pause_panel.show()
@@ -375,6 +377,9 @@ func _open_save_slots(mode: String) -> void:
 	picker.closed.connect(%ResumeButton.grab_focus)
 	picker.saved.connect(func(slot: int):
 		$PausePanel/Margin/VBox/SaveHint.text = "已保存至存档 %d · 后续自动保存将更新这个档位" % slot)
+	picker.deleted.connect(func(_slot: int):
+		if GameState.active_slot == 0:
+			$PausePanel/Margin/VBox/SaveHint.text = "当前档已删除 · 游戏可继续，请手动保存以恢复自动保存")
 	picker.popup_centered()
 
 
@@ -459,6 +464,9 @@ func _on_reset_bindings_pressed() -> void:
 
 func _on_return_title_button_pressed() -> void:
 	_capture_player_position()
+	if GameState.active_slot == 0:
+		_open_save_slots("save")
+		return
 	if GameState.persistence_enabled and not GameState.save_case():
 		$PausePanel/Margin/VBox/SaveHint.text = "保存失败，尚未返回标题。请检查磁盘或尝试另一个档位。"
 		return

@@ -118,7 +118,7 @@ func has_save() -> bool:
 
 
 func save_case() -> bool:
-	if not persistence_enabled:
+	if not persistence_enabled or save_path.is_empty():
 		return false
 	var save_data := {
 		"version": SAVE_VERSION,
@@ -175,6 +175,21 @@ func save_to_slot(slot: int) -> bool:
 	return true
 
 
+func delete_slot(slot: int) -> bool:
+	var target := get_slot_path(slot)
+	if not persistence_enabled or target.is_empty() or not FileAccess.file_exists(target):
+		return false
+	# Remember deliberate deletions so legacy backups cannot resurrect an empty list.
+	if not _write_json(slot_directory.path_join("slots_initialized.json"), {"version": 1}):
+		return false
+	if DirAccess.remove_absolute(ProjectSettings.globalize_path(target)) != OK:
+		return false
+	if slot == active_slot:
+		active_slot = 0
+		save_path = ""
+	return true
+
+
 func begin_slot(slot: int) -> bool:
 	# Create the complete initial checkpoint before replacing the active session.
 	var target := get_slot_path(slot)
@@ -224,6 +239,8 @@ func _write_json(path: String, data: Dictionary) -> bool:
 func migrate_legacy(legacy_save: String = LEGACY_SAVE_PATH, legacy_profile: String = DEFAULT_PROFILE_PATH) -> bool:
 	# Preserve originals; never replace any of the three existing slot files.
 	if not persistence_enabled:
+		return false
+	if FileAccess.file_exists(slot_directory.path_join("slots_initialized.json")):
 		return false
 	for slot in range(1, SLOT_COUNT + 1):
 		if FileAccess.file_exists(get_slot_path(slot)):
