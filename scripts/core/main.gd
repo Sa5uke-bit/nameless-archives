@@ -55,6 +55,8 @@ func _start_new_case() -> void:
 
 
 func _start_chapter_two() -> void:
+	if not GameState.is_chapter_unlocked("chapter_02"):
+		return
 	GameState.reset_case()
 	GameState.set_flag("current_chapter", "chapter_02")
 	GameState.set_flag(
@@ -65,6 +67,8 @@ func _start_chapter_two() -> void:
 
 
 func _start_chapter_three() -> void:
+	if not GameState.is_chapter_unlocked("chapter_03"):
+		return
 	GameState.reset_case()
 	GameState.set_flag("current_chapter", "chapter_03")
 	GameState.set_flag(
@@ -79,6 +83,8 @@ func _start_chapter_three() -> void:
 
 
 func _start_chapter_four() -> void:
+	if not GameState.is_chapter_unlocked("chapter_04"):
+		return
 	GameState.reset_case()
 	GameState.set_flag("current_chapter", "chapter_04")
 	GameState.set_flag(
@@ -97,6 +103,8 @@ func _start_chapter_four() -> void:
 
 
 func _start_chapter_five() -> void:
+	if not GameState.is_chapter_unlocked("chapter_05"):
+		return
 	GameState.reset_case()
 	GameState.set_flag("current_chapter", "chapter_05")
 	GameState.set_flag("chapter_04_ending", GameState.get_chapter_outcome("chapter_04", "doorplate"))

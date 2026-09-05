@@ -10,6 +10,17 @@ const DEFAULT_SAVE_PATH := "user://chapter_01_save.json"
 const DEFAULT_PROFILE_PATH := "user://progression.json"
 const SAVE_VERSION := 1
 const PROFILE_VERSION := 1
+const CHAPTERS := ["chapter_01", "chapter_02", "chapter_03", "chapter_04", "chapter_05"]
+
+
+func is_chapter_unlocked(chapter_id: String) -> bool:
+	var index := CHAPTERS.find(chapter_id)
+	if index < 0:
+		return false
+	for previous in range(index):
+		if get_chapter_outcome(CHAPTERS[previous]).is_empty():
+			return false
+	return true
 
 var evidence: Dictionary = {}
 var flags: Dictionary = {}

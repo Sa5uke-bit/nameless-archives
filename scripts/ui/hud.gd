@@ -1,6 +1,8 @@
 class_name InvestigationHUD
 extends CanvasLayer
 
+const CONVERSATION_ACTOR := preload("res://scripts/characters/conversation_actor.gd")
+
 signal dialogue_finished(context: String)
 signal modal_changed(controls_enabled: bool)
 signal choice_selected(context: String, choice_id: String)
@@ -79,6 +81,19 @@ func _ready() -> void:
 	guide_panel.hide()
 	toast_timer.timeout.connect(evidence_toast.hide)
 	_setup_settings_ui()
+	_setup_conversation_actors(get_parent())
+
+
+func _setup_conversation_actors(root: Node) -> void:
+	for child: Node in root.get_children():
+		if child == self:
+			continue
+		if child is Sprite2D and not CONVERSATION_ACTOR.identify(child).is_empty():
+			var actor := CONVERSATION_ACTOR.new()
+			actor.configure(child, self)
+			child.add_child(actor)
+		else:
+			_setup_conversation_actors(child)
 
 
 func _unhandled_input(event: InputEvent) -> void:

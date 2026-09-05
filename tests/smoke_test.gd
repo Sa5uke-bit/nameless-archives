@@ -58,6 +58,9 @@ func _run() -> void:
 		if is_nan(player.mouse_destination):
 			break
 	_check(player.global_position.x > starting_x + 150.0, "click destination moves the detective")
+	# Allow the 100 ms landing blend to settle after movement arrives.
+	for _frame in range(8):
+		await get_tree().physics_frame
 	_check(player.character_sprite.visible and not player.walk_sprite.visible, "idle portrait returns after arrival")
 
 	var desk: Investigable = lobby.get_node("FrontDesk")

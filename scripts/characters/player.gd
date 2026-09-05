@@ -20,7 +20,23 @@ var current_target: Investigable
 var hovered_target: Investigable
 var pending_interaction: Investigable
 var mouse_destination := NAN
+var walk_blend := 0.0
+var last_motion_x := 0.0
+const WALK_HIP_X := [350.0, 285.0, 350.0, 310.0]
+const WALK_SOLE_Y := [615.0, 615.0, 618.0, 610.0]
 var gravity: float = ProjectSettings.get_setting("physics/2d/default_gravity", 980.0)
+
+
+func _ready() -> void:
+	walk_sprite.frame_changed.connect(_align_walk_frame)
+	_align_walk_frame()
+
+
+func _align_walk_frame() -> void:
+	# The source sheet was painted without a shared pelvis / ground registration.
+	# Correct that drift rather than letting the entire body jump between cells.
+	var index := walk_sprite.frame % WALK_HIP_X.size()
+	walk_sprite.offset = Vector2(313.5 - WALK_HIP_X[index], 615.0 - WALK_SOLE_Y[index])
 
 
 func _physics_process(delta: float) -> void:
@@ -54,7 +70,9 @@ func _physics_process(delta: float) -> void:
 	else:
 		velocity.y = 0.0
 
+	var previous_x := global_position.x
 	move_and_slide()
+	last_motion_x = absf(global_position.x - previous_x) / maxf(delta, 0.001)
 	_update_walk_visual(delta)
 	_update_interaction_target()
 	_update_hovered_target()
@@ -183,17 +201,20 @@ func _refresh_prompt() -> void:
 		target_changed.emit("")
 
 
-func _update_walk_visual(_delta: float) -> void:
-	var is_walking := absf(velocity.x) > 8.0 and is_on_floor()
+func _update_walk_visual(delta: float) -> void:
+	var is_walking := last_motion_x > 8.0 and is_on_floor()
+	walk_blend = move_toward(walk_blend, 1.0 if is_walking else 0.0, delta * 10.0)
 	if is_walking:
-		character_sprite.hide()
-		walk_sprite.show()
+		# Cadence follows real displacement, including acceleration and wall contact.
+		walk_sprite.speed_scale = clampf(last_motion_x / move_speed, 0.05, 1.3)
 		if not walk_sprite.is_playing():
 			walk_sprite.play("walk")
 	else:
-		walk_sprite.stop()
-		walk_sprite.hide()
-		character_sprite.show()
+		walk_sprite.pause()
+	character_sprite.visible = walk_blend < 1.0
+	walk_sprite.visible = walk_blend > 0.0
+	character_sprite.modulate.a = 1.0 - walk_blend
+	walk_sprite.modulate.a = walk_blend
 
 
 func _exit_tree() -> void:

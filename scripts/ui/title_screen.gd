@@ -18,6 +18,13 @@ signal quit_requested
 
 func _ready() -> void:
 	_update_chapter_labels()
+	var buttons := [start_button, chapter_two_button, chapter_three_button, chapter_four_button, chapter_five_button]
+	for index in range(buttons.size()):
+		var button: Button = buttons[index]
+		button.disabled = not GameState.is_chapter_unlocked(GameState.CHAPTERS[index])
+		if button.disabled:
+			button.text += "　·　未解锁"
+			button.tooltip_text = "按章节顺序完成此前案件后解锁。"
 	continue_button.disabled = not GameState.has_save()
 	continue_button.text = "继续调查" if not continue_button.disabled else "继续（尚无存档）"
 	start_button.grab_focus()
