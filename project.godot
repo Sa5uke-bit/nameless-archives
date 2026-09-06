@@ -11,6 +11,7 @@ config_version=5
 [application]
 
 config/name="无名档案"
+config/version="0.1.0"
 ; Keep the existing Windows save and settings directory after the title change.
 config/use_custom_user_dir.windows=true
 config/custom_user_dir_name.windows="Godot/app_userdata/不存在的住客"

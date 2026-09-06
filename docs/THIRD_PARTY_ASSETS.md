@@ -2,7 +2,7 @@
 
 > 最后更新：2026-08-15
 
-当前版本使用下列第三方声音。项目场景与人物美术为本项目通过内置图像生成工具制作的原创资产，另见 [`GENERATED_ART.md`](GENERATED_ART.md)；第一章完整百炼 AI 配音属于生成式资产，另见 [`VOICE_PRODUCTION.md`](VOICE_PRODUCTION.md)，不作为第三方下载素材登记。项目未接入第三方美术、字体、插件或外部代码。
+当前版本使用下列第三方声音。项目场景与人物美术为本项目通过内置图像生成工具制作的原创资产，另见 [生成美术登记](https://github.com/Sa5uke-bit/nameless-archives/blob/main/docs/GENERATED_ART.md)；第一章完整百炼 AI 配音属于生成式资产，另见 [配音制作记录](https://github.com/Sa5uke-bit/nameless-archives/blob/main/docs/VOICE_PRODUCTION.md)，不作为第三方下载素材登记。项目未接入第三方美术、字体、插件或外部代码。
 
 | 类型 | 名称 | 作者 | 原始链接 | 许可证 | 下载日期 | 本项目修改 | 使用位置 |
 | --- | --- | --- | --- | --- | --- | --- | --- |
@@ -19,3 +19,7 @@
 - 需要署名时，在本表和游戏制作人员页同时保留正确署名；
 - 暂不纳入禁止修改、来源不明或用途限制含糊的素材；
 - 下载时一并保存许可证文本或页面快照，避免原页面变化后无法追溯。
+
+## 引擎与随包声明
+
+Windows 体验包附 Godot 4.6.2 的 MIT 许可证与第三方库版权声明，分别为 `licenses/GODOT_LICENSE.txt` 和 `licenses/GODOT_COPYRIGHT.txt`。仓库原件位于 `docs/licenses/`，来源为 Godot 官方仓库 `4.6.2-stable` 标签下的 [LICENSE.txt](https://github.com/godotengine/godot/blob/4.6.2-stable/LICENSE.txt) 与 [COPYRIGHT.txt](https://github.com/godotengine/godot/blob/4.6.2-stable/COPYRIGHT.txt)。

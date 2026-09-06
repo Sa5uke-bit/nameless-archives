@@ -5,6 +5,12 @@
 > 状态：五章完整制作版；首次游玩按章节顺序解锁
 > 更新日期：2026-09-06
 
+## 直接下载试玩
+
+普通玩家请前往 [Releases 下载 Windows 64 位体验版](https://github.com/Sa5uke-bit/nameless-archives/releases/tag/v0.1.0)，选择 `nameless-archives-v0.1.0-windows-x86_64.zip`，完整解压后双击 `无名档案.exe`。无需安装 Godot 或克隆源码；游戏可离线运行。
+
+GitHub 自动提供的 Source code 压缩包是源项目。体验版说明见 [`docs/releases/v0.1.0.md`](docs/releases/v0.1.0.md)。
+
 ## 游戏概念
 
 《无名档案》是一款完全现实规则下的横版侦探剧情游戏。玩家在五起相互关联、又各自完整成立的案件中调查姓名、声音、时间、地址和自己的案件档案。共同命题是：记录可以证明一个人存在，也可能暴露、误解或再次伤害这个人。
@@ -137,3 +143,5 @@ nameless-archives/
 GitHub 仓库名为 `nameless-archives`。源代码、剧本和游戏资源随仓库公开；Godot 缓存、Windows 构建、本地凭据和环境变量文件不纳入版本控制。当前未选择面向全项目的开源许可证；外部素材许可与 AI 生成资产来源见上方文档。
 
 2026-09-06 改名验证：Godot 4.6.2 导入、正式名称与 Windows 旧用户目录核对、三槽存档回归、第一章完整通关测试、Windows 重新导出及导出程序启动均通过。部分 headless 检查快速退出时仍有原有资源清理警告。
+
+发布包制作：先运行上述 Windows 导出命令，再执行 `python tools/package_release.py --version 0.1.0`（Python 3.11+）。ZIP 和 SHA-256 校验文件输出到 `builds/releases/v0.1.0/`；打包脚本仅纳入游戏、玩家说明和许可文件，并校验 ZIP 完整性及程序内容一致性。
