@@ -1,9 +1,9 @@
-# 《无名档案》2D 侦探剧情游戏
+# 《无名档案》｜Nameless Archives
 
-> 工作目录：`Narrative2D`
-> 文档版本：v2.0
+> 工作目录：`nameless-archives`
+> 文档版本：v2.1
 > 状态：五章完整制作版；首次游玩按章节顺序解锁
-> 更新日期：2026-09-05
+> 更新日期：2026-09-06
 
 ## 游戏概念
 
@@ -35,16 +35,18 @@
 
 ## 启动方法
 
-普通试玩可直接运行：
+本仓库保存 Godot 源项目及资源，克隆后用 Godot 4.6.2 打开 `project.godot`，等待首次资源导入完成即可运行。以下命令以本机安装位置为例，其他电脑请替换 Godot 可执行文件和项目路径。
+
+本机导出后可直接运行（`builds/` 不上传 GitHub）：
 
 ```text
-D:\IndieGame\Narrative2D\builds\windows\不存在的住客.exe
+D:\IndieGame\nameless-archives\builds\windows\无名档案.exe
 ```
 
-构建文件名保留第一章时期的兼容名称；标题画面显示完整作品暂名《无名档案》。开发时可用 Godot 打开 `project.godot`，或执行：
+正式中文名为《无名档案》，英文名为 Nameless Archives；《不存在的住客》保留为第一章标题。Windows 继续使用旧版用户数据目录，现有存档和设置无需搬动。开发时可用 Godot 打开 `project.godot`，或执行：
 
 ```powershell
-& 'D:\Godot\Godot_v4.6.2\Godot_v4.6.2-stable_win64_console.exe' --path 'D:\IndieGame\Narrative2D'
+& 'D:\Godot\Godot_v4.6.2\Godot_v4.6.2-stable_win64_console.exe' --path 'D:\IndieGame\nameless-archives'
 ```
 
 ## 操作
@@ -68,11 +70,11 @@ D:\IndieGame\Narrative2D\builds\windows\不存在的住客.exe
 五章自动测试：
 
 ```powershell
-& 'D:\Godot\Godot_v4.6.2\Godot_v4.6.2-stable_win64_console.exe' --headless --path 'D:\IndieGame\Narrative2D' --scene res://tests/smoke_test.tscn
-& 'D:\Godot\Godot_v4.6.2\Godot_v4.6.2-stable_win64_console.exe' --headless --path 'D:\IndieGame\Narrative2D' --scene res://tests/chapter_02_smoke_test.tscn
-& 'D:\Godot\Godot_v4.6.2\Godot_v4.6.2-stable_win64_console.exe' --headless --path 'D:\IndieGame\Narrative2D' --scene res://tests/chapter_03_smoke_test.tscn
-& 'D:\Godot\Godot_v4.6.2\Godot_v4.6.2-stable_win64_console.exe' --headless --path 'D:\IndieGame\Narrative2D' --scene res://tests/chapter_04_smoke_test.tscn
-& 'D:\Godot\Godot_v4.6.2\Godot_v4.6.2-stable_win64_console.exe' --headless --path 'D:\IndieGame\Narrative2D' --scene res://tests/chapter_05_smoke_test.tscn
+& 'D:\Godot\Godot_v4.6.2\Godot_v4.6.2-stable_win64_console.exe' --headless --path 'D:\IndieGame\nameless-archives' --scene res://tests/smoke_test.tscn
+& 'D:\Godot\Godot_v4.6.2\Godot_v4.6.2-stable_win64_console.exe' --headless --path 'D:\IndieGame\nameless-archives' --scene res://tests/chapter_02_smoke_test.tscn
+& 'D:\Godot\Godot_v4.6.2\Godot_v4.6.2-stable_win64_console.exe' --headless --path 'D:\IndieGame\nameless-archives' --scene res://tests/chapter_03_smoke_test.tscn
+& 'D:\Godot\Godot_v4.6.2\Godot_v4.6.2-stable_win64_console.exe' --headless --path 'D:\IndieGame\nameless-archives' --scene res://tests/chapter_04_smoke_test.tscn
+& 'D:\Godot\Godot_v4.6.2\Godot_v4.6.2-stable_win64_console.exe' --headless --path 'D:\IndieGame\nameless-archives' --scene res://tests/chapter_05_smoke_test.tscn
 ```
 
 第五章语音数据检查：
@@ -85,13 +87,13 @@ python tools/validate_voice_pack.py --chapter 5
 Windows 导出：
 
 ```powershell
-& 'D:\Godot\Godot_v4.6.2\Godot_v4.6.2-stable_win64_console.exe' --headless --path 'D:\IndieGame\Narrative2D' --export-release 'Windows Desktop'
+& 'D:\Godot\Godot_v4.6.2\Godot_v4.6.2-stable_win64_console.exe' --headless --path 'D:\IndieGame\nameless-archives' --export-release 'Windows Desktop'
 ```
 
 ## 目录结构
 
 ```text
-Narrative2D/
+nameless-archives/
 ├─ assets/                # 正式美术、环境声、音效和五章配音
 ├─ data/dialogue/         # 五章 JSON 对白
 ├─ data/voice/            # 试听与正式配音生成清单
@@ -113,9 +115,9 @@ Narrative2D/
 - 主角仍使用四张原始步态，已改善中心抖动、固定播放速度和突然起停；本轮生成的八帧候选存在姿态/透明底问题，未纳入游戏。下一步应制作并逐帧验收真正交替双腿的 8–12 帧步态，或采用分肢骨骼动画；
 - 暂无原创配乐、手柄适配和独立制作人员页；
 - 画面以 1280×720 和 16:9 窗口验证，其他比例需要额外检查；
-- 完整作品暂名、Logo、商店材料和正式发行许可复核尚未完成。
+- 作品名称已确定；Logo、商店材料和正式发行许可复核尚未完成。
 
-下一轮不再增加第六章。优先顺序是：完整五章人工通关与听测、修订具体卡点、补配乐/动画和手柄、确定正式名称与发行材料。
+下一轮不再增加第六章。优先顺序是：完整五章人工通关与听测、修订具体卡点、补配乐/动画和手柄、完善 Logo 与发行材料。
 
 本轮验证与行为边界见 [`docs/PROGRESSION_PERFORMANCE.md`](docs/PROGRESSION_PERFORMANCE.md)。新增回归场景：`res://tests/progression_performance_test.tscn`；图形捕获场景：`res://tests/performance_visual_capture.tscn`。
 
@@ -129,3 +131,9 @@ Narrative2D/
 - 外部 CC0 音效：[`docs/THIRD_PARTY_ASSETS.md`](docs/THIRD_PARTY_ASSETS.md)
 
 项目原创剧本、代码与生成美术保存在本仓库。外部声音仅使用已登记许可的素材；AI 合成语音不冒充真人配音，正式发行前需重新核对届时适用的服务条款与商用条件。
+
+## 仓库公开范围
+
+GitHub 仓库名为 `nameless-archives`。源代码、剧本和游戏资源随仓库公开；Godot 缓存、Windows 构建、本地凭据和环境变量文件不纳入版本控制。当前未选择面向全项目的开源许可证；外部素材许可与 AI 生成资产来源见上方文档。
+
+2026-09-06 改名验证：Godot 4.6.2 导入、正式名称与 Windows 旧用户目录核对、三槽存档回归、第一章完整通关测试、Windows 重新导出及导出程序启动均通过。部分 headless 检查快速退出时仍有原有资源清理警告。

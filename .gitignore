@@ -13,3 +13,12 @@ __pycache__/
 .DS_Store
 Thumbs.db
 desktop.ini
+
+# Local credentials and Godot export credentials
+.env
+.env.*
+!.env.example
+export_credentials.cfg
+*.pem
+*.pfx
+*.p12
